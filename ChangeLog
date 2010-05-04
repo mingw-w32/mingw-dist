@@ -1,0 +1,13 @@
+2010-05-04  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Initial import of mingw-dist module.
+
+	* $CVSROOT/mingw-dist: New CVS module directory.
+	* mingw32, msys: New subdirectories; created by import.
+
+	* COPYING, ChangeLog, configure.ac, .cvsignore: New files.
+	* Makefile.in, Makefile.comm.in, Makefile.stub.in: New files.
+
+	* issue.log.in: New file; use it as template, to initialise...
+
+	* mingw32/issue.log, msys/issue.log: ...these new files.

@@ -1,0 +1,98 @@
+# @configure_input@
+#
+# $Id$
+#
+# Written by Keith Marshall <keithmarshall@users.sourceforge.net>
+# Copyright (C) 2010, MinGW Project
+#
+#
+# Makefile template for generating mingw-get distribution manifests.
+#
+#   Project: @PACKAGE_TARNAME@
+#   Version: @PACKAGE_VERSION@
+#
+#
+# This is free software.  Permission is granted to copy, modify and
+# redistribute this software, under the provisions of the GNU General
+# Public License, Version 3, (or, at your option, any later version),
+# as published by the Free Software Foundation; see the file COPYING
+# for licensing details.
+#
+# Note, in particular, that this software is provided "as is", in the
+# hope that it may prove useful, but WITHOUT WARRANTY OF ANY KIND; not
+# even an implied WARRANTY OF MERCHANTABILITY, nor of FITNESS FOR ANY
+# PARTICULAR PURPOSE.  Under no circumstances will the author, or the
+# MinGW Project, accept liability for any damages, however caused,
+# arising from the use of this software.
+#
+VPATH = ${srcdir}
+
+all: update all-distfiles
+
+# To accommodate a top-level make on just a single subdirectory, we list
+# each of the managed subdirectories as an independent goal, invoking the
+# "all" action for the target subdirectory.
+#
+@mingw_ac_subdirs@: all
+
+# We use an automatically generated Makefile.sub to manage the list
+# of distributable files, ensuring that we automatically capture all
+# XML files in the source directory, and converting them to serialised
+# LZMA compressed format for upload to the repository server.
+#
+Makefile.sub: ${srcdir}/*.xml
+	echo 'auto-distfiles = \\' > $@
+	for file in $^; do echo "$$file.lzma \\" | sed 's,.*/,  ,' >> $@; done
+	echo '  $$(EXTRA_DISTFILES)' >> $@
+
+include Makefile.sub
+all-distfiles: $(DISTFILES) $(auto-distfiles)
+
+# Distributed manifests are serialised by incorporating a date-stamped
+# issue number, of the form YYMMDDNN; we track issue numbers using the
+# issue.log file, (which we keep in CVS to ensure that all maintainers
+# can share a common issue number registry).
+#
+issue_number = YYYYMMDDNN
+issue_log = ${srcdir}/issue.log
+
+update: FORCE
+	cd ${srcdir}; cvs -z3 -Q update -AC issue.log
+	rm -f ${srcdir}'/.#issue.log'*
+
+# Formatting within issue.log is controlled by PAD and TAB settings.
+#
+TAB = [	 ]
+PAD = "  "
+
+# The following generic rule processes an XML source template, inserting
+# the appropriate issue number, and compressing to yield the required LZMA
+# distribution manifest.  The generated issue number which gets applied is
+# appropriately serialised relative to the original record for the  source
+# XML file being processed, as noted in the local copy of issue.log, which
+# is then updated to record the new issue number; to avoid any regression
+# of issue numbers, all maintainers are advised to update issue.log from
+# CVS immediately prior manifest generation, and to commit back as soon
+# as possible thereafter; any ensuing conflict must be resolved before
+# any updated manifest is uploaded to the repository server.
+#
+%.xml.lzma: %.xml
+	>> $(issue_log)
+	sed '/^$(TAB)*$$/d;/^$(TAB)*#/d' $(issue_log) > issue.tmp
+	sed -n '/^$(TAB)*$$/q;/^$(TAB)*[^#]/q;p' $(issue_log) > issue.new
+	test x$${issue="`sed -n 's/^$(TAB)*$*.xml://p' $(issue_log)`"} = x && \
+	  issue=0 && echo $(PAD)"$*.xml:0" >> issue.tmp; \
+	test $$issue -lt $${mark="`date -u +%Y%m%d`00"} && \
+	  issue=$$mark || issue=`expr $$issue + 1`; \
+	sed "s/^\($(TAB)*$*.xml:\).*/\1$$issue/" issue.tmp | sort >> issue.new; \
+	sed "s/@$(serial_number)@/$$issue/" $< | lzma -c > $@
+	sed -n 's/^$(TAB)*$$/break/;1,/^$(TAB)*[^#]/d;/^$(TAB)*#/p' \
+	  $(issue_log) >> issue.new
+	rm -f $(issue_log) issue.tmp
+	mv issue.new $(issue_log)
+
+.PHONY: FORCE
+# An internal target, to specify a dependency which must always be updated.
+FORCE:
+
+# $RCSfile$: end of file
