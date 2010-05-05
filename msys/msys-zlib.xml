@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
+  <package-collection subsystem="msys">
+    <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+    <package name="msys-zlib">
+      <affiliate group="MSYS Base System" />
+      <description lang="en" title="ZLib: A Massively Spiffy Yet Delicately Unobtrusive Compression Library">
+	<paragraph>The zlib compression library provides in-memory compression and decompression functions, including integrity checks of the uncompressed data.</paragraph>
+      </description>
+      <!-- note: for historical reasons, the zlib dll component does not specify a soname -->
+      <component class="dll">
+        <release tarname="zlib-1.2.3-1-msys-1.0.11-dll.tar.gz" />
+        <release tarname="zlib-1.2.3-2-msys-1.0.13-dll.tar.lzma" />
+	<requires eq="msys-msysCORE-*-msys-*-bin.tar" />
+      </component>
+      <component class="dev">
+        <release tarname="zlib-1.2.3-1-msys-1.0.11-dev.tar.gz" />
+        <release tarname="zlib-1.2.3-2-msys-1.0.13-dev.tar.lzma" />
+	<requires eq="msys-zlib-%-msys-%-dll.tar" />
+      </component>
+      <component class="doc">
+        <release tarname="zlib-1.2.3-1-msys-1.0.11-doc.tar.gz" />
+        <release tarname="zlib-1.2.3-2-msys-1.0.13-doc.tar.lzma" />
+      </component>
+      <component class="lic">
+        <release tarname="zlib-1.2.3-1-msys-1.0.11-lic.tar.gz" />
+        <release tarname="zlib-1.2.3-2-msys-1.0.13-lic.tar.lzma" />
+      </component>
+      <licence tarname="zlib-%-msys-%-lic.tar" />
+      <source tarname="zlib-%-msys-%-src.tar" />
+    </package>
+  </package-collection>
+</software-distribution>
+
