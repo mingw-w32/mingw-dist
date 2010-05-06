@@ -5,7 +5,7 @@
     <package name="msys-lndir">
       <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="lndir: Xorg recursive directory symlink tool">
-	<paragraph>The lndir program makes a shadow copy of a directory
+        <paragraph>The lndir program makes a shadow copy of a directory
 tree, except that the shadow is not populated with real files but instead
 with symbolic links (*) pointing at the real files in the original
 directory tree. This is usually useful building applications outside their
@@ -19,17 +19,17 @@ and with copies if not (e.g. the original and destination directories are
 on different devices, or the file system is not NTFS).</paragraph>
       </description>
       <component class="bin">
-	<release tarname="lndir-1.0.1-1-msys-1.0.11-bin.tar.gz" />
-	<release tarname="lndir-1.0.1-2-msys-1.0.13-bin.tar.lzma" />
-	<requires eq="msys-msysCORE-*-msys-*-bin.tar" />
+        <release tarname="lndir-1.0.1-1-msys-1.0.11-bin.tar.gz" />
+        <release tarname="lndir-1.0.1-2-msys-1.0.13-bin.tar.lzma" />
+        <requires eq="msys-msysCORE-*-msys-*-bin.tar" />
       </component>
       <component class="doc">
-	<release tarname="lndir-1.0.1-1-msys-1.0.11-doc.tar.gz" />
-	<release tarname="lndir-1.0.1-2-msys-1.0.13-doc.tar.lzma" />
+        <release tarname="lndir-1.0.1-1-msys-1.0.11-doc.tar.gz" />
+        <release tarname="lndir-1.0.1-2-msys-1.0.13-doc.tar.lzma" />
       </component>
       <component class="lic">
-	<release tarname="lndir-1.0.1-1-msys-1.0.11-lic.tar.gz" />
-	<release tarname="lndir-1.0.1-2-msys-1.0.13-lic.tar.lzma" />
+        <release tarname="lndir-1.0.1-1-msys-1.0.11-lic.tar.gz" />
+        <release tarname="lndir-1.0.1-2-msys-1.0.13-lic.tar.lzma" />
       </component>
       <licence tarname="lndir-%-msys-%-lic.tar" />
       <source tarname="lndir-%-msys-%-src.tar" />
