@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
+  <package-collection subsystem="msys">
+    <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+    <package name="msys-bzip2">
+      <affiliate group="MSYS Developer Toolkit" />
+      <description lang="en" title="bzip2: a high-quality data compressor" />
+      <paragraph>bzip2 is a freely available, patent free (see below),
+high-quality data compressor. It typically compresses files to within
+10% to 15% of the best available techniques (the PPM family of statistical
+compressors), whilst being around twice as fast at compression and six
+times faster at decompression. This package provides the utility programs
+and scripts.</paragraph>
+      </description>
+      <component class="bin">
+        <!-- Note that the bzip2 utilities are linked against the static
+             version of libbz2.a, so there is no -dll dependency here. -->
+        <release tarname="bzip2-1.0.5-1-msys-1.0.11-bin.tar.gz" />
+        <release tarname="bzip2-1.0.5-2-msys-1.0.13-bin.tar.lzma" />
+        <requires eq="msys-msysCORE-*-msys-*-bin.tar" />
+      </component>
+      <component class="doc">
+        <release tarname="bzip2-1.0.5-1-msys-1.0.11-doc.tar.gz" />
+        <release tarname="bzip2-1.0.5-2-msys-1.0.13-doc.tar.lzma" />
+      </component>
+      <component class="lic">
+        <release tarname="bzip2-1.0.5-1-msys-1.0.11-lic.tar.gz" />
+        <release tarname="bzip2-1.0.5-2-msys-1.0.13-lic.tar.lzma" />
+      </component>
+      <licence tarname="bzip2-%-msys-%-lic.tar" />
+      <source tarname="bzip2-%-msys-%-src.tar" />
+    </package>
+    <package name="msys-libbz2">
+      <affiliate group="MSYS Developer Toolkit" />
+      <description lang="en" title="libbz2: runtime library for bzip2" />
+      <paragraph>bzip2 is a freely available, patent free (see below),
+high-quality data compressor. It typically compresses files to within
+10% to 15% of the best available techniques (the PPM family of statistical
+compressors), whilst being around twice as fast at compression and six
+times faster at decompression. This package provides the runtime library
+and development files.</paragraph>
+      </description>
+      <component class="dll">
+        <release tarname="libbz2-1.0.5-1-msys-1.0.11-dll-1.tar.gz" />
+        <release tarname="libbz2-1.0.5-2-msys-1.0.13-dll-1.tar.lzma" />
+        <requires eq="msys-msysCORE-*-msys-*-bin.tar" />
+      </component>
+      <component class="dev">
+        <release tarname="libbz2-1.0.5-1-msys-1.0.11-dev.tar.gz" />
+        <release tarname="libbz2-1.0.5-2-msys-1.0.13-dev.tar.lzma" />
+      </component>
+      <licence tarname="bzip2-%-msys-%-lic.tar" />
+      <source tarname="bzip2-%-msys-%-src.tar" />
+    </package>
+  </package-collection>
+</software-distribution>
+
