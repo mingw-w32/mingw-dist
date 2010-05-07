@@ -4,12 +4,12 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
     <package name="msys-crypt">
       <affiliate group="MSYS Developer Toolkit" />
-      <description lang="en" title="crypt: tools for DES encryption" />
+      <description lang="en" title="crypt: tools for DES encryption">
         <paragraph>crypt provides a library implementing the standard
 encryption functions crypt(), encrypt(), and setkey(). Many programs,
 such as perl, rely on the presence of these functions; as the functions
 are not provided by the MSYS runtime, this additional library fulfils
-those needs.</paragragh>
+those needs.</paragraph>
         <paragraph>crypt also provides a command-line tool for exercising
 those functions. `crypt cleartext' generates an encrypted version of the
 cleartext using a random salt. `crypt salt cleartext' encrypts cleartext
@@ -39,12 +39,12 @@ package provides the runtime library and related development files.</paragraph>
     </package>
     <package name="msys-libcrypt">
       <affiliate group="MSYS Developer Toolkit" />
-      <description lang="en" title="libcrypt: runtime library for crypt" />
+      <description lang="en" title="libcrypt: runtime library for crypt">
         <paragraph>crypt provides a library implementing the standard
 encryption functions crypt(), encrypt(), and setkey(). Many programs,
 such as perl, rely on the presence of these functions; as the functions
 are not provided by the MSYS runtime, this additional library fulfils
-those needs.</paragragh>
+those needs.</paragraph>
         <paragraph>crypt also provides a command-line tool for exercising
 those functions. `crypt cleartext' generates an encrypted version of the
 cleartext using a random salt. `crypt salt cleartext' encrypts cleartext
