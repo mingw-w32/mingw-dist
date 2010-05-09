@@ -5,18 +5,18 @@
     <package name="msys-expat">
       <description lang="en" title="expat: XML parsing library written in C">
         <paragraph>expat is a C library for parsing XML written by James
-	  Clark. Expat is a stream-oriented XML parser.  This means that
-	  you register handlers with the parser before starting the parse.
-	  These handlers are called when the parser discovers the
-	  associated structures in the document being parsed.  A start tag
-	  is an example of the kind of structures for which you may
-	  register handlers.
-	</paragraph>
+          Clark. Expat is a stream-oriented XML parser.  This means that
+          you register handlers with the parser before starting the parse.
+          These handlers are called when the parser discovers the
+          associated structures in the document being parsed.  A start tag
+          is an example of the kind of structures for which you may
+          register handlers.
+        </paragraph>
         <paragraph>The msys-expat package provides the xmlwf validation
           tool and documentation related to the library. The associated
           msys-libexpat package provides the runtime library and related
           development files.
-	</paragraph>
+        </paragraph>
       </description>
       <component class="bin">
         <release tarname="expat-2.0.1-1-msys-1.0.13-bin.tar.lzma" />
@@ -36,18 +36,18 @@
       <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="libexpat: XML parsing library written in C">
         <paragraph>expat is a C library for parsing XML written by James
-	  Clark. Expat is a stream-oriented XML parser.  This means that
-	  you register handlers with the parser before starting the parse.
-	  These handlers are called when the parser discovers the
-	  associated structures in the document being parsed.  A start tag
-	  is an example of the kind of structures for which you may
-	  register handlers.
-	</paragraph>
+          Clark. Expat is a stream-oriented XML parser.  This means that
+          you register handlers with the parser before starting the parse.
+          These handlers are called when the parser discovers the
+          associated structures in the document being parsed.  A start tag
+          is an example of the kind of structures for which you may
+          register handlers.
+        </paragraph>
         <paragraph>The msys-libexpat package provides the runtime library
           and related development files for expat.  The associated
-	  msys-expat package provides the xmlwf validation tool and
-	  documentation related to the library.
-	</paragraph>
+          msys-expat package provides the xmlwf validation tool and
+          documentation related to the library.
+        </paragraph>
       </description>
       <component class="dll">
         <release tarname="libexpat-2.0.1-1-msys-1.0.13-dll-1.tar.lzma" />
