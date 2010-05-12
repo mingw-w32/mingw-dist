@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
+  <package-collection subsystem="msys">
+    <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+    <package name="msys-automake">
+      <affiliate group="MSYS System Builder" />
+      <description lang="en" title="automake (msys): Automatic Makefile Builder">
+        <paragraph>This is not the automake you are looking for.</paragraph>
+        <paragraph>Automake is a tool for automatically generating
+          Makefile.in files compliant with the GNU Coding Standards.
+          Automake requires the use of Autoconf.
+        </paragraph>
+        <paragraph>This msys port of automake has been modified
+          specifically for the MSYS System Builder environment; that is,
+          it is intended to be used only when producing binary packages
+          for the MSYS subsystem.  If you intend to produce executables
+          for the native "mingw32" subsystem (that is, applications that
+          should work on Microsoft Windows installations without the MSYS
+          dll), then you should install the automake-*-mingw32-bin, and/or
+          the automake1.NN-*-mingw32-bin packages instead.
+        </paragraph>
+      </description>
+      <component class="bin">
+        <release tarname="automake-1.11-1-msys-1.0.11-bin.tar.lzma" />
+        <release tarname="automake-1.11.1-1-msys-1.0.13-bin.tar.lzma" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-perl-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+        <requires eq="msys-m4-*-msys-*-bin.tar" />
+        <requires eq="msys-texinfo-*-msys-*-bin.tar" />
+        <requires eq="msys-autoconf-*-msys-*-bin.tar" />
+      </component>
+      <component class="doc">
+        <release tarname="automake-1.11-1-msys-1.0.11-doc.tar.lzma" />
+        <release tarname="automake-1.11.1-1-msys-1.0.13-doc.tar.lzma" />
+      </component>
+      <component class="lic">
+        <release tarname="automake-1.11-1-msys-1.0.11-lic.tar.lzma" />
+        <release tarname="automake-1.11.1-1-msys-1.0.13-lic.tar.lzma" />
+      </component>
+      <licence tarname="automake-%-msys-%-lic.tar" />
+      <source tarname="automake-%-msys-%-src.tar" />
+    </package>
+  </package-collection>
+</software-distribution>
+
