@@ -2,7 +2,7 @@
 <software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
   <package-collection subsystem="mingw32">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
-    <package name="autoconf">
+    <package name="mingw32-autoconf" alias="autoconf">
       <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="autoconf: Wrapper scripts for autoconf commands">
         <paragraph>Autoconf is an extensible package of M4 macros that
@@ -23,8 +23,8 @@
         <requires eq="msys-core-*-msys-*-bin.tar" />
         <requires eq="msys-bash-*-msys-*-bin.tar" />
         <requires eq="msys-gawk-*-msys-*-bin.tar" />
-        <requires eq="autoconf2.1-*-mingw32-*-bin.tar" />
-        <requires eq="autoconf2.5-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-autoconf2.1-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-autoconf2.5-*-mingw32-*-bin.tar" />
       </component>
       <component class="doc">
         <release tarname="autoconf-6-1-mingw32-doc.tar.lzma" />
@@ -37,7 +37,7 @@
       <licence tarname="autoconf-%-mingw32-%-lic.tar" />
       <source tarname="autoconf-%-mingw32-%-src.tar" />
     </package>
-    <package name="autoconf2.1">
+    <package name="mingw32-autoconf2.1" alias="autoconf2.1">
       <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="autoconf2.1: Automatic Configure Script Builder (2.1x series)">
         <paragraph>Autoconf is an extensible package of M4 macros that
@@ -68,7 +68,7 @@
       <licence tarname="autoconf2.1-%-mingw32-%-lic.tar" />
       <source tarname="autoconf2.1-%-mingw32-%-src.tar" />
     </package>
-    <package name="autoconf2.5">
+    <package name="mingw32-autoconf2.5" alias="autoconf2.5">
       <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="autoconf2.5: Automatic Configure Script Builder (2.5x/2.6x series)">
         <paragraph>Autoconf is an extensible package of M4 macros that

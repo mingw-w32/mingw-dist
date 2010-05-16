@@ -2,7 +2,7 @@
 <software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
-    <package name="libtool">
+    <package name="mingw32-libtool" alias="libtool">
       <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="libtool: A shared library generation tool" >
         <paragraph>GNU libtool is a generic library support package.
@@ -26,8 +26,8 @@
         <requires eq="msys-file-*-msys-*-bin.tar" />
         <requires eq="msys-m4-*-msys-*-bin.tar" />
         <requires eq="msys-texinfo-*-msys-*-bin.tar" />
-        <requires eq="autoconf-*-mingw32-*-bin.tar" />
-        <requires eq="automake-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-autoconf-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake-*-mingw32-*-bin.tar" />
       </component>
       <component class="doc">
         <release tarname="libtool-2.2.7a-1-mingw32-doc.tar.lzma" />
@@ -38,7 +38,7 @@
       <licence tarname="libtool-%-mingw32-%-lic.tar" />
       <source tarname="libtool-%-mingw32-%-src.tar" />
     </package>
-    <package name="libltdl">
+    <package name="mingw32-libltdl" alias="libltdl">
       <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="libltdl: A portable dlopen replacement" >
         <paragraph>GNU libtool is a generic library support script.
@@ -58,8 +58,8 @@
       </component>
       <component class="dev">
         <release tarname="libltdl-2.2.7a-1-mingw32-dev.tar.lzma" />
-        <requires eq="libltdl-%-mingw32-%-dll-7.tar" />
-        <requires eq="libtool-%-mingw32-%-bin.tar" />
+        <requires eq="mingw32-libltdl-%-mingw32-%-dll-7.tar" />
+        <requires eq="mingw32-libtool-%-mingw32-%-bin.tar" />
       </component>
       <licence tarname="libtool-%-mingw32-%-lic.tar" />
       <source tarname="libtool-%-mingw32-%-src.tar" />
