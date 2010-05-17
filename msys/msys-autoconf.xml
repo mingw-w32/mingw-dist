@@ -21,9 +21,9 @@
           for the MSYS subsystem.  If you intend to produce executables
           for the native "mingw32" subsystem (that is, applications that
           should work on Microsoft Windows installations without the MSYS
-          dll), then you should install the autoconf-*-mingw32-bin,
-          autoconf2.5-*-mingw32-bin, and/or autoconf2.1-*-mingw32-bin
-          packages instead.
+          dll), then you should install the mingw32-autoconf-*,
+          mingw32-autoconf2.5-*, and/or mingw32-autoconf2.1-* packages
+          instead.
         </paragraph>
       </description>
       <component class="bin">

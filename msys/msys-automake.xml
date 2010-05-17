@@ -16,8 +16,8 @@
           for the MSYS subsystem.  If you intend to produce executables
           for the native "mingw32" subsystem (that is, applications that
           should work on Microsoft Windows installations without the MSYS
-          dll), then you should install the automake-*-mingw32-bin, and/or
-          the automake1.NN-*-mingw32-bin packages instead.
+          dll), then you should install the mingw32-automake-*, and/or
+          the mingw32-automake1.NN-* packages instead.
         </paragraph>
       </description>
       <component class="bin">

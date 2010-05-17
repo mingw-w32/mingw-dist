@@ -17,7 +17,7 @@
           for the MSYS subsystem.  If you intend to produce executables
           for the native "mingw32" subsystem (that is, applications that
           should work on Microsoft Windows installations without the MSYS
-          dll), then you should install the libtool-*-mingw32-bin package
+          dll), then you should install the mingw32-libtool-* package
           instead.
         </paragraph>
         <paragraph>msys-libtool provides the development files and
@@ -67,7 +67,7 @@
           for the MSYS subsystem.  If you intend to produce executables
           for the native "mingw32" subsystem (that is, applications that
           should work on Microsoft Windows installations without the MSYS
-          dll), then you should install the libtool-*-mingw32-bin package
+          dll), then you should install the mingw32-libtool-* package
           instead.
         </paragraph>
         <paragraph>msys-libltdl provides the runtime library and
