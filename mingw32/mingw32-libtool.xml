@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
-  <package-collection subsystem="msys">
+  <package-collection subsystem="mingw32">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
     <package name="mingw32-libtool" alias="libtool">
       <affiliate group="MSYS Developer Toolkit" />
