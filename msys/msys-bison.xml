@@ -3,6 +3,7 @@
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
     <package name="msys-bison">
+      <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="bison: GNU Parser Generator" >
         <paragraph>bison is a general-purpose parser generator that
           converts an annotated context-free grammar into an LALR(1)
