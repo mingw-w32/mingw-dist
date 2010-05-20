@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<software-distribution project="MinGW" home="http://www.mingw.org" issue="@YYYYMMDDNN@">
+
+  <!-- File: mingw32-gdb.xml ~~ mingw-get package description for the GNU debugger -->
+
+  <package-collection subsystem="mingw32">
+    <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+
+    <package name="mingw32-gdb" alias="gdb">
+      <affiliate group="MinGW Base System" />
+      <description lang="en" title="The GNU Source-Level Debugger">
+        <paragraph>
+	  GDB is a source-level debugger, capable of breaking programs at
+	  any specific line, displaying variable values, and determining
+	  where errors occurred.  Currently, it works for C, C++, Fortran,
+	  Modula 2 and Java programs.  A must-have for any serious
+	  programmer.
+        </paragraph>
+      </description>
+      <release tarname="gdb-7.1-2-mingw32-bin.tar.gz">
+	<source tarname="gdb-7.1-src.tar.gz" />
+      </release>
+    </package>
+
+  </package-collection>
+</software-distribution>
