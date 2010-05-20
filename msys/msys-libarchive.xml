@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
+  <package-collection subsystem="msys">
+    <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+    <package name="msys-libarchive">
+      <description lang="en" title="libarchive (msys): library for handling various archive formats" >
+        <paragraph>libarchive is a programming library that can create and
+          read several different streaming archive formats, including most
+          popular tar variants and several cpio formats, mtree, and ar
+          archives. It can also read shar, zip, jar, and xar archives, as
+          well as ISO9660 CDROM images.  It automatically handles gzip,
+          bzip2, compress, xz, and lzma compression and decompression, as
+          well as uudecode decompression. The bsdtar program is an
+          implementation of tar(1) that is built on top of libarchive.
+        </paragraph>
+        <paragraph>This MSYS port of libarchive differs from the MinGW
+          version also provided by the MinGW/MSYS project. In addition
+          to requiring the MSYS runtime library, this implementation
+          supports mtree data and understands MSYS's "unix" style pathnames.
+          It also supports archives that contain symbolic links by
+          converting them to equivalent hardlink (or recursive copy)
+          representations (see msys-bsdtar for more information). The MinGW
+          implementation does not support archives with symbolic links, nor
+          mtree data. It does, however, operate properly on systems where
+          MSYS is not installed. Both msys-libarchive and mingw32-libarchive
+          (and their associated bsdtar and bsdcpio subpackages) depend on
+          additional DLLs such as msys-liblzma (mingw32-liblzma), etc.
+          There is, in addition, a MinGW package that provides a standalone
+          version of bsdtar which has no external dependencies and only
+          limited functionality: mingw32-basic-bsdtar (see its documentation
+          for more information).
+        </paragraph>
+        <paragraph>The msys-libarchive package provides the runtime
+          library, development files, and documentation for libarchive.
+          The associated msys-bsdtar package provides an implementation
+          of tar(1) based on libarchive, while the associated msys-bsdcpio
+          package provides a similar implementation of cpio(1).
+        </paragraph>
+      </description>
+      <component class="doc">
+        <release tarname="libarchive-2.7.1-1-msys-1.0.11-doc.tar.lzma" />
+        <release tarname="libarchive-2.8.3-1-msys-1.0.13-doc.tar.lzma" />
+      </component>
+      <component class="lic">
+        <release tarname="libarchive-2.7.1-1-msys-1.0.11-lic.tar.lzma" />
+        <release tarname="libarchive-2.8.3-1-msys-1.0.13-lic.tar.lzma" />
+      </component>
+      <component class="dev">
+        <release tarname="libarchive-2.7.1-1-msys-1.0.11-dev.tar.lzma" />
+        <release tarname="libarchive-2.8.3-1-msys-1.0.13-dev.tar.lzma" >
+          <requires eq="msys-libxml2-*-msys-*-dev.tar" />
+        </release>
+        <requires eq="msys-libarchive-%-msys-%-dll-2.tar" />
+        <requires eq="msys-libopenssl-*-msys-*-dev.tar" />
+        <requires eq="msys-liblzma-*-msys-*-dev.tar" />
+        <requires eq="msys-libbz2-*-msys-*-dev.tar" />
+        <requires eq="msys-zlib-*-msys-*-dev.tar" />
+      </component>
+      <component class="dll">
+        <release tarname="libarchive-2.7.1-1-msys-1.0.11-dll-2.tar.lzma" />
+        <release tarname="libarchive-2.8.3-1-msys-1.0.13-dll-2.tar.lzma" >
+          <requires eq="msys-libxml2-*-msys-*-dll-2.tar" />
+        </release>
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-libopenssl-*-msys-*-dll-100.tar" />
+        <requires eq="msys-liblzma-*-msys-*-dll-1.tar" />
+        <requires eq="msys-libbz2-*-msys-*-dll-1.tar" />
+        <requires eq="msys-zlib-*-msys-*-dll.tar" />
+      </component>
+      <licence tarname="libarchive-%-msys-%-lic.tar" />
+      <source tarname="libarchive-%-msys-%-src.tar" />
+    </package>
+    <package name="msys-bsdtar">
+      <affiliate group="MSYS Developer Toolkit" />
+      <description lang="en" title="bsdtar (msys): BSD version of the tar utility" >
+        <paragraph>The msys-bsdtar package provides an implementation
+          of tar(1) based on libarchive, which manipulates streaming archive
+          files -- including the eponymous tar format.  However, bsdtar
+          can also extract from tar, pax, cpio, zip, jar, ar, xar, mtree,
+          and ISO 9660 cdrom images, as well as create tar, pax, cpio, ar,
+          mtree, and shar archives. It supports automatic detection and
+          handling of .gz, .bz2, .lzma, .xz, and .Z decompression (and
+          compression). It supports ustar, pax, and GNU tar formats.
+        </paragraph>
+        <paragraph>This MSYS port of bsdtar differs from the MinGW version
+          also provided by the MinGW/MSYS project. In addition to requiring
+          the MSYS runtime library, this implementation supports mtree data
+          and understands MSYS's "unix" style pathnames. It also supports
+          archives that contain symbolic links by converting them to
+          equivalent hardlink (or recursive copy) representations (see
+          below). The MinGW implementation does not support archives with
+          symbolic links, nor mtree data. It does, however, operate properly
+          on systems where MSYS is not installed. Both msys-bsdtar and
+          mingw32-bsdtar depend on additional DLLs such as msys-libarchive
+          (mingw32-liblzma), etc. There is, in addition, a MinGW package
+          that provides a standalone version of bsdtar which has no external
+          dependencies and only limited functionality: mingw32-basic-bsdtar
+          (see its documentation for more information).
+        </paragraph>
+        <paragraph>This msys implementation has some unique behaviors with
+          regards to symbolic and hard links. When creating archives on an
+          MSYS platform, there are no symbolic links; hardlinks are archived
+          as on unix, without requiring duplicate storage (unless the
+          --hard-dereference option is used).  When extracing archives on
+          an MSYS platform, if the archive contains hardlinks then they are
+          reproduced on the local file system provided the Win32 filesystem
+          supports hardlinks (e.g. NTFS. On FAT, a duplicate copy of the
+          file is created).  If the archive contains symbolic links where
+          the target is a file contained within the archive itself, then
+          those links are reproduced as if they were hardlinks, as described
+          above. "Dangling" symbolic links are not supported.  Symbolic
+          links to directories within the archive are "supported", by
+          creating a recursive copy of the target directory, where the
+          contents of the directory are treated as hardlinks as described
+          above.
+        </paragraph>
+        <paragraph>This msys implementation ignores ownership data and
+          permission bits; all extracted files are created as if owned
+          by the current user, regardless of the current user's root
+          (Administrator) status. All archived files are added to the
+          archive with "default" permission and as if owned by the current
+          user.
+        </paragraph>
+        <paragraph>libarchive is a programming library that can create and
+          read several different streaming archive formats, including most
+          popular tar variants and several cpio formats, mtree, and ar
+          archives. It can also read shar, zip, jar, and xar archives, as
+          well as ISO9660 CDROM images.  It automatically handles gzip,
+          bzip2, compress, xz, and lzma compression and decompression, as
+          well as uudecode decompression. The bsdtar program is an
+          implementation of tar(1) that is built on top of libarchive.
+        </paragraph>
+        <paragraph>The msys-bsdtar package provides an implementation
+          of tar(1) based on libarchive, while the associated msys-bsdcpio
+          package provides a similar implementation of cpio(1). The
+          associated msys-libarchive package provides the runtime
+          library, development files, and documentation.
+        </paragraph>
+      </description>
+      <component class="bin">
+        <release tarname="bsdtar-2.7.1-1-msys-1.0.11-bin.tar.lzma" />
+        <release tarname="bsdtar-2.8.3-1-msys-1.0.13-bin.tar.lzma" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-libarchive-%-msys-%-dll-2.tar" />
+      </component>
+      <licence tarname="libarchive-%-msys-%-lic.tar" />
+      <source tarname="libarchive-%-msys-%-src.tar" />
+    </package>
+    <package name="msys-bsdcpio">
+      <affiliate group="MSYS Developer Toolkit" />
+      <description lang="en" title="bsdcpio (msys): BSD version of the cpio utility" >
+        <paragraph>The msys-bsdcpio package provides an implementation
+          of cpio(1) based on libarchive, which copies files between
+          archives and directories. This implementation can extract from
+          tar, pax, cpio, zip, jar, ar, mtree, xar, and ISO 9660 cdrom
+          images, as well as create tar, pax, cpio, ar, and shar archives.
+          It supports automatic detection and handling of .gz, .bz2, .lzma,
+          .xz, and .Z decompression (and compression). It supports the old
+          POSIX.1 portable cpio format (odc), the new SVR4 portable cpio
+          format (newc), as well as the POSIX.1 pax and ustar formats.
+        </paragraph>
+        <paragraph>This MSYS port of bsdcpio differs from the MinGW version
+          also provided by the MinGW/MSYS project. In addition to requiring
+          the MSYS runtime library, this implementation supports mtree data
+          and understands MSYS's "unix" style pathnames. It also supports
+          archives that contain symbolic links by converting them to
+          equivalent hardlink (or recursive copy) representations (see
+          below). The MinGW implementation does not support archives with
+          symbolic links. It does, however, operate properly on systems
+          where MSYS is not installed. Both msys-bsdcpio and mingw32-bsdcpio
+          depend on additional DLLs such as msys-libarchive (mingw32-liblzma),
+          etc.
+        </paragraph>
+        <paragraph>This msys implementation has some unique behaviors with
+          regards to symbolic and hard links. When creating archives on an
+          MSYS platform, there are no symbolic links; hardlinks are archived
+          as on unix, without requiring duplicate storage (unless the
+          --hard-dereference option is used).  When extracing archives on
+          an MSYS platform, if the archive contains hardlinks then they are
+          reproduced on the local file system provided the Win32 filesystem
+          supports hardlinks (e.g. NTFS. On FAT, a duplicate copy of the
+          file is created).  If the archive contains symbolic links where
+          the target is a file contained within the archive itself, then
+          those links are reproduced as if they were hardlinks, as described
+          above. "Dangling" symbolic links are not supported.  Symbolic
+          links to directories within the archive are "supported", by
+          creating a recursive copy of the target directory, where the
+          contents of the directory are treated as hardlinks as described
+          above.
+        </paragraph>
+        <paragraph>This msys implementation ignores ownership data and
+          permission bits; all extracted files are created as if owned
+          by the current user, regardless of the current user's root
+          (Administrator) status. All archived files are added to the
+          archive with "default" permission and as if owned by the current
+          user.
+        </paragraph>
+        <paragraph>libarchive is a programming library that can create and
+          read several different streaming archive formats, including most
+          popular tar variants and several cpio formats, mtree, and ar
+          archives. It can also read shar, zip, jar, and xar archives, as
+          well as ISO9660 CDROM images.  It automatically handles gzip,
+          bzip2, compress, xz, and lzma compression and decompression, as
+          well as uudecode decompression. The bsdtar program is an
+          implementation of tar(1) that is built on top of libarchive.
+        </paragraph>
+        <paragraph>The msys-bsdcpio package provides an implementation
+          of cpio(1) based on libarchive, while the associated msys-bsdtar
+          package provides a similar implementation of tar(1). The
+          associated msys-libarchive package provides the runtime
+          library, development files, and documentation.
+        </paragraph>
+      </description>
+      <component class="bin">
+        <release tarname="bsdcpio-2.7.1-1-msys-1.0.11-bin.tar.lzma" />
+        <release tarname="bsdcpio-2.8.3-1-msys-1.0.13-bin.tar.lzma" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-libarchive-%-msys-%-dll-2.tar" />
+      </component>
+      <licence tarname="libarchive-%-msys-%-lic.tar" />
+      <source tarname="libarchive-%-msys-%-src.tar" />
+    </package>
+  </package-collection>
+</software-distribution>
+
