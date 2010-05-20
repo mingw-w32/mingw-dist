@@ -3,6 +3,7 @@
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
     <package name="msys-openssl">
+      <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="openssl: Open source crypto toolkit for TLS/SSL" >
         <paragraph>openssl is a collaborative effort to develop a robust,
           commercial-grade, fully featured, and Open Source toolkit
@@ -40,6 +41,7 @@
       <source tarname="openssl-%-msys-%-src.tar" />
     </package>
     <package name="msys-libopenssl">
+      <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="libopenssl: Open source crypto toolkit for TLS/SSL" >
         <paragraph>openssl is a collaborative effort to develop a robust,
           commercial-grade, fully featured, and Open Source toolkit
