@@ -3,7 +3,7 @@
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
     <package name="msys-xz">
-      <affiliate group="MSYS Developer Toolkit" />
+      <affiliate group="MSYS Base System" />
       <description lang="en" title="xz (msys): High performance compression based on the LZMA algorithm" >
         <paragraph>LZMA is data compression algorithm based on the
           Lempel-Ziv-Markov chain-Algorithm. It provides high compression
@@ -52,7 +52,6 @@
       <source tarname="xz-%-msys-%-src.tar" />
     </package>
     <package name="msys-liblzma">
-      <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="liblzma (msys): High performance compression library based on the LZMA algorithm" >
         <paragraph>LZMA is data compression algorithm based on the
           Lempel-Ziv-Markov chain-Algorithm. It provides high compression

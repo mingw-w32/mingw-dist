@@ -3,7 +3,7 @@
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
     <package name="msys-sed">
-      <affiliate group="MSYS Developer Toolkit" />
+      <affiliate group="MSYS Base System" />
       <description lang="en" title="sed: GNU Stream Editor" >
         <paragraph>sed is a stream editor. A stream editor is used to
           perform basic text transformations on an input stream (a file or

@@ -3,7 +3,7 @@
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
     <package name="msys-bzip2">
-      <affiliate group="MSYS Developer Toolkit" />
+      <affiliate group="MSYS Base System" />
       <description lang="en" title="bzip2 (msys): a high-quality data compressor">
         <paragraph>bzip2 is a freely available, patent free (see below),
           high-quality data compressor. It typically compresses files

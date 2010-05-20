@@ -3,9 +3,6 @@
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
     <package name="msys-gdbm">
-      <!-- Should this really be in msys-dtk? dependencies will pull in
-           the necessary dll package automatically. -->
-      <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="gdbm: GNU Database System">
         <paragraph>The GNU Database System is a set of database routines
           that use extensible hashing. It works similar to the standard
@@ -37,7 +34,6 @@
       <source tarname="gdbm-%-msys-%-src.tar" />
     </package>
     <package name="msys-libcrypt">
-      <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="libgdbm: runtime library for the GNU Database System">
         <paragraph>The GNU Database System is a set of database routines
           that use extensible hashing. It works similar to the standard

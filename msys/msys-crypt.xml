@@ -3,7 +3,6 @@
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
     <package name="msys-crypt">
-      <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="crypt: tools for DES encryption">
         <paragraph>crypt provides a library implementing the standard
           encryption functions crypt(), encrypt(), and setkey(). Many
@@ -42,7 +41,6 @@
       <source tarname="crypt-%-msys-%-src.tar" />
     </package>
     <package name="msys-libcrypt">
-      <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="libcrypt: runtime library for crypt">
         <paragraph>crypt provides a library implementing the standard
           encryption functions crypt(), encrypt(), and setkey(). Many
