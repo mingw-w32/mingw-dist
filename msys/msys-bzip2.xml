@@ -4,7 +4,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
     <package name="msys-bzip2">
       <affiliate group="MSYS Developer Toolkit" />
-      <description lang="en" title="bzip2: a high-quality data compressor">
+      <description lang="en" title="bzip2 (msys): a high-quality data compressor">
         <paragraph>bzip2 is a freely available, patent free (see below),
           high-quality data compressor. It typically compresses files
           to within 10% to 15% of the best available techniques (the
@@ -33,8 +33,7 @@
       <source tarname="bzip2-%-msys-%-src.tar" />
     </package>
     <package name="msys-libbz2">
-      <affiliate group="MSYS Developer Toolkit" />
-      <description lang="en" title="libbz2: runtime library for bzip2">
+      <description lang="en" title="libbz2 (msys): runtime library for bzip2">
         <paragraph>bzip2 is a freely available, patent free (see below),
           high-quality data compressor. It typically compresses files
           to within 10% to 15% of the best available techniques (the
