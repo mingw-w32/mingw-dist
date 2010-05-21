@@ -41,11 +41,11 @@
         -->
         <release tarname="msysCORE-1.0.15-1-msys-1.0.15-ext.tar.lzma" />
         <requires eq="msys-core-%-msys-%-bin.tar" />
-        <!-- update this once the appropriate .xml files exist
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
         <requires eq="msys-bash-*-msys-*-bin.tar" />
+        <requires eq="msys-grep-*-msys-*-bin.tar" />
+        <requires eq="msys-sed-*-msys-*-bin.tar" />
         <requires eq="msys-gawk-*-msys-*-bin.tar" />
-        ...
-        -->
       </component>
       <component class="dev">
         <release tarname="msysCORE-1.0.13-2-msys-1.0.13-dev.tar.lzma" />

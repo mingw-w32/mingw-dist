@@ -20,6 +20,12 @@
         <release tarname="bzip2-1.0.5-1-msys-1.0.11-bin.tar.gz" />
         <release tarname="bzip2-1.0.5-2-msys-1.0.13-bin.tar.lzma" />
         <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+        <requires eq="msys-bash-*-msys-*-bin.tar" />
+        <requires eq="msys-less-*-msys-*-bin.tar" />
+        <requires eq="msys-grep-*-msys-*-bin.tar" />
+        <requires eq="msys-diffutils-*-msys-*-bin.tar" />
+        <requires eq="msys-bash-*-msys-*-bin.tar" />
       </component>
       <component class="doc">
         <release tarname="bzip2-1.0.5-1-msys-1.0.11-doc.tar.gz" />
