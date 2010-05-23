@@ -23,7 +23,7 @@
           this MSYS one supports https and understands MSYS pathnames, but
           requires the MSYS dll (and various others) to be installed. There
           is also a 'mingwPORT" wget, which is a MinGW (that is, native
-	  Win32) version.  That version has no external dependencies but
+          Win32) version.  That version has no external dependencies but
           is based on an older version of wget and does not support https.
         </paragraph>
       </description>
