@@ -20,9 +20,9 @@
         <requires eq="msys-bzip2-*-msys-*-bin.tar" />
         <requires eq="msys-gzip-*-msys-*-bin.tar" />
         <requires eq="msys-xz-*-msys-*-bin.tar" />
-	<requires eq="msys-less-*-msys-*-bin.tar" />
-	<!-- deliberately not including perl, which is required only
-	by `manlint' -->
+        <requires eq="msys-less-*-msys-*-bin.tar" />
+        <!-- deliberately not including perl, which is required only
+        by `manlint' -->
       </component>
       <component class="lang">
         <release tarname="man-1.6f-1-msys-1.0.11-lang.tar.lzma" />
