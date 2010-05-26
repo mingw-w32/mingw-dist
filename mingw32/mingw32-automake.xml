@@ -2,7 +2,7 @@
 <software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
   <package-collection subsystem="mingw32">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
-    <package name="mingw32-automake" alias="automake"
+    <package name="mingw32-automake" alias="automake" >
       <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="automake: Wrapper scripts for automake and aclocal">
         <paragraph>Automake is a tool for automatically generating
