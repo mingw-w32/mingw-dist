@@ -41,7 +41,7 @@ all: update all-distfiles
 # LZMA compressed format for upload to the repository server.
 #
 Makefile.sub: ${srcdir}/*.xml
-	echo 'auto-distfiles = \\' > $@
+	echo "auto-distfiles = \\" > $@
 	for file in $^; do echo "$$file.lzma \\" | sed 's,.*/,  ,' >> $@; done
 	echo '  $$(EXTRA_DISTFILES)' >> $@
 
@@ -49,7 +49,7 @@ include Makefile.sub
 all-distfiles: $(DISTFILES) $(auto-distfiles)
 
 # Distributed manifests are serialised by incorporating a date-stamped
-# issue number, of the form YYMMDDNN; we track issue numbers using the
+# issue number, of the form YYYYMMDDNN; we track issue numbers using the
 # issue.log file, (which we keep in CVS to ensure that all maintainers
 # can share a common issue number registry).
 #
@@ -85,7 +85,7 @@ PAD = "  "
 	test $$issue -lt $${mark="`date -u +%Y%m%d`00"} && \
 	  issue=$$mark || issue=`expr $$issue + 1`; \
 	sed "s/^\($(TAB)*$*.xml:\).*/\1$$issue/" issue.tmp | sort >> issue.new; \
-	sed "s/@$(serial_number)@/$$issue/" $< | lzma -c > $@
+	sed "s/@$(issue_number)@/$$issue/" $< | lzma -c > $@
 	sed -n 's/^$(TAB)*$$/break/;1,/^$(TAB)*[^#]/d;/^$(TAB)*#/p' \
 	  $(issue_log) >> issue.new
 	rm -f $(issue_log) issue.tmp

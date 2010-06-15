@@ -25,7 +25,7 @@
 # MinGW Project, accept liability for any damages, however caused,
 # arising from the use of this software.
 #
-all: @mingw_ac_subdirs@
+update all-distfiles: @mingw_ac_subdirs@
 
 @mingw_ac_subdirs@: FORCE
 	@if test -r $@/Makefile; then \

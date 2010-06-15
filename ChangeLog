@@ -1,3 +1,14 @@
+2010-06-15  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Fix Makefile.comm bug reported by Chris Sutcliffe.
+
+	* Makefile.in: Itemise standard sub-make goals as top-level defaults.
+
+	* Makefile.com.in (Makefile.sub): Use double quotes in preference to
+	single, to avoid shell portability issue with quoted escapes.
+	(serial_number): Replace use of unintentionally undefined macro...
+	(issue_number): ...with this defined one.
+
 2010-05-04  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Initial import of mingw-dist module.
