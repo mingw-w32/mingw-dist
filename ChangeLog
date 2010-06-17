@@ -1,3 +1,7 @@
+2010-06-16  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	* mingw32/mingw32-binutils.xml: Updated for the 2.20.51-1 release.
+
 2010-06-15  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Fix Makefile.comm bug reported by Chris Sutcliffe.
