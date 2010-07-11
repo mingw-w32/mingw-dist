@@ -1,3 +1,12 @@
+2010-07-11  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	* msys/*.xml: Add vim modeline to all files.
+	* mingw32/*.xml: Add vim modeline to all files.
+	* mingw32/mingw32-binutils: Retabify.
+	* mingw32/mingw32-gdb: Retabify.
+	* mingw32/mingw32-runtime: Retabify.
+	* mingw32/mingw32-base: Retabify.
+
 2010-06-30  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	* mingw32/mingw32-make.xml: Updated for the 3.81.90-20100618-1 release.
