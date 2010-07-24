@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
+
+  <!-- File: msys-libiconv.xml -->
+
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+
     <package name="msys-libiconv">
       <affiliate group="MSYS System Builder" />
       <description lang="en" title="libiconv (msys): GNU libraries and utilities for character set conversion" >
@@ -26,35 +30,38 @@
           should install the mingw32-libiconv-* package(s) instead.
         </paragraph>
       </description>
+
+      <source tarname="libiconv-%-msys-%-src.tar" />
+      <licence tarname="libiconv-%-msys-%-lic.tar" />
+
       <component class="bin">
-        <release tarname="libiconv-1.13.1-1-msys-1.0.11-bin.tar.lzma" />
-        <release tarname="libiconv-1.13.1-2-msys-1.0.13-bin.tar.lzma" >
+        <release tarname="libiconv-1.13.1-2-msys-1.0.13-bin.tar.lzma">
           <requires eq="msys-libintl-*-msys-*-dll-8.tar" />
           <requires eq="msys-libiconv-%-msys-%-dll-2.tar" />
         </release>
         <requires eq="msys-core-*-msys-*-bin.tar" />
       </component>
+
       <component class="doc">
-        <release tarname="libiconv-1.13.1-1-msys-1.0.11-doc.tar.lzma" />
         <release tarname="libiconv-1.13.1-2-msys-1.0.13-doc.tar.lzma" />
       </component>
+
       <component class="lic">
-        <release tarname="libiconv-1.13.1-1-msys-1.0.11-lic.tar.lzma" />
         <release tarname="libiconv-1.13.1-2-msys-1.0.13-lic.tar.lzma" />
       </component>
+
       <component class="dev">
-        <release tarname="libiconv-1.13.1-1-msys-1.0.11-dev.tar.lzma" />
         <release tarname="libiconv-1.13.1-2-msys-1.0.13-dev.tar.lzma" >
           <requires eq="msys-libiconv-%-msys-%-dll-2.tar" />
         </release>
       </component>
+
       <component class="dll">
         <release tarname="libiconv-1.13.1-2-msys-1.0.13-dll-2.tar.lzma" />
         <requires eq="msys-core-*-msys-*-bin.tar" />
       </component>
-      <licence tarname="libiconv-%-msys-%-lic.tar" />
-      <source tarname="libiconv-%-msys-%-src.tar" />
     </package>
+
     <package name="msys-libcharset">
       <affiliate group="MSYS System Builder" />
       <description lang="en" title="libcharset (msys): GNU libraries and utilities for character set conversion" >
@@ -79,14 +86,16 @@
           should install the mingw32-libiconv-* package(s) instead.
         </paragraph>
       </description>
+
+      <source tarname="libiconv-%-msys-%-src.tar" />
+      <licence tarname="libiconv-%-msys-%-lic.tar" />
+
       <component class="dll">
         <release tarname="libcharset-1.13.1-2-msys-1.0.13-dll-1.tar.lzma" />
         <requires eq="msys-core-*-msys-*-bin.tar" />
       </component>
-      <licence tarname="libiconv-%-msys-%-lic.tar" />
-      <source tarname="libiconv-%-msys-%-src.tar" />
     </package>
+
   </package-collection>
 </software-distribution>
-<!-- vim: set nocompatible expandtab tw=80 ts=2 sw=2 ff=unix: -->
-
+<!-- vim: set nocompatible expandtab fileformat=unix textwidth=80 tabstop=2 shiftwidth=2: -->

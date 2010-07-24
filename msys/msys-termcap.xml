@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
+
+  <!-- File: msys-termcap.xml -->
+
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+
     <package name="msys-termcap">
       <affiliate group="MSYS Base System" />
       <description lang="en" title="termcap: The terminal feature database used by certain applications" >
@@ -19,21 +23,23 @@
           provides the runtime library.
         </paragraph>
       </description>
+
+      <source tarname="termcap-%-msys-%-src.tar" />
+      <licence tarname="termcap-%-msys-%-lic.tar" />
+
       <component class="bin">
         <release tarname="termcap-0.20050421_1-2-msys-1.0.13-bin.tar.lzma" />
-        <release tarname="termcap-0.20050421_1-1-msys-1.0.11-bin.tar.lzma" />
       </component>
+
       <component class="doc">
         <release tarname="termcap-0.20050421_1-2-msys-1.0.13-doc.tar.lzma" />
-        <release tarname="termcap-0.20050421_1-1-msys-1.0.11-doc.tar.lzma" />
       </component>
+
       <component class="lic">
         <release tarname="termcap-0.20050421_1-2-msys-1.0.13-lic.tar.lzma" />
-        <release tarname="termcap-0.20050421_1-1-msys-1.0.11-lic.tar.lzma" />
       </component>
-      <licence tarname="termcap-%-msys-%-lic.tar" />
-      <source tarname="termcap-%-msys-%-src.tar" />
     </package>
+
     <package name="msys-libtermcap">
       <description lang="en" title="libtermcap: The terminal feature library used by certain applications" >
         <paragraph>The msys-libtermcap package provides the runtime and
@@ -50,21 +56,23 @@
           provides the runtime library.
         </paragraph>
       </description>
-      <component class="dll">
-        <release tarname="libtermcap-0.20050421_1-2-msys-1.0.13-dll-0.tar.lzma" />
-        <requires eq="msys-core-*-msys-*-bin.tar" />
-      </component>
-      <component class="dev">
-        <release tarname="libtermcap-0.20050421_1-2-msys-1.0.13-dev.tar.lzma" >
-          <requires eq="msys-libtermcap-%-msys-%-dll-0.tar" />
-        </release>
-        <release tarname="libtermcap-0.20050421_1-1-msys-1.0.11-dev.tar.lzma" />
-        <requires eq="msys-termcap-%-msys-%-bin.tar" />
-      </component>
+
       <licence tarname="termcap-%-msys-%-lic.tar" />
       <source tarname="termcap-%-msys-%-src.tar" />
+
+      <component class="dll">
+        <release tarname="libtermcap-0.20050421_1-2-msys-1.0.13-dll-0.tar.lzma" />
+        <requires eq="msys-termcap-%-msys-%-bin.tar" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+      </component>
+
+      <component class="dev">
+        <release tarname="libtermcap-0.20050421_1-2-msys-1.0.13-dev.tar.lzma" />
+        <requires eq="msys-libtermcap-%-msys-%-dll-0.tar" />
+        <requires eq="msys-termcap-%-msys-%-bin.tar" />
+      </component>
     </package>
+
   </package-collection>
 </software-distribution>
-<!-- vim: set nocompatible expandtab tw=80 ts=2 sw=2 ff=unix: -->
-
+<!-- vim: set nocompatible expandtab fileformat=unix textwidth=80 tabstop=2 shiftwidth=2: -->

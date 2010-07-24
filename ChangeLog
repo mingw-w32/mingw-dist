@@ -1,3 +1,31 @@
+2010-07-19  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Prepare manifests for "msys-tiny" publication; compress and upload.
+
+	* common: New directory.
+	* common/package-list.xml: New file.
+	* common/issue.log: New file; replicate it from...
+	* issue.log.in: ...this.
+
+	* mingw32/mingw32-base.xml: Factor out package lists; move to...
+	* mingw32/mingw32-package-list.xml: ...this new file.
+
+	* msys/msys-package-list.xml: Comment out sub-packages which are not
+	yet ready for publication.
+
+	* msys/msys-base.xml: New file; created from prototype provided by
+	Charles Wilson, with minor format adjustments, defining...
+	(msys-base): ...this new meta-package; reduce it to a single release
+	version, omitting deferred prerequisites; initially it matches...
+	(msys-tiny): ...this new meta package; declare its prerequisites.
+
+	* msys/msys-bash.xml msys/msys-coreutils.xml msys/msys-core.xml:
+	* msys/msys-gettext.xml msys/msys-libiconv.xml msys/msys-regex.xml:
+	* msys/msys-termcap.xml: Minor format adjustments; reduce to single
+	deliverable version for each constituent sub-package.
+
+	* mingw32/issue.log msys/issue.log: Update for publication status.
+
 2010-07-11  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	* msys/*.xml: Add vim modeline to all files.
