@@ -39,12 +39,12 @@
   <!--package-list catalogue="msys-file" /-->
   <!--package-list catalogue="msys-findutils" /-->
   <!--package-list catalogue="msys-flex" /-->
-  <!--package-list catalogue="msys-gawk" /-->
+  <package-list catalogue="msys-gawk" />
   <!--package-list catalogue="msys-gcc" /-->
   <!--package-list catalogue="msys-gdbm" /-->
   <package-list catalogue="msys-gettext" />
   <!--package-list catalogue="msys-gmp" /-->
-  <!--package-list catalogue="msys-grep" /-->
+  <package-list catalogue="msys-grep" />
   <!--package-list catalogue="msys-groff" /-->
   <!--package-list catalogue="msys-guile" /-->
   <!--package-list catalogue="msys-gzip" /-->
@@ -69,7 +69,7 @@
   <!--package-list catalogue="msys-rebase" /-->
   <package-list catalogue="msys-regex" />
   <!--package-list catalogue="msys-rxvt" /-->
-  <!--package-list catalogue="msys-sed" /-->
+  <package-list catalogue="msys-sed" />
   <!--package-list catalogue="msys-tar" /-->
   <package-list catalogue="msys-termcap" />
   <!--package-list catalogue="msys-texinfo" /-->

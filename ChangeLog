@@ -1,3 +1,21 @@
+2010-07-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add grep, sed, awk and extended msys-core to msys-base.
+
+	* msys/msys-package-list.xml: Expose manifest references for...
+	(msys-gawk, msys-grep, msys-sed): ...these packages.
+
+	* msys/msys-base.xml (msys-base): Declare dependencies on...
+	(msys-core-ext, msys-gawk, msys-grep, msys-sed): ...these.
+
+	* msys/msys-core.xml (msys-core-ext): Expose dependencies on...
+	(msys-gawk, msys-grep, msys-sed): ...these.
+
+	* msys/msys-gawk.xml msys/msys-grep.xml msys/msys-sed.xml: Adjust
+	formatting; reduce to deliver only latest version of each component.
+
+	* msys/issue.log: Update for revised publication status.
+
 2010-07-19  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Prepare manifests for "msys-tiny" publication; compress and upload.
