@@ -1,3 +1,11 @@
+2010-07-27  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	* msys/msys-core.xml (msys-core-bin): Require -lic and -doc cpts.
+	* msys/msys-gettext.xml: Reduce to deliver only latest version of all
+	package components; make all versioned -dll refs release specific.
+	* msys/msys-regex.xml msys/msys-termcap.xml: Make all versioned -dll
+	refs release specific.
+
 2010-07-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add grep, sed, awk and extended msys-core to msys-base.

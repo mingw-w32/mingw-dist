@@ -67,9 +67,9 @@
       </component>
 
       <component class="dev">
-        <release tarname="libtermcap-0.20050421_1-2-msys-1.0.13-dev.tar.lzma" />
-        <requires eq="msys-libtermcap-%-msys-%-dll-0.tar" />
-        <requires eq="msys-termcap-%-msys-%-bin.tar" />
+        <release tarname="libtermcap-0.20050421_1-2-msys-1.0.13-dev.tar.lzma">
+          <requires eq="msys-libtermcap-%-msys-%-dll-0.tar" />
+        </release>
       </component>
     </package>
 

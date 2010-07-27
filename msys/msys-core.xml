@@ -37,8 +37,12 @@
       <component class="bin">
         <!-- Note: no specific dll component in this package; the
          MSYS dll, which is required by all MSYS packages, is bundled
-         within this msys-core-bin component.
+         within this msys-core-bin component.  Always ensure that the
+         basic MSYS documentation and licence information is installed
+         along with msys-core-bin; only msys-core is treated this way.
          -->
+        <requires eq="msys-core-%-msys-%-doc.tar" />
+        <requires eq="msys-core-%-msys-%-lic.tar" />
         <release tarname="msysCORE-1.0.15-1-msys-1.0.15-bin.tar.lzma" />
       </component>
 
