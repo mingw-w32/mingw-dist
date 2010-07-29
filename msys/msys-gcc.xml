@@ -25,16 +25,16 @@
           applications.
         </paragraph>
       </description>
-      <component name="bin" >
+      <component class="bin" >
         <release tarname="gcc-3.4.4-3-msys-1.0.13-bin.tar.lzma" />
         <requires ge="msys-core-*-msys-*-bin.tar" />
         <requires ge="msys-binutils-*-msys-*-bin.tar" />
         <requires ge="msys-w32api-*-msys-*-dev.tar" />
       </component>
-      <component name="doc" >
+      <component class="doc" >
         <release tarname="gcc-3.4.4-3-msys-1.0.13-doc.tar.lzma" />
       </component>
-      <component name="lic" >
+      <component class="lic" >
         <release tarname="gcc-3.4.4-3-msys-1.0.13-lic.tar.lzma" />
       </component>
       <license tarname="gcc-%-msys-%-lic.tar.lzma" />

@@ -1,3 +1,7 @@
+2010-07-29  Cesar Strauss  <cestrauss@gmail.com>
+
+	* msys/msys-gcc.xml: Use correct attribute in component tag.
+
 2010-07-27  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	* msys/msys-core.xml (msys-core-bin): Require -lic and -doc cpts.
