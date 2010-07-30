@@ -21,6 +21,9 @@
           comparison.
         </paragraph>
       </description>
+      <release tarname="make-3.82-1-mingw32-bin.tar.lzma">
+          <source tarname="make-3.82-1-mingw32-src.tar.lzma" />
+      </release>
       <release tarname="make-3.81.90-20100618-1-mingw32-bin.tar.lzma">
           <source tarname="make-3.81.90-20100618-1-mingw32-src.tar.lzma" />
       </release>

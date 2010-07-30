@@ -1,3 +1,7 @@
+2010-07-30  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	* mingw32/mingw32-make.xml: Update for 3.82 release.
+
 2010-07-29  Cesar Strauss  <cestrauss@gmail.com>
 
 	* msys/msys-gcc.xml: Use correct attribute in component tag.
