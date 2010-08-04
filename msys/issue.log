@@ -23,17 +23,23 @@
 # MinGW Project, accept liability for any damages, however caused,
 # arising from the use of this software.
 #
-  msys-base.xml:2010072600
+  msys-base.xml:2010072800
   msys-bash.xml:2010071901
+  msys-bzip2.xml:2010072800
   msys-coreutils.xml:2010071901
   msys-core.xml:2010072600
+  msys-diffutils.xml:2010072800
   msys-gawk.xml:2010072600
   msys-gettext.xml:2010071900
   msys-grep.xml:2010072600
+  msys-gzip.xml:2010072800
+  msys-less.xml:2010072800
   msys-libiconv.xml:2010071900
-  msys-package-list.xml:2010072600
+  msys-package-list.xml:2010072800
   msys-regex.xml:2010071900
   msys-sed.xml:2010072600
+  msys-tar.xml:2010072800
   msys-termcap.xml:2010071900
+  msys-xz.xml:2010072800
 #
 # $RCSfile$: end of file

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
+
+  <!-- File: msys-gzip.xml -->
+
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+
     <package name="msys-gzip">
       <affiliate group="MSYS Base System" />
       <description lang="en" title="gzip: compress or expand files" >
@@ -19,28 +23,35 @@
           program on unix, and is universally available.
         </paragraph>
       </description>
+
+      <source tarname="gzip-%-msys-%-src.tar" />
+      <licence tarname="gzip-%-msys-%-lic.tar" />
+
       <component class="bin">
-        <release tarname="gzip-1.3.12-1-msys-1.0.11-bin.tar.lzma" />
         <release tarname="gzip-1.3.12-2-msys-1.0.13-bin.tar.lzma" />
+
+        <!-- Every MSYS package requires msys-core-bin -->
         <requires eq="msys-core-*-msys-*-bin.tar" />
-        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+
+        <!-- Other requirements support the auxiliary scripts,
+          which are provided by the gzip-bin package.
+          -->
         <requires eq="msys-bash-*-msys-*-bin.tar" />
-        <requires eq="msys-less-*-msys-*-bin.tar" />
-        <requires eq="msys-grep-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
         <requires eq="msys-diffutils-*-msys-*-bin.tar" />
+        <requires eq="msys-grep-*-msys-*-bin.tar" />
+        <requires eq="msys-less-*-msys-*-bin.tar" />
       </component>
+
       <component class="doc">
-        <release tarname="gzip-1.3.12-1-msys-1.0.11-doc.tar.lzma" />
         <release tarname="gzip-1.3.12-2-msys-1.0.13-doc.tar.lzma" />
       </component>
+
       <component class="lic">
-        <release tarname="gzip-1.3.12-1-msys-1.0.11-lic.tar.lzma" />
         <release tarname="gzip-1.3.12-2-msys-1.0.13-lic.tar.lzma" />
       </component>
-      <licence tarname="gzip-%-msys-%-lic.tar" />
-      <source tarname="gzip-%-msys-%-src.tar" />
     </package>
+
   </package-collection>
 </software-distribution>
-<!-- vim: set nocompatible expandtab tw=80 ts=2 sw=2 ff=unix: -->
-
+<!-- vim: set nocompatible expandtab fileformat=unix textwidth=80 tabstop=2 shiftwidth=2: -->

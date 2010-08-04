@@ -6,6 +6,28 @@
 
 	* msys/msys-gcc.xml: Use correct attribute in component tag.
 
+2010-07-28  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add less, diffutils, tar, gzip, bzip2 and xz (lzma) to msys-base.
+
+	* msys/msys-package-list.xml: Expose manifest references for...
+	(msys-less, msys-diffutils, msys-tar, msys-gzip, msys-bzip2):
+	(msys-xz): ...these packages.
+
+	* msys/msys-base.xml (msys-base): Add dependencies...
+	(msys-less-bin, msys-diffutils-bin, msys-tar-bin, msys-gzip-bin):
+	(msys-bzip2-bin, msys-xz-bin): ...on these.
+
+	* msys/msys-less.xml msys/msys-diffutils msys/msys-gzip.xml:
+	* msys/msys-bzip2.xml msys/msys-xz.xml: Clean up formatting; reduce to
+	deliver only latest versions of all package components.
+
+	* msys/msys-tar.xml: Clean up formatting; reduce to deliver only
+	latest versions of all package components; add missing dependencies...
+	(msys-gzip-bin, msys-bzip2-bin, msys-xz-bin): ...on these.
+
+	* msys/issue.log: Updated.
+
 2010-07-27  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	* msys/msys-core.xml (msys-core-bin): Require -lic and -doc cpts.

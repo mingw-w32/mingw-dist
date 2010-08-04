@@ -26,7 +26,7 @@
   <package-list catalogue="msys-bash" />
   <!--package-list catalogue="msys-binutils" /-->
   <!--package-list catalogue="msys-bison" /-->
-  <!--package-list catalogue="msys-bzip2" /-->
+  <package-list catalogue="msys-bzip2" />
   <!--package-list catalogue="msys-console" /-->
   <package-list catalogue="msys-core" />
   <package-list catalogue="msys-coreutils" />
@@ -34,7 +34,7 @@
   <!--package-list catalogue="msys-cvs" /-->
   <!--package-list catalogue="msys-cygutils" /-->
   <!--package-list catalogue="msys-dash" /-->
-  <!--package-list catalogue="msys-diffutils" /-->
+  <package-list catalogue="msys-diffutils" />
   <!--package-list catalogue="msys-expat" /-->
   <!--package-list catalogue="msys-file" /-->
   <!--package-list catalogue="msys-findutils" /-->
@@ -47,9 +47,9 @@
   <package-list catalogue="msys-grep" />
   <!--package-list catalogue="msys-groff" /-->
   <!--package-list catalogue="msys-guile" /-->
-  <!--package-list catalogue="msys-gzip" /-->
+  <package-list catalogue="msys-gzip" />
   <!--package-list catalogue="msys-inetutils" /-->
-  <!--package-list catalogue="msys-less" /-->
+  <package-list catalogue="msys-less" />
   <!--package-list catalogue="msys-libarchive" /-->
   <package-list catalogue="msys-libiconv" />
   <!--package-list catalogue="msys-libtool" /-->
@@ -70,14 +70,14 @@
   <package-list catalogue="msys-regex" />
   <!--package-list catalogue="msys-rxvt" /-->
   <package-list catalogue="msys-sed" />
-  <!--package-list catalogue="msys-tar" /-->
+  <package-list catalogue="msys-tar" />
   <package-list catalogue="msys-termcap" />
   <!--package-list catalogue="msys-texinfo" /-->
   <!--package-list catalogue="msys-unzip" /-->
   <!--package-list catalogue="msys-vim" /-->
   <!--package-list catalogue="msys-w32api" /-->
   <!--package-list catalogue="msys-wget" /-->
-  <!--package-list catalogue="msys-xz" /-->
+  <package-list catalogue="msys-xz" />
   <!--package-list catalogue="msys-zip" /-->
   <!--package-list catalogue="msys-zlib" /-->
 

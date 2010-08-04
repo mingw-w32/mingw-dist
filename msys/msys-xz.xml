@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
+
+  <!-- File: msys-xz.xml -->
+
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+
     <package name="msys-xz">
       <affiliate group="MSYS Base System" />
       <description lang="en" title="xz (msys): High performance compression based on the LZMA algorithm" >
@@ -24,33 +28,40 @@
           prerequisites for the native (mingw32) basic-bsdtar utility.
         </paragraph>
       </description>
+
+      <source tarname="xz-%-msys-%-src.tar" />
+      <licence tarname="xz-%-msys-%-lic.tar" />
+
       <component class="bin">
-        <release tarname="xz-4.999.9beta-1-msys-1.0.11-bin.tar.gz" />
-        <release tarname="xz-4.999.9beta_20091209-1-msys-1.0.12-bin.tar.gz" />
         <release tarname="xz-4.999.9beta_20100401-1-msys-1.0.13-bin.tar.gz" >
           <requires eq="msys-libintl-*-msys-*-dll-8.tar" />
         </release>
-        <requires eq="msys-core-*-msys-*-bin.tar" />
+
+        <!-- Every MSYS package requires msys-core-bin; this dependency
+          is implicitly satisfied, as a prerequisite of the matching DLL
+          for this package itself.
+          -->
         <requires eq="msys-liblzma-%-msys-%-dll-1.tar" />
-        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+
+        <!-- Other requirements support the auxiliary scripts, which are
+          provided by the xz-bin package.
+          -->
         <requires eq="msys-bash-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
         <requires eq="msys-diffutils-*-msys-*-bin.tar" />
         <requires eq="msys-grep-*-msys-*-bin.tar" />
         <requires eq="msys-less-*-msys-*-bin.tar" />
       </component>
+
       <component class="doc">
-        <release tarname="xz-4.999.9beta-1-msys-1.0.11-doc.tar.gz" />
-        <release tarname="xz-4.999.9beta_20091209-1-msys-1.0.12-doc.tar.gz" />
         <release tarname="xz-4.999.9beta_20100401-1-msys-1.0.13-doc.tar.gz" />
       </component>
+
       <component class="lic">
-        <release tarname="xz-4.999.9beta-1-msys-1.0.11-lic.tar.gz" />
-        <release tarname="xz-4.999.9beta_20091209-1-msys-1.0.12-lic.tar.gz" />
         <release tarname="xz-4.999.9beta_20100401-1-msys-1.0.13-lic.tar.gz" />
       </component>
-      <licence tarname="xz-%-msys-%-lic.tar" />
-      <source tarname="xz-%-msys-%-src.tar" />
     </package>
+
     <package name="msys-liblzma">
       <description lang="en" title="liblzma (msys): High performance compression library based on the LZMA algorithm" >
         <paragraph>LZMA is data compression algorithm based on the
@@ -72,22 +83,23 @@
           prerequisites for the native (mingw32) basic-bsdtar utility.
         </paragraph>
       </description>
+
+      <source tarname="xz-%-msys-%-src.tar" />
+      <licence tarname="xz-%-msys-%-lic.tar" />
+
       <component class="dll">
-        <release tarname="liblzma-4.999.9beta-1-msys-1.0.11-dll-1.tar.gz" />
-        <release tarname="liblzma-4.999.9beta_20091209-1-msys-1.0.12-dll-1.tar.gz" />
         <release tarname="liblzma-4.999.9beta_20100401-1-msys-1.0.13-dll-1.tar.gz" />
+
+        <!-- Every MSYS DLL package requires msys-core-bin -->
         <requires eq="msys-core-*-msys-*-bin.tar" />
       </component>
+
       <component class="dev">
-        <release tarname="liblzma-4.999.9beta-1-msys-1.0.11-dev.tar.gz" />
-        <release tarname="liblzma-4.999.9beta_20091209-1-msys-1.0.12-dev.tar.gz" />
         <release tarname="liblzma-4.999.9beta_20100401-1-msys-1.0.13-dev.tar.gz" />
         <requires eq="msys-liblzma-%-msys-%-dll-1.tar" />
       </component>
-      <licence tarname="xz-%-msys-%-lic.tar" />
-      <source tarname="xz-%-msys-%-src.tar" />
     </package>
+
   </package-collection>
 </software-distribution>
-<!-- vim: set nocompatible expandtab tw=80 ts=2 sw=2 ff=unix: -->
-
+<!-- vim: set nocompatible expandtab fileformat=unix textwidth=80 tabstop=2 shiftwidth=2: -->

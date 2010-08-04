@@ -43,11 +43,17 @@
       <component class="bin">
         <release tarname="msys-base-@YYYYMMDDNN@-msys-bin.meta" />
         <requires eq="msys-bash-*-msys-*-bin.tar" />
+        <requires eq="msys-bzip2-*-msys-*-bin.tar" />
         <requires eq="msys-core-*-msys-*-ext.tar" />
         <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+        <requires eq="msys-diffutils-*-msys-*-bin.tar" />
         <requires eq="msys-gawk-*-msys-*-bin.tar" />
         <requires eq="msys-grep-*-msys-*-bin.tar" />
+        <requires eq="msys-gzip-*-msys-*-bin.tar" />
+        <requires eq="msys-less-*-msys-*-bin.tar" />
         <requires eq="msys-sed-*-msys-*-bin.tar" />
+        <requires eq="msys-tar-*-msys-*-bin.tar" />
+        <requires eq="msys-xz-*-msys-*-bin.tar" />
       </component>
     </package>
 
