@@ -31,9 +31,9 @@
       <component class="bin">
         <release tarname="less-436-2-msys-1.0.13-bin.tar.lzma" >
           <requires eq="msys-libtermcap-*-msys-*-dll-0.tar" />
+          <requires eq="msys-libregex-*-msys-*-dll-1.tar" />
         </release>
         <requires eq="msys-core-*-msys-*-bin.tar" />
-        <requires eq="msys-libregex-*-msys-*-dll-1.tar" />
       </component>
 
       <component class="doc">

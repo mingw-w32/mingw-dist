@@ -1,3 +1,17 @@
+2010-08-05  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	* msys/msys-core.xml msys/msys-gettext.xml msys/msys-regex.xml:
+	* msys/msys-bzip2.xml msys/msys-less.xml msys/msys-xz.xml: Regenerate
+	and publish derived .lzma files, to capture Charles Wilson's updates
+	dated 2010-07-27 and 2010-08-05.
+
+	* msys/issue.log: Updated accordingly.
+
+2010-08-05  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	* msys/msys-bzip2.xml msys/msys-less.xml msys/msys-xz.xml: Make all
+	versioned -dll requirements specifications release specific.
+
 2010-07-30  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	* mingw32/mingw32-make.xml: Update for 3.82 release.

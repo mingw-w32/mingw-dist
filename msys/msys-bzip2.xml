@@ -70,7 +70,9 @@
       </component>
 
       <component class="dev">
-        <release tarname="libbz2-1.0.5-2-msys-1.0.13-dev.tar.lzma" />
+        <release tarname="libbz2-1.0.5-2-msys-1.0.13-dev.tar.lzma">
+          <requires eq="msys-libbz2-%-msys-%-dll-1.tar.lzma" />
+        </release>
       </component>
     </package>
 
