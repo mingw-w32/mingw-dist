@@ -47,6 +47,7 @@
         <requires eq="msys-core-*-msys-*-ext.tar" />
         <requires eq="msys-coreutils-*-msys-*-bin.tar" />
         <requires eq="msys-diffutils-*-msys-*-bin.tar" />
+        <requires eq="msys-findutils-*-msys-*-bin.tar" />
         <requires eq="msys-gawk-*-msys-*-bin.tar" />
         <requires eq="msys-grep-*-msys-*-bin.tar" />
         <requires eq="msys-gzip-*-msys-*-bin.tar" />

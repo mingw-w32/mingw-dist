@@ -1,3 +1,22 @@
+2010-08-06  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add findutils to msys-base.
+
+	* msys/msys-findutils.xml: Clean up formatting; reduce to deliver
+	only the latest available release for each component package.
+	(msys-locate): Add note to package description, advising of need for
+	manual selection for package installation; (not in msys-base).
+	Generate and publish .lzma file.
+
+	* msys/msys-package-list.xml (msys-findutils): Expose package list
+	declaration; regenerate and publish .lzma file.
+
+	* msys/msys-base.xml (msys-base): Add requirement declaration for...
+	(findutils-*-msys-*-bin.tar): ...this.
+	Regenerate and publish .lzma file.
+
+	* msys/issue.log: Updated accordingly.
+
 2010-08-05  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	* msys/msys-core.xml msys/msys-gettext.xml msys/msys-regex.xml:

@@ -37,7 +37,7 @@
   <package-list catalogue="msys-diffutils" />
   <!--package-list catalogue="msys-expat" /-->
   <!--package-list catalogue="msys-file" /-->
-  <!--package-list catalogue="msys-findutils" /-->
+  <package-list catalogue="msys-findutils" />
   <!--package-list catalogue="msys-flex" /-->
   <package-list catalogue="msys-gawk" />
   <!--package-list catalogue="msys-gcc" /-->
