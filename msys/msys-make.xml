@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
+
+  <!-- File: msys-make.xml -->
+
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+
     <package name="msys-make">
       <affiliate group="MSYS Base System" />
       <description lang="en" title="make (msys): GNU make utility to maintain groups of programs" >
@@ -30,29 +34,31 @@
           comparison.
         </paragraph>
       </description>
+
+      <source tarname="make-%-msys-%-src.tar" />
+      <licence tarname="make-%-msys-%-lic.tar" />
+
       <component class="bin">
-        <release tarname="make-3.81-2-msys-1.0.11-bin.tar.lzma" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+
         <release tarname="make-3.81-3-msys-1.0.13-bin.tar.lzma" >
           <requires eq="msys-libintl-*-msys-*-dll-8.tar" />
         </release>
-        <requires eq="msys-core-*-msys-*-bin.tar" />
       </component>
+
       <component class="lang">
-        <release tarname="make-3.81-2-msys-1.0.11-lang.tar.lzma" />
         <release tarname="make-3.81-3-msys-1.0.13-lang.tar.lzma" />
       </component>
+
       <component class="doc">
-        <release tarname="make-3.81-2-msys-1.0.11-doc.tar.lzma" />
         <release tarname="make-3.81-3-msys-1.0.13-doc.tar.lzma" />
       </component>
+
       <component class="lic">
-        <release tarname="make-3.81-2-msys-1.0.11-lic.tar.lzma" />
         <release tarname="make-3.81-3-msys-1.0.13-lic.tar.lzma" />
       </component>
-      <licence tarname="make-%-msys-%-lic.tar" />
-      <source tarname="make-%-msys-%-src.tar" />
     </package>
+
   </package-collection>
 </software-distribution>
-<!-- vim: set nocompatible expandtab tw=80 ts=2 sw=2 ff=unix: -->
-
+<!-- vim: set nocompatible expandtab fileformat=unix textwidth=80 tabstop=2 shiftwidth=2: -->

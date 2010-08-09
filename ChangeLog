@@ -1,3 +1,26 @@
+2010-08-09  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add make, file, texinfo and dos2unix (cygutils) to msys-base.
+
+	* msys/msys-popt.xml (msys-libpopt-dll): Invalid dependency on...
+	(msys-libintl-%-msys-%-dll-8.tar): ...this; it should have been on...
+	(msys-libintl-*-msys-*-dll-8.tar): ...this; corrected.
+
+	* msys/msys-make.xml msys/msys-file.xml msys/msys-texinfo.xml:
+	* msys/msys-cygutils.xml msys/msys-popt.xml msys/msys-zlib.xml:
+	Clean up formatting; reduce to deliver only latest release for each
+	component package; generate and publish .lzma files.
+
+	* msys/msys-package-list.xml (msys-cygutils, msys-popt, msys-make):
+	(msys-file, msys-texinfo, msys-zlib): Expose declarations for package
+	lists; regenerate and publish updated .lzma file.
+
+	* msys/msys-base.xml (msys-base): Add dependency declarations for...
+	(msys-cygutils-dos2unix-*-msys-*-bin.tar, msys-make-*-msys-*-bin.tar):
+	(msys-file-*-msys-*-bin.tar, msys-texinfo-*-msys-*-bin.tar): ...these.
+
+	* msys/issue.log: Updated.
+
 2010-08-06  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add findutils to msys-base.
