@@ -30,6 +30,7 @@
   msys-core.xml:2010080500
   msys-cygutils.xml:2010080900
   msys-diffutils.xml:2010072800
+  msys-expat.xml:2010081000
   msys-file.xml:2010080900
   msys-findutils.xml:2010080600
   msys-gawk.xml:2010072600
@@ -38,14 +39,17 @@
   msys-gzip.xml:2010072800
   msys-less.xml:2010080500
   msys-libiconv.xml:2010071900
+  msys-m4.xml:2010081000
   msys-make.xml:2010080900
-  msys-package-list.xml:2010080900
+  msys-package-list.xml:2010081000
+  msys-patch.xml:2010081000
   msys-popt.xml:2010080900
   msys-regex.xml:2010080500
   msys-sed.xml:2010072600
   msys-tar.xml:2010072800
   msys-termcap.xml:2010071900
   msys-texinfo.xml:2010080900
+  msys-vim.xml:2010081000
   msys-xz.xml:2010080500
   msys-zlib.xml:2010080900
 #

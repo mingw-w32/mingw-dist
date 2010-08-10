@@ -1,3 +1,20 @@
+2010-08-10  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add free-standing msys-expat, msys-m4, msys-patch and msys-vim.
+
+	* msys/msys-expat.xml: Clean up formatting; generate and publish
+	.lzma file.
+
+	* msys/msys-m4.xml msys/msys-patch.xml msys/msys-vim.xml: Clean up
+	formatting; reduce to deliver only latest release for each component
+	package; generate and publish .lzma files.
+
+	* msys/msys-package-list.xml (msys-expat, msys-m4, msys-patch):
+	(msys-vim): Expose declarations for package lists; regenerate and
+	publish updated .lzma file.
+
+	* msys/issue.log: Updated.
+
 2010-08-09  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add make, file, texinfo and dos2unix (cygutils) to msys-base.

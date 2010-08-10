@@ -35,7 +35,7 @@
   <package-list catalogue="msys-cygutils" />
   <!--package-list catalogue="msys-dash" /-->
   <package-list catalogue="msys-diffutils" />
-  <!--package-list catalogue="msys-expat" /-->
+  <package-list catalogue="msys-expat" />
   <package-list catalogue="msys-file" />
   <package-list catalogue="msys-findutils" />
   <!--package-list catalogue="msys-flex" /-->
@@ -56,14 +56,14 @@
   <!--package-list catalogue="msys-libxml2" /-->
   <!--package-list catalogue="msys-lndir" /-->
   <!--package-list catalogue="msys-lpr-enhanced" /-->
-  <!--package-list catalogue="msys-m4" /-->
+  <package-list catalogue="msys-m4" />
   <package-list catalogue="msys-make" />
   <!--package-list catalogue="msys-man" /-->
   <!--package-list catalogue="msys-minires" /-->
   <!--package-list catalogue="msys-mktemp" /-->
   <!--package-list catalogue="msys-openssh" /-->
   <!--package-list catalogue="msys-openssl" /-->
-  <!--package-list catalogue="msys-patch" /-->
+  <package-list catalogue="msys-patch" />
   <!--package-list catalogue="msys-perl" /-->
   <package-list catalogue="msys-popt" />
   <!--package-list catalogue="msys-rebase" /-->
@@ -74,7 +74,7 @@
   <package-list catalogue="msys-termcap" />
   <package-list catalogue="msys-texinfo" />
   <!--package-list catalogue="msys-unzip" /-->
-  <!--package-list catalogue="msys-vim" /-->
+  <package-list catalogue="msys-vim" />
   <!--package-list catalogue="msys-w32api" /-->
   <!--package-list catalogue="msys-wget" /-->
   <package-list catalogue="msys-xz" />
