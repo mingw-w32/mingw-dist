@@ -77,16 +77,16 @@
         </paragraph>
       </description>
       <component class="dll">
-        <release tarname="xz-4.999.8beta_20090725git-1-mingw32-dll-1.tar.bz2" />
-        <release tarname="xz-4.999.9beta-1-mingw32-dll-1.tar.bz2" />
-        <release tarname="xz-4.999.9beta_20091209-3-mingw32-dll-1.tar.bz2" />
-        <release tarname="xz-4.999.9beta_20100401-1-mingw32-dll-1.tar.bz2" />
+        <release tarname="liblzma-4.999.8beta_20090725git-1-mingw32-dll-1.tar.bz2" />
+        <release tarname="liblzma-4.999.9beta-1-mingw32-dll-1.tar.bz2" />
+        <release tarname="liblzma-4.999.9beta_20091209-3-mingw32-dll-1.tar.bz2" />
+        <release tarname="liblzma-4.999.9beta_20100401-1-mingw32-dll-1.tar.bz2" />
       </component>
       <component class="dev">
-        <release tarname="xz-4.999.8beta_20090725git-1-mingw32-dev.tar.bz2" />
-        <release tarname="xz-4.999.9beta-1-mingw32-dev.tar.bz2" />
-        <release tarname="xz-4.999.9beta_20091209-3-mingw32-dev.tar.bz2" />
-        <release tarname="xz-4.999.9beta_20100401-1-mingw32-dev.tar.bz2" />
+        <release tarname="liblzma-4.999.8beta_20090725git-1-mingw32-dev.tar.bz2" />
+        <release tarname="liblzma-4.999.9beta-1-mingw32-dev.tar.bz2" />
+        <release tarname="liblzma-4.999.9beta_20091209-3-mingw32-dev.tar.bz2" />
+        <release tarname="liblzma-4.999.9beta_20100401-1-mingw32-dev.tar.bz2" />
         <requires eq="mingw32-liblzma-%-mingw32-%-dll-1.tar" />
       </component>
       <licence tarname="xz-%-mingw32-%-lic.tar" />

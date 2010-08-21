@@ -27,9 +27,6 @@
         <requires eq="mingw32-automake1.10-*-mingw32-*-bin.tar" />
         <requires eq="mingw32-automake1.11-*-mingw32-*-bin.tar" />
       </component>
-      <component class="doc">
-        <release tarname="automake-4-1-mingw32-doc.tar.lzma" />
-      </component>
       <component class="lic">
         <release tarname="automake-4-1-mingw32-lic.tar.lzma" />
       </component>

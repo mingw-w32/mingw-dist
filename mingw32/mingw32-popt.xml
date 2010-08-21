@@ -39,7 +39,7 @@
       </description>
       <component class="dll">
         <release tarname="libpopt-1.15-1-mingw32-dll-0.tar.lzma" />
-        <requires eq="mingw32-libintl-%-mingw32-%-dll-8.tar" />
+        <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />
       </component>
       <component class="dev">
         <release tarname="libpopt-1.15-1-mingw32-dev.tar.lzma" />

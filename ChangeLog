@@ -1,3 +1,30 @@
+2010-08-20  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Correct a few typos in various manifests.
+
+	* msys/msys-gdbm.xml: Correct package name for msys-libgdbm.
+
+	* msys/msys-guile.xml: Remove references to old versions. Use
+	correct name for DLL's msys-libguile-rtm requirement. Move versioned
+	DLL requirements inside release entity.
+
+	* mingw32/mingw32-autoconf.xml: Remove non-existant wrapper -doc
+	package.
+
+	* mingw32/mingw32-automake.xml: Remove non-existant wrapper -doc
+	package.
+
+	* mingw32/mingw32-libarchive.xml: Use correct compression extension
+	for packages. Use correct package name for requirements (zlib and
+	bzip2 -dev and -dll packages).
+
+	* mingw32/mingw32-popt.xml (msys-libpopt-dll): Invalid dependency on...
+	(mingw32-libintl-%-mingw32-%-dll-8.tar): ...this; it should have been on...
+	(mingw32-libintl-*-mingw32-*-dll-8.tar): ...this; corrected.
+
+	* mingw32/mingw32-xz.xml: Use correct package name for -dll and -dev
+	packages (was xz-; should be liblzma-).
+
 2010-08-10  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add free-standing msys-expat, msys-m4, msys-patch and msys-vim.

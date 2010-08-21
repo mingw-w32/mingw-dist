@@ -26,9 +26,9 @@
         </paragraph>
       </description>
       <component class="bin">
-        <release tarname="guile-1.8.7-1-msys-1.0.11-bin.tar.lzma" />
-        <release tarname="guile-1.8.7-2-msys-1.0.15-bin.tar.lzma" />
-        <requires eq="msys-libguile-%-msys-%-dll-17.tar" />
+        <release tarname="guile-1.8.7-2-msys-1.0.15-bin.tar.lzma" >
+          <requires eq="msys-libguile-%-msys-%-dll-17.tar" />
+        </release>
         <requires eq="msys-bash-*-msys-*-bin.tar" />
         <requires eq="msys-coreutils-*-msys-*-bin.tar" />
         <requires eq="msys-grep-*-msys-*-bin.tar" />
@@ -36,11 +36,9 @@
         <requires eq="msys-sed-*-msys-*-bin.tar" />
       </component>
       <component class="doc">
-        <release tarname="guile-1.8.7-1-msys-1.0.11-doc.tar.lzma" />
         <release tarname="guile-1.8.7-2-msys-1.0.15-doc.tar.lzma" />
       </component>
       <component class="lic">
-        <release tarname="guile-1.8.7-1-msys-1.0.11-lic.tar.lzma" />
         <release tarname="guile-1.8.7-2-msys-1.0.15-lic.tar.lzma" />
       </component>
       <licence tarname="guile-%-msys-%-lic.tar" />
@@ -69,23 +67,20 @@
         </paragraph>
       </description>
       <component class="dll">
-        <release tarname="libguile-1.8.7-1-msys-1.0.11-dll-17.tar.lzma" >
-          <requires eq="msys-libgmp-*-msys-*-dll-3.tar" />
-        </release>
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-libguile-%-msys-%-rtm.tar" />
         <release tarname="libguile-1.8.7-2-msys-1.0.15-dll-17.tar.lzma" >
           <requires eq="msys-libgmp-*-msys-*-dll-10.tar" />
           <requires eq="msys-libintl-*-msys-*-dll-8.tar" />
+          <requires eq="msys-libcrypt-*-msys-*-dll-0.tar" />
+          <requires eq="msys-libltdl-*-msys-*-dll-7.tar" />
+          <requires eq="msys-libregex-*-msys-*-dll-1.tar" />
         </release>
-        <requires eq="msys-guile-%-msys-%-rtm.tar" />
-        <requires eq="msys-core-*-msys-*-bin.tar" />
-        <requires eq="msys-libcrypt-*-msys-*-dll-0.tar" />
-        <requires eq="msys-libltdl-*-msys-*-dll-7.tar" />
-        <requires eq="msys-libregex-*-msys-*-dll-1.tar" />
       </component>
       <component class="dev">
-        <release tarname="libguile-1.8.7-1-msys-1.0.11-dev.tar.lzma" />
-        <release tarname="libguile-1.8.7-2-msys-1.0.15-dev.tar.lzma" />
-        <requires eq="msys-libguile-%-msys-%-dll-17.tar" />
+        <release tarname="libguile-1.8.7-2-msys-1.0.15-dev.tar.lzma" >
+          <requires eq="msys-libguile-%-msys-%-dll-17.tar" />
+        </release>
         <requires eq="msys-libcrypt-*-msys-*-dev.tar" />
         <requires eq="msys-libgmp-*-msys-*-dev.tar" />
         <requires eq="msys-gettext-*-msys-*-dev.tar" />
@@ -93,8 +88,7 @@
         <requires eq="msys-libregex-*-msys-*-dev.tar" />
       </component>
       <component class="rtm">
-        <release tarname="libguile-1.8.7-1-msys-1.0.11-rtm.tar.lzma" />
-        <release tarname="libguile-1.8.7-1-msys-1.0.11-rtm.tar.lzma" />
+        <release tarname="libguile-1.8.7-2-msys-1.0.15-rtm.tar.lzma" />
       </component>
       <licence tarname="guile-%-msys-%-lic.tar" />
       <source tarname="guile-%-msys-%-src.tar" />

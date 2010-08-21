@@ -33,7 +33,7 @@
       <licence tarname="gdbm-%-msys-%-lic.tar" />
       <source tarname="gdbm-%-msys-%-src.tar" />
     </package>
-    <package name="msys-libcrypt">
+    <package name="msys-libgdbm">
       <description lang="en" title="libgdbm: runtime library for the GNU Database System">
         <paragraph>The GNU Database System is a set of database routines
           that use extensible hashing. It works similar to the standard

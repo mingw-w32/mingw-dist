@@ -33,25 +33,25 @@
         </paragraph>
       </description>
       <component class="doc">
-        <release tarname="libarchive-2.8.3-1-mingw32-doc.tar.lzma" />
+        <release tarname="libarchive-2.8.3-1-mingw32-doc.tar.bz2" />
       </component>
       <component class="lic">
-        <release tarname="libarchive-2.8.3-1-mingw32-lic.tar.lzma" />
+        <release tarname="libarchive-2.8.3-1-mingw32-lic.tar.bz2" />
       </component>
       <component class="dev">
-        <release tarname="libarchive-2.8.3-1-mingw32-dev.tar.lzma" />
+        <release tarname="libarchive-2.8.3-1-mingw32-dev.tar.bz2" />
         <requires eq="mingw32-libarchive-%-mingw32-%-dll-2.tar" />
         <requires eq="mingw32-libexpat-*-mingw32-*-dev.tar" />
         <requires eq="mingw32-liblzma-*-mingw32-*-dev.tar" />
-        <requires eq="mingw32-libbz2-*-mingw32-*-dev.tar" />
-        <requires eq="mingw32-zlib-*-mingw32-*-dev.tar" />
+        <requires eq="mingw32-bzip2-*-mingw32-*-dev.tar" />
+        <requires eq="mingw32-libz-*-mingw32-*-dev.tar" />
       </component>
       <component class="dll">
-        <release tarname="libarchive-2.8.3-1-mingw32-dll-2.tar.lzma" />
+        <release tarname="libarchive-2.8.3-1-mingw32-dll-2.tar.bz2" />
         <requires eq="mingw32-libexpat-*-mingw32-*-dll-1.tar" />
         <requires eq="mingw32-liblzma-*-mingw32-*-dll-1.tar" />
-        <requires eq="mingw32-libbz2-*-mingw32-*-dll-1.tar" />
-        <requires eq="mingw32-zlib-*-mingw32-*-dll.tar" />
+        <requires eq="mingw32-libbz2-*-mingw32-*-dll-2.tar" />
+        <requires eq="mingw32-libz-*-mingw32-*-dll.tar" />
       </component>
       <licence tarname="libarchive-%-mingw32-%-lic.tar" />
       <source tarname="libarchive-%-mingw32-%-src.tar" />
@@ -94,7 +94,7 @@
         </paragraph>
       </description>
       <component class="bin">
-        <release tarname="bsdtar-2.8.3-1-mingw32-bin.tar.lzma" />
+        <release tarname="bsdtar-2.8.3-1-mingw32-bin.tar.bz2" />
         <requires eq="mingw32-libarchive-%-mingw32-%-dll-2.tar" />
       </component>
       <licence tarname="libarchive-%-mingw32-%-lic.tar" />
@@ -136,7 +136,7 @@
         </paragraph>
       </description>
       <component class="bin">
-        <release tarname="bsdcpio-2.8.3-1-mingw32-bin.tar.lzma" />
+        <release tarname="bsdcpio-2.8.3-1-mingw32-bin.tar.bz2" />
         <requires eq="mingw32-libarchive-%-mingw32-%-dll-2.tar" />
       </component>
       <licence tarname="libarchive-%-mingw32-%-lic.tar" />

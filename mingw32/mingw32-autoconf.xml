@@ -26,10 +26,6 @@
         <requires eq="mingw32-autoconf2.1-*-mingw32-*-bin.tar" />
         <requires eq="mingw32-autoconf2.5-*-mingw32-*-bin.tar" />
       </component>
-      <component class="doc">
-        <release tarname="autoconf-6-1-mingw32-doc.tar.lzma" />
-        <release tarname="autoconf-7-1-mingw32-doc.tar.lzma" />
-      </component>
       <component class="lic">
         <release tarname="autoconf-6-1-mingw32-lic.tar.lzma" />
         <release tarname="autoconf-7-1-mingw32-lic.tar.lzma" />
