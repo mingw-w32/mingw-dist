@@ -1,3 +1,9 @@
+2010-08-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add manifest specific to GCC v3.
+
+	* mingw32/mingw32-gcc3.xml: New file.
+
 2010-08-20  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Correct a few typos in various manifests.
