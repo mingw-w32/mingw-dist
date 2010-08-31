@@ -1,3 +1,19 @@
+2010-08-31  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Add manifests needed for gcc4
+
+	* mingw32/mingw32-gcc4.xml: New file.
+	* mingw32/mingw32-mpc.xml: New file.
+	* mingw32/mingw32-mpfr.xml: New file.
+	* mingw32/mingw32-pthreads-w32.xml: New file.
+	* mingw32/mingw32-base.xml: Remove gcc3 elements.
+	(mingw32-base): New package installs gcc (and prereqs), mingw32-make,
+	and gdb.
+	* mingw32/mingw32-gmp.xml: Reformat to new standard.
+	* mingw32/mingw32-package-list.xml (mingw32-gcc3, mingw32-gcc4):
+	(mingw32-mpc, mingw32-mpfr, mingw32-gmp, mingw32-pthreads-w32): Expose
+	declarations for package lists.
+
 2010-08-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add manifest specific to GCC v3.

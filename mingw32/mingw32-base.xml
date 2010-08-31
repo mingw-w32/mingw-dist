@@ -3,132 +3,30 @@
 
   <!-- File: mingw32-base.xml -->
   <!-- This is a preliminary catalogue to facilitate the release of
-       mingw-get-0.1-mingw32-alpha-2; it currently reproduces the package
-       inventory of the original package-index.xml from the previous
-       mingw-get-0.1-mingw32-alpha-1, but it is planned to update it
-       over the coming weeks, to provide a more comprehensive and
-       up-to-date package inventory.
+       mingw-get-0.1-mingw32-alpha-3. It has been modified to support
+       the deployment of gcc-4.5.0-1 and msys-base.
     -->
 
   <package-collection subsystem="mingw32">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
-    <package name="mingw32-gcc-core" alias="gcc gcc-core">
-      <description lang="en" title="The GNU C Compiler">
-        <paragraph>
-          This package provides the MinGW implementation of the
-          GNU C language compiler; this includes the C preprocessor,
-          and the common back end processors which are necessary to
-          support all other language compilers in the GNU Compiler
-          Collection.
-        </paragraph>
-        <paragraph>
-          This is a required component of the MinGW Compiler Suite.
+    <package name="mingw32-base" alias="base" class="virtual" >
+      <affiliate group="MinGW Base System" />
+      <description lang="en" title="A Basic MinGW Installation" >
+        <paragraph>This meta package provides a basic GCC installation,
+          and includes the C compiler, linker and other binary tools,
+          the runtime libraries and windows API support, mingw32-make,
+          and a debugger. Other components can be added manually as needed.
         </paragraph>
       </description>
-      <affiliate group="MinGW Compiler Suite" />
-      <requires ge="binutils-*-mingw32-bin.tar" />
-      <requires ge="mingw-runtime-*-mingw32-dev.tar" />
-      <requires ge="mingw-runtime-*-mingw32-dll.tar" />
-      <requires ge="w32api-*-mingw32-dev.tar" />
-      <release tarname="gcc-core-3.4.5-20060117-3-mingw32-bin.tar.gz">
-        <download tarname="gcc-core-3.4.5-20060117-3.tar.gz" />
-      </release>
-    </package>
 
-    <package name="mingw32-gcc-ada" alias="gcc-ada ada">
-      <affiliate group="MinGW Compiler Suite" />
-      <description lang="en" title="The GNU Ada Compiler">
-        <paragraph>
-          This package provides the MinGW implementation of the
-          GNU Ada language compiler.
-        </paragraph>
-        <paragraph>
-          This is an optional component of the MinGW Compiler Suite;
-          you require it only if you wish to compile programs written
-          in the Ada language.
-        </paragraph>
-      </description>
-      <requires eq="gcc-core-%-mingw32-bin.tar" />
-      <release tarname="gcc-ada-3.4.5-20060117-3-mingw32-bin.tar.gz">
-        <download tarname="gcc-ada-3.4.5-20060117-3.tar.gz" />
-      </release>
-    </package>
-
-    <package name="mingw32-gcc-g++" alias="gcc-g++ g++ gcc-c++ c++">
-      <description lang="en" title="The GNU C++ Compiler">
-        <paragraph>
-          This package provides the MinGW implementation of the
-          GNU C++ language compiler.
-        </paragraph>
-        <paragraph>
-          This is an optional component of the MinGW Compiler Suite;
-          you require it only if you wish to compile programs written
-          in the C++ language.
-        </paragraph>
-      </description>
-      <affiliate group="MinGW Compiler Suite" />
-      <requires eq="gcc-core-%-mingw32-bin.tar" />
-      <release tarname="gcc-g++-3.4.5-20060117-3-mingw32-bin.tar.gz">
-        <download tarname="gcc-g++-3.4.5-20060117-3.tar.gz" />
-      </release>
-    </package>
-
-    <package name="mingw32-gcc-fortran" alias="gcc-fortran gcc-g77 g77 f77">
-      <affiliate group="MinGW Compiler Suite" />
-      <description lang="en" title="The GNU FORTRAN Compiler">
-        <paragraph>
-          This package provides the MinGW implementation of the
-          GNU FORTRAN language compiler.
-        </paragraph>
-        <paragraph>
-          This is an optional component of the MinGW Compiler Suite;
-          you require it only if you wish to compile programs written
-          in the FORTRAN language.
-        </paragraph>
-      </description>
-      <requires eq="gcc-core-%-mingw32-bin.tar" />
-      <release tarname="gcc-g77-3.4.5-20060117-3-mingw32-bin.tar.gz">
-        <download tarname="gcc-g77-3.4.5-20060117-3.tar.gz" />
-      </release>
-    </package>
-
-    <package name="mingw32-gcc-java" alias="gcc-java java">
-      <affiliate group="MinGW Compiler Suite" />
-      <description lang="en" title="The GNU Java Compiler">
-        <paragraph>
-          This package provides the MinGW implementation of the
-          GNU Java language compiler.
-        </paragraph>
-        <paragraph>
-          This is an optional component of the MinGW Compiler Suite;
-          you require it only if you wish to compile programs written
-          in the Java language.
-        </paragraph>
-      </description>
-      <requires eq="gcc-core-%-mingw32-bin.tar" />
-      <release tarname="gcc-java-3.4.5-20060117-3-mingw32-bin.tar.gz">
-        <download tarname="gcc-java-3.4.5-20060117-3.tar.gz" />
-      </release>
-    </package>
-
-    <package name="gcc-objc" alias="objc">
-      <affiliate group="MinGW Compiler Suite" />
-      <description lang="en" title="The GNU Objective-C Compiler">
-        <paragraph>
-          This package provides the MinGW implementation of the
-          GNU Objective-C language compiler.
-        </paragraph>
-        <paragraph>
-          This is an optional component of the MinGW Compiler Suite;
-          you require it only if you wish to compile programs written
-          in the Objective-C language.
-        </paragraph>
-      </description>
-      <requires eq="gcc-core-%-mingw32-bin.tar" />
-      <release tarname="gcc-objc-3.4.5-20060117-3-mingw32-bin.tar.gz">
-        <download tarname="gcc-objc-3.4.5-20060117-3.tar.gz" />
-      </release>
+      <component class="bin">
+        <release tarname="mingw32-base-@YYYYMMDDNN@-mingw32-bin.meta" />
+        <requires eq="mingw32-gcc-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-gcc-*-mingw32-*-lic.tar" />
+        <requires eq="mingw32-make-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-gdb-*-mingw32-*-bin.tar" />
+      </component>
     </package>
 
   </package-collection>

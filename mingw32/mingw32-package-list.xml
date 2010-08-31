@@ -18,11 +18,17 @@
   </package-group-hierarchy>
 
   <package-list catalogue="mingw32-base" />
+  <package-list catalogue="mingw32-gcc3" />
+  <package-list catalogue="mingw32-gcc4" />
   <package-list catalogue="mingw32-binutils" />
   <package-list catalogue="mingw32-expat" />
   <package-list catalogue="mingw32-gdb" />
   <package-list catalogue="mingw32-make" />
   <package-list catalogue="mingw32-runtime" />
+  <package-list catalogue="mingw32-pthreads-w32" />
+  <package-list catalogue="mingw32-gmp" />
+  <package-list catalogue="mingw32-mpc" />
+  <package-list catalogue="mingw32-mpfr" />
 
 </software-distribution>
 <!-- vim: set nocompatible expandtab fileformat=unix textwidth=80 tabstop=2 shiftwidth=2: -->
