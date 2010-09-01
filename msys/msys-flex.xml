@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
+
+  <!-- File: msys-flex.xml -->
+
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+
     <package name="msys-flex">
       <affiliate group="MSYS Developer Toolkit" />
       <description lang="en" title="flex: Fast Lexical Analyzer Generator" >
@@ -10,29 +14,32 @@
           lexical patterns in text.
         </paragraph>
       </description>
+
+      <source tarname="flex-%-msys-%-src.tar" />
+      <licence tarname="flex-%-msys-%-lic.tar" />
+
       <component class="bin">
-        <release tarname="flex-2.5.35-1-msys-1.0.11-bin.tar.lzma" />
         <release tarname="flex-2.5.35-2-msys-1.0.13-bin.tar.lzma" >
           <requires eq="msys-libintl-*-msys-*-dll-8.tar" />
+          <requires eq="msys-libregex-*-msys-*-dll-1.tar" />
         </release>
         <requires eq="msys-core-*-msys-*-bin.tar" />
-        <requires eq="msys-libregex-*-msys-*-dll-1.tar" />
+        <requires eq="msys-m4-*-msys-*-bin.tar" />
       </component>
+
       <component class="lang">
         <release tarname="flex-2.5.35-2-msys-1.0.13-lang.tar.lzma" />
       </component>
+
       <component class="doc">
-        <release tarname="flex-2.5.35-1-msys-1.0.11-doc.tar.lzma" />
         <release tarname="flex-2.5.35-2-msys-1.0.13-doc.tar.lzma" />
       </component>
+
       <component class="lic">
-        <release tarname="flex-2.5.35-1-msys-1.0.11-lic.tar.lzma" />
         <release tarname="flex-2.5.35-2-msys-1.0.13-lic.tar.lzma" />
       </component>
-      <licence tarname="flex-%-msys-%-lic.tar" />
-      <source tarname="flex-%-msys-%-src.tar" />
     </package>
+
   </package-collection>
 </software-distribution>
-<!-- vim: set nocompatible expandtab tw=80 ts=2 sw=2 ff=unix: -->
-
+<!-- vim: set nocompatible expandtab fileformat=unix textwidth=80 tabstop=2 shiftwidth=2: -->

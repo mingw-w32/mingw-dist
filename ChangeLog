@@ -1,3 +1,18 @@
+2010-09-01  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add free-standing manifest for msys-flex.
+
+	* msys/msys-flex.xml (msys-flex-bin): Add missing dependency...
+	(msys-m4-bin): ...on this.
+	Clean up formatting; reduce to deliver only the latest available
+	release; move versioned DLL requirements specs inside the dependent
+	release entity; generate and publish msys-flex.xml.lzma
+
+	* msys/msys-package-list.xml (msys-flex): Make it visible.
+	Regenerate and publish msys-package-list.xml.lzma
+
+	* msys/issue.log: Updated accordingly.
+
 2010-08-31  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Add manifests needed for gcc4

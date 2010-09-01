@@ -33,6 +33,7 @@
   msys-expat.xml:2010081000
   msys-file.xml:2010080900
   msys-findutils.xml:2010080600
+  msys-flex.xml:2010090100
   msys-gawk.xml:2010072600
   msys-gettext.xml:2010080500
   msys-grep.xml:2010072600
@@ -41,7 +42,7 @@
   msys-libiconv.xml:2010071900
   msys-m4.xml:2010081000
   msys-make.xml:2010080900
-  msys-package-list.xml:2010081000
+  msys-package-list.xml:2010090100
   msys-patch.xml:2010081000
   msys-popt.xml:2010080900
   msys-regex.xml:2010080500
