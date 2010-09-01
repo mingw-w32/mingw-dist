@@ -27,7 +27,11 @@
 #
 VPATH = ${srcdir}
 
-all: update all-distfiles
+# Define hooks for invoking system tools.
+#
+LN_S = @LN_S@
+
+all: all-sync all-distfiles
 
 # To accommodate a top-level make on just a single subdirectory, we list
 # each of the managed subdirectories as an independent goal, invoking the
@@ -46,7 +50,7 @@ Makefile.sub: ${srcdir}/*.xml
 	echo '  $$(EXTRA_DISTFILES)' >> $@
 
 include Makefile.sub
-all-distfiles: $(DISTFILES) $(auto-distfiles)
+all-distfiles: unpublished $(DISTFILES) $(auto-distfiles)
 
 # Distributed manifests are serialised by incorporating a date-stamped
 # issue number, of the form YYYYMMDDNN; we track issue numbers using the
@@ -55,10 +59,6 @@ all-distfiles: $(DISTFILES) $(auto-distfiles)
 #
 issue_number = YYYYMMDDNN
 issue_log = ${srcdir}/issue.log
-
-update: FORCE
-	cd ${srcdir}; cvs -z3 -Q update -AC issue.log
-	rm -f ${srcdir}'/.#issue.log'*
 
 # Formatting within issue.log is controlled by PAD and TAB settings.
 #
@@ -90,9 +90,53 @@ PAD = "  "
 	  $(issue_log) >> issue.new
 	rm -f $(issue_log) issue.tmp
 	mv issue.new $(issue_log)
+	cd unpublished && $(LN_S) ../$@ .
 
 .PHONY: FORCE
 # An internal target, to specify a dependency which must always be updated.
 FORCE:
+
+# Create a local directory in which to collect files which we have generated,
+# but we have not yet published; (we make this a prerequisite of all sources,
+# to ensure that it is created when the source directory is scanned to create
+# Makefile.sub, so that will always exist when any individual source file is
+# processed, even on explicit file-by-file request).
+#
+${srcdir}/*.xml: unpublished
+unpublished: FORCE
+	test -d unpublished || mkdir unpublished
+
+# Before creating any set of files for publication, the local working copy
+# of the entire publication data set needs to be synchronised with the state
+# of any externally published copies.  This is accomplished with reference
+# to the publication state as recorded in the `issue.log' files which may
+# be found in each publication subdirectory; the `all-sync-offline' and
+# `all-sync-to-cvs' targets fulfil this requirement, allowing the user to
+# select between synchronising to the locally recorded publication state as
+# is, or (preferably) after first synchronising the local state with the
+# state as recorded in the master CVS repository, respectively.
+#
+cvsroot = `cat ${srcdir}/CVS/Root`
+repository = `cat ${srcdir}/CVS/Repository`
+
+all-sync-offline: all-sync-offline-begin all-sync-to-cvs-or-offline
+all-sync all-sync-to-cvs: all-sync-to-cvs-begin all-sync-to-cvs-or-offline
+
+all-sync-begin: FORCE
+	rm -rf tmp
+
+all-sync-offline-begin: all-sync-begin
+	mkdir tmp
+
+all-sync-to-cvs-begin: all-sync-begin
+	cvs -z3 -Q -d ${cvsroot} checkout -A -d tmp ${repository}/issue.log
+	rm -f $(issue_log); mv tmp/issue.log $(issue_log)
+
+all-sync-to-cvs-or-offline: FORCE
+	$(LN_S) ../$(issue_log) tmp
+	for file in ${srcdir}/*.xml *.xml.lzma; do \
+	  if test -f $$file; then $(LN_S) ../$$file tmp; fi; done
+	cd tmp && $(MAKE) -f ../../Makefile.sync $@
+	rm -rf tmp
 
 # $RCSfile$: end of file

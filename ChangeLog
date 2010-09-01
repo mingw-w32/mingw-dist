@@ -1,5 +1,32 @@
 2010-09-01  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Update build system to facilitate publication state synchronisation.
+
+	* configure.ac (AC_PROG_LN_S): Add macro reference.
+	(mingw_ac_subdirs): Add `common' subdirectory reference.
+	(Makefile.sync): New AC_OUTPUT target; add it.
+
+	* Makefile.in (all): New default goal; define it, replacing...
+	(all-distfiles): ...this; retain as a dependent synonym for `all'.
+	(all-sync, all-sync-to-cvs, all-sync-offline): New alternative goals;
+	define them, as further dependent synonyms for `all'.
+	(update): Defunct goal; delete it.
+
+	* Makefile.comm.in (LN_S): New macro; define from AC_PROG_LN_S.
+	(unpublished, all-sync-online): New primary targets.
+	(all-sync, all-sync-to-cvs): New primary targets, mutually aliased.
+	(cvsroot, repository): New internal use macros; define them.
+	(all-sync-begin, all-sync-offline-begin, all-sync-to-cvs-begin):
+	(all-sync-to-cvs-or-offline): New internal targets.
+	(all): Remove prerequisite `update'; add `all-sync'.
+	(all-distfiles): Add prerequisite `unpublished'.
+	(update): Defunct target; delete it.
+
+	* Makefile.sync.in: New file; it defines the recursive make actions
+	required to perform the issue.log --> *.xml.lzma synchronisation.
+
+2010-09-01  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Add free-standing manifest for msys-flex.
 
 	* msys/msys-flex.xml (msys-flex-bin): Add missing dependency...

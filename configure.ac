@@ -24,11 +24,16 @@
 #
   AC_INIT([mingw-dist],[0.0],[http://mingw.org/reporting_bugs])
 
+# Check for required tools.
+#
+  AC_PROG_LN_S
+
 # Specify all makefiles which are to be created
 #
   AC_CONFIG_FILES([Makefile])
   AC_CONFIG_FILES([Makefile.comm])
-  AC_FOREACH([subdir],[mingw32 msys],
+  AC_CONFIG_FILES([Makefile.sync])
+  AC_FOREACH([subdir],[common mingw32 msys],
   [AC_CONFIG_FILES(subdir[/Makefile:Makefile.stub.in])dnl
    mingw_ac_subdirs=${mingw_ac_subdirs+"${mingw_ac_subdirs} "}"subdir"dnl
   ])

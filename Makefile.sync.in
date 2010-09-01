@@ -1,0 +1,68 @@
+# @configure_input@
+#
+# $Id$
+#
+# Written by Keith Marshall <keithmarshall@users.sourceforge.net>
+# Copyright (C) 2010, MinGW Project
+#
+#
+# Auxiliary makefile template; this provides for synchronisation of
+# a local manifest build with the published, state as it is recorded
+# in the issue.log files in the source for each managed subdirectory.
+#
+#   Project: @PACKAGE_TARNAME@
+#   Version: @PACKAGE_VERSION@
+#
+#
+# This is free software.  Permission is granted to copy, modify and
+# redistribute this software, under the provisions of the GNU General
+# Public License, Version 3, (or, at your option, any later version),
+# as published by the Free Software Foundation; see the file COPYING
+# for licensing details.
+#
+# Note, in particular, that this software is provided "as is", in the
+# hope that it may prove useful, but WITHOUT WARRANTY OF ANY KIND; not
+# even an implied WARRANTY OF MERCHANTABILITY, nor of FITNESS FOR ANY
+# PARTICULAR PURPOSE.  Under no circumstances will the author, or the
+# MinGW Project, accept liability for any damages, however caused,
+# arising from the use of this software.
+#
+
+TAB = [	 ]
+serial_number = YYYYMMDDNN
+
+LN_S = @LN_S@
+
+# This default rule attempts to synchronise the state of the locally generated
+# manifest files, to match the published state as recorded in `issue.log'
+#
+all-sync all-sync-to-cvs-or-offline: issue.log
+issue.log: FORCE *.xml
+	@for srcfile in $^; do \
+	  case $$srcfile in `echo FORCE $? | sed 's, ,|,g'`) ;; *) \
+	    if test ! -e "$$srcfile.lzma"; then \
+	      stamp=`sed -n "s,^$(TAB)*$$srcfile:\([0-9][0-9]*\),\1,p" $@`; \
+	      if test -n "$$stamp"; then \
+		echo sed "s,@$(serial_number)@,$$stamp," "$$srcfile |" \
+		  "lzma -c > $$srcfile.lzma"; \
+		sed "s,@$(serial_number)@,$$stamp," $$srcfile | \
+		  lzma -c > $$srcfile.lzma; \
+		echo touch -r $@ $$srcfile.lzma; \
+		touch -r $@ $$srcfile.lzma; \
+		rm -f ../$$srcfile.lzma; \
+		mv $$srcfile.lzma ..; \
+		$(LN_S) ../$$srcfile.lzma .; \
+	      fi; \
+	    fi ;; \
+	  esac; \
+	done
+
+.PHONY: FORCE
+# An internal target, to specify a dependency which must always be updated.
+FORCE:
+
+# If there are no *.xml files, this provides a "do nothing" fall back rule.
+#
+*.xml:
+
+# $RCSfile$: end of file
