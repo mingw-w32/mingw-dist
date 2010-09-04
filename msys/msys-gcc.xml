@@ -28,6 +28,7 @@
       <component class="bin" >
         <release tarname="gcc-3.4.4-3-msys-1.0.13-bin.tar.lzma" />
         <requires ge="msys-core-*-msys-*-bin.tar" />
+        <requires ge="msys-core-*-msys-*-dev.tar" />
         <requires ge="msys-binutils-*-msys-*-bin.tar" />
         <requires ge="msys-w32api-*-msys-*-dev.tar" />
       </component>

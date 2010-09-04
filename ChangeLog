@@ -1,3 +1,8 @@
+2010-07-29  Cesar Strauss  <cestrauss@gmail.com>
+
+	* msys/msys-gcc.xml (msys-gcc-bin): Add missing dependency ...
+        (msys-core-dev): ... on this.
+
 2010-09-01  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Update build system to facilitate publication state synchronisation.
