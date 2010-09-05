@@ -30,7 +30,7 @@
   <!--package-list catalogue="msys-console" /-->
   <package-list catalogue="msys-core" />
   <package-list catalogue="msys-coreutils" />
-  <!--package-list catalogue="msys-crypt" /-->
+  <package-list catalogue="msys-crypt" />
   <!--package-list catalogue="msys-cvs" /-->
   <package-list catalogue="msys-cygutils" />
   <!--package-list catalogue="msys-dash" /-->
@@ -41,7 +41,7 @@
   <package-list catalogue="msys-flex" />
   <package-list catalogue="msys-gawk" />
   <!--package-list catalogue="msys-gcc" /-->
-  <!--package-list catalogue="msys-gdbm" /-->
+  <package-list catalogue="msys-gdbm" />
   <package-list catalogue="msys-gettext" />
   <!--package-list catalogue="msys-gmp" /-->
   <package-list catalogue="msys-grep" />
@@ -54,17 +54,17 @@
   <package-list catalogue="msys-libiconv" />
   <!--package-list catalogue="msys-libtool" /-->
   <!--package-list catalogue="msys-libxml2" /-->
-  <!--package-list catalogue="msys-lndir" /-->
+  <package-list catalogue="msys-lndir" />
   <!--package-list catalogue="msys-lpr-enhanced" /-->
   <package-list catalogue="msys-m4" />
   <package-list catalogue="msys-make" />
   <!--package-list catalogue="msys-man" /-->
-  <!--package-list catalogue="msys-minires" /-->
-  <!--package-list catalogue="msys-mktemp" /-->
+  <package-list catalogue="msys-minires" />
+  <package-list catalogue="msys-mktemp" />
   <!--package-list catalogue="msys-openssh" /-->
   <!--package-list catalogue="msys-openssl" /-->
   <package-list catalogue="msys-patch" />
-  <!--package-list catalogue="msys-perl" /-->
+  <package-list catalogue="msys-perl" />
   <package-list catalogue="msys-popt" />
   <!--package-list catalogue="msys-rebase" /-->
   <package-list catalogue="msys-regex" />
@@ -83,7 +83,7 @@
 
   <!-- "virtual" packages -->
   <package-list catalogue="msys-base" />
-  <!--package-list catalogue="msys-developer-toolkit" /-->
+  <!--package-list catalogue="mingw-developer-toolkit" /-->
   <!--package-list catalogue="msys-system-builder" /-->
 
 </software-distribution>

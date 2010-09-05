@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
+
+  <!-- File: msys-perl.xml -->
+
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+
     <package name="msys-perl">
-      <affiliate group="MSYS Developer Toolkit" /> -->
+      <affiliate group="MinGW Developer Toolkit" /> -->
       <description lang="en" title="perl: The Perl programming language">
         <paragraph>Perl is a general-purpose programming language
           originally developed for text manipulation and now used for
@@ -13,34 +17,36 @@
           and automake developer utilities.
         </paragraph>
       </description>
-      <component class="bin">
-        <release tarname="perl-5.6.1_2-1-msys-1.0.11-bin.tar.lzma" />
-        <release tarname="perl-5.6.1_2-2-msys-1.0.13-bin.tar.lzma" />
-        <requires eq="msys-core-*-msys-*-bin.tar" />
-        <requires eq="msys-zlib-*-msys-*-dll.tar" />
-        <requires eq="msys-libgdbm-*-msys-*-dll-3.tar" />
-        <requires eq="msys-libcrypt-*-msys-*-dll-0.tar" />
-      </component>
-      <component class="doc">
-        <release tarname="perl-5.6.1_2-1-msys-1.0.11-doc.tar.lzma" />
-        <release tarname="perl-5.6.1_2-2-msys-1.0.13-doc.tar.lzma" />
-      </component>
-      <component class="html">
-        <release tarname="perl-5.6.1_2-1-msys-1.0.11-html.tar.lzma" />
-        <release tarname="perl-5.6.1_2-2-msys-1.0.13-html.tar.lzma" />
-      </component>
-      <component class="man">
-        <release tarname="perl-5.6.1_2-1-msys-1.0.11-man.tar.lzma" />
-        <release tarname="perl-5.6.1_2-2-msys-1.0.13-man.tar.lzma" />
-      </component>
-      <component class="lic">
-        <release tarname="perl-5.6.1_2-1-msys-1.0.11-lic.tar.lzma" />
-        <release tarname="perl-5.6.1_2-2-msys-1.0.13-lic.tar.lzma" />
-      </component>
+
       <licence tarname="perl-%-msys-%-lic.tar" />
       <source tarname="perl-%-msys-%-src.tar" />
+
+      <component class="bin">
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <release tarname="perl-5.6.1_2-2-msys-1.0.13-bin.tar.lzma" >
+          <requires eq="msys-zlib-*-msys-*-dll.tar" />
+          <requires eq="msys-libgdbm-*-msys-*-dll-3.tar" />
+          <requires eq="msys-libcrypt-*-msys-*-dll-0.tar" />
+        </release>
+      </component>
+
+      <component class="doc">
+        <release tarname="perl-5.6.1_2-2-msys-1.0.13-doc.tar.lzma" />
+      </component>
+
+      <component class="html">
+        <release tarname="perl-5.6.1_2-2-msys-1.0.13-html.tar.lzma" />
+      </component>
+
+      <component class="man">
+        <release tarname="perl-5.6.1_2-2-msys-1.0.13-man.tar.lzma" />
+      </component>
+
+      <component class="lic">
+        <release tarname="perl-5.6.1_2-2-msys-1.0.13-lic.tar.lzma" />
+      </component>
     </package>
+
   </package-collection>
 </software-distribution>
-<!-- vim: set nocompatible expandtab tw=80 ts=2 sw=2 ff=unix: -->
-
+<!-- vim: set nocompatible expandtab fileformat=unix textwidth=80 tabstop=2 shiftwidth=2: -->

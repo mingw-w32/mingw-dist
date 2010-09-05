@@ -1,7 +1,38 @@
+2010-09-05  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update & publish msys-{crypt,gdbm,lndir,minires,mktemp,perl}
+
+	* msys/msys-crypt.xml: Clean up formatting; reduce to deliver only the
+	latest available release; move versioned DLL requirements specs inside
+	the dependent release entity recent release of all components; ensure
+	-dev component requires -dll; generate and publish
+	msys-crypt.xml.lzma.
+	* msys/msys-gdbm.xml: Ditto (generate and publish msys-gdbm.xml.lzma).
+	* msys/msys-minires.xml: Ditto (generate and publish
+	msys-minires.xml.lzma).
+	* msys/msys-lndir.xml: Clean up formatting; reduce to deliver only the
+	latest available release; generate and publish msys-lndir.xml.lzma).
+	* msys/msys-mktemp.xml: Ditto (generate and publish
+	msys-mktemp.xml.lzma).
+	* msys/msys-perl.xml: Clean up formatting; reduce to deliver only the
+	latest available release; move versioned DLL requirements specs inside
+	the dependent release entity recent release of all components;
+	generate and publish msys-perl.xml.lzma).
+
+	* msys/msys-package-list.xml (msys-crypt): Make it visible.
+	(msys-gdbm): Ditto.
+	(msys-lndir): Ditto.
+	(msys-minires): Ditto.
+	(msys-mktemp): Ditto.
+	(msys-perl): Ditto.
+	Regenerate and publish msys-package-list.xml.lzma
+
+	* msys/issue.log: Updated accordingly.
+
 2010-07-29  Cesar Strauss  <cestrauss@gmail.com>
 
 	* msys/msys-gcc.xml (msys-gcc-bin): Add missing dependency ...
-        (msys-core-dev): ... on this.
+	(msys-core-dev): ... on this.
 
 2010-09-01  Keith Marshall  <keithmarshall@users.sourceforge.net>
 

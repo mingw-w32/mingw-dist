@@ -26,8 +26,9 @@
   msys-base.xml:2010080900
   msys-bash.xml:2010071901
   msys-bzip2.xml:2010080500
-  msys-coreutils.xml:2010071901
   msys-core.xml:2010080500
+  msys-coreutils.xml:2010071901
+  msys-crypt.xml:2010090500
   msys-cygutils.xml:2010080900
   msys-diffutils.xml:2010072800
   msys-expat.xml:2010081000
@@ -35,15 +36,20 @@
   msys-findutils.xml:2010080600
   msys-flex.xml:2010090100
   msys-gawk.xml:2010072600
+  msys-gdbm.xml:2010090500
   msys-gettext.xml:2010080500
   msys-grep.xml:2010072600
   msys-gzip.xml:2010072800
   msys-less.xml:2010080500
   msys-libiconv.xml:2010071900
+  msys-lndir.xml:2010090500
   msys-m4.xml:2010081000
   msys-make.xml:2010080900
-  msys-package-list.xml:2010090100
+  msys-minires.xml:2010090500
+  msys-mktemp.xml:2010090500
+  msys-package-list.xml:2010090500
   msys-patch.xml:2010081000
+  msys-perl.xml:2010090500
   msys-popt.xml:2010080900
   msys-regex.xml:2010080500
   msys-sed.xml:2010072600
