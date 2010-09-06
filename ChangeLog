@@ -1,5 +1,30 @@
 2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
+	Update & publish msys-{console,groff,lpr-enhanced,man,rxvt}
+
+	* msys/msys-console.xml: Clean up formatting; generate and publish
+	msys-console.xml.lzma.
+	* msys/msys-groff.xml: Clean up formatting; reduce to deliver only the
+	latest available release; generate and publish msys-groff.xml.lzma.
+	* msys/msys-lpr-enhanced.xml: Clean up formatting; generate and
+	publish msys-lpr-enhanced.xml.lzma.
+	* msys/msys-man.xml: Clean up formatting; reduce to deliver only the
+	latest available release; generate and publish msys-man.xml.lzma.
+	* msys/msys-rxvt.xml: Clean up formatting; update comments to mention
+	the Console 2.00 (msys-console) option; generate and publish
+	msys-rxvt.xml.lzma.
+
+	* msys/msys-package-list.xml (msys-console): Make it visible.
+	(msys-groff): Ditto.
+	(msys-lpr-enhanced): Ditto.
+	(msys-man): Ditto.
+	(msys-rxvt): Ditto.
+	Regenerate and publish msys-package-list.xml.lzma
+
+	* msys/issue.log: Updated accordingly.
+
+2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
 	Update & publish msys-{cvs,gmp,inetutils,libarchive,libxml2,openssh}
 
 	* msys/msys-cvs.xml: Clean up formatting; reduce to deliver only the

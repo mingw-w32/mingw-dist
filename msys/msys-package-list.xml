@@ -27,7 +27,7 @@
   <!--package-list catalogue="msys-binutils" /-->
   <package-list catalogue="msys-bison" />
   <package-list catalogue="msys-bzip2" />
-  <!--package-list catalogue="msys-console" /-->
+  <package-list catalogue="msys-console" />
   <package-list catalogue="msys-core" />
   <package-list catalogue="msys-coreutils" />
   <package-list catalogue="msys-crypt" />
@@ -45,7 +45,7 @@
   <package-list catalogue="msys-gettext" />
   <package-list catalogue="msys-gmp" />
   <package-list catalogue="msys-grep" />
-  <!--package-list catalogue="msys-groff" /-->
+  <package-list catalogue="msys-groff" />
   <!--package-list catalogue="msys-guile" /-->
   <package-list catalogue="msys-gzip" />
   <package-list catalogue="msys-inetutils" />
@@ -55,10 +55,10 @@
   <!--package-list catalogue="msys-libtool" /-->
   <package-list catalogue="msys-libxml2" />
   <package-list catalogue="msys-lndir" />
-  <!--package-list catalogue="msys-lpr-enhanced" /-->
+  <package-list catalogue="msys-lpr-enhanced" />
   <package-list catalogue="msys-m4" />
   <package-list catalogue="msys-make" />
-  <!--package-list catalogue="msys-man" /-->
+  <package-list catalogue="msys-man" />
   <package-list catalogue="msys-minires" />
   <package-list catalogue="msys-mktemp" />
   <package-list catalogue="msys-openssh" />
@@ -68,7 +68,7 @@
   <package-list catalogue="msys-popt" />
   <package-list catalogue="msys-rebase" />
   <package-list catalogue="msys-regex" />
-  <!--package-list catalogue="msys-rxvt" /-->
+  <package-list catalogue="msys-rxvt" />
   <package-list catalogue="msys-sed" />
   <package-list catalogue="msys-tar" />
   <package-list catalogue="msys-termcap" />

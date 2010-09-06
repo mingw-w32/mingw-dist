@@ -27,6 +27,7 @@
   msys-bash.xml:2010071901
   msys-bison.xml:2010090600
   msys-bzip2.xml:2010080500
+  msys-console.xml:2010090600
   msys-core.xml:2010080500
   msys-coreutils.xml:2010071901
   msys-crypt.xml:2010090500
@@ -43,6 +44,7 @@
   msys-gettext.xml:2010080500
   msys-gmp.xml:2010090600
   msys-grep.xml:2010072600
+  msys-groff.xml:2010090600
   msys-gzip.xml:2010072800
   msys-inetutils.xml:2010090600
   msys-less.xml:2010080500
@@ -50,18 +52,21 @@
   msys-libiconv.xml:2010071900
   msys-libxml2.xml:2010090600
   msys-lndir.xml:2010090500
+  msys-lpr-enhanced.xml:2010090600
   msys-m4.xml:2010081000
   msys-make.xml:2010080900
+  msys-man.xml:2010090600
   msys-minires.xml:2010090500
   msys-mktemp.xml:2010090500
   msys-openssh.xml:2010090600
   msys-openssl.xml:2010090600
-  msys-package-list.xml:2010090601
+  msys-package-list.xml:2010090602
   msys-patch.xml:2010081000
   msys-perl.xml:2010090500
   msys-popt.xml:2010080900
   msys-rebase.xml:2010090600
   msys-regex.xml:2010080500
+  msys-rxvt.xml:2010090600
   msys-sed.xml:2010072600
   msys-tar.xml:2010072800
   msys-termcap.xml:2010071900
