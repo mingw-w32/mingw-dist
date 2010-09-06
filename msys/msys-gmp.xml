@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
+
+  <!-- File: msys-gmp.xml -->
+
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+
     <package name="msys-gmp">
       <description lang="en" title="gmp (msys): The GNU Multiple Precision Arithmetic Library" >
         <paragraph>GNU MP is a library for arbitrary precision arithmetic,
@@ -10,28 +14,30 @@
           have a regular interface.
         </paragraph>
         <paragraph>The MinGW/MSYS project provides two gmp packages:
-          this msys-gmp one and a native win32 mingw32-gmp. This one
+          this msys-gmp one and a native win32 mingw32-gmp.  This one
           requires the MSYS dll, and is provided as a necessary component
-          of various MSYS tools, such as guile. The mingw32-gmp version
+          of various MSYS tools, such as guile.  The mingw32-gmp version
           is provided as a necessary component of modern MinGW gcc
           compilers.
         </paragraph>
         <paragraph>The msys-gmp package provides the documentation
-          for the gmp library. The associated msys-libgmp package
+          for the gmp library.  The associated msys-libgmp package
           provides the runtime library and related development files.
         </paragraph>
       </description>
-      <component class="doc">
-        <release tarname="gmp-4.3.1-1-msys-1.0.11-doc.tar.lzma" />
-        <release tarname="gmp-5.0.1-1-msys-1.0.13-doc.tar.lzma" />
-      </component>
-      <component class="lic">
-        <release tarname="gmp-4.3.1-1-msys-1.0.11-lic.tar.lzma" />
-        <release tarname="gmp-5.0.1-1-msys-1.0.13-lic.tar.lzma" />
-      </component>
+
       <licence tarname="gmp-%-msys-%-lic.tar" />
       <source tarname="gmp-%-msys-%-src.tar" />
+
+      <component class="doc">
+        <release tarname="gmp-5.0.1-1-msys-1.0.13-doc.tar.lzma" />
+      </component>
+
+      <component class="lic">
+        <release tarname="gmp-5.0.1-1-msys-1.0.13-lic.tar.lzma" />
+      </component>
     </package>
+
     <package name="msys-libgmp">
       <description lang="en" title="libgmp (msys): The GNU Multiple Precision Arithmetic Library" >
         <paragraph>GNU MP is a library for arbitrary precision arithmetic,
@@ -40,34 +46,35 @@
           have a regular interface.
         </paragraph>
         <paragraph>The MinGW/MSYS project provides two libgmp packages:
-          this msys-libgmp one and a native win32 mingw32-libgmp. This one
+          this msys-libgmp one and a native win32 mingw32-libgmp.  This one
           requires the MSYS dll, and is provided as a necessary component
-          of various MSYS tools, such as guile. The mingw32-gmp version
+          of various MSYS tools, such as guile.  The mingw32-gmp version
           is provided as a necessary component of modern MinGW gcc
           compilers.
         </paragraph>
         <paragraph>The msys-libgmp package provides the runtime library
-          and related development files. The associated msys-gmp package
+          and related development files.  The associated msys-gmp package
           provides the documentation for the gmp library.
         </paragraph>
       </description>
+
+      <licence tarname="gmp-%-msys-%-lic.tar" />
+      <source tarname="gmp-%-msys-%-src.tar" />
+
       <component class="dll">
-        <release tarname="libgmp-4.3.1-1-msys-1.0.11-dll-3.tar.lzma" />
         <release tarname="libgmp-5.0.1-1-msys-1.0.13-dll-10.tar.lzma" />
+
+        <!-- Every MSYS DLL package requires msys-core-bin -->
         <requires eq="msys-core-*-msys-*-bin.tar" />
       </component>
+
       <component class="dev">
-        <release tarname="libgmp-4.3.1-1-msys-1.0.11-dev.tar.lzma" >
-          <requires eq="msys-libgmp-%-msys-%-dll-3.tar" />
-        </release>
         <release tarname="libgmp-5.0.1-1-msys-1.0.13-dev.tar.lzma" >
           <requires eq="msys-libgmp-%-msys-%-dll-10.tar" />
         </release>
       </component>
-      <licence tarname="gmp-%-msys-%-lic.tar" />
-      <source tarname="gmp-%-msys-%-src.tar" />
     </package>
+
   </package-collection>
 </software-distribution>
-<!-- vim: set nocompatible expandtab tw=80 ts=2 sw=2 ff=unix: -->
-
+<!-- vim: set nocompatible expandtab fileformat=unix textwidth=80 tabstop=2 shiftwidth=2: -->

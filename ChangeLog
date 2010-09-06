@@ -1,5 +1,40 @@
 2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
+	Update & publish msys-{cvs,gmp,inetutils,libarchive,libxml2,openssh}
+
+	* msys/msys-cvs.xml: Clean up formatting; reduce to deliver only the
+	latest available release; move versioned DLL requirements specs inside
+	the dependent release entity recent release of all components;
+	generate and publish msys-cvs.xml.lzma.
+	* msys/msys-gmp.xml: Clean up formatting; reduce to deliver only the
+	latest available release; generate and publish msys-gmp.xml.lzma.
+	* msys/msys-inetutils.xml: Ditto (generate and publish
+	msys-inetutils.xml.lzma).
+	* msys/msys-libarchive.xml: Clean up formatting; reduce to deliver only the
+	latest available release; move versioned DLL requirements specs insi
+	the dependent release entity recent release of all components;
+	generate and publish msys-libarchive.xml.lzma).
+	* msys/msys-libxml2.xml: Clean up formatting; move versioned DLL
+	requirements specs inside the dependent release entity recent release
+	of all components; ensure -dev component requires -dll component;
+	generate and publish msys-libxml2.xml.lzma.
+	* msys/msys-openssh.xml: Clean up formatting; reduce to deliver only the
+	latest available release; move versioned DLL requirements specs inside
+	the dependent release entity recent release of all components;
+	generate and publish msys-openssh.xml.lzma.
+
+	* msys/msys-package-list.xml (msys-cvs): Make it visible.
+	(msys-gmp): Ditto.
+	(msys-inetutils): Ditto.
+	(msys-libarchive): Ditto.
+	(msys-libxml2): Ditto.
+	(msys-openssh): Ditto.
+	Regenerate and publish msys-package-list.xml.lzma
+
+	* msys/issue.log: Updated accordingly.
+
+2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
 	Update & publish msys-{bison,dash,openssl,rebase,unzip,wget,zip}
 
 	* msys/msys-bison.xml: Clean up formatting; reduce to deliver only the
