@@ -24,6 +24,7 @@
 # arising from the use of this software.
 #
   msys-autoconf.xml:2010090600
+  msys-autogen.xml:2010090600
   msys-automake.xml:2010090600
   msys-base.xml:2010080900
   msys-bash.xml:2010071901
@@ -49,6 +50,7 @@
   msys-gmp.xml:2010090600
   msys-grep.xml:2010072600
   msys-groff.xml:2010090600
+  msys-guile.xml:2010090600
   msys-gzip.xml:2010072800
   msys-inetutils.xml:2010090600
   msys-less.xml:2010080500
@@ -65,7 +67,7 @@
   msys-mktemp.xml:2010090500
   msys-openssh.xml:2010090600
   msys-openssl.xml:2010090600
-  msys-package-list.xml:2010090603
+  msys-package-list.xml:2010090604
   msys-patch.xml:2010081000
   msys-perl.xml:2010090500
   msys-popt.xml:2010080900

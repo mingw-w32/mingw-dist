@@ -21,7 +21,7 @@
   <!--package-list catalogue="mingw32-libiconv" /-->
   <!--package-list catalogue="mingw32-gettext" /-->
   <package-list catalogue="msys-autoconf" />
-  <!--package-list catalogue="msys-autogen" /-->
+  <package-list catalogue="msys-autogen" />
   <package-list catalogue="msys-automake" />
   <package-list catalogue="msys-bash" />
   <package-list catalogue="msys-binutils" />
@@ -46,7 +46,7 @@
   <package-list catalogue="msys-gmp" />
   <package-list catalogue="msys-grep" />
   <package-list catalogue="msys-groff" />
-  <!--package-list catalogue="msys-guile" /-->
+  <package-list catalogue="msys-guile" />
   <package-list catalogue="msys-gzip" />
   <package-list catalogue="msys-inetutils" />
   <package-list catalogue="msys-less" />

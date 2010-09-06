@@ -1,5 +1,52 @@
 2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
+	Update & publish msys-{guile,autogen}
+
+	* msys/msys-guile.xml: Clean up formatting; generate and publish
+	msys-guile.xml.lzma.
+	* msys/msys-autogen.xml: Clean up formatting; reduce to deliver only
+	the latest available release (eliminate obsolete msys-libguileopts
+	sub-package); move versioned DLL requirements specs inside the
+	dependent release entity recent release of all components; generate
+	and publish msys-autogen.xml.lzma.
+
+	* msys/msys-package-list.xml (msys-guile): Make it visible.
+	(msys-autogen): Ditto.
+	Regenerate and publish msys-package-list.xml.lzma
+
+	* msys/issue.log: Updated accordingly.
+
+2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update & publish msys-{autoconf,automake,binutils,gcc,libtool,w32api}
+	Add & publish msys-system-builder (aka msys-dvlpr).
+
+	* msys/msys-autoconf.xml: Clean up formatting; reduce to deliver only
+	the latest available release; generate and publish msys-autoconf.xml.lzma.
+	* msys/msys-automake.xml: Ditto (generate and publish
+	msys-automake.xml.lzma).
+	* msys/msys-libtool.xml: Ditto (generate and publish
+	msys-libtool.xml.lzma).
+	* msys/msys-binutils.xml: Clean up formatting; generate and
+	publish msys-binutils.xml.lzma.
+	* msys/msys-gcc.xml: Ditto (generate and publish msys-gcc.xml.lzma).
+	* msys/msys-w32api.xml: Ditto (generate and publish
+	msys-w32api.xml.lzma).
+	* msys/msys-system-builder.xml: New meta package description.
+
+	* msys/msys-package-list.xml (msys-autoconf): Make it visible.
+	(msys-automake): Ditto.
+	(msys-binutils): Ditto.
+	(msys-gcc): Ditto.
+	(msys-libtool): Ditto.
+	(msys-w32api): Ditto.
+	(msys-system-builder): Ditto.
+	Regenerate and publish msys-package-list.xml.lzma
+
+	* msys/issue.log: Updated accordingly.
+
+2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
 	Update & publish msys-{console,groff,lpr-enhanced,man,rxvt}
 
 	* msys/msys-console.xml: Clean up formatting; generate and publish
