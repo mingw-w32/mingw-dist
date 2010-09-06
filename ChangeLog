@@ -1,3 +1,39 @@
+2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update & publish msys-{bison,dash,openssl,rebase,unzip,wget,zip}
+
+	* msys/msys-bison.xml: Clean up formatting; reduce to deliver only the
+	latest available release; generate and publish msys-bison.xml.lzma.
+	* msys/msys-dash.xml: Clean up formatting; generate and publish
+	msys-dash.xml.lzma).
+	* msys/msys-rebase.xml: Ditto (generate and publish
+	msys-rebase.xml.lzma).
+	* msys/msys-unzip.xml: Ditto (generate and publish
+	msys-unzip.xml.lzma).
+	* msys/msys-openssl.xml: Clean up formatting; reduce to deliver only
+	the latest available release; generate and publish
+	msys-openssl.xml.lzma.
+	* msys/msys-wget.xml: Clean up formatting; move versioned DLL
+	requirements specs inside the dependent release entity recent release
+	of all components; generate and publish msys-wget.xml.lzma.
+	* msys/msys-zip.xml: Clean up formatting; generate and publish
+	msys-zip.xml.lzma.
+	* msys/msys-flex.xml: Correct affiliate group name; generate and
+	publish msys-flex.xml.lzma.
+	* msys/msys-vim.xml: Correct affiliate group name; generate and
+	publish msys-vim.xml.lzma.
+
+	* msys/msys-package-list.xml (msys-bison): Make it visible.
+	(msys-dash): Ditto.
+	(msys-openssl): Ditto.
+	(msys-rebase): Ditto.
+	(msys-unzip): Ditto.
+	(msys-wget): Ditto.
+	(msys-zip): Ditto.
+	Regenerate and publish msys-package-list.xml.lzma
+
+	* msys/issue.log: Updated accordingly.
+
 2010-09-05  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Update & publish msys-{crypt,gdbm,lndir,minires,mktemp,perl}
@@ -17,7 +53,7 @@
 	* msys/msys-perl.xml: Clean up formatting; reduce to deliver only the
 	latest available release; move versioned DLL requirements specs inside
 	the dependent release entity recent release of all components;
-	generate and publish msys-perl.xml.lzma).
+	generate and publish msys-perl.xml.lzma.
 
 	* msys/msys-package-list.xml (msys-crypt): Make it visible.
 	(msys-gdbm): Ditto.

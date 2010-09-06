@@ -25,16 +25,18 @@
 #
   msys-base.xml:2010080900
   msys-bash.xml:2010071901
+  msys-bison.xml:2010090600
   msys-bzip2.xml:2010080500
   msys-core.xml:2010080500
   msys-coreutils.xml:2010071901
   msys-crypt.xml:2010090500
   msys-cygutils.xml:2010080900
+  msys-dash.xml:2010090600
   msys-diffutils.xml:2010072800
   msys-expat.xml:2010081000
   msys-file.xml:2010080900
   msys-findutils.xml:2010080600
-  msys-flex.xml:2010090100
+  msys-flex.xml:2010090600
   msys-gawk.xml:2010072600
   msys-gdbm.xml:2010090500
   msys-gettext.xml:2010080500
@@ -47,17 +49,22 @@
   msys-make.xml:2010080900
   msys-minires.xml:2010090500
   msys-mktemp.xml:2010090500
-  msys-package-list.xml:2010090500
+  msys-openssl.xml:2010090600
+  msys-package-list.xml:2010090600
   msys-patch.xml:2010081000
   msys-perl.xml:2010090500
   msys-popt.xml:2010080900
+  msys-rebase.xml:2010090600
   msys-regex.xml:2010080500
   msys-sed.xml:2010072600
   msys-tar.xml:2010072800
   msys-termcap.xml:2010071900
   msys-texinfo.xml:2010080900
-  msys-vim.xml:2010081000
+  msys-unzip.xml:2010090600
+  msys-vim.xml:2010090600
+  msys-wget.xml:2010090600
   msys-xz.xml:2010080500
+  msys-zip.xml:2010090600
   msys-zlib.xml:2010080900
 #
 # $RCSfile$: end of file

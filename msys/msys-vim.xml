@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-vim">
-      <affiliate group="MSYS Developer Toolkit" />
+      <affiliate group="MinGW Developer Toolkit" />
       <description lang="en" title="vim: Vi IMproved, a programmers text editor" >
         <paragraph>Vim is a highly configurable text editor built to enable
           efficient text editing. It is an improved version of the vi editor
