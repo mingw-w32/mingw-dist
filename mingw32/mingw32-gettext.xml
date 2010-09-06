@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
+
+  <!-- File: mingw32-gettext.xml -->
+
   <package-collection subsystem="mingw32">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-gettext" alias="gettext">
-      <affiliate group="MSYS Developer Toolkit" />
+      <affiliate group="MinGW Autotools" />
       <description lang="en" title="gettext: GNU Internationalization Library and Utilities" >
         <paragraph>GNU gettext provides a set of tools that create a
           framework to help other GNU packages produce multi-lingual
-          messages. In this way, with suitable care a single binary
+          messages.  In this way, with suitable care a single binary
           application can automatically provide user messages (such as
           `help' text) in the language corresponding to the current
           locale settings.
         </paragraph>
         <paragraph>The gettext package provides utilities that may
           be useful to end-users, allowing interaction with the message
-          translation database of other i18n-enabled GNU utilities. It
+          translation database of other i18n-enabled GNU utilities.  It
           also provides the development libraries, header files, and
           documentation for the gettext system, as well as additional
           utilities useful for maintainers of i18n-enabled applications.
@@ -28,84 +33,98 @@
           library itself.
         </paragraph>
       </description>
+
+      <licence tarname="gettext-%-mingw32-%-lic.tar" />
+      <source tarname="gettext-%-mingw32-%-src.tar" />
+
       <component class="bin">
-        <release tarname="gettext-0.17-1-mingw32-bin.tar.lzma" />
-        <requires eq="libintl-%-mingw32-%-dll-8.tar" />
-        <requires eq="libiconv-*-mingw32-*-dll-2.tar" />
+        <release tarname="gettext-0.17-1-mingw32-bin.tar.lzma" >
+          <requires eq="mingw32-libiconv-*-mingw32-*-dll-2.tar" />
+          <requires eq="mingw32-libintl-%-mingw32-%-dll-8.tar" />
+        </release>
       </component>
+
       <component class="doc">
         <release tarname="gettext-0.17-1-mingw32-doc.tar.lzma" />
       </component>
+
       <component class="lic">
         <release tarname="gettext-0.17-1-mingw32-lic.tar.lzma" />
       </component>
+
       <component class="dev">
-        <release tarname="gettext-0.17-1-mingw32-dev.tar.lzma" />
-        <requires eq="libgettextpo-%-mingw32-%-dll-0.tar" />
-        <requires eq="libintl-%-mingw32-%-dll-8.tar" />
-        <requires eq="libiconv-*-mingw32-*-dll-2.tar" />
-        <!-- update as needed, to pull in libgcc_s_dw2-1.dll -->
-        <requires eq="gcc-core-4.4.0-mingw32-dll.tar" />
+        <release tarname="gettext-0.17-1-mingw32-dev.tar.lzma" >
+          <requires eq="mingw32-libgcc-*-mingw32-dll-1.tar" />
+          <requires eq="mingw32-libgettextpo-%-mingw32-%-dll-0.tar" />
+          <requires eq="mingw32-libiconv-*-mingw32-*-dll-2.tar" />
+          <requires eq="mingw32-libintl-%-mingw32-%-dll-8.tar" />
+        </release>
       </component>
+
       <component class="ext">
         <release tarname="gettext-0.17-1-mingw32-ext.tar.lzma" />
       </component>
-      <licence tarname="gettext-%-mingw32-%-lic.tar" />
-      <source tarname="gettext-%-mingw32-%-src.tar" />
     </package>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-libintl" alias="libintl">
-      <affiliate group="MSYS Developer Toolkit" />
+      <affiliate group="MinGW Autotools" />
       <description lang="en" title="libintl: GNU Internationalization Runtime Library" >
         <paragraph>GNU gettext provides a set of tools that create a
           framework to help other GNU packages produce multi-lingual
-          messages. In this way, with suitable care a single binary
+          messages.  In this way, with suitable care a single binary
           application can automatically provide user messages (such as
           `help' text) in the language corresponding to the current
-          locale settings. libintl is the primary runtime component of
+          locale settings.  libintl is the primary runtime component of
           that framework.
         </paragraph>
         <paragraph>The libintl package provides the runtime component
-          of the GNU internationalization library. The gettext package
+          of the GNU internationalization library.  The gettext package
           provides utilities that may be useful to end-users, allowing
           interaction with the message translation database of other
-          i18n-enabled GNU utilities. It also provides the development
+          i18n-enabled GNU utilities.  It also provides the development
           libraries, header files, and documentation for the gettext
           system, as well as additional utilities useful for maintainers
-          of i18n-enabled applications. The *-ext package provides extra
+          of i18n-enabled applications.  The *-ext package provides extra
           documentation, in the form of example implementations in many
-          different computer languages. The associated libgettextpo package
+          different computer languages.  The associated libgettextpo package
           provides the runtime libraries needed by the gettext utilities;
           the associated libasprintf package provides the runtime library
           for the asprintf utility library.
         </paragraph>
       </description>
-      <component class="dll">
-        <release tarname="libintl-0.17-1-mingw32-dll-8.tar.lzma" />
-        <requires eq="libiconv-*-mingw32-*-dll-2.tar" />
-      </component>
+
       <licence tarname="gettext-%-mingw32-%-lic.tar" />
       <source tarname="gettext-%-mingw32-%-src.tar" />
+
+      <component class="dll">
+        <release tarname="libintl-0.17-1-mingw32-dll-8.tar.lzma" >
+          <requires eq="mingw32-libiconv-*-mingw32-*-dll-2.tar" />
+        </release>
+      </component>
     </package>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-libgettextpo" alias="libgettextpo">
-      <affiliate group="MSYS Developer Toolkit" />
+      <affiliate group="MinGW Autotools" />
       <description lang="en" title="libgettextpo: GNU Internationalization Utility Library" >
         <paragraph>GNU gettext provides a set of tools that create a
           framework to help other GNU packages produce multi-lingual
-          messages. In this way, with suitable care a single binary
+          messages.  In this way, with suitable care a single binary
           application can automatically provide user messages (such as
           `help' text) in the language corresponding to the current
-          locale settings. libgettextpo provides runtime support for the
+          locale settings.  libgettextpo provides runtime support for the
           gettext utilities; it is typically not needed by `regular' i18n
           clients of libintl.
         </paragraph>
         <paragraph>The libgettextpo package provides the runtime
-          libraries needed by the gettext utilities. The associated
+          libraries needed by the gettext utilities.  The associated
           gettext package provides utilities that may be useful to
           end-users, allowing interaction with the message translation
-          database of other i18n-enabled GNU utilities. It also provides
+          database of other i18n-enabled GNU utilities.  It also provides
           the development libraries, header files, and documentation for
           the gettext system, as well as additional utilities useful for
-          maintainers of i18n-enabled applications. The *-ext package
+          maintainers of i18n-enabled applications.  The *-ext package
           provides extra documentation, in the form of example
           implementations in many different computer languages.
           The associated libasprintf package provides the runtime
@@ -114,53 +133,59 @@
           of the internationalization library itself.
         </paragraph>
       </description>
-      <component class="dll">
-        <release tarname="libgettextpo-0.17-1-mingw32-dll-0.tar.lzma" />
-        <requires eq="libintl-%-mingw32-%-dll-8.tar" />
-        <requires eq="libiconv-*-mingw32-*-dll-2.tar" />
-        <!-- update as needed, to pull in libgcc_s_dw2-1.dll -->
-        <requires eq="gcc-core-4.4.0-mingw32-dll.tar" />
-      </component>
+
       <licence tarname="gettext-%-mingw32-%-lic.tar" />
       <source tarname="gettext-%-mingw32-%-src.tar" />
+
+      <component class="dll">
+        <release tarname="libgettextpo-0.17-1-mingw32-dll-0.tar.lzma" >
+          <requires eq="mingw32-libgcc-*-mingw32-dll-1.tar" />
+          <requires eq="mingw32-libiconv-*-mingw32-*-dll-2.tar" />
+          <requires eq="mingw32-libintl-%-mingw32-%-dll-8.tar" />
+        </release>
+      </component>
     </package>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-libasprintf" alias="libasprintf">
-      <affiliate group="MSYS Developer Toolkit" />
+      <affiliate group="MinGW Autotools" />
       <description lang="en" title="libasprintf: GNU Internationalization Utility Library" >
         <paragraph>GNU gettext provides a set of tools that create a
           framework to help other GNU packages produce multi-lingual
-          messages. In this way, with suitable care a single binary
+          messages.  In this way, with suitable care a single binary
           application can automatically provide user messages (such as
           `help' text) in the language corresponding to the current
-          locale settings. libasprintf provides an implementation of
+          locale settings.  libasprintf provides an implementation of
           the C formatted output routines suitable for use in C++
           applications, where i18n is a goal.
         </paragraph>
         <paragraph>The libasprintf package provides the runtime
-          library for the asprintf utility library. The associated
+          library for the asprintf utility library.  The associated
           gettext package provides utilities that may be useful to
           end-users, allowing interaction with the message translation
-          database of other i18n-enabled GNU utilities. It also provides
+          database of other i18n-enabled GNU utilities.  It also provides
           the development libraries, header files, and documentation for
           the gettext system, as well as additional utilities useful for
-          maintainers of i18n-enabled applications. The *-ext package
+          maintainers of i18n-enabled applications.  The *-ext package
           provides extra documentation, in the form of example
-          implementations in many different computer languages. The
+          implementations in many different computer languages.  The
           associated libgettextpo package provides the runtime
           libraries needed by the gettext utilities, while the
           associated libintl package provides the runtime component
           of the internationalization library itself.
         </paragraph>
       </description>
-      <component class="dll">
-        <release tarname="libasprintf-0.17-1-mingw32-dll-0.tar.lzma" />
-        <!-- update as needed, to pull in libgcc_s_dw2-1.dll -->
-        <requires eq="gcc-core-4.4.0-mingw32-dll.tar" />
-      </component>
+
       <licence tarname="gettext-%-mingw32-%-lic.tar" />
       <source tarname="gettext-%-mingw32-%-src.tar" />
+
+      <component class="dll">
+        <release tarname="libasprintf-0.17-1-mingw32-dll-0.tar.lzma" >
+          <requires eq="mingw32-libgcc-*-mingw32-dll-1.tar" />
+        </release>
+      </component>
     </package>
+
   </package-collection>
 </software-distribution>
-<!-- vim: set nocompatible expandtab tw=80 ts=2 sw=2 ff=unix: -->
-
+<!-- vim: set nocompatible expandtab fileformat=unix textwidth=80 tabstop=2 shiftwidth=2: -->
