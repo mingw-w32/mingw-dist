@@ -25,16 +25,16 @@
 #
   mingw32-autoconf.xml:2010090600
   mingw32-automake.xml:2010090600
-  mingw32-autotools.xml:2010090600
+  mingw32-autotools.xml:2010090601
   mingw32-base.xml:2010071900
   mingw32-binutils.xml:2010061600
   mingw32-expat.xml:2010052100
   mingw32-gdb.xml:2010052101
   mingw32-gettext.xml:2010090600
-  mingw32-libiconv.xml:2010090600
+  mingw32-libiconv.xml:2010090601
   mingw32-libtool.xml:2010090600
   mingw32-make.xml:2010070100
-  mingw32-package-list.xml:2010090600
+  mingw32-package-list.xml:2010090601
   mingw32-runtime.xml:2010052101
 #
 # $RCSfile$: end of file

@@ -18,6 +18,7 @@
     </package-group>
   </package-group-hierarchy>
 
+  <!-- "real" packages ~~ those commented out are yet to be published -->
   <package-list catalogue="mingw32-autoconf" />
   <package-list catalogue="mingw32-automake" />
   <!-- package-list catalogue="mingw32-basic-bsdtar" /-->

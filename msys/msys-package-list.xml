@@ -9,17 +9,12 @@
   <package-group-hierarchy>
     <package-group name="MSYS" expand="true">
       <package-group name="MSYS Base System" />
-      <!--package-group name="MinGW Developer Toolkit" /-->
+      <package-group name="MinGW Developer Toolkit" />
       <package-group name="MSYS System Builder" />
     </package-group>
   </package-group-hierarchy>
 
   <!-- "real" packages ~~ those commented out are yet to be published -->
-  <!--package-list catalogue="mingw32-autoconf" /-->
-  <!--package-list catalogue="mingw32-automake" /-->
-  <!--package-list catalogue="mingw32-libtool" /-->
-  <!--package-list catalogue="mingw32-libiconv" /-->
-  <!--package-list catalogue="mingw32-gettext" /-->
   <package-list catalogue="msys-autoconf" />
   <package-list catalogue="msys-autogen" />
   <package-list catalogue="msys-automake" />
@@ -83,7 +78,7 @@
 
   <!-- "virtual" packages -->
   <package-list catalogue="msys-base" />
-  <!--package-list catalogue="mingw-developer-toolkit" /-->
+  <package-list catalogue="mingw-developer-toolkit" />
   <package-list catalogue="msys-system-builder" />
 
 </software-distribution>

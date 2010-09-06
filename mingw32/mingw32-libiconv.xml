@@ -50,7 +50,7 @@
     </package>
 
     <package name="mingw32-libcharset" alias="libcharset">
-      <affiliate group="MSYS Developer Toolkit" />
+      <affiliate group="MinGW Autotools" />
       <description lang="en" title="libcharset: GNU libraries and utilities for character set conversion" >
         <paragraph>GNU libiconv provides an implementation of the iconv()
           function which is used to convert between various character

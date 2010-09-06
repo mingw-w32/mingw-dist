@@ -1,5 +1,30 @@
 2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
+	Fix bugs; Add & publish mingw-developer-toolkit (aka mingw-dtk).
+
+	* mingw32/mingw32-autotools.xml: Correct subsystem; generate and
+	publish mingw32-autotools.xml.lzma.
+	* mingw32/mingw32-libiconv.xml: Correct affiliate group for
+	libcharset; generate and publish mingw32-libiconv.xml.lzma.
+
+	* mingw32/mingw32-package-list.xml: Add comment.
+	Regenerate and publish msys-package-list.xml.lzma
+
+	* mingw32/issue.log: Updated accordingly.
+
+	* msys/mingw-developer-toolkit.xml: New meta package description;
+	generate and publish mingw-developer-toolkit.xml.lzma.
+
+	* msys/msys-package-list.xml: Enable MinGW Developer Toolkit
+	package-group; remove commented-out autotool entries (now included
+	via mingw32-package-list.xml instead); Add mingw-developer-toolkit.xml
+	entry.
+	Regenerate and publish msys-package-list.xml.lzma
+
+	* msys/issue.log: Updated accordingly.
+
+2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
 	Update & publish mingw32-{autoconf,automake,libtool,libiconv,gettext}
 	Add & publish mingw32-autotools (aka autotools).
 
@@ -19,7 +44,7 @@
 	DLL requirements specs inside the dependent release entity recent
 	release of all components; update dependency on libgcc DLL; generate
 	and publish mingw32-gettext.xml.lzma.
-	* msys/mingw32-autotools.xml: New meta package description; generate
+	* mingw32/mingw32-autotools.xml: New meta package description; generate
 	and publish mingw32-autotools.xml.lzma.
 
 	* mingw32/mingw32-package-list.xml: Add (commented-out) entries for

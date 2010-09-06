@@ -3,7 +3,7 @@
 
   <!-- File: mingw32-autotools.xml -->
 
-  <package-collection subsystem="msys">
+  <package-collection subsystem="mingw32">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="mingw32-autotools" alias="autotools" class="virtual">
