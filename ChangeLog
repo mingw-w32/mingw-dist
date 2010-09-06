@@ -1,5 +1,37 @@
 2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
+	Update & publish mingw32-{cygutils,gendef,mingw-utils,pexports,popt}
+	Add & publish mingw32-pdcurses
+
+	* mingw32/mingw32-cygutils.xml: Clean up formatting; move versioned
+	DLL requirements specs inside the dependent release entity recent
+	releaseof all components; generate and publish
+	mingw32-cygutils.xml.lzma.
+	* mingw32/mingw32-gendef.xml: Clean up formatting; generate and
+	publish mingw32-gendef.xml.lzma.
+	* mingw32/mingw32-mingw-utils.xml: Clean up formatting; generate and
+	publish mingw32-mingw-utils.xml.lzma.
+	* mingw32/mingw32-pexports.xml: Clean up formatting; generate and
+	publish mingw32-pexports.xml.lzma.
+	* mingw32/mingw32-popt.xml: Clean up formatting; move versioned DLL
+	requirements specs inside the dependent release entity recent release
+	of all components; generate and publish mingw32-popt.xml.lzma.
+	* mingw32/mingw32-pdcurses.xml: New meta package description;
+	generate and publish mingw32-pdcurses.xml.lzma.
+
+	* mingw32/mingw32-package-list.xml (mingw32-cygutils): Make it
+	visible.
+	(mingw32-gendef): Ditto.
+	(mingw32-mingw-utils): Ditto.
+	(mingw32-pexports): Ditto.
+	(mingw32-popt): Ditto.
+	(mingw32-pdcurses): Ditto.
+	Regenerate and publish mingw32-package-list.xml.lzma
+
+	* mingw32/issue.log: Updated accordingly.
+
+2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
 	Update & publish mingw32-{basic-bsdtar,bzip2,libarchive,xz,zlib}
 
 	* mingw32/mingw32-basic-bsdtar.xml: Clean up formatting; generate and
