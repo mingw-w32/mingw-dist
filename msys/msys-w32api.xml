@@ -19,9 +19,9 @@
           constituting a standard API for the development of applications
           which utilise the capabilities of the 32-bit MS-Windows system
           dynamic link libraries, configured specifically for use with the
-          MSYS System Builder toolset.  It should be installed into the
-          / == /usr (that is, C:\msys\1.0) directory, and NOT into the
-          usual MinGW location /mingw (C:\MinGW).
+          MSYS System Builder (msys-dvlpr) toolset.  It should be installed
+          into the / == /usr (that is, C:\msys\1.0) directory, and NOT intoo
+          the usual MinGW location /mingw (C:\MinGW).
         </paragraph>
         <paragraph>
           Install this component only if you intend to create MSYS-dependent
@@ -29,15 +29,15 @@
         </paragraph>
       </description>
 
-      <component class="dev">
-        <release tarname="w32api-3.14-3-msys-1.0.12-dev.tar.lzma" />
-      </component>
       <!-- The -dev package includes licence and documentation -->
       <licence tarname="w32api-%-msys-%-dev.tar.lzma" />
       <source tarname="w32api-%-msys-%-src.tar.lzma" />
+
+      <component class="dev">
+        <release tarname="w32api-3.14-3-msys-1.0.12-dev.tar.lzma" />
+      </component>
     </package>
 
   </package-collection>
 </software-distribution>
-<!-- vim: set nocompatible expandtab tw=80 ts=2 sw=2 ff=unix: -->
-
+<!-- vim: set nocompatible expandtab fileformat=unix textwidth=80 tabstop=2 shiftwidth=2: -->

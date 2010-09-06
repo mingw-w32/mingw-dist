@@ -14,35 +14,38 @@
           This package provides the MSYS implementation of the GNU C and
           C++ language compilers; this includes the C preprocessor, and
           the common back end processors which are necessary to these two
-          language compilers. It has been compiled specifically for
-          generating MSYS-dependent applications and libraries. It should
+          language compilers.  It has been compiled specifically for
+          generating MSYS-dependent applications and libraries.  It should
           be installed into the / == /usr (that is, C:\msys\1.0) directory,
-          and NOT into the usual MinGW location /mingw (C:\MinGW). It is
-          part of the MSYS System Builder toolset.
+          and NOT into the usual MinGW location /mingw (C:\MinGW).  It is
+          part of the MSYS System Builder (msys-dvlpr) toolset.
         </paragraph>
         <paragraph>
           Install this component only if you intend to create MSYS-dependent
           applications.
         </paragraph>
       </description>
+
+      <license tarname="gcc-%-msys-%-lic.tar.lzma" />
+      <source tarname="gcc-%-msys-%-src.tar.lzma" />
+
       <component class="bin" >
-        <release tarname="gcc-3.4.4-3-msys-1.0.13-bin.tar.lzma" />
+        <requires ge="msys-binutils-*-msys-*-bin.tar" />
         <requires ge="msys-core-*-msys-*-bin.tar" />
         <requires ge="msys-core-*-msys-*-dev.tar" />
-        <requires ge="msys-binutils-*-msys-*-bin.tar" />
         <requires ge="msys-w32api-*-msys-*-dev.tar" />
+        <release tarname="gcc-3.4.4-3-msys-1.0.13-bin.tar.lzma" />
       </component>
+
       <component class="doc" >
         <release tarname="gcc-3.4.4-3-msys-1.0.13-doc.tar.lzma" />
       </component>
+
       <component class="lic" >
         <release tarname="gcc-3.4.4-3-msys-1.0.13-lic.tar.lzma" />
       </component>
-      <license tarname="gcc-%-msys-%-lic.tar.lzma" />
-      <source tarname="gcc-%-msys-%-src.tar.lzma" />
     </package>
 
   </package-collection>
 </software-distribution>
-<!-- vim: set nocompatible expandtab tw=80 ts=2 sw=2 ff=unix: -->
-
+<!-- vim: set nocompatible expandtab fileformat=unix textwidth=80 tabstop=2 shiftwidth=2: -->

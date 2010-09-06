@@ -16,28 +16,31 @@
           specifically for use generating MSYS libraries and applications.
           It should be installed into the / == /usr (that is, C:\msys\1.0)
           directory, and NOT into the usual MinGW location /mingw (C:\MinGW).
-          It is part of the MSYS System Builder toolset.
+          It is part of the MSYS System Builder (msys-dvlpr) toolset.
         </paragraph>
         <paragraph>
           Install this component only if you intend to create MSYS-dependent
           applications.
         </paragraph>
       </description>
+
+      <licence tarname="binutils-%-msys-%-lic.tar.lzma" />
+      <source tarname="binutils-%-msys-%-src.tar.lzma" />
+
       <component class="bin" >
         <release tarname="binutils-2.19.51-3-msys-1.0.13-bin.tar.lzma" />
         <requires ge="msys-core-*-msys-*-bin.tar" />
       </component>
+
       <component class="doc" >
         <release tarname="binutils-2.19.51-3-msys-1.0.13-doc.tar.lzma" />
       </component>
+
       <component class="lic" >
         <release tarname="binutils-2.19.51-3-msys-1.0.13-lic.tar.lzma" />
       </component>
-      <licence tarname="binutils-%-msys-%-lic.tar.lzma" />
-      <source tarname="binutils-%-msys-%-src.tar.lzma" />
     </package>
 
   </package-collection>
 </software-distribution>
-<!-- vim: set nocompatible expandtab tw=80 ts=2 sw=2 ff=unix: -->
-
+<!-- vim: set nocompatible expandtab fileformat=unix textwidth=80 tabstop=2 shiftwidth=2: -->

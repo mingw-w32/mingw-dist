@@ -23,8 +23,11 @@
 # MinGW Project, accept liability for any damages, however caused,
 # arising from the use of this software.
 #
+  msys-autoconf.xml:2010090600
+  msys-automake.xml:2010090600
   msys-base.xml:2010080900
   msys-bash.xml:2010071901
+  msys-binutils.xml:2010090600
   msys-bison.xml:2010090600
   msys-bzip2.xml:2010080500
   msys-console.xml:2010090600
@@ -40,6 +43,7 @@
   msys-findutils.xml:2010080600
   msys-flex.xml:2010090600
   msys-gawk.xml:2010072600
+  msys-gcc.xml:2010090600
   msys-gdbm.xml:2010090500
   msys-gettext.xml:2010080500
   msys-gmp.xml:2010090600
@@ -50,6 +54,7 @@
   msys-less.xml:2010080500
   msys-libarchive.xml:2010090600
   msys-libiconv.xml:2010071900
+  msys-libtool.xml:2010090600
   msys-libxml2.xml:2010090600
   msys-lndir.xml:2010090500
   msys-lpr-enhanced.xml:2010090600
@@ -60,7 +65,7 @@
   msys-mktemp.xml:2010090500
   msys-openssh.xml:2010090600
   msys-openssl.xml:2010090600
-  msys-package-list.xml:2010090602
+  msys-package-list.xml:2010090603
   msys-patch.xml:2010081000
   msys-perl.xml:2010090500
   msys-popt.xml:2010080900
@@ -68,11 +73,13 @@
   msys-regex.xml:2010080500
   msys-rxvt.xml:2010090600
   msys-sed.xml:2010072600
+  msys-system-builder.xml:2010090600
   msys-tar.xml:2010072800
   msys-termcap.xml:2010071900
   msys-texinfo.xml:2010080900
   msys-unzip.xml:2010090600
   msys-vim.xml:2010090600
+  msys-w32api.xml:2010090600
   msys-wget.xml:2010090600
   msys-xz.xml:2010080500
   msys-zip.xml:2010090600
