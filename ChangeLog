@@ -1,5 +1,36 @@
 2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
+	Update & publish mingw32-{basic-bsdtar,bzip2,libarchive,xz,zlib}
+
+	* mingw32/mingw32-basic-bsdtar.xml: Clean up formatting; generate and
+	publish mingw32-basic-bsdtar.xml.lzma.
+	* mingw32/mingw32-bzip2.xml: Clean up formatting; move versioned DLL
+	requirements specs inside the dependent release entity recent release
+	of all components; generate and publish mingw32-bzip2.xml.lzma.
+	* mingw32/mingw32-libarchive.xml: Clean up formatting; move versioned
+	DLL requirements specs inside the dependent release entity recent
+	release of all components; generate and publish
+	mingw32-libarchive.xml.lzma.
+	* mingw32/mingw32-xz.xml: Clean up formatting; reduce to deliver
+	only the latest available release; move versioned DLL requirements
+	specs inside the dependent release entity recent release of all
+	components; generate and publish mingw32-xz.xml.lzma.
+	* mingw32/mingw32-zlib.xml: Clean up formatting; move versioned DLL
+	requirements specs inside the dependent release entity recent release
+	of all components; generate and publish mingw32-zlib.xml.lzma.
+
+	* mingw32/mingw32-package-list.xml (mingw32-basic-bsdtar): Make it
+	visible.
+	(mingw32-bzip2): Ditto.
+	(mingw32-libarchive): Ditto.
+	(mingw32-xz): Ditto.
+	(mingw32-zlib): Ditto.
+	Regenerate and publish mingw32-package-list.xml.lzma
+
+	* mingw32/issue.log: Updated accordingly.
+
+2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
 	Fix bugs; Add & publish mingw-developer-toolkit (aka mingw-dtk).
 
 	* mingw32/mingw32-autotools.xml: Correct subsystem; generate and
