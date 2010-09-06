@@ -1,5 +1,42 @@
 2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
+	Update & publish mingw32-{autoconf,automake,libtool,libiconv,gettext}
+	Add & publish mingw32-autotools (aka autotools).
+
+	* mingw32/mingw32-autoconf.xml: Clean up formatting; reduce to deliver
+	only the latest available release; generate and publish
+	mingw32-autoconf.xml.lzma.
+	* mingw32/mingw32-automake.xml: Clean up formatting; generate and
+	publish mingw32-automake.xml.lzma.
+	* mingw32/mingw32-libiconv.xml: Clean up formatting; move versioned
+	DLL requirements specs inside the dependent release entity recent
+	release of all components; generate and publish
+	mingw32-libiconv.xml.lzma.
+	* mingw32/mingw32-libtool.xml: Clean up formatting; update to deliver
+	the latest available release; generate and publish
+	mingw32-libtool.xml.lzma.
+	* mingw32/mingw32-gettext.xml: Clean up formatting; move versioned
+	DLL requirements specs inside the dependent release entity recent
+	release of all components; update dependency on libgcc DLL; generate
+	and publish mingw32-gettext.xml.lzma.
+	* msys/mingw32-autotools.xml: New meta package description; generate
+	and publish mingw32-autotools.xml.lzma.
+
+	* mingw32/mingw32-package-list.xml: Add (commented-out) entries for
+	unpublished manifests. Sort manifest list -- but keep manifests for
+	meta packages separated.
+	(mingw32-autoconf): Make it visible.
+	(mingw32-automake): Ditto.
+	(mingw32-libiconv): Ditto.
+	(mingw32-libtool): Ditto.
+	(mingw32-gettext): Ditto.
+	(mingw32-autotools): Ditto.
+	Regenerate and publish msys-package-list.xml.lzma
+
+	* mingw32/issue.log: Updated accordingly.
+
+2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
 	Update & publish msys-{guile,autogen}
 
 	* msys/msys-guile.xml: Clean up formatting; generate and publish
@@ -32,7 +69,8 @@
 	* msys/msys-gcc.xml: Ditto (generate and publish msys-gcc.xml.lzma).
 	* msys/msys-w32api.xml: Ditto (generate and publish
 	msys-w32api.xml.lzma).
-	* msys/msys-system-builder.xml: New meta package description.
+	* msys/msys-system-builder.xml: New meta package description; generate
+	and publish msys-system-builder.xml.lzma.
 
 	* msys/msys-package-list.xml (msys-autoconf): Make it visible.
 	(msys-automake): Ditto.
