@@ -1,3 +1,17 @@
+2010-09-10  Chris Sutcliffe  <ir0nh34d@gmail.com>
+
+	Update & publish mingw32-{gdb,runtime}
+
+	* mingw32/mingw32-gdb.xml: Clean up formatting; add source and licence
+	specifications; add new doc component; generate and publish
+	mingw32-gdb.xml.lzma.
+	* mingw32/mingw32-runtime.xml: Clean up formatting; reduce to deliver
+	only the latest available releases; restore mingw-runtime alias; add
+	source and licence specifications; ensure -dev component requires -dll
+	component; generate and publish mingw32-runtime.xml.lzma.
+
+	* mingw32/issue.log: Updated accordingly.
+
 2010-09-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Update & publish mingw32-{cygutils,gendef,mingw-utils,pexports,popt}
