@@ -302,14 +302,17 @@
         <requires eq="msys-perl-*-msys-*-bin.tar" />
         <requires eq="msys-texinfo-*-msys-*-bin.tar" />
         <release tarname="automake1.11-1.11-1-mingw32-bin.tar.lzma" />
+        <release tarname="automake1.11-1.11.1-1-mingw32-bin.tar.lzma" />
       </component>
 
       <component class="doc">
         <release tarname="automake1.11-1.11-1-mingw32-doc.tar.lzma" />
+        <release tarname="automake1.11-1.11.1-1-mingw32-doc.tar.lzma" />
       </component>
 
       <component class="lic">
         <release tarname="automake1.11-1.11-1-mingw32-lic.tar.lzma" />
+        <release tarname="automake1.11-1.11.1-1-mingw32-lic.tar.lzma" />
       </component>
     </package>
 

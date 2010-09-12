@@ -1,3 +1,11 @@
+2010-09-11  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update & publish mingw32-automake.
+
+	* mingw32/mingw32-automake.xml: Add new automake-1.11.1 release.
+
+	* mingw32/issue.log: Updated accordingly.
+
 2010-09-10  Chris Sutcliffe  <ir0nh34d@gmail.com>
 
 	Update & publish mingw32-{gdb,runtime}
