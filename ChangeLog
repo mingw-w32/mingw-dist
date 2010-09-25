@@ -1,3 +1,13 @@
+2010-09-25  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update & publish mingw32-libtool, mingw32-gdb.
+
+	* mingw32/mingw32-libtool.xml: Add new libtool-2.4-1 release.
+
+	* mingw32/mingw32-gdb.xml: Add missing libexpat-dll requirement.
+
+	* mingw32/issue.log: Updated accordingly.
+
 2010-09-11  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Update & publish mingw32-automake.

@@ -37,14 +37,17 @@
         <requires eq="msys-texinfo-*-msys-*-bin.tar" />
         <!-- libtool doesn't actually depend on its own runtime library -->
         <release tarname="libtool-2.2.11a-1-mingw32-bin.tar.lzma" />
+        <release tarname="libtool-2.4-1-mingw32-bin.tar.lzma" />
       </component>
 
       <component class="doc">
         <release tarname="libtool-2.2.11a-1-mingw32-doc.tar.lzma" />
+        <release tarname="libtool-2.4-1-mingw32-doc.tar.lzma" />
       </component>
 
       <component class="lic">
         <release tarname="libtool-2.2.11a-1-mingw32-lic.tar.lzma" />
+        <release tarname="libtool-2.4-1-mingw32-lic.tar.lzma" />
       </component>
     </package>
 
@@ -69,11 +72,15 @@
 
       <component class="dll">
         <release tarname="libltdl-2.2.11a-1-mingw32-dll-7.tar.lzma" />
+        <release tarname="libltdl-2.4-1-mingw32-dll-7.tar.lzma" />
       </component>
 
       <component class="dev">
         <requires eq="mingw32-libtool-%-mingw32-%-bin.tar" />
         <release tarname="libltdl-2.2.11a-1-mingw32-dev.tar.lzma" >
+          <requires eq="mingw32-libltdl-%-mingw32-%-dll-7.tar" />
+        </release>
+        <release tarname="libltdl-2.4-1-mingw32-dev.tar.lzma" >
           <requires eq="mingw32-libltdl-%-mingw32-%-dll-7.tar" />
         </release>
       </component>

@@ -22,6 +22,7 @@
         <release tarname="gdb-7.2-1-mingw32-bin.tar.lzma" >
           <source tarname="gdb-%-mingw32-src.tar.lzma" />
           <licence tarname="gdb-%-mingw32-doc.tar.lzma" />
+          <requires eq="mingw32-libexpat-*-mingw32-*-dll-1.tar" />
         </release>
         <release tarname="gdb-7.1-2-mingw32-bin.tar.gz" >
           <source tarname="gdb-7.1-src.tar.gz" />

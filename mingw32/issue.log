@@ -32,12 +32,12 @@
   mingw32-bzip2.xml:2010090600
   mingw32-cygutils.xml:2010090600
   mingw32-expat.xml:2010052100
-  mingw32-gdb.xml:2010091000
+  mingw32-gdb.xml:2010092500
   mingw32-gendef.xml:2010090600
   mingw32-gettext.xml:2010090600
   mingw32-libarchive.xml:2010090600
   mingw32-libiconv.xml:2010090601
-  mingw32-libtool.xml:2010090600
+  mingw32-libtool.xml:2010092500
   mingw32-make.xml:2010070100
   mingw32-mingw-utils.xml:2010090600
   mingw32-package-list.xml:2010090603
