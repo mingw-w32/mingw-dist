@@ -24,13 +24,13 @@
 # arising from the use of this software.
 #
   mingw-developer-toolkit.xml:2010090600
-  msys-autoconf.xml:2010090600
+  msys-autoconf.xml:2010092500
   msys-autogen.xml:2010090600
   msys-automake.xml:2010090600
   msys-base.xml:2010080900
   msys-bash.xml:2010071901
   msys-binutils.xml:2010090600
-  msys-bison.xml:2010090600
+  msys-bison.xml:2010092500
   msys-bzip2.xml:2010080500
   msys-console.xml:2010090600
   msys-core.xml:2010080500
@@ -57,7 +57,7 @@
   msys-less.xml:2010080500
   msys-libarchive.xml:2010090600
   msys-libiconv.xml:2010071900
-  msys-libtool.xml:2010090600
+  msys-libtool.xml:2010092600
   msys-libxml2.xml:2010090600
   msys-lndir.xml:2010090500
   msys-lpr-enhanced.xml:2010090600

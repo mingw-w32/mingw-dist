@@ -45,14 +45,17 @@
         <requires eq="msys-texinfo-*-msys-*-bin.tar" />
         <!-- libtool doesn't actually depend on its own runtime library -->
         <release tarname="libtool-2.2.7a-2-msys-1.0.13-bin.tar.lzma" />
+        <release tarname="libtool-2.4-1-msys-1.0.15-bin.tar.lzma" />
       </component>
 
       <component class="doc">
         <release tarname="libtool-2.2.7a-2-msys-1.0.13-doc.tar.lzma" />
+        <release tarname="libtool-2.4-1-msys-1.0.15-doc.tar.lzma" />
       </component>
 
       <component class="lic">
         <release tarname="libtool-2.2.7a-2-msys-1.0.13-lic.tar.lzma" />
+        <release tarname="libtool-2.4-1-msys-1.0.15-lic.tar.lzma" />
       </component>
     </package>
 
@@ -85,6 +88,7 @@
 
       <component class="dll">
         <release tarname="libltdl-2.2.7a-2-msys-1.0.13-dll-7.tar.lzma" />
+        <release tarname="libltdl-2.4-1-msys-1.0.15-dll-7.tar.lzma" />
 
         <!-- Every MSYS DLL package requires msys-core-bin -->
         <requires eq="msys-core-*-msys-*-bin.tar" />
@@ -93,6 +97,9 @@
       <component class="dev">
         <requires eq="msys-libtool-%-msys-%-bin.tar" />
         <release tarname="libltdl-2.2.7a-2-msys-1.0.13-dev.tar.lzma" >
+          <requires eq="msys-libltdl-%-msys-%-dll-7.tar" />
+        </release>
+        <release tarname="libltdl-2.4-1-msys-1.0.15-dev.tar.lzma" >
           <requires eq="msys-libltdl-%-msys-%-dll-7.tar" />
         </release>
       </component>

@@ -28,6 +28,7 @@
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-m4-*-msys-*-bin.tar" />
         <release tarname="bison-2.4.2-1-msys-1.0.13-bin.tar.lzma" >
           <requires eq="msys-libintl-*-msys-*-dll-8.tar" />
         </release>

@@ -1,3 +1,15 @@
+2010-09-26  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update & publish msys-autoconf, msys-libtool, msys-bison.
+
+	* msys/msys-autoconf.xml: Add new autoconf-2.67-1 release.
+
+	* msys/msys-libtool.xml: Add new libtool-2.4-1 release.
+
+	* msys/msys-bison.xml: Add missing msys-m4-bin requirement.
+
+	* msys/issue.log: Updated accordingly.
+
 2010-09-25  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Update & publish mingw32-libtool, mingw32-gdb.
