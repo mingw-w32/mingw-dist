@@ -1,3 +1,17 @@
+2010-09-30  Cesar Strauss  <cestrauss@gmail.com>
+
+	Update & publish msys-core, mingw32-gcc4.
+
+	* msys/msys-core.xml: Update to 1.0.16.
+
+	* mingw32/mingw32-gcc4.xml: Add missing	dependency on
+	mingw32-pthreads-w32-dev.
+	Remove direct dependency on libpthread-2.dll.
+
+	* msys/issue.log: Updated accordingly.
+
+	* mingw/issue.log: Ditto.
+
 2010-09-26  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Update & publish msys-autoconf, msys-libtool, msys-bison.

@@ -36,7 +36,7 @@
         <requires eq="libssp-%-mingw32-dll-0.tar" />
         <requires eq="libmpc-*-mingw32-dll-2.tar" />
         <requires eq="libgomp-%-mingw32-dll-1.tar" />
-        <requires eq="libpthread-*-mingw32-dll-2.tar" />
+        <requires eq="pthreads-w32-*-mingw32-dev.tar" />
         <release tarname="gcc-core-4.5.0-1-mingw32-bin.tar.lzma" />
       </component>
 
