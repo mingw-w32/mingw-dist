@@ -11,7 +11,7 @@
         <paragraph>Mintty is a terminal emulator for Cygwin and Cygwin
           derivatives such as MSYS.
         </paragraph>
-        <paragraph>To launch MSYS in an rxvt window, create a shortcut
+        <paragraph>To launch MSYS in a mintty window, create a shortcut
           to C:\msys\1.0\msys.bat, with the argument "--mintty". Some
           people find mintty a more accomodating terminal than cmd.exe, since
           it may be resized at will and has a larger scrollback buffer.

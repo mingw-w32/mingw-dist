@@ -1,5 +1,9 @@
 2010-10-07  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
+	* msys/msys-mintty.xml: Fix typo.
+
+2010-10-07  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
 	* msys/msys-package-list.xml: Add msys-mintty.
 	Regenerate and publish msys-package-list.xml.lzma
 	* msys/issue.log: Updated accordingly.
