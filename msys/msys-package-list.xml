@@ -55,6 +55,7 @@
   <package-list catalogue="msys-make" />
   <package-list catalogue="msys-man" />
   <package-list catalogue="msys-minires" />
+  <package-list catalogue="msys-mintty" />
   <package-list catalogue="msys-mktemp" />
   <package-list catalogue="msys-openssh" />
   <package-list catalogue="msys-openssl" />
