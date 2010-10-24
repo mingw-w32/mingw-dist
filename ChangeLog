@@ -1,3 +1,9 @@
+2010-10-24  Cesar Strauss  <cestrauss@gmail.com>
+
+	Update & publish msys-bash.
+	* msys/msys-bash.xml: Update to 3.1.17-4.
+	* msys/issue.log: Updated accordingly.
+
 2010-10-07  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	* msys/msys-mintty.xml: Fix typo.
