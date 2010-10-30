@@ -1,6 +1,17 @@
+2010-10-29  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add and publish manifest for mingw-get.
+
+	* mingw32/mingw32-mingw-get.xml: New file;
+	generate and publish mingw32-mingw-get.xml.lzma
+	* mingw32/mingw32-package-list.xml: Register it; regenerate and
+	publish mingw32-package-list.xml.lzma
+	* mingw32/issue.log: Update accordingly.
+
 2010-10-24  Cesar Strauss  <cestrauss@gmail.com>
 
 	Update & publish msys-bash.
+
 	* msys/msys-bash.xml: Update to 3.1.17-4.
 	* msys/issue.log: Updated accordingly.
 
