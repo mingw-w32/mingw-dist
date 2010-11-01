@@ -1,5 +1,14 @@
 2010-10-29  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Work around for improper chronological sorting of release status
+	fields; (issue reported by Chris Sutcliffe).
+
+	* mingw32/mingw32-mingw-get.xml (all package components): Present
+	release records in reverse chronological (newest first) order.
+	* mingw32/issue.log: Republish, and update accordingly.
+
+2010-10-29  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Add and publish manifest for mingw-get.
 
 	* mingw32/mingw32-mingw-get.xml: New file;
