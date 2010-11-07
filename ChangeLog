@@ -1,3 +1,10 @@
+2010-10-24  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish msys-mintty.
+
+	* msys/msys-bash.xml: Update to 0.9.2-1.
+	* msys/issue.log: Updated accordingly.
+
 2010-10-29  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Work around for improper chronological sorting of release status
