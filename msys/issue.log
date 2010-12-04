@@ -28,7 +28,7 @@
   msys-autogen.xml:2010090600
   msys-automake.xml:2010090600
   msys-base.xml:2010080900
-  msys-bash.xml:2010102400
+  msys-bash.xml:2010120400
   msys-binutils.xml:2010090600
   msys-bison.xml:2010092500
   msys-bzip2.xml:2010080500
@@ -65,7 +65,7 @@
   msys-make.xml:2010080900
   msys-man.xml:2010090600
   msys-minires.xml:2010090500
-  msys-mintty.xml:2010110700
+  msys-mintty.xml:2010120400
   msys-mktemp.xml:2010090500
   msys-openssh.xml:2010090600
   msys-openssl.xml:2010090600
