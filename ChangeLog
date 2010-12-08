@@ -1,3 +1,10 @@
+2010-12-08  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish mingw32-make.
+
+	* mingw32/mingw32-make.xml: Update to 3.82-4.
+	* mingw32/issue.log: Updated accordingly.
+
 2010-12-04  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish msys-mintty.

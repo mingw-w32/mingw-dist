@@ -21,15 +21,23 @@
           comparison.
         </paragraph>
       </description>
-      <release tarname="make-3.82-1-mingw32-bin.tar.lzma">
-          <source tarname="make-3.82-1-mingw32-src.tar.lzma" />
-      </release>
-      <release tarname="make-3.81.90-20100618-1-mingw32-bin.tar.lzma">
-          <source tarname="make-3.81.90-20100618-1-mingw32-src.tar.lzma" />
-      </release>
-      <release tarname="make-3.81-20090914-mingw32-bin.tar.gz">
-          <source tarname="make-3.81-20090914-mingw32-src.tar.gz" />
-      </release>
+
+      <source tarname="make-%-mingw32-src.tar" />
+      <licence tarname="make-%-mingw32-doc.tar" />
+
+      <component class="bin">
+        <release tarname="make-3.82-4-mingw32-bin.tar.lzma" />
+        <release tarname="make-3.81.90-20100618-1-mingw32-bin.tar.lzma" />
+        <release tarname="make-3.81-20090914-mingw32-bin.tar.gz" />
+      </component>
+
+      <component class="doc">
+        <release tarname="make-3.82-4-mingw32-doc.tar.lzma" />
+      </component>
+
+      <component class="lang">
+        <release tarname="make-3.82-4-mingw32-lang.tar.lzma" />
+      </component>
     </package>
   </package-collection>
 </software-distribution>
