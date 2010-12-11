@@ -17,15 +17,25 @@
           This is a required component of the MinGW Compiler Suite.
         </paragraph>
       </description>
-      <release tarname="binutils-2.20.51-1-mingw32-bin.tar.lzma">
-        <source tarname="binutils-2.20.51-1-mingw32-src.tar.lzma" />
-      </release>
-      <release tarname="binutils-2.20.1-2-mingw32-bin.tar.gz">
-        <source tarname="binutils-2.20.1-src.tar.gz" />
-      </release>
-      <release tarname="binutils-2.20-1-mingw32-bin.tar.gz" />
-      <release tarname="binutils-2.19.1-mingw32-bin.tar.gz">
-        <source tarname="binutils-2.19.1-src.tar.gz" />
+
+      <source tarname="binutils-%-mingw32-src.tar" />
+      <licence tarname="binutils-%-mingw32-doc.tar" />
+
+      <component class="bin">
+        <release tarname="binutils-2.21-1-mingw32-bin.tar.lzma" />
+        <release tarname="binutils-2.20.51-1-mingw32-bin.tar.lzma" />
+        <release tarname="binutils-2.20.1-2-mingw32-bin.tar.gz" />
+        <release tarname="binutils-2.20-1-mingw32-bin.tar.gz" />
+        <release tarname="binutils-2.19.1-mingw32-bin.tar.gz" />
+      </component>
+
+      <component class="doc">
+        <release tarname="binutils-2.21-1-mingw32-doc.tar.lzma" />
+      </component>
+
+      <component class="lang">
+        <release tarname="binutils-2.21-1-mingw32-lang.tar.lzma" />
+      </component>
       </release>
     </package>
 
