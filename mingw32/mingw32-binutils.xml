@@ -36,7 +36,6 @@
       <component class="lang">
         <release tarname="binutils-2.21-2-mingw32-lang.tar.lzma" />
       </component>
-      </release>
     </package>
 
   </package-collection>
