@@ -1,3 +1,17 @@
+2010-12-30  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish msys-mintty.
+
+	* msys/msys-mintty.xml: Update to 0.9.5-1.
+	* msys/issue.log: Updated accordingly.
+
+2010-12-19  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish msys-mintty.
+
+	* msys/msys-mintty.xml: Update to 0.9.4-1.
+	* msys/issue.log: Updated accordingly.
+
 2010-12-13  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	* mingw32/mingw32-binutils.xml: Remove spurious release tag.
