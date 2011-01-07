@@ -1,3 +1,13 @@
+2010-10-24  Cesar Strauss  <cestrauss@gmail.com>
+
+	Add a few missing entries to mingw32/issue.log.
+
+	* mingw32/issue.log (mingw32-gcc3.xml): Add missing entry.
+	(mingw32-gmp.xml): Ditto.
+	(mingw32-mpc.xml): Ditto.
+	(mingw32-mpfr.xml): Ditto.
+	(mingw32-pthreads-w32.xml): Ditto.
+
 2010-12-30  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish msys-mintty.
