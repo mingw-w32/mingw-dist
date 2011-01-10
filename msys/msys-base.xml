@@ -22,7 +22,7 @@
       </description>
 
       <component class="bin">
-        <release tarname="msys-base-@YYYYMMDDNN@-msys-bin.meta" />
+        <release tarname="msys-tiny-@YYYYMMDDNN@-msys-bin.meta" />
         <requires eq="msys-bash-*-msys-*-bin.tar" />
         <requires eq="msys-coreutils-*-msys-*-bin.tar" />
       </component>

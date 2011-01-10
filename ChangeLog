@@ -1,3 +1,11 @@
+2011-01-10  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Correct improperly named meta package reference.
+
+	* msys/msys-base.xml (msys-tiny): Change package name reference...
+	(msys-base-@YYYYMMDDNN@-msys-bin.meta): ...from this incorrect name...
+	(msys-tiny-@YYYYMMDDNN@-msys-bin.meta): ...to this.
+
 2011-01-07  Cesar Strauss  <cestrauss@gmail.com>
 
 	Add a few missing entries to mingw32/issue.log.
