@@ -1,5 +1,12 @@
 2011-01-12  Cesar Strauss  <cestrauss@gmail.com>
 
+	Update & publish mingw32-gcc4.
+
+	* mingw32/mingw32-gcc4.xml: Update to 4.5.2-1.
+	* mingw32/issue.log: Updated accordingly.
+
+2011-01-12  Cesar Strauss  <cestrauss@gmail.com>
+
 	Fix incorrectly named tarball.
 
 	* mingw32/mingw32-gcc4.xml (mingw32-gcc-objc): Change tarball name...
