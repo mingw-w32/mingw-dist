@@ -257,7 +257,7 @@
 
       <requires eq="gcc-core-%-mingw32-bin.tar" />
       <requires eq="libobjc-%-mingw32-dll-2.tar" />
-      <release tarname="gcc-c++-4.5.0-1-mingw32-bin.tar.lzma" />
+      <release tarname="gcc-objc-4.5.0-1-mingw32-bin.tar.lzma" />
     </package>
 
     <package name="mingw32-libobjc" alias="libobjc">
