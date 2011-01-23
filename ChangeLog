@@ -1,3 +1,10 @@
+2011-01-23  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish mingw32-make.
+
+	* mingw32/mingw32-make.xml: Update to 3.82-5.
+	* mingw32/issue.log: Updated accordingly.
+
 2011-01-12  Cesar Strauss  <cestrauss@gmail.com>
 
 	Update & publish mingw32-gcc4.
@@ -31,6 +38,7 @@
 	(mingw32-mpfr.xml): Ditto.
 	(mingw32-pthreads-w32.xml): Ditto.
 
+>>>>>>> 1.54
 2010-12-30  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish msys-mintty.
