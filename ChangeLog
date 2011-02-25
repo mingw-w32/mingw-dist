@@ -1,3 +1,10 @@
+2011-02-25  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Fix typo/version mismatch in msys-console.
+
+	* msys/msys-console.xml: Correct subsystem version.
+	* msys/issue.log: Updated accordingly.
+
 2011-02-24  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Update & publish msys-console.
