@@ -1,3 +1,10 @@
+2011-02-24  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update & publish msys-console.
+
+	* msys/msys-console.xml: Update to 2.00b147-1.
+	* msys/issue.log: Updated accordingly.
+
 2011-02-01  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish mingw32-binutils.

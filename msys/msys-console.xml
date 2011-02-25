@@ -38,14 +38,18 @@
         <requires eq="msys-mktemp-*-msys-*-bin.tar" />
         <requires eq="msys-sed-*-msys-*-bin.tar" />
         <requires eq="msys-unzip-*-msys-*-bin.tar" />
+        <requires eq="msys-wget-*-msys-*-bin.tar" />
+        <release tarname="console-2.00b147-1-msys-1.0.14-bin.tar.lzma" />
         <release tarname="console-2.00b146-1-msys-1.0.14-bin.tar.lzma" />
       </component>
 
       <component class="doc">
+        <release tarname="console-2.00b147-1-msys-1.0.14-doc.tar.lzma" />
         <release tarname="console-2.00b146-1-msys-1.0.14-doc.tar.lzma" />
       </component>
 
       <component class="lic">
+        <release tarname="console-2.00b147-1-msys-1.0.14-lic.tar.lzma" />
         <release tarname="console-2.00b146-1-msys-1.0.14-lic.tar.lzma" />
       </component>
     </package>
