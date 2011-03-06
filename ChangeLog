@@ -1,3 +1,10 @@
+2011-03-05  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish w32api.
+
+	* mingw32/mingw32-runtime.xml: Update w32api to 3.16-1.
+	* mingw32/issue.log: Updated accordingly.
+
 2011-02-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Update for mingw-get-0.1-alpha-5.2 bug-fix release.
