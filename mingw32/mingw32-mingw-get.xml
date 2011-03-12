@@ -27,6 +27,7 @@
       </description>
 
       <component class="bin">
+        <release tarname="mingw-get-0.2-mingw32-alpha-1-bin.tar.gz" />
         <release tarname="mingw-get-0.1-mingw32-alpha-5.2-bin.tar.gz" />
         <release tarname="mingw-get-0.1-mingw32-alpha-5.1-bin.tar.gz" />
         <release tarname="mingw-get-0.1-mingw32-alpha-5-bin.tar.gz" />
@@ -35,6 +36,7 @@
       </component>
 
       <component class="lic">
+        <release tarname="mingw-get-0.2-mingw32-alpha-1-lic.tar.gz" />
         <release tarname="mingw-get-0.1-mingw32-alpha-5.2-lic.tar.gz" />
         <release tarname="mingw-get-0.1-mingw32-alpha-5.1-lic.tar.gz" />
         <release tarname="mingw-get-0.1-mingw32-alpha-5-lic.tar.gz" />
