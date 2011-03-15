@@ -48,7 +48,7 @@
 
       <component class="bin">
         <release tarname="gettext-0.17-2-msys-1.0.13-bin.tar.lzma">
-          <requires eq="msys-libintl-%-msys-%-dll-8.tar" />
+          <requires eq="msys-libintl-%-msys-*-dll-8.tar" />
           <requires eq="msys-libiconv-*-msys-*-dll-2.tar" />
         </release>
       </component>
@@ -63,8 +63,8 @@
 
       <component class="dev">
         <release tarname="gettext-0.17-2-msys-1.0.13-dev.tar.lzma">
-          <requires eq="msys-libgettextpo-%-msys-%-dll-0.tar" />
-          <requires eq="msys-libintl-%-msys-%-dll-8.tar" />
+          <requires eq="msys-libgettextpo-%-msys-*-dll-0.tar" />
+          <requires eq="msys-libintl-%-msys-*-dll-8.tar" />
           <requires eq="msys-libiconv-*-msys-*-dll-2.tar" />
           <requires eq="msys-libexpat-*-msys-*-dll-1.tar" />
           <requires eq="msys-libtermcap-*-msys-*-dll-0.tar.lzma" />
@@ -118,7 +118,8 @@
       <licence tarname="gettext-%-msys-%-lic.tar" />
 
       <component class="dll">
-        <release tarname="libintl-0.17-2-msys-dll-8.tar.lzma">
+        <release tarname="libintl-0.17-2-msys-1.0.13-dll-8.tar.lzma">
+          <download tarname="libintl-0.17-2-msys-dll-8.tar.lzma" />
           <requires eq="msys-libiconv-*-msys-*-dll-2.tar" />
         </release>
         <requires eq="msys-core-*-msys-*-bin.tar" />
@@ -169,8 +170,9 @@
       <licence tarname="gettext-%-msys-%-lic.tar" />
 
       <component class="dll">
-        <release tarname="libgettextpo-0.17-2-msys-dll-0.tar.lzma">
-          <requires eq="msys-libintl-%-msys-%-dll-8.tar" />
+        <release tarname="libgettextpo-0.17-2-msys-1.0.13-dll-0.tar.lzma">
+          <download tarname="libgettextpo-0.17-2-msys-dll-0.tar.lzma" />
+          <requires eq="msys-libintl-%-msys-*-dll-8.tar" />
           <requires eq="msys-libiconv-*-msys-*-dll-2.tar" />
           <requires eq="msys-libtermcap-*-msys-*-dll-0.tar.lzma" />
         </release>
@@ -222,7 +224,9 @@
       <licence tarname="gettext-%-msys-%-lic.tar" />
 
       <component class="dll">
-        <release tarname="libasprintf-0.17-2-msys-dll-0.tar.lzma" />
+        <release tarname="libasprintf-0.17-2-msys-1.0.13-dll-0.tar.lzma">
+          <download tarname="libasprintf-0.17-2-msys-dll-0.tar.lzma" />
+        </release>
         <requires eq="msys-core-*-msys-*-bin.tar" />
       </component>
     </package>

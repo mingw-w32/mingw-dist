@@ -1,5 +1,17 @@
 2011-03-15  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Correct inconsistencies in msys-gettext package names.
+
+	* msys/msys-gettext.xml (msys-gettext): Make dependencies independent
+	of MSYS version number; (match using "*" wild-card instead of "%").
+	(msys-libintl, msys-libgettextpo, msys-libasprintf): Likewise; also
+	include MSYS version number (1.0.13) in release specifications, adding
+	"download" tags to map modified release names to actual tarball names.
+
+	* msys/issue.log: Update for publication.
+
+2011-03-15  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Update for mingw-get-0.2-alpha-2 release.
 
 	* mingw32/mingw32-mingw-get.xml: Add release entries.
