@@ -47,6 +47,31 @@
       </component>
     </package>
 
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <package name="mingw32-pkginfo" alias="pkginfo">
+      <description lang="en" title="MinGW Package Identification Tool">
+        <paragraph>pkginfo is a tool which may be used to parse and analyse
+          the names of packages provided by the MinGW/MSYS Project.  It uses
+          the same lexical analyser as mingw-get, to extract meta-data from
+          any specified package name.
+        </paragraph>
+        <paragraph>It is usually of interest only to members of the MinGW/MSYS
+          Project Team, who may use it to confirm that their chosen package
+          names convey the intended meta-data to mingw-get.
+        </paragraph>
+      </description>
+
+      <licence tarname="mingw-get-%-mingw32-%-lic.tar" />
+      <source tarname="mingw-get-%-mingw32-%-src.tar" />
+
+      <component class="bin">
+        <release tarname="pkginfo-0.2-mingw32-alpha-2-bin.tar.gz" />
+        <release tarname="pkginfo-0.1-mingw32-alpha-5.2-bin.tar.gz" />
+        <release tarname="pkginfo-0.1-mingw32-alpha-4-bin.tar.gz" />
+      </component>
+    </package>
+
   </package-collection>
 </software-distribution>
 <!-- vim: set nocompatible expandtab fileformat=unix textwidth=82 tabstop=2 shiftwidth=2: -->

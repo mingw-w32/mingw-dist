@@ -1,3 +1,13 @@
+2011-03-16  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Add and publish specification for mingw32-pkginfo package.
+
+	* mingw32/mingw32-mingw-get.xml (mingw32-pkginfo): New package;
+	add free-standing specification, (there are no dependencies), with...
+	(pkginfo): ...this alias name.
+
+	* mingw32/issue.log: Update accordingly.
+
 2011-03-15  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Correct inconsistencies in msys-gettext package names.
