@@ -1,3 +1,10 @@
+2011-03-18  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish msys-vim.
+
+	* msys/msys-vim.xml: Update vim to 7.3-1.
+	* msys/issue.log: Updated accordingly.
+
 2011-03-16  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Add and publish specification for mingw32-pkginfo package.
@@ -34,6 +41,7 @@
 	* mingw32/mingw32-mingw-get.xml: Add release entries.
 	* mingw32/issue.log: Update accordingly.
 
+>>>>>>> 1.66
 2011-03-11  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish w32api.

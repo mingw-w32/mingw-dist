@@ -33,8 +33,8 @@
   msys-bison.xml:2010092500
   msys-bzip2.xml:2010080500
   msys-console.xml:2011022501
-  msys-coreutils.xml:2010071901
   msys-core.xml:2010100100
+  msys-coreutils.xml:2010071901
   msys-crypt.xml:2010090500
   msys-cvs.xml:2010090600
   msys-cygutils.xml:2010080900
@@ -47,7 +47,7 @@
   msys-gawk.xml:2010072600
   msys-gcc.xml:2010090600
   msys-gdbm.xml:2010090500
-  msys-gettext.xml:2011031500
+  msys-gettext.xml:2011031800
   msys-gmp.xml:2010090600
   msys-grep.xml:2010072600
   msys-groff.xml:2010090600
@@ -82,7 +82,7 @@
   msys-termcap.xml:2010071900
   msys-texinfo.xml:2010080900
   msys-unzip.xml:2010090600
-  msys-vim.xml:2010090600
+  msys-vim.xml:2011031800
   msys-w32api.xml:2010090600
   msys-wget.xml:2010090600
   msys-xz.xml:2010080500
