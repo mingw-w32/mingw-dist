@@ -1,3 +1,10 @@
+2011-03-19  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish msys-vim.
+
+	* msys/msys-vim.xml: Update vim to 7.3-2.
+	* msys/issue.log: Updated accordingly.
+
 2011-03-18  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish msys-vim.
