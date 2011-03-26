@@ -1,3 +1,10 @@
+2011-03-25  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish w32api.
+
+	* mingw32/mingw32-runtime.xml: Update w32api to 3.17-2.
+	* mingw32/issue.log: Updated accordingly.
+
 2011-03-19  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish msys-vim.
@@ -48,7 +55,6 @@
 	* mingw32/mingw32-mingw-get.xml: Add release entries.
 	* mingw32/issue.log: Update accordingly.
 
->>>>>>> 1.66
 2011-03-11  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish w32api.

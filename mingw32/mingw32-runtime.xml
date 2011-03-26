@@ -55,6 +55,10 @@
       </description>
 
       <component class="dev">
+        <release tarname="w32api-3.17-2-mingw32-dev.tar.lzma" >
+          <licence tarname="w32api-%-mingw32-dev.tar.lzma" />
+          <source tarname="w32api-%-mingw32-src.tar.lzma" />
+        </release>
         <release tarname="w32api-3.17-1-mingw32-dev.tar.lzma" >
           <licence tarname="w32api-%-mingw32-dev.tar.lzma" />
           <source tarname="w32api-%-mingw32-src.tar.lzma" />
