@@ -1,3 +1,10 @@
+2011-04-21  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish msys-mintty.
+
+	* msys/msys-mintty.xml: Update to 0.9.7-1.
+	* msys/issue.log: Updated accordingly.
+
 2011-03-31  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Update for mingw-get-0.2-alpha-3 release.
