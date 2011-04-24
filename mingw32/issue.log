@@ -53,6 +53,6 @@
   mingw32-pthreads-w32.xml:2010083100
   mingw32-runtime.xml:2011032600
   mingw32-xz.xml:2010090600
-  mingw32-zlib.xml:2010090600
+  mingw32-zlib.xml:2011042400
 #
 # $RCSfile$: end of file

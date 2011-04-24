@@ -21,14 +21,17 @@
 
       <component class="doc">
         <release tarname="zlib-1.2.3-1-mingw32-doc.tar.gz" />
+        <release tarname="zlib-1.2.5-1-mingw32-doc.tar.lzma" />
       </component>
 
       <component class="lic">
         <release tarname="zlib-1.2.3-1-mingw32-lic.tar.gz" />
+        <release tarname="zlib-1.2.5-1-mingw32-lic.tar.lzma" />
       </component>
 
       <component class="man">
         <release tarname="zlib-1.2.3-1-mingw32-man.tar.gz" />
+        <release tarname="zlib-1.2.5-1-mingw32-man.tar.lzma" />
       </component>
     </package>
 
@@ -47,10 +50,16 @@
 
       <component class="dll">
         <release tarname="libz-1.2.3-1-mingw32-dll-1.tar.gz" />
+        <release tarname="libz-1.2.5-1-mingw32-dll-1.tar.lzma" >
+          <requires eq="mingw32-libgcc-*-mingw32-dll-1.tar" />
+        </release>
       </component>
 
       <component class="dev">
         <release tarname="libz-1.2.3-1-mingw32-dev.tar.gz" >
+          <requires eq="mingw32-libz-%-mingw32-%-dll-1.tar" />
+        </release>
+        <release tarname="libz-1.2.5-1-mingw32-dev.tar.lzma" >
           <requires eq="mingw32-libz-%-mingw32-%-dll-1.tar" />
         </release>
       </component>

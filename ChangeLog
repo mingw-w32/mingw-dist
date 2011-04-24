@@ -1,3 +1,10 @@
+2011-04-23  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update & publish mingw32-zlib.
+
+	* mingw32/mingw32-zlib.xml: Update to 1.2.5-1.
+	* mingw32/issue.log: Updated accordingly.
+
 2011-04-21  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish msys-mintty.
