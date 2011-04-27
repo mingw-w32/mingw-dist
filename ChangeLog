@@ -1,3 +1,10 @@
+2011-04-27  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update & publish msys-perl.
+
+	* msys/msys-perl.xml: Update to 5.8.8-1.
+	* msys/issue.log: Updated accordingly.
+
 2011-04-24  Cesar Strauss  <cestrauss@gmail.com>
 
 	Update & publish msys-core.
