@@ -3,7 +3,7 @@
 # $Id$
 #
 # Written by Keith Marshall  <keithmarshall@users.sourceforge.net>
-# Copyright (C) 2010, MinGW Project
+# Copyright (C) 2010, 2011, MinGW Project
 #
 #
 # Configuration script for mingw-dist
@@ -22,7 +22,7 @@
 # MinGW Project, accept liability for any damages, however caused,
 # arising from the use of this software.
 #
-  AC_INIT([mingw-dist],[0.0],[http://mingw.org/reporting_bugs])
+  AC_INIT([mingw-dist],[1.0],[http://mingw.org/reporting_bugs])
 
 # Check for required tools.
 #
@@ -32,7 +32,6 @@
 #
   AC_CONFIG_FILES([Makefile])
   AC_CONFIG_FILES([Makefile.comm])
-  AC_CONFIG_FILES([Makefile.sync])
   AC_FOREACH([subdir],[common mingw32 msys],
   [AC_CONFIG_FILES(subdir[/Makefile:Makefile.stub.in])dnl
    mingw_ac_subdirs=${mingw_ac_subdirs+"${mingw_ac_subdirs} "}"subdir"dnl

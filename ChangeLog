@@ -1,3 +1,27 @@
+2011-05-04  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Remove defunct CVS specific synchronisation goals.
+	Base (re)publication decisions on changing SHA1 hashes.
+
+	* common/issue.log: Add SHA1 hashes to publication records.
+	* mingw32/issue.log msys/issue.log: Likewise.
+
+	* Makefile.comm.in (issue_key, sha1hash): New macros; define them.
+	(%.xml.lzma): Adapt build commands to use them; make the output files
+	self-synchronising to current publication state.
+	(all-sync, all-sync-to-cvs, all-sync-offline): ...
+	(all-sync-begin, all-sync-offline-begin, all-sync-to-cvs-begin): ...
+	(all-sync-to-cvs-or-offline): Defunct goals; remove them.
+	(all-sync, all-sync-to-cvs): Delete all residual references.
+	(cvsroot, repository): Defunct macros; remove them.
+
+	* Makefile.in (all-sync, all-sync-to-cvs, all-sync-offline): Defunct
+	goals; remove them.
+
+	* Makefile.sync.in: File no longer required; remove it.
+	* configure.ac (AC_CONFIG_FILES): Adjust accordingly.
+	(AC_INIT): Set package version as 1.0
+
 2011-04-27  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Update & publish msys-perl.

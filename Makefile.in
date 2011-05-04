@@ -3,7 +3,7 @@
 # $Id$
 #
 # Written by Keith Marshall <keithmarshall@users.sourceforge.net>
-# Copyright (C) 2010, MinGW Project
+# Copyright (C) 2010, 2011, MinGW Project
 #
 #
 # Makefile template for generating mingw-get distribution manifests.
@@ -40,6 +40,6 @@ FORCE:
 # level, the action for each is equivalent to that to be performed for
 # the `all' goal.
 #
-all-sync all-sync-offline all-sync-to-cvs all-distfiles: all
+all-distfiles: all
 
 # $RCSfile$: end of file

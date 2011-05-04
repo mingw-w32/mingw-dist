@@ -3,7 +3,7 @@
 # $Id$
 #
 # Written by Keith Marshall <keithmarshall@users.sourceforge.net>
-# Copyright (C) 2010, MinGW Project
+# Copyright (C) 2010, 2011, MinGW Project
 #
 #
 # Makefile template for generating mingw-get distribution manifests.
@@ -31,7 +31,7 @@ VPATH = ${srcdir}
 #
 LN_S = @LN_S@
 
-all: all-sync all-distfiles
+all: all-distfiles
 
 # To accommodate a top-level make on just a single subdirectory, we list
 # each of the managed subdirectories as an independent goal, invoking the
@@ -58,7 +58,16 @@ all-distfiles: unpublished $(DISTFILES) $(auto-distfiles)
 # can share a common issue number registry).
 #
 issue_number = YYYYMMDDNN
+issue_key = awk '$$3 == "$*.xml" { print $$1 }' issue.new
 issue_log = ${srcdir}/issue.log
+
+# We use SHA1 hashes to determine when source files have been changed
+# from the last published version, as recorded in `issue.log'; the hash
+# is computed by openssl, after filtering the source through awk; (this
+# ensures that the computed hash is not influenced by any unintentional
+# pollution due to accidental insertion of CRLF line endings).
+#
+sha1hash = awk '{ sub( "\r$$", "" ); print }' $< | openssl sha1
 
 # Formatting within issue.log is controlled by PAD and TAB settings.
 #
@@ -78,19 +87,26 @@ PAD = "  "
 #
 %.xml.lzma: %.xml
 	>> $(issue_log)
-	sed '/^$(TAB)*$$/d;/^$(TAB)*#/d' $(issue_log) > issue.tmp
-	sed -n '/^$(TAB)*$$/q;/^$(TAB)*[^#]/q;p' $(issue_log) > issue.new
-	test x$${issue="`sed -n 's/^$(TAB)*$*.xml://p' $(issue_log)`"} = x && \
-	  issue=0 && echo $(PAD)"$*.xml:0" >> issue.tmp; \
-	test $$issue -lt $${mark="`date -u +%Y%m%d`00"} && \
-	  issue=$$mark || issue=`expr $$issue + 1`; \
-	sed "s/^\($(TAB)*$*.xml:\).*/\1$$issue/" issue.tmp | sort >> issue.new; \
+	rm -f issue.new issue.tmp
+	sed '/^$(TAB)*$$/d;/^$(TAB)*#/d' $(issue_log) > issue.new
+	issue=`awk '$$3 == "$*.xml" { print $$2 }' issue.new`; \
+	if test x$${hash="`$(sha1hash)`"} != x"`$(issue_key)`"; then \
+	  test -n "$$issue" || issue=0; \
+	  test $$issue -lt $${mark="`date -u +%Y%m%d`00"} && \
+	    issue=$$mark || issue=`expr $$issue + 1`; \
+	  awk '$$3 != "$*.xml"' issue.new > issue.tmp; \
+	  echo $(PAD)$$hash $$issue $*.xml >> issue.tmp; \
+	  fi; \
 	sed "s/@$(issue_number)@/$$issue/" $< | lzma -c > $@
-	sed -n 's/^$(TAB)*$$/break/;1,/^$(TAB)*[^#]/d;/^$(TAB)*#/p' \
-	  $(issue_log) >> issue.new
-	rm -f $(issue_log) issue.tmp
-	mv issue.new $(issue_log)
-	cd unpublished && $(LN_S) ../$@ .
+	if test -f issue.tmp; then \
+	  sed -n '/^$(TAB)*$$/q;/^$(TAB)*[^#]/q;p' $(issue_log) > issue.new; \
+	  LC_COLLATE=POSIX sort -k3 issue.tmp >> issue.new; \
+	  sed -n 's/^$(TAB)*$$/break/;1,/^$(TAB)*[^#]/d;/^$(TAB)*#/p' \
+	    $(issue_log) >> issue.new; \
+	  rm -f $(issue_log) && mv issue.new $(issue_log); \
+	  cd unpublished && $(LN_S) -f ../$@ .; \
+	  fi
+	rm -f issue.new issue.tmp
 
 .PHONY: FORCE
 # An internal target, to specify a dependency which must always be updated.
@@ -105,38 +121,5 @@ FORCE:
 ${srcdir}/*.xml: unpublished
 unpublished: FORCE
 	test -d unpublished || mkdir unpublished
-
-# Before creating any set of files for publication, the local working copy
-# of the entire publication data set needs to be synchronised with the state
-# of any externally published copies.  This is accomplished with reference
-# to the publication state as recorded in the `issue.log' files which may
-# be found in each publication subdirectory; the `all-sync-offline' and
-# `all-sync-to-cvs' targets fulfil this requirement, allowing the user to
-# select between synchronising to the locally recorded publication state as
-# is, or (preferably) after first synchronising the local state with the
-# state as recorded in the master CVS repository, respectively.
-#
-cvsroot = `cat ${srcdir}/CVS/Root`
-repository = `cat ${srcdir}/CVS/Repository`
-
-all-sync-offline: all-sync-offline-begin all-sync-to-cvs-or-offline
-all-sync all-sync-to-cvs: all-sync-to-cvs-begin all-sync-to-cvs-or-offline
-
-all-sync-begin: FORCE
-	rm -rf tmp
-
-all-sync-offline-begin: all-sync-begin
-	mkdir tmp
-
-all-sync-to-cvs-begin: all-sync-begin
-	cvs -z3 -Q -d ${cvsroot} checkout -A -d tmp ${repository}/issue.log
-	rm -f $(issue_log); mv tmp/issue.log $(issue_log)
-
-all-sync-to-cvs-or-offline: FORCE
-	$(LN_S) ../$(issue_log) tmp
-	for file in ${srcdir}/*.xml *.xml.lzma; do \
-	  if test -f $$file; then $(LN_S) ../$$file tmp; fi; done
-	cd tmp && $(MAKE) -f ../../Makefile.sync $@
-	rm -rf tmp
 
 # $RCSfile$: end of file

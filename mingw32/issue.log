@@ -23,36 +23,36 @@
 # MinGW Project, accept liability for any damages, however caused,
 # arising from the use of this software.
 #
-  mingw32-autoconf.xml:2010090600
-  mingw32-automake.xml:2010091200
-  mingw32-autotools.xml:2010090601
-  mingw32-base.xml:2010071900
-  mingw32-basic-bsdtar.xml:2010090600
-  mingw32-binutils.xml:2011021600
-  mingw32-bzip2.xml:2010090600
-  mingw32-cygutils.xml:2010090600
-  mingw32-expat.xml:2010052100
-  mingw32-gcc3.xml:2010083100
-  mingw32-gcc4.xml:2011011200
-  mingw32-gdb.xml:2010092500
-  mingw32-gendef.xml:2010090600
-  mingw32-gettext.xml:2010090600
-  mingw32-gmp.xml:2010083100
-  mingw32-libarchive.xml:2010090600
-  mingw32-libiconv.xml:2010090601
-  mingw32-libtool.xml:2010092500
-  mingw32-make.xml:2011012200
-  mingw32-mingw-get.xml:2011033100
-  mingw32-mingw-utils.xml:2010090600
-  mingw32-mpc.xml:2010083100
-  mingw32-mpfr.xml:2010083100
-  mingw32-package-list.xml:2010102900
-  mingw32-pdcurses.xml:2010090600
-  mingw32-pexports.xml:2010090600
-  mingw32-popt.xml:2010090600
-  mingw32-pthreads-w32.xml:2010083100
-  mingw32-runtime.xml:2011032600
-  mingw32-xz.xml:2010090600
-  mingw32-zlib.xml:2011042400
+  69c3b1322a6264f115c1a21c0fd3fae366003df9 2010090600 mingw32-autoconf.xml
+  d2238e76f7af6de4c662cd2ef8e1cd40f04bbb1c 2010091200 mingw32-automake.xml
+  e2f730e78dc27254776b672fc007a4bef3dd0f56 2010090601 mingw32-autotools.xml
+  c93e459947ca3f90e0fc98490d05f8a6e2120aae 2010071900 mingw32-base.xml
+  7ff448c34d1b3e7d49f9c10bbe4630366d0d9f3d 2010090600 mingw32-basic-bsdtar.xml
+  89f2e01067e79bd79bf30d3e547874e58b065397 2011021600 mingw32-binutils.xml
+  b02dc7d1ec48f9e9de3e0d04ccc79f4529f7e60f 2010090600 mingw32-bzip2.xml
+  07b4037fb26f3015890c27e07f6e292bba1c2dbb 2010090600 mingw32-cygutils.xml
+  f22aef52f7062813148d3ea1f4477b7ee05f5f5a 2010052100 mingw32-expat.xml
+  27195c5e1d8c510104d2bc802452b94f842e27d9 2010083100 mingw32-gcc3.xml
+  375d70d2455d16e61be672a0555afabb5ed9a21e 2011011200 mingw32-gcc4.xml
+  ed67389f5a0499eddc5d715357a4893bb1cad92a 2010092500 mingw32-gdb.xml
+  432e7e89cfc138836b6b39930d81c5d054882ea4 2010090600 mingw32-gendef.xml
+  7244fccd3713760a3afda6b9e4908a9610a645b3 2010090600 mingw32-gettext.xml
+  753225ffa6c00882b8e5aaf0c1be392e75dad30d 2010083100 mingw32-gmp.xml
+  f307a17c1cb7b7b4cc038c7cd159e2943e35ba9e 2010090600 mingw32-libarchive.xml
+  2ae06d7a2cc868e73b3a0c43a6c3973abd983cbf 2010090601 mingw32-libiconv.xml
+  cd96b5759d4b1bc19c4e71c5c35980092659c2f8 2010092500 mingw32-libtool.xml
+  0f5fd373c90d9acc6cd7f63120375707b81d4fb5 2011012200 mingw32-make.xml
+  a4cd18c1b0799bf6c0f99a13ac4df783d350db72 2011033100 mingw32-mingw-get.xml
+  3dff337479c4ce7122fdfb0c194146fe2e47c74b 2010090600 mingw32-mingw-utils.xml
+  397021010754b50cdbbe5d5003b1f6217158ec8e 2010083100 mingw32-mpc.xml
+  c35e6513fa814743400729714413bd749ff148ef 2010083100 mingw32-mpfr.xml
+  8ef4390ea4b7b44d06492e41601a0f49e6c09ada 2010102900 mingw32-package-list.xml
+  f00d8a451ba74658073db3cfae44a0d3dbaf3ed9 2010090600 mingw32-pdcurses.xml
+  e0b11cf1f8b8bc2229c34905e4ce5fedfeb52778 2010090600 mingw32-pexports.xml
+  85218a27818c20463c1bb520f8a3044969406fbc 2010090600 mingw32-popt.xml
+  1dd5cd39ee78cb9895ddf42b0621b5ffe0176bc4 2010083100 mingw32-pthreads-w32.xml
+  5581a30ffc9af24b9d8fcb2b04c3661f26ddd226 2011032600 mingw32-runtime.xml
+  713bf38bf91f67c0e1bdb9cc379285c10c3d7afb 2010090600 mingw32-xz.xml
+  09f15afc1c832abdf7ecf7d983d8633a90c89697 2011042400 mingw32-zlib.xml
 #
 # $RCSfile$: end of file

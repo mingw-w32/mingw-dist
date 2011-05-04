@@ -23,70 +23,70 @@
 # MinGW Project, accept liability for any damages, however caused,
 # arising from the use of this software.
 #
-  mingw-developer-toolkit.xml:2010090600
-  msys-autoconf.xml:2010092500
-  msys-autogen.xml:2010090600
-  msys-automake.xml:2010090600
-  msys-base.xml:2011011000
-  msys-bash.xml:2010120400
-  msys-binutils.xml:2010090600
-  msys-bison.xml:2010092500
-  msys-bzip2.xml:2010080500
-  msys-console.xml:2011022501
-  msys-core.xml:2011042400
-  msys-coreutils.xml:2010071901
-  msys-crypt.xml:2010090500
-  msys-cvs.xml:2010090600
-  msys-cygutils.xml:2010080900
-  msys-dash.xml:2010090600
-  msys-diffutils.xml:2010072800
-  msys-expat.xml:2010081000
-  msys-file.xml:2010080900
-  msys-findutils.xml:2010080600
-  msys-flex.xml:2010090600
-  msys-gawk.xml:2010072600
-  msys-gcc.xml:2010090600
-  msys-gdbm.xml:2010090500
-  msys-gettext.xml:2011031800
-  msys-gmp.xml:2010090600
-  msys-grep.xml:2010072600
-  msys-groff.xml:2010090600
-  msys-guile.xml:2010090600
-  msys-gzip.xml:2010072800
-  msys-inetutils.xml:2010090600
-  msys-less.xml:2010080500
-  msys-libarchive.xml:2010090600
-  msys-libiconv.xml:2010071900
-  msys-libtool.xml:2010092600
-  msys-libxml2.xml:2010090600
-  msys-lndir.xml:2010090500
-  msys-lpr-enhanced.xml:2010090600
-  msys-m4.xml:2010081000
-  msys-make.xml:2010080900
-  msys-man.xml:2010090600
-  msys-minires.xml:2010090500
-  msys-mintty.xml:2011042200
-  msys-mktemp.xml:2010090500
-  msys-openssh.xml:2010090600
-  msys-openssl.xml:2010090600
-  msys-package-list.xml:2010100700
-  msys-patch.xml:2010081000
-  msys-perl.xml:2011042700
-  msys-popt.xml:2010080900
-  msys-rebase.xml:2010090600
-  msys-regex.xml:2010080500
-  msys-rxvt.xml:2010090600
-  msys-sed.xml:2010072600
-  msys-system-builder.xml:2010090600
-  msys-tar.xml:2010072800
-  msys-termcap.xml:2010071900
-  msys-texinfo.xml:2010080900
-  msys-unzip.xml:2010090600
-  msys-vim.xml:2011031900
-  msys-w32api.xml:2010090600
-  msys-wget.xml:2010090600
-  msys-xz.xml:2010080500
-  msys-zip.xml:2010090600
-  msys-zlib.xml:2010080900
+  ce5435d81de37b3f0026eeadcfc184837b1ae8ec 2010090600 mingw-developer-toolkit.xml
+  dfd9cb4f354c07f66eba1de1453ec4eeb6171e50 2010092500 msys-autoconf.xml
+  f8c23efaeaf06405cd535a6ae5959b0983516d00 2010090600 msys-autogen.xml
+  acc3d8687855178ac17c98d655743ccf80a916ae 2010090600 msys-automake.xml
+  686ef0ba0dea36ed8a6f296aade584cbc37085fb 2011011000 msys-base.xml
+  c3c0cdf4e07d21dcc2e48278258996973f929d07 2010120400 msys-bash.xml
+  e52982cbff0b0bb825461deb9af0411f72f2e4a2 2010090600 msys-binutils.xml
+  f812f86da6a3be1878ba17c595163d2c66560fbc 2010092500 msys-bison.xml
+  841a297cf2ab5f2b94dfe51639bacb40a71c4900 2010080500 msys-bzip2.xml
+  016cf8d399c06af0b3325a64b42ebb9a1c3e4d71 2011022501 msys-console.xml
+  5df8bb6c305878bc2cda8235c03ffff371110787 2011042400 msys-core.xml
+  f04efd5a14ad1c491fe4120a281c148ffcaade8a 2010071901 msys-coreutils.xml
+  c88ce7c6e1a2dddcff4924eeac963c82d4fad9f1 2010090500 msys-crypt.xml
+  818d3a20f85464f4641e7c4a1a9f92c0a190373b 2010090600 msys-cvs.xml
+  eda455371db497bb83193712da725c6f2ec8524d 2010080900 msys-cygutils.xml
+  20ea54bde4876deded24112b2b69bf4a56109efb 2010090600 msys-dash.xml
+  c3c1de61dab88cf0d909a1a4a7d6a4e31a03d7d9 2010072800 msys-diffutils.xml
+  caade7aec2195638c25c88566b9b38666963ac33 2010081000 msys-expat.xml
+  200be8fa97e9d397e6d439b3b14fbb4622d55258 2010080900 msys-file.xml
+  a51b6d345576ed4f74e5c901269b529c1c7f7669 2010080600 msys-findutils.xml
+  2b32312712ad417388de9b194a158fc447584518 2010090600 msys-flex.xml
+  6aa97d803a65db8d618207eceb7c9bf1873c89a7 2010072600 msys-gawk.xml
+  567a81647f6705107b69c8e708e2197bf39192c2 2010090600 msys-gcc.xml
+  7e1d3ffc844599932810c1f1acab90a683a2ca68 2010090500 msys-gdbm.xml
+  64460eaf329486ec4f23e74732ab387398424c13 2011031800 msys-gettext.xml
+  cbc021bf76163836e8d1c5cf6c2f5c9c6d57ce91 2010090600 msys-gmp.xml
+  250eac2963984324caa9d6233a96a7395be529fc 2010072600 msys-grep.xml
+  85165509f0dc3b7319e7fb24bbcaaf99437868f2 2010090600 msys-groff.xml
+  2fcd6a4ee24dea76373c433bf60b829e07c2d265 2010090600 msys-guile.xml
+  3de9e82f88247132a08b5a0173471f0654b710b6 2010072800 msys-gzip.xml
+  475e04ecb555319cdf316af52b1941e54e86d70d 2010090600 msys-inetutils.xml
+  4abbf2f7c0420e8d3ea103f2702e9a1ce9716d76 2010080500 msys-less.xml
+  56e6c0366c46c0dda4d522875110cc57adc35bfa 2010090600 msys-libarchive.xml
+  5fa39a4fafd0d69490452886979b2e76d5179238 2010071900 msys-libiconv.xml
+  10af8234c925b2622c133ec71b8cad50121d919a 2010092600 msys-libtool.xml
+  9d8699606d6add2da79c110c8021fa2bc41b6cce 2010090600 msys-libxml2.xml
+  ace5b7a5d479b7307e605f45766de58a4c6a490c 2010090500 msys-lndir.xml
+  ce5135107382ed5fd306bf46c9a69b3c94c9bd9c 2010090600 msys-lpr-enhanced.xml
+  7bffc15a279dedc6de2eebe7509e21222cefe3ef 2010081000 msys-m4.xml
+  ec5afb31494c1b3406a55b0fb370748021c54e70 2010080900 msys-make.xml
+  ab247fb69c9891a5988890ddb71d7ad14f9fd8b5 2010090600 msys-man.xml
+  23034cbb3524c78949550109086d88a1decbf237 2010090500 msys-minires.xml
+  c0902b4df2aa854f9ed5038bf1f0a97406fa86b0 2011042200 msys-mintty.xml
+  67d785915f786d195fd2fab5a0b59fad0337b6c5 2010090500 msys-mktemp.xml
+  3bd4da5adb392657a7f4e28715c30aee87c6e5a9 2010090600 msys-openssh.xml
+  2902a92042e440f0b0f46ef8fdb3c0c17af48d63 2010090600 msys-openssl.xml
+  113afbae95941e2882995eb70f89270a6ca0fc0c 2010100700 msys-package-list.xml
+  791f69a07674cad4e57c562e583432b48a7bc8d4 2010081000 msys-patch.xml
+  52ce9085a89646d5830394b29f3352baa3f88b45 2011042700 msys-perl.xml
+  29c5202d3f4ef244fad94b3d4b34673612df38cd 2010080900 msys-popt.xml
+  25fa44b9bdf48be926aa01f7290cfdebaeb92443 2010090600 msys-rebase.xml
+  00e25e5a049ee12dd2d502c1a1275f0823e6e974 2010080500 msys-regex.xml
+  094f8c82e164908cac0da9c9d7340f055dd9f0c1 2010090600 msys-rxvt.xml
+  7bf3e063f14fbe52243606ec37f77bd3c0bac947 2010072600 msys-sed.xml
+  2328296bf87dfefe62d06792cef153ce10109bc8 2010090600 msys-system-builder.xml
+  88a03ecf24109cd17299554fcfa88ceaedc872fd 2010072800 msys-tar.xml
+  47d538ae61c7baec8a472cc96f0c8e49a4f6b833 2010071900 msys-termcap.xml
+  af5654d7e3b1ab576177796d82c746d0163034ac 2010080900 msys-texinfo.xml
+  d5172ee0eeb9f43e68b4c9e607c9e215ff3aa470 2010090600 msys-unzip.xml
+  f83f717a24bd1cc66a2f8c5b7de0abc3aced67c3 2011031900 msys-vim.xml
+  9f12fffede2f0a8b48e18a0f3cbc269344667f45 2010090600 msys-w32api.xml
+  b0042f26ea373c68f019e22932b31f0108bc55d5 2010090600 msys-wget.xml
+  5fa3fbec51630bac80840c280819f575433c1e19 2010080500 msys-xz.xml
+  fa05273d1914fbf0ee39744b94075abd7e0dbc18 2010090600 msys-zip.xml
+  8fc3c5dcd125cb53cbd4c5a3643f7668ea9b43de 2010080900 msys-zlib.xml
 #
 # $RCSfile$: end of file
