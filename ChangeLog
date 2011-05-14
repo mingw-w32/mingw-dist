@@ -1,3 +1,10 @@
+2011-05-14  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Update for mingw-get-0.2-alpha-4 release.
+
+	* mingw32/mingw32-mingw-get.xml: Add release entries.
+	* mingw32/issue.log: Update accordingly.
+
 2011-05-04  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Ensure all (sub)packages have at least one explicit
