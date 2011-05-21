@@ -1,3 +1,10 @@
+2011-05-21  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update & publish mingw32-bzip2.
+
+	* mingw32/mingw32-bzip2.xml: Update to 1.0.6-1
+	* mingw32/issue.log: Updated accordingly.
+
 2011-05-14  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Update for mingw-get-0.2-alpha-4 release.
