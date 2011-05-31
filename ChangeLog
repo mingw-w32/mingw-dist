@@ -1,3 +1,10 @@
+2011-05-31  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Work around MSYS' `openssl sha1' output format anomaly.
+
+	* Makefile.comm.in (sha1sum): New macro; define it.
+	(sha1hash): Use it.
+
 2011-05-30  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish msys-mintty.

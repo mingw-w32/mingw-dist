@@ -67,7 +67,8 @@ issue_log = ${srcdir}/issue.log
 # ensures that the computed hash is not influenced by any unintentional
 # pollution due to accidental insertion of CRLF line endings).
 #
-sha1hash = awk '{ sub( "\r$$", "" ); print }' $< | openssl sha1
+sha1hash = awk '{ sub( "\r$$", "" ); print }' $< | $(sha1sum)
+sha1sum = openssl sha1 | awk '{print $$NF}'
 
 # Formatting within issue.log is controlled by PAD and TAB settings.
 #
