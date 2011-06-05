@@ -28,7 +28,7 @@
       </component>
     </package>
 
-    <package name="msys-base" class="virtual">
+    <package name="msys-base" alias="msys" class="virtual">
       <affiliate group="MSYS Base System" />
       <description lang="en" title="A Basic MSYS Installation (meta)">
         <paragraph>This meta package contains the components necessary

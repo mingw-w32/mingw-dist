@@ -10,7 +10,7 @@
   <package-collection subsystem="mingw32">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
-    <package name="mingw32-base" alias="base" class="virtual" >
+    <package name="mingw32-base" alias="base mingw mingw32" class="virtual" >
       <affiliate group="MinGW Base System" />
       <description lang="en" title="A Basic MinGW Installation" >
         <paragraph>This meta package provides a basic GCC installation,

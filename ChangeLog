@@ -1,3 +1,12 @@
+2011-06-05  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	Add new aliases for mingw32-base and msys-base
+	* mingw32/mingw32-base.xml: Add 'mingw' and 'mingw32' aliases
+	for mingw32-base.
+	* mingw32/issue.log: Update accordingly.
+	* msys/msys-base.xml: Add 'msys' alias for msys-base.
+	* msys/issue.log: Update accordingly.
+
 2011-05-31  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Work around MSYS' `openssl sha1' output format anomaly.
