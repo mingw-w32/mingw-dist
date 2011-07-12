@@ -1,3 +1,13 @@
+2011-07-11  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update mingw32-pthreads; coordinate publication with gcc.
+	* mingw32/mingw32-pthreads-w32.xml: Restructure & rename.
+	Update to 2.9.0-pre snapshot from 20110507. New packages:
+	mingw32-libpthreadgc, mingw32-libpthreadgce, mingw32-libquserex,
+	and mingw32-libpthread-old (containing just libpthread-2.dll for
+	backwards compatibility).
+	* mingw32/issue.: Update accordingly.
+
 2011-06-05  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	Add new aliases for mingw32-base and msys-base
