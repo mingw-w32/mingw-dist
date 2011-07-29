@@ -8,6 +8,13 @@
 	backwards compatibility).
 	* mingw32/issue.: Update accordingly.
 
+2011-06-17  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Update for mingw-get-0.3-alpha-2 release.
+
+	* mingw32/mingw32-mingw-get.xml: Add release entries.
+	* mingw32/issue.log: Update accordingly.
+
 2011-06-05  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	Add new aliases for mingw32-base and msys-base
