@@ -27,31 +27,17 @@
       </description>
 
       <component class="bin">
+        <release tarname="mingw-get-0.3-mingw32-alpha-2.1-bin.tar.xz" />
         <release tarname="mingw-get-0.3-mingw32-alpha-2-bin.tar.gz" />
         <release tarname="mingw-get-0.3-mingw32-alpha-1-bin.tar.gz" />
         <release tarname="mingw-get-0.2-mingw32-alpha-4-bin.tar.gz" />
-        <release tarname="mingw-get-0.2-mingw32-alpha-3-bin.tar.gz" />
-        <release tarname="mingw-get-0.2-mingw32-alpha-2-bin.tar.gz" />
-        <release tarname="mingw-get-0.2-mingw32-alpha-1-bin.tar.gz" />
-        <release tarname="mingw-get-0.1-mingw32-alpha-5.2-bin.tar.gz" />
-        <release tarname="mingw-get-0.1-mingw32-alpha-5.1-bin.tar.gz" />
-        <release tarname="mingw-get-0.1-mingw32-alpha-5-bin.tar.gz" />
-        <release tarname="mingw-get-0.1-mingw32-alpha-4-bin.tar.gz" />
-        <release tarname="mingw-get-0.1-mingw32-alpha-3-bin.tar.gz" />
       </component>
 
       <component class="lic">
+        <release tarname="mingw-get-0.3-mingw32-alpha-2.1-lic.tar.xz" />
         <release tarname="mingw-get-0.3-mingw32-alpha-2-lic.tar.gz" />
         <release tarname="mingw-get-0.3-mingw32-alpha-1-lic.tar.gz" />
         <release tarname="mingw-get-0.2-mingw32-alpha-4-lic.tar.gz" />
-        <release tarname="mingw-get-0.2-mingw32-alpha-3-lic.tar.gz" />
-        <release tarname="mingw-get-0.2-mingw32-alpha-2-lic.tar.gz" />
-        <release tarname="mingw-get-0.2-mingw32-alpha-1-lic.tar.gz" />
-        <release tarname="mingw-get-0.1-mingw32-alpha-5.2-lic.tar.gz" />
-        <release tarname="mingw-get-0.1-mingw32-alpha-5.1-lic.tar.gz" />
-        <release tarname="mingw-get-0.1-mingw32-alpha-5-lic.tar.gz" />
-        <release tarname="mingw-get-0.1-mingw32-alpha-4-lic.tar.gz" />
-        <release tarname="mingw-get-0.1-mingw32-alpha-3-lic.tar.gz" />
       </component>
     </package>
 
@@ -74,13 +60,10 @@
       <source tarname="mingw-get-%-mingw32-%-src.tar" />
 
       <component class="bin">
+        <release tarname="pkginfo-0.3-mingw32-alpha-2.1-bin.tar.xz" />
         <release tarname="pkginfo-0.3-mingw32-alpha-2-bin.tar.gz" />
         <release tarname="pkginfo-0.3-mingw32-alpha-1-bin.tar.gz" />
         <release tarname="pkginfo-0.2-mingw32-alpha-4-bin.tar.gz" />
-        <release tarname="pkginfo-0.2-mingw32-alpha-3-bin.tar.gz" />
-        <release tarname="pkginfo-0.2-mingw32-alpha-2-bin.tar.gz" />
-        <release tarname="pkginfo-0.1-mingw32-alpha-5.2-bin.tar.gz" />
-        <release tarname="pkginfo-0.1-mingw32-alpha-4-bin.tar.gz" />
       </component>
     </package>
 
