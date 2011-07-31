@@ -26,6 +26,8 @@
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />
+        <release tarname="mintty-1.0.1-1-msys-1.0.16-bin.tar.lzma" />
+        <release tarname="mintty-0.9.9-1-msys-1.0.16-bin.tar.lzma" />
         <release tarname="mintty-0.9.8-1-msys-1.0.16-bin.tar.lzma" />
         <release tarname="mintty-0.9.7-1-msys-1.0.16-bin.tar.lzma" />
         <release tarname="mintty-0.9.6-1-msys-1.0.16-bin.tar.lzma" />
@@ -37,6 +39,8 @@
       </component>
 
       <component class="doc">
+        <release tarname="mintty-1.0.1-1-msys-1.0.16-doc.tar.lzma" />
+        <release tarname="mintty-0.9.9-1-msys-1.0.16-doc.tar.lzma" />
         <release tarname="mintty-0.9.8-1-msys-1.0.16-doc.tar.lzma" />
         <release tarname="mintty-0.9.7-1-msys-1.0.16-doc.tar.lzma" />
         <release tarname="mintty-0.9.6-1-msys-1.0.16-doc.tar.lzma" />
@@ -48,6 +52,8 @@
       </component>
 
       <component class="lic">
+        <release tarname="mintty-1.0.1-1-msys-1.0.16-lic.tar.lzma" />
+        <release tarname="mintty-0.9.9-1-msys-1.0.16-lic.tar.lzma" />
         <release tarname="mintty-0.9.8-1-msys-1.0.16-lic.tar.lzma" />
         <release tarname="mintty-0.9.7-1-msys-1.0.16-lic.tar.lzma" />
         <release tarname="mintty-0.9.6-1-msys-1.0.16-lic.tar.lzma" />
