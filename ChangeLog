@@ -1,3 +1,10 @@
+2011-08-05  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish mingw32-binutils.
+
+	* mingw32/mingw32-binutils.xml: Update to 2.21.53-1.
+	* mingw32/issue.log: Updated accordingly.
+
 2011-08-04  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish mingw32-binutils.
