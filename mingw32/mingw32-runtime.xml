@@ -29,11 +29,13 @@
 
       <component class="dev">
         <requires eq="mingwrt-%-mingw32-dll.tar" />
+        <release tarname="mingwrt-3.19-mingw32-dev.tar.gz" />
         <release tarname="mingwrt-3.18-mingw32-dev.tar.gz" />
         <release tarname="mingwrt-3.17-mingw32-dev.tar.gz" />
       </component>
 
       <component class="dll">
+        <release tarname="mingwrt-3.19-mingw32-dll.tar.gz" />
         <release tarname="mingwrt-3.18-mingw32-dll.tar.gz" />
         <release tarname="mingwrt-3.17-mingw32-dll.tar.gz" />
       </component>
