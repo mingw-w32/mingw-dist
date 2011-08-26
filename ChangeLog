@@ -1,3 +1,14 @@
+2011-08-26  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Add msys-rsync, msys-diffstat, msys-help2man.
+
+	* msys/msys-rsync.xml: New file (version 3.0.8).
+	* msys/msys-diffstat.xml: New file (version 1.54).
+	* msys/msys-help2man.xml: New file (version 1.40.4).
+	* msys/msys-package-list.xml: Add new manifests.
+	* msys/mingw-developer-toolkit.xml: Add rsync and diffstat.
+	* msys/issue.log: Updated accordingly.
+
 2011-08-23  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish mingwrt.

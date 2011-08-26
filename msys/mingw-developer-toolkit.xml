@@ -44,6 +44,7 @@
         <requires eq="msys-bsdcpio-*-msys-*-bin.tar" />
         <requires eq="msys-coreutils-*-msys-*-ext.tar" />
         <requires eq="msys-cvs-*-msys-*-bin.tar" />
+        <requires eq="msys-diffstat-*-msys-*-bin.tar" />
         <requires eq="msys-flex-*-msys-*-bin.tar" />
         <requires eq="msys-guile-*-msys-*-bin.tar" />
         <requires eq="msys-inetutils-*-msys-*-bin.tar" />
@@ -54,6 +55,7 @@
         <requires eq="msys-openssl-*-msys-*-bin.tar" />
         <requires eq="msys-patch-*-msys-*-bin.tar" />
         <requires eq="msys-perl-*-msys-*-bin.tar" />
+        <requires eq="msys-rsync-*-msys-*-bin.tar" />
         <requires eq="msys-vim-*-msys-*-bin.tar" />
       </component>
     </package>
