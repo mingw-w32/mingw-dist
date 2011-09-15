@@ -47,7 +47,7 @@
       </component>
     </package>
 
-    <package name="mingw32-libpthreadgc" alias="libpthreadgc mingw32-libthread libpthread">
+    <package name="mingw32-libpthreadgc" alias="libpthreadgc mingw32-libpthread libpthread">
       <affiliate group="MinGW Standard Libraries" />
       <description lang="en" title="POSIX threading library for Win32" >
         <paragraph>
