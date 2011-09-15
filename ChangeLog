@@ -1,3 +1,10 @@
+2011-09-15  Cesar Strauss  <cestrauss@gmail.com>
+
+	Update & publish mingw32-gcc4.
+
+	* mingw32/mingw32-gcc4.xml: Update to 4.6.1-2.
+	* mingw32/issue.log: Updated accordingly.
+
 2011-09-14  Cesar Strauss  <cestrauss@gmail.com>
 
 	Update & publish mingw32-pthreads-w32 and mingw32-gcc4.
