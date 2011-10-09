@@ -1,3 +1,9 @@
+2011-10-09  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add support for local change tracking with mercurial.
+
+	* .cvsignore (.hg, .hgignore, .hgtags): Add to ignored list.
+
 2011-09-15  Cesar Strauss  <cestrauss@gmail.com>
 
 	Update & publish mingw32-gcc4.

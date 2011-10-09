@@ -1,1 +1,2 @@
 build configure autom4te.cache
+.hg .hgignore .hgtags
