@@ -28,6 +28,7 @@
   <package-list catalogue="mingw32-expat" />
   <package-list catalogue="mingw32-gcc3" />
   <package-list catalogue="mingw32-gcc4" />
+  <package-list catalogue="mingw32-gcc-tools" />
   <package-list catalogue="mingw32-gdb" />
   <package-list catalogue="mingw32-gendef" />
   <package-list catalogue="mingw32-gettext" />
@@ -38,6 +39,7 @@
   <package-list catalogue="mingw32-make" />
   <package-list catalogue="mingw32-mingw-get" />
   <package-list catalogue="mingw32-mingw-utils" />
+  <package-list catalogue="mingw32-mgwport" />
   <package-list catalogue="mingw32-mpc" />
   <package-list catalogue="mingw32-mpfr" />
   <package-list catalogue="mingw32-pdcurses" />

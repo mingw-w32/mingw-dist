@@ -1,3 +1,21 @@
+2011-10-09  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update & publish autoconf (wrapper), autoconf2.5.
+	Add new packages gcc-tools-epoch2-{autoconf,automake}.
+	Add new package mgwport.
+
+	* mingw32/mingw32-autoconf.xml: Update to autoconf-10-1
+	and autoconf2.5-2.68-1.
+	* mingw32/mingw32-gcc-tools.xml: New file. Represents specific
+	versions of autoconf and automake required for developing
+	gcc-4.5/4.6 itself, installed into /mingw/opt/.  Few users should
+	have need of this.
+	* mingw32/mingw32-mgwport.xml: New file. Represents new mgwport
+	packaging tool.
+	* mingw32/mingw32-package-list.xml: Add mingw32-gcc-tools.xml.
+	Add mingw32-mgwport.xml.
+	* mingw32/issue.log: Update accordingly.
+
 2011-10-09  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add support for local change tracking with mercurial.
