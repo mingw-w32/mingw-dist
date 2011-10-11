@@ -47,8 +47,8 @@
         </paragraph>
       </description>
 
-      <source tarname="regex-%-msys-%-src.tar" />
-      <licence tarname="regex-%-msys-%-lic.tar" />
+      <source tarname="regex-%-msys-%-src.tar.%" />
+      <licence tarname="regex-%-msys-%-lic.tar.%" />
 
       <component class="dll">
         <release tarname="libregex-0.12-1-msys-1.0.11-dll-0.tar.lzma" />

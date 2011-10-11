@@ -19,8 +19,8 @@
         </paragraph>
       </description>
 
-      <source tarname="sed-%-msys-%-src.tar" />
-      <licence tarname="sed-%-msys-%-lic.tar" />
+      <source tarname="sed-%-msys-%-src.tar.%" />
+      <licence tarname="sed-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <release tarname="sed-4.2.1-2-msys-1.0.13-bin.tar.lzma" >

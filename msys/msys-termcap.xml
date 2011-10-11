@@ -24,8 +24,8 @@
         </paragraph>
       </description>
 
-      <source tarname="termcap-%-msys-%-src.tar" />
-      <licence tarname="termcap-%-msys-%-lic.tar" />
+      <source tarname="termcap-%-msys-%-src.tar.%" />
+      <licence tarname="termcap-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <release tarname="termcap-0.20050421_1-2-msys-1.0.13-bin.tar.lzma" />
@@ -57,8 +57,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="termcap-%-msys-%-lic.tar" />
-      <source tarname="termcap-%-msys-%-src.tar" />
+      <licence tarname="termcap-%-msys-%-lic.tar.%" />
+      <source tarname="termcap-%-msys-%-src.tar.%" />
 
       <component class="dll">
         <release tarname="libtermcap-0.20050421_1-2-msys-1.0.13-dll-0.tar.lzma" />

@@ -21,8 +21,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="mintty-%-msys-%-lic.tar" />
-      <source tarname="mintty-%-msys-%-src.tar" />
+      <licence tarname="mintty-%-msys-%-lic.tar.%" />
+      <source tarname="mintty-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

@@ -20,8 +20,8 @@
         </paragraph>
       </description>
 
-      <source tarname="popt-%-msys-%-src.tar" />
-      <licence tarname="popt-%-msys-%-lic.tar" />
+      <source tarname="popt-%-msys-%-src.tar.%" />
+      <licence tarname="popt-%-msys-%-lic.tar.%" />
 
       <component class="doc">
         <release tarname="popt-1.15-2-msys-1.0.13-doc.tar.lzma" />
@@ -46,8 +46,8 @@
         </paragraph>
       </description>
 
-      <source tarname="popt-%-msys-%-src.tar" />
-      <licence tarname="popt-%-msys-%-lic.tar" />
+      <source tarname="popt-%-msys-%-src.tar.%" />
+      <licence tarname="popt-%-msys-%-lic.tar.%" />
 
       <component class="dll">
         <requires eq="msys-core-*-msys-*-bin.tar" />

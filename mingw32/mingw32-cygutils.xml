@@ -20,8 +20,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="cygutils-%-mingw32-%-lic.tar" />
-      <source tarname="cygutils-%-mingw32-%-src.tar" />
+      <licence tarname="cygutils-%-mingw32-%-lic.tar.%" />
+      <source tarname="cygutils-%-mingw32-%-src.tar.%" />
 
       <component class="doc">
         <release tarname="cygutils-1.3.4-1-mingw32-doc.tar.lzma" />
@@ -54,8 +54,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="cygutils-%-mingw32-%-lic.tar" />
-      <source tarname="cygutils-%-mingw32-%-src.tar" />
+      <licence tarname="cygutils-%-mingw32-%-lic.tar.%" />
+      <source tarname="cygutils-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
         <release tarname="cygutils-dos2unix-1.3.4-1-mingw32-bin.tar.lzma" >

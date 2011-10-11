@@ -19,8 +19,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="bzip2-%-mingw32-%-lic.tar" />
-      <source tarname="bzip2-%-mingw32-%-src.tar" />
+      <licence tarname="bzip2-%-mingw32-%-lic.tar.%" />
+      <source tarname="bzip2-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
         <release tarname="bzip2-1.0.6-1-mingw32-bin.tar.lzma" >
@@ -64,8 +64,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="bzip2-%-mingw32-%-lic.tar" />
-      <source tarname="bzip2-%-mingw32-%-src.tar" />
+      <licence tarname="bzip2-%-mingw32-%-lic.tar.%" />
+      <source tarname="bzip2-%-mingw32-%-src.tar.%" />
 
       <component class="dll">
         <release tarname="libbz2-1.0.6-1-mingw32-dll-2.tar.lzma" />

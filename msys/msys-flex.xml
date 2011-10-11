@@ -15,8 +15,8 @@
         </paragraph>
       </description>
 
-      <source tarname="flex-%-msys-%-src.tar" />
-      <licence tarname="flex-%-msys-%-lic.tar" />
+      <source tarname="flex-%-msys-%-src.tar.%" />
+      <licence tarname="flex-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <release tarname="flex-2.5.35-2-msys-1.0.13-bin.tar.lzma" >

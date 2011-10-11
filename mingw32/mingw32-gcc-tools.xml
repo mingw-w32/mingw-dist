@@ -31,8 +31,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="gcc-tools-epoch2-autoconf-%-mingw32-%-lic.tar" />
-      <source tarname="gcc-tools-epoch2-autoconf-%-mingw32-%-src.tar" />
+      <licence tarname="gcc-tools-epoch2-autoconf-%-mingw32-%-lic.tar.%" />
+      <source tarname="gcc-tools-epoch2-autoconf-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />
@@ -77,8 +77,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="gcc-tools-epoch2-automake-%-mingw32-%-lic.tar" />
-      <source tarname="gcc-tools-epoch2-automake-%-mingw32-%-src.tar" />
+      <licence tarname="gcc-tools-epoch2-automake-%-mingw32-%-lic.tar.%" />
+      <source tarname="gcc-tools-epoch2-automake-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="mingw32-gcc-tools-epoch2-autoconf-*-mingw32-*-bin.tar" />

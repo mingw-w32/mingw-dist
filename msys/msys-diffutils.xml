@@ -25,8 +25,8 @@
         </paragraph>
       </description>
 
-      <source tarname="diffutils-%-msys-%-src.tar" />
-      <licence tarname="diffutils-%-msys-%-lic.tar" />
+      <source tarname="diffutils-%-msys-%-src.tar.%" />
+      <licence tarname="diffutils-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <release tarname="diffutils-2.8.7.20071206cvs-3-msys-1.0.13-bin.tar.lzma" >

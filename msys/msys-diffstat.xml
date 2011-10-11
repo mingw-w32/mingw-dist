@@ -15,8 +15,8 @@
         </paragraph>
       </description>
 
-      <source tarname="diffstat-%-msys-%-src.tar" />
-      <licence tarname="diffstat-%-msys-%-lic.tar" />
+      <source tarname="diffstat-%-msys-%-src.tar.%" />
+      <licence tarname="diffstat-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <release tarname="diffstat-1.54-1-msys-1.0.17-bin.tar.lzma" />

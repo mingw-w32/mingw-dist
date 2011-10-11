@@ -14,8 +14,8 @@
         </paragraph>
       </description>
 
-      <source tarname="help2man-%-msys-%-src.tar" />
-      <licence tarname="help2man-%-msys-%-lic.tar" />
+      <source tarname="help2man-%-msys-%-src.tar.%" />
+      <licence tarname="help2man-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <release tarname="help2man-1.40.4-1-msys-1.0.17-bin.tar.lzma" />

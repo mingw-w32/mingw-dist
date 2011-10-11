@@ -23,8 +23,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="autoconf-%-mingw32-%-lic.tar" />
-      <source tarname="autoconf-%-mingw32-%-src.tar" />
+      <licence tarname="autoconf-%-mingw32-%-lic.tar.%" />
+      <source tarname="autoconf-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="mingw32-autoconf2.1-*-mingw32-*-bin.tar" />
@@ -58,8 +58,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="autoconf2.1-%-mingw32-%-lic.tar" />
-      <source tarname="autoconf2.1-%-mingw32-%-src.tar" />
+      <licence tarname="autoconf2.1-%-mingw32-%-lic.tar.%" />
+      <source tarname="autoconf2.1-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />
@@ -95,8 +95,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="autoconf2.5-%-mingw32-%-lic.tar" />
-      <source tarname="autoconf2.5-%-mingw32-%-src.tar" />
+      <licence tarname="autoconf2.5-%-mingw32-%-lic.tar.%" />
+      <source tarname="autoconf2.5-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

@@ -24,8 +24,8 @@
         </paragraph>
       </description>
 
-      <source tarname="findutils-%-msys-%-src.tar" />
-      <licence tarname="findutils-%-msys-%-lic.tar" />
+      <source tarname="findutils-%-msys-%-src.tar.%" />
+      <licence tarname="findutils-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />
@@ -69,8 +69,8 @@
         </paragraph>
       </description>
 
-      <source tarname="findutils-%-msys-%-src.tar" />
-      <licence tarname="findutils-%-msys-%-lic.tar" />
+      <source tarname="findutils-%-msys-%-src.tar.%" />
+      <licence tarname="findutils-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

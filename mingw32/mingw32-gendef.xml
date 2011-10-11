@@ -28,8 +28,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="gendef-%-mingw32-%-lic.tar" />
-      <source tarname="gendef-%-mingw32-%-src.tar" />
+      <licence tarname="gendef-%-mingw32-%-lic.tar.%" />
+      <source tarname="gendef-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
         <release tarname="gendef-1.0.1346-1-mingw32-bin.tar.lzma" />

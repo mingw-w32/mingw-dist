@@ -31,8 +31,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="rxvt-%-msys-%-lic.tar" />
-      <source tarname="rxvt-%-msys-%-src.tar" />
+      <licence tarname="rxvt-%-msys-%-lic.tar.%" />
+      <source tarname="rxvt-%-msys-%-src.tar.%" />
 
       <!-- NOTE: the rxvt-2.7.10.20050409-* versions have a serious flaw, in
            that whenever a native application is launched from within an rxvt

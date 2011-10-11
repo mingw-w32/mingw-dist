@@ -1,3 +1,101 @@
+2011-10-11  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Make "source" and "licence" tarname resolution deterministic.
+
+	* mingw32/mingw32-autoconf.xml (source, licence): Append ".%" to
+	tarname attribute, where no explicit compression type is specified.
+	* mingw32/mingw32-automake.xml (source, licence): Likewise.
+	* mingw32/mingw32-basic-bsdtar.xml (source, licence): Likewise.
+	* mingw32/mingw32-binutils.xml (source, licence): Likewise.
+	* mingw32/mingw32-bzip2.xml (source, licence): Likewise.
+	* mingw32/mingw32-cygutils.xml (source, licence): Likewise.
+	* mingw32/mingw32-expat.xml (source, licence): Likewise.
+	* mingw32/mingw32-gcc-tools.xml (source, licence): Likewise.
+	* mingw32/mingw32-gendef.xml (source, licence): Likewise.
+	* mingw32/mingw32-gettext.xml (source, licence): Likewise.
+	* mingw32/mingw32-libarchive.xml (source, licence): Likewise.
+	* mingw32/mingw32-libiconv.xml (source, licence): Likewise.
+	* mingw32/mingw32-libtool.xml (source, licence): Likewise.
+	* mingw32/mingw32-make.xml (source, licence): Likewise.
+	* mingw32/mingw32-mgwport.xml (source, licence): Likewise.
+	* mingw32/mingw32-mingw-get.xml (source, licence): Likewise.
+	* mingw32/mingw32-mingw-utils.xml (source, licence): Likewise.
+	* mingw32/mingw32-pdcurses.xml (source, licence): Likewise.
+	* mingw32/mingw32-pexports.xml (source, licence): Likewise.
+	* mingw32/mingw32-popt.xml (source, licence): Likewise.
+	* mingw32/mingw32-xz.xml (source, licence): Likewise.
+	* mingw32/mingw32-zlib.xml (source, licence): Likewise.
+
+	* mingw32/issue.log: Update to capture above changes; publish all.
+
+	* msys/msys-core.xml (package): Add alias="msysCORE" attribute.
+	(source, licence): Append ".%" to tarname attribute, where no explicit
+	compression type is specified.
+
+	* msys/msys-autoconf.xml (source, licence): Append ".%" to tarname
+	attribute, where no explicit compression type is specified.
+	* msys/msys-autogen.xml (source, licence): Likewise.
+	* msys/msys-automake.xml (source, licence): Likewise.
+	* msys/msys-bash.xml (source, licence): Likewise.
+	* msys/msys-bison.xml (source, licence): Likewise.
+	* msys/msys-bzip2.xml (source, licence): Likewise.
+	* msys/msys-console.xml (source, licence): Likewise.
+	* msys/msys-coreutils.xml (source, licence): Likewise.
+	* msys/msys-crypt.xml (source, licence): Likewise.
+	* msys/msys-cvs.xml (source, licence): Likewise.
+	* msys/msys-cygutils.xml (source, licence): Likewise.
+	* msys/msys-dash.xml (source, licence): Likewise.
+	* msys/msys-diffstat.xml (source, licence): Likewise.
+	* msys/msys-diffutils.xml (source, licence): Likewise.
+	* msys/msys-expat.xml (source, licence): Likewise.
+	* msys/msys-file.xml (source, licence): Likewise.
+	* msys/msys-findutils.xml (source, licence): Likewise.
+	* msys/msys-flex.xml (source, licence): Likewise.
+	* msys/msys-gawk.xml (source, licence): Likewise.
+	* msys/msys-gdbm.xml (source, licence): Likewise.
+	* msys/msys-gettext.xml (source, licence): Likewise.
+	* msys/msys-gmp.xml (source, licence): Likewise.
+	* msys/msys-grep.xml (source, licence): Likewise.
+	* msys/msys-groff.xml (source, licence): Likewise.
+	* msys/msys-guile.xml (source, licence): Likewise.
+	* msys/msys-gzip.xml (source, licence): Likewise.
+	* msys/msys-help2man.xml (source, licence): Likewise.
+	* msys/msys-inetutils.xml (source, licence): Likewise.
+	* msys/msys-less.xml (source, licence): Likewise.
+	* msys/msys-libarchive.xml (source, licence): Likewise.
+	* msys/msys-libiconv.xml (source, licence): Likewise.
+	* msys/msys-libtool.xml (source, licence): Likewise.
+	* msys/msys-libxml (source, licence): Likewise.
+	* msys/msys-lndir.xml (source, licence): Likewise.
+	* msys/msys-lpr-enhanced.xml (source, licence): Likewise.
+	* msys/msys-m4.xml (source, licence): Likewise.
+	* msys/msys-make.xml (source, licence): Likewise.
+	* msys/msys-man.xml (source, licence): Likewise.
+	* msys/msys-minires.xml (source, licence): Likewise.
+	* msys/msys-mintty.xml (source, licence): Likewise.
+	* msys/msys-mktemp.xml (source, licence): Likewise.
+	* msys/msys-openssh.xml (source, licence): Likewise.
+	* msys/msys-openssl.xml (source, licence): Likewise.
+	* msys/msys-patch.xml (source, licence): Likewise.
+	* msys/msys-perl.xml (source, licence): Likewise.
+	* msys/msys-popt.xml (source, licence): Likewise.
+	* msys/msys-rebase.xml (source, licence): Likewise.
+	* msys/msys-regex.xml (source, licence): Likewise.
+	* msys/msys-rsync.xml (source, licence): Likewise.
+	* msys/msys-rxvt.xml (source, licence): Likewise.
+	* msys/msys-sed.xml (source, licence): Likewise.
+	* msys/msys-tar.xml (source, licence): Likewise.
+	* msys/msys-termcap.xml (source, licence): Likewise.
+	* msys/msys-texinfo.xml (source, licence): Likewise.
+	* msys/msys-unzip.xml (source, licence): Likewise.
+	* msys/msys-vim.xml (source, licence): Likewise.
+	* msys/msys-wget.xml (source, licence): Likewise.
+	* msys/msys-xz.xml (source, licence): Likewise.
+	* msys/msys-zip.xml (source, licence): Likewise.
+	* msys/msys-zlib.xml (source, licence): Likewise.
+
+	* msys/issue.log: Update to capture above changes; publish all.
+
 2011-10-09  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Update & publish autoconf (wrapper), autoconf2.5.

@@ -25,8 +25,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="automake-%-msys-%-lic.tar" />
-      <source tarname="automake-%-msys-%-src.tar" />
+      <licence tarname="automake-%-msys-%-lic.tar.%" />
+      <source tarname="automake-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-autoconf-*-msys-*-bin.tar" />

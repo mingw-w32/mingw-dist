@@ -23,8 +23,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="bison-%-msys-%-lic.tar" />
-      <source tarname="bison-%-msys-%-src.tar" />
+      <licence tarname="bison-%-msys-%-lic.tar.%" />
+      <source tarname="bison-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

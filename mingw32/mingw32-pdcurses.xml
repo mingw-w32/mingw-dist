@@ -20,8 +20,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="PDCurses-%-mingw32-%-lic.tar" />
-      <source tarname="PDCurses-%-mingw32-%-src.tar" />
+      <licence tarname="PDCurses-%-mingw32-%-lic.tar.%" />
+      <source tarname="PDCurses-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
         <release tarname="PDCurses-3.4-1-mingw32-bin.tar.lzma" >
@@ -52,8 +52,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="PDCurses-%-mingw32-%-lic.tar" />
-      <source tarname="PDCurses-%-mingw32-%-src.tar" />
+      <licence tarname="PDCurses-%-mingw32-%-lic.tar.%" />
+      <source tarname="PDCurses-%-mingw32-%-src.tar.%" />
 
       <component class="dll">
         <release tarname="libpdcurses-3.4-1-mingw32-dll.tar.lzma" />

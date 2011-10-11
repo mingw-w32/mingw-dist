@@ -23,8 +23,8 @@
         </paragraph>
       </description>
 
-      <source tarname="expat-%-msys-%-src.tar" />
-      <licence tarname="expat-%-msys-%-lic.tar" />
+      <source tarname="expat-%-msys-%-src.tar.%" />
+      <licence tarname="expat-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <!-- Every MSYS package requires msys-core-bin.  This dependency
@@ -63,8 +63,8 @@
         </paragraph>
       </description>
 
-      <source tarname="expat-%-msys-%-src.tar" />
-      <licence tarname="expat-%-msys-%-lic.tar" />
+      <source tarname="expat-%-msys-%-src.tar.%" />
+      <licence tarname="expat-%-msys-%-lic.tar.%" />
 
       <component class="dll">
         <!-- Specification of the mandatory msys-core-bin requirement here

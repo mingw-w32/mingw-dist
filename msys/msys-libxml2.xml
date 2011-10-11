@@ -20,8 +20,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="libxml2-%-msys-%-lic.tar" />
-      <source tarname="libxml2-%-msys-%-src.tar" />
+      <licence tarname="libxml2-%-msys-%-lic.tar.%" />
+      <source tarname="libxml2-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <!-- Every MSYS package requires msys-core-bin.  This dependency

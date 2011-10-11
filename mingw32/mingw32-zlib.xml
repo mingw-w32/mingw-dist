@@ -16,8 +16,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="zlib-%-mingw32-%-lic.tar" />
-      <source tarname="zlib-%-mingw32-%-src.tar" />
+      <licence tarname="zlib-%-mingw32-%-lic.tar.%" />
+      <source tarname="zlib-%-mingw32-%-src.tar.%" />
 
       <component class="doc">
         <release tarname="zlib-1.2.3-1-mingw32-doc.tar.gz" />
@@ -45,8 +45,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="zlib-%-mingw32-%-lic.tar" />
-      <source tarname="zlib-%-mingw32-%-src.tar" />
+      <licence tarname="zlib-%-mingw32-%-lic.tar.%" />
+      <source tarname="zlib-%-mingw32-%-src.tar.%" />
 
       <component class="dll">
         <release tarname="libz-1.2.3-1-mingw32-dll-1.tar.gz" />

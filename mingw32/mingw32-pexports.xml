@@ -28,8 +28,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="pexports-%-mingw32-%-lic.tar" />
-      <source tarname="pexports-%-mingw32-%-src.tar" />
+      <licence tarname="pexports-%-mingw32-%-lic.tar.%" />
+      <source tarname="pexports-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="mingw32-gcc-core-*-mingw32-*-bin.tar" />

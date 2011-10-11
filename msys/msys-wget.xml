@@ -32,8 +32,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="wget-%-msys-%-lic.tar" />
-      <source tarname="wget-%-msys-%-src.tar" />
+      <licence tarname="wget-%-msys-%-lic.tar.%" />
+      <source tarname="wget-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

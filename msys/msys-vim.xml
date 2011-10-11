@@ -17,8 +17,8 @@
         </paragraph>
       </description>
 
-      <source tarname="vim-%-msys-%-src.tar" />
-      <licence tarname="vim-%-msys-%-lic.tar" />
+      <source tarname="vim-%-msys-%-src.tar.%" />
+      <licence tarname="vim-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

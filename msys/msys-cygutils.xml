@@ -36,8 +36,8 @@
         </paragraph>
       </description>
 
-      <source tarname="cygutils-%-msys-%-src.tar" />
-      <licence tarname="cygutils-%-msys-%-lic.tar" />
+      <source tarname="cygutils-%-msys-%-src.tar.%" />
+      <licence tarname="cygutils-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />
@@ -79,8 +79,8 @@
         </paragraph>
       </description>
 
-      <source tarname="cygutils-%-msys-%-src.tar" />
-      <licence tarname="cygutils-%-msys-%-lic.tar" />
+      <source tarname="cygutils-%-msys-%-src.tar.%" />
+      <licence tarname="cygutils-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

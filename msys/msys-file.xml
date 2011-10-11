@@ -21,8 +21,8 @@
         </paragraph>
       </description>
 
-      <source tarname="file-%-msys-%-src.tar" />
-      <licence tarname="file-%-msys-%-lic.tar" />
+      <source tarname="file-%-msys-%-src.tar.%" />
+      <licence tarname="file-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <!-- Although every MSYS package requires msys-core-bin,
@@ -57,8 +57,8 @@
         </paragraph>
       </description>
 
-      <source tarname="file-%-msys-%-src.tar" />
-      <licence tarname="file-%-msys-%-lic.tar" />
+      <source tarname="file-%-msys-%-src.tar.%" />
+      <licence tarname="file-%-msys-%-lic.tar.%" />
 
       <component class="dll">
         <!-- Requirements common to all releases:

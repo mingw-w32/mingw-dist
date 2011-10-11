@@ -22,8 +22,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="dash-%-msys-%-lic.tar" />
-      <source tarname="dash-%-msys-%-src.tar" />
+      <licence tarname="dash-%-msys-%-lic.tar.%" />
+      <source tarname="dash-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

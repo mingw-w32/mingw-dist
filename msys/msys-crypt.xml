@@ -27,8 +27,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="crypt-%-msys-%-lic.tar" />
-      <source tarname="crypt-%-msys-%-src.tar" />
+      <licence tarname="crypt-%-msys-%-lic.tar.%" />
+      <source tarname="crypt-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />
@@ -68,8 +68,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="crypt-%-msys-%-lic.tar" />
-      <source tarname="crypt-%-msys-%-src.tar" />
+      <licence tarname="crypt-%-msys-%-lic.tar.%" />
+      <source tarname="crypt-%-msys-%-src.tar.%" />
 
       <component class="dll">
         <!-- Every MSYS DLL package requires msys-core-bin -->

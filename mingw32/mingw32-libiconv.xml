@@ -20,8 +20,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="libiconv-%-mingw32-%-lic.tar" />
-      <source tarname="libiconv-%-mingw32-%-src.tar" />
+      <licence tarname="libiconv-%-mingw32-%-lic.tar.%" />
+      <source tarname="libiconv-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
         <release tarname="libiconv-1.13.1-1-mingw32-bin.tar.lzma" >
@@ -64,8 +64,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="libiconv-%-mingw32-%-lic.tar" />
-      <source tarname="libiconv-%-mingw32-%-src.tar" />
+      <licence tarname="libiconv-%-mingw32-%-lic.tar.%" />
+      <source tarname="libiconv-%-mingw32-%-src.tar.%" />
 
       <component class="dll">
         <release tarname="libcharset-1.13.1-1-mingw32-dll-1.tar.lzma" />

@@ -56,8 +56,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="mingw-get-%-mingw32-%-lic.tar" />
-      <source tarname="mingw-get-%-mingw32-%-src.tar" />
+      <licence tarname="mingw-get-%-mingw32-%-lic.tar.%" />
+      <source tarname="mingw-get-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
         <release tarname="pkginfo-0.3-mingw32-alpha-2.1-bin.tar.xz" />

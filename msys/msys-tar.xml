@@ -41,8 +41,8 @@
         </paragraph>
       </description>
 
-      <source tarname="tar-%-msys-%-src.tar" />
-      <licence tarname="tar-%-msys-%-lic.tar" />
+      <source tarname="tar-%-msys-%-src.tar.%" />
+      <licence tarname="tar-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <release tarname="tar-1.23-1-msys-1.0.13-bin.tar.lzma">

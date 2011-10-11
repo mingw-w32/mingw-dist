@@ -31,8 +31,8 @@
         </paragraph>
       </description>
 
-      <source tarname="libiconv-%-msys-%-src.tar" />
-      <licence tarname="libiconv-%-msys-%-lic.tar" />
+      <source tarname="libiconv-%-msys-%-src.tar.%" />
+      <licence tarname="libiconv-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <release tarname="libiconv-1.13.1-2-msys-1.0.13-bin.tar.lzma">
@@ -87,8 +87,8 @@
         </paragraph>
       </description>
 
-      <source tarname="libiconv-%-msys-%-src.tar" />
-      <licence tarname="libiconv-%-msys-%-lic.tar" />
+      <source tarname="libiconv-%-msys-%-src.tar.%" />
+      <licence tarname="libiconv-%-msys-%-lic.tar.%" />
 
       <component class="dll">
         <release tarname="libcharset-1.13.1-2-msys-1.0.13-dll-1.tar.lzma" />

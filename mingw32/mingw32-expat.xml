@@ -28,8 +28,8 @@
       <component class="lic">
         <release tarname="expat-2.0.1-1-mingw32-lic.tar.gz" />
       </component>
-      <licence tarname="expat-%-mingw32-%-lic.tar" />
-      <source tarname="expat-%-mingw32-%-src.tar" />
+      <licence tarname="expat-%-mingw32-%-lic.tar.%" />
+      <source tarname="expat-%-mingw32-%-src.tar.%" />
     </package>
     <package name="mingw32-libexpat" alias="libexpat">
       <description lang="en" title="libexpat: XML parsing library written in C">
@@ -54,8 +54,8 @@
         <release tarname="libexpat-2.0.1-1-mingw32-dev.tar.gz" />
         <requires eq="mingw32-libexpat-%-mingw32-%-dll-1.tar" />
       </component>
-      <licence tarname="expat-%-mingw32-%-lic.tar" />
-      <source tarname="expat-%-mingw32-%-src.tar" />
+      <licence tarname="expat-%-mingw32-%-lic.tar.%" />
+      <source tarname="expat-%-mingw32-%-src.tar.%" />
     </package>
   </package-collection>
 </software-distribution>

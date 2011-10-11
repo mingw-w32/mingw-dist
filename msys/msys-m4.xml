@@ -22,8 +22,8 @@
         </paragraph>
       </description>
 
-      <source tarname="m4-%-msys-%-src.tar" />
-      <licence tarname="m4-%-msys-%-lic.tar" />
+      <source tarname="m4-%-msys-%-src.tar.%" />
+      <licence tarname="m4-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

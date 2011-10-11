@@ -16,8 +16,8 @@
         </paragraph>
       </description>
 
-      <source tarname="grep-%-msys-%-src.tar" />
-      <licence tarname="grep-%-msys-%-lic.tar" />
+      <source tarname="grep-%-msys-%-src.tar.%" />
+      <licence tarname="grep-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <release tarname="grep-2.5.4-2-msys-1.0.13-bin.tar.lzma" >

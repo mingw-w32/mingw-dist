@@ -17,8 +17,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="mktemp-%-msys-%-lic.tar" />
-      <source tarname="mktemp-%-msys-%-src.tar" />
+      <licence tarname="mktemp-%-msys-%-lic.tar.%" />
+      <source tarname="mktemp-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

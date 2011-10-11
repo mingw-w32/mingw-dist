@@ -18,8 +18,8 @@
         </paragraph>
       </description>
 
-      <source tarname="binutils-%-mingw32-src.tar" />
-      <licence tarname="binutils-%-mingw32-doc.tar" />
+      <source tarname="binutils-%-mingw32-src.tar.%" />
+      <licence tarname="binutils-%-mingw32-doc.tar.%" />
 
       <component class="bin">
         <release tarname="binutils-2.21.53-1-mingw32-bin.tar.lzma" >

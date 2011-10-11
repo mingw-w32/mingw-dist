@@ -35,8 +35,8 @@
         </paragraph>
       </description>
 
-      <source tarname="make-%-msys-%-src.tar" />
-      <licence tarname="make-%-msys-%-lic.tar" />
+      <source tarname="make-%-msys-%-src.tar.%" />
+      <licence tarname="make-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

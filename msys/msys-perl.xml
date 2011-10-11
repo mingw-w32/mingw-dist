@@ -18,8 +18,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="perl-%-msys-%-lic.tar" />
-      <source tarname="perl-%-msys-%-src.tar" />
+      <licence tarname="perl-%-msys-%-lic.tar.%" />
+      <source tarname="perl-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

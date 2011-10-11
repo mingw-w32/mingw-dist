@@ -32,8 +32,8 @@
         </paragraph>
       </description>
 
-      <source tarname="texinfo-%-msys-%-src.tar" />
-      <licence tarname="texinfo-%-msys-%-lic.tar" />
+      <source tarname="texinfo-%-msys-%-src.tar.%" />
+      <licence tarname="texinfo-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

@@ -30,8 +30,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="mingw-utils-%-mingw32-%-lic.tar" />
-      <source tarname="mingw-utils-%-mingw32-%-src.tar" />
+      <licence tarname="mingw-utils-%-mingw32-%-lic.tar.%" />
+      <source tarname="mingw-utils-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
         <!-- All of the following requirements are needed to satisfy 

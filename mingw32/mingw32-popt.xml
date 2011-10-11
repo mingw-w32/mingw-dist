@@ -19,8 +19,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="popt-%-mingw32-%-lic.tar" />
-      <source tarname="popt-%-mingw32-%-src.tar" />
+      <licence tarname="popt-%-mingw32-%-lic.tar.%" />
+      <source tarname="popt-%-mingw32-%-src.tar.%" />
 
       <component class="doc">
         <release tarname="popt-1.15-1-mingw32-doc.tar.lzma" />
@@ -44,8 +44,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="popt-%-mingw32-%-lic.tar" />
-      <source tarname="popt-%-mingw32-%-src.tar" />
+      <licence tarname="popt-%-mingw32-%-lic.tar.%" />
+      <source tarname="popt-%-mingw32-%-src.tar.%" />
 
       <component class="dll">
         <release tarname="libpopt-1.15-1-mingw32-dll-0.tar.lzma" >

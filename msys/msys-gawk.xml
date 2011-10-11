@@ -22,8 +22,8 @@
         </paragraph>
       </description>
 
-      <source tarname="gawk-%-msys-%-src.tar" />
-      <licence tarname="gawk-%-msys-%-lic.tar" />
+      <source tarname="gawk-%-msys-%-src.tar.%" />
+      <licence tarname="gawk-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <release tarname="gawk-3.1.7-2-msys-1.0.13-bin.tar.lzma" >

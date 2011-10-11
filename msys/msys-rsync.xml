@@ -17,8 +17,8 @@
         </paragraph>
       </description>
 
-      <source tarname="rsync-%-msys-%-src.tar" />
-      <licence tarname="rsync-%-msys-%-lic.tar" />
+      <source tarname="rsync-%-msys-%-src.tar.%" />
+      <licence tarname="rsync-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <release tarname="rsync-3.0.8-1-msys-1.0.17-bin.tar.lzma" />

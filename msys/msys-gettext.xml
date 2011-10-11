@@ -43,8 +43,8 @@
         </paragraph>
       </description>
 
-      <source tarname="gettext-%-msys-%-src.tar" />
-      <licence tarname="gettext-%-msys-%-lic.tar" />
+      <source tarname="gettext-%-msys-%-src.tar.%" />
+      <licence tarname="gettext-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <release tarname="gettext-0.17-2-msys-1.0.13-bin.tar.lzma">
@@ -114,8 +114,8 @@
         </paragraph>
       </description>
 
-      <source tarname="gettext-%-msys-%-src.tar" />
-      <licence tarname="gettext-%-msys-%-lic.tar" />
+      <source tarname="gettext-%-msys-%-src.tar.%" />
+      <licence tarname="gettext-%-msys-%-lic.tar.%" />
 
       <component class="dll">
         <release tarname="libintl-0.17-2-msys-1.0.13-dll-8.tar.lzma">
@@ -166,8 +166,8 @@
         </paragraph>
       </description>
 
-      <source tarname="gettext-%-msys-%-src.tar" />
-      <licence tarname="gettext-%-msys-%-lic.tar" />
+      <source tarname="gettext-%-msys-%-src.tar.%" />
+      <licence tarname="gettext-%-msys-%-lic.tar.%" />
 
       <component class="dll">
         <release tarname="libgettextpo-0.17-2-msys-1.0.13-dll-0.tar.lzma">
@@ -220,8 +220,8 @@
         </paragraph>
       </description>
 
-      <source tarname="gettext-%-msys-%-src.tar" />
-      <licence tarname="gettext-%-msys-%-lic.tar" />
+      <source tarname="gettext-%-msys-%-src.tar.%" />
+      <licence tarname="gettext-%-msys-%-lic.tar.%" />
 
       <component class="dll">
         <release tarname="libasprintf-0.17-2-msys-1.0.13-dll-0.tar.lzma">

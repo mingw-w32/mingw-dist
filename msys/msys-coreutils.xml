@@ -23,8 +23,8 @@
         </paragraph>
       </description>
 
-      <source tarname="coreutils-%-msys-%-src.tar" />
-      <licence tarname="coreutils-%-msys-%-lic.tar" />
+      <source tarname="coreutils-%-msys-%-src.tar.%" />
+      <licence tarname="coreutils-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <release tarname="coreutils-5.97-3-msys-1.0.13-bin.tar.lzma">

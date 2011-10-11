@@ -43,8 +43,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="lpr-enhanced-%-msys-%-lic.tar" />
-      <source tarname="lpr-enhanced-%-msys-%-src.tar" />
+      <licence tarname="lpr-enhanced-%-msys-%-lic.tar.%" />
+      <source tarname="lpr-enhanced-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <!-- msys-coreutils-ext provides /bin/pr, which is used by

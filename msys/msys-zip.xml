@@ -16,8 +16,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="zip-%-msys-%-lic.tar" />
-      <source tarname="zip-%-msys-%-src.tar" />
+      <licence tarname="zip-%-msys-%-lic.tar.%" />
+      <source tarname="zip-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

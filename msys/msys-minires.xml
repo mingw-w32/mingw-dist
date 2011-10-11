@@ -32,8 +32,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="minires-%-msys-%-lic.tar" />
-      <source tarname="minires-%-msys-%-src.tar" />
+      <licence tarname="minires-%-msys-%-lic.tar.%" />
+      <source tarname="minires-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <!-- Every MSYS package requires msys-core-bin.  This dependency
@@ -81,8 +81,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="minires-%-msys-%-lic.tar" />
-      <source tarname="minires-%-msys-%-src.tar" />
+      <licence tarname="minires-%-msys-%-lic.tar.%" />
+      <source tarname="minires-%-msys-%-src.tar.%" />
 
       <component class="dll">
         <!-- Every MSYS DLL package requires msys-core-bin -->

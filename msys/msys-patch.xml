@@ -16,8 +16,8 @@
         </paragraph>
       </description>
 
-      <source tarname="patch-%-msys-%-src.tar" />
-      <licence tarname="patch-%-msys-%-lic.tar" />
+      <source tarname="patch-%-msys-%-src.tar.%" />
+      <licence tarname="patch-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

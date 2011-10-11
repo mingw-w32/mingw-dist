@@ -29,8 +29,8 @@
         </paragraph>
       </description>
 
-      <source tarname="xz-%-msys-%-src.tar" />
-      <licence tarname="xz-%-msys-%-lic.tar" />
+      <source tarname="xz-%-msys-%-src.tar.%" />
+      <licence tarname="xz-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <!-- Every MSYS package requires msys-core-bin.  This dependency
@@ -84,8 +84,8 @@
         </paragraph>
       </description>
 
-      <source tarname="xz-%-msys-%-src.tar" />
-      <licence tarname="xz-%-msys-%-lic.tar" />
+      <source tarname="xz-%-msys-%-src.tar.%" />
+      <licence tarname="xz-%-msys-%-lic.tar.%" />
 
       <component class="dll">
         <release tarname="liblzma-4.999.9beta_20100401-1-msys-1.0.13-dll-1.tar.gz" />

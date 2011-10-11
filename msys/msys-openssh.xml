@@ -26,8 +26,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="openssh-%-msys-%-lic.tar" />
-      <source tarname="openssh-%-msys-%-src.tar" />
+      <licence tarname="openssh-%-msys-%-lic.tar.%" />
+      <source tarname="openssh-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

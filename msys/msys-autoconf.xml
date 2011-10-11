@@ -30,8 +30,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="autoconf-%-msys-%-lic.tar" />
-      <source tarname="autoconf-%-msys-%-src.tar" />
+      <licence tarname="autoconf-%-msys-%-lic.tar.%" />
+      <source tarname="autoconf-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

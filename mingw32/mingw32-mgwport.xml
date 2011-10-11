@@ -15,8 +15,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="mgwport-%-mingw32-%-lic.tar" />
-      <source tarname="mgwport-%-mingw32-%-src.tar" />
+      <licence tarname="mgwport-%-mingw32-%-lic.tar.%" />
+      <source tarname="mgwport-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

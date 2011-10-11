@@ -19,8 +19,8 @@
         </paragraph>
       </description>
 
-      <source tarname="bzip2-%-msys-%-src.tar" />
-      <licence tarname="bzip2-%-msys-%-lic.tar" />
+      <source tarname="bzip2-%-msys-%-src.tar.%" />
+      <licence tarname="bzip2-%-msys-%-lic.tar.%" />
 
       <component class="bin">
         <release tarname="bzip2-1.0.5-2-msys-1.0.13-bin.tar.lzma" />
@@ -61,8 +61,8 @@
         </paragraph>
       </description>
 
-      <source tarname="bzip2-%-msys-%-src.tar" />
-      <licence tarname="bzip2-%-msys-%-lic.tar" />
+      <source tarname="bzip2-%-msys-%-src.tar.%" />
+      <licence tarname="bzip2-%-msys-%-lic.tar.%" />
 
       <component class="dll">
         <release tarname="libbz2-1.0.5-2-msys-1.0.13-dll-1.tar.lzma" />

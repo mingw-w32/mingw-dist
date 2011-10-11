@@ -42,8 +42,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="libarchive-%-msys-%-lic.tar" />
-      <source tarname="libarchive-%-msys-%-src.tar" />
+      <licence tarname="libarchive-%-msys-%-lic.tar.%" />
+      <source tarname="libarchive-%-msys-%-src.tar.%" />
 
       <component class="doc">
         <release tarname="libarchive-2.8.3-1-msys-1.0.13-doc.tar.lzma" />
@@ -146,8 +146,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="libarchive-%-msys-%-lic.tar" />
-      <source tarname="libarchive-%-msys-%-src.tar" />
+      <licence tarname="libarchive-%-msys-%-lic.tar.%" />
+      <source tarname="libarchive-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <!-- Every MSYS package requires msys-core-bin.  This dependency
@@ -227,8 +227,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="libarchive-%-msys-%-lic.tar" />
-      <source tarname="libarchive-%-msys-%-src.tar" />
+      <licence tarname="libarchive-%-msys-%-lic.tar.%" />
+      <source tarname="libarchive-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <!-- Every MSYS package requires msys-core-bin.  This dependency

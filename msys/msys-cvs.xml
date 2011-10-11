@@ -15,8 +15,8 @@
         </paragraph>
       </description>
 
-      <licence tarname="cvs-%-msys-%-lic.tar" />
-      <source tarname="cvs-%-msys-%-src.tar" />
+      <licence tarname="cvs-%-msys-%-lic.tar.%" />
+      <source tarname="cvs-%-msys-%-src.tar.%" />
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />

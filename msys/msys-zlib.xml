@@ -14,8 +14,8 @@
         </paragraph>
       </description>
 
-      <source tarname="zlib-%-msys-%-src.tar" />
-      <licence tarname="zlib-%-msys-%-lic.tar" />
+      <source tarname="zlib-%-msys-%-src.tar.%" />
+      <licence tarname="zlib-%-msys-%-lic.tar.%" />
 
       <component class="dll">
         <!-- note: for historical reasons,
