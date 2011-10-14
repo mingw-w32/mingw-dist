@@ -23,6 +23,9 @@
       <source tarname="bzip2-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
+        <release tarname="bzip2-1.0.6-4-mingw32-bin.tar.lzma" >
+          <requires eq="mingw32-libbz2-%-mingw32-%-dll-2.tar" />
+        </release>
         <release tarname="bzip2-1.0.6-1-mingw32-bin.tar.lzma" >
           <requires eq="mingw32-libbz2-%-mingw32-%-dll-2.tar" />
         </release>
@@ -32,23 +35,33 @@
       </component>
 
       <component class="doc">
+        <release tarname="bzip2-1.0.6-4-mingw32-doc.tar.lzma" />
         <release tarname="bzip2-1.0.6-1-mingw32-doc.tar.lzma" />
         <release tarname="bzip2-1.0.5-2-mingw32-doc.tar.gz" />
       </component>
 
       <component class="lic">
+        <release tarname="bzip2-1.0.6-4-mingw32-lic.tar.lzma" />
         <release tarname="bzip2-1.0.6-1-mingw32-lic.tar.lzma" />
         <release tarname="bzip2-1.0.5-2-mingw32-lic.tar.gz" />
       </component>
 
       <component class="man">
+        <release tarname="bzip2-1.0.6-4-mingw32-man.tar.lzma" />
         <release tarname="bzip2-1.0.6-1-mingw32-man.tar.lzma" />
         <release tarname="bzip2-1.0.5-2-mingw32-man.tar.gz" />
       </component>
 
       <component class="dev">
-        <release tarname="bzip2-1.0.6-1-mingw32-dev.tar.lzma" />
-        <release tarname="bzip2-1.0.5-2-mingw32-dev.tar.gz" />
+        <release tarname="bzip2-1.0.6-4-mingw32-dev.tar.lzma" >
+          <requires eq="mingw32-libbz2-%-mingw32-%-dll-2.tar" />
+        </release>
+        <release tarname="bzip2-1.0.6-1-mingw32-dev.tar.lzma" >
+          <requires eq="mingw32-libbz2-%-mingw32-%-dll-2.tar" />
+        </release>
+        <release tarname="bzip2-1.0.5-2-mingw32-dev.tar.gz" >
+          <requires eq="mingw32-libbz2-%-mingw32-%-dll-2.tar" />
+        </release>
       </component>
     </package>
 
@@ -68,6 +81,9 @@
       <source tarname="bzip2-%-mingw32-%-src.tar.%" />
 
       <component class="dll">
+        <release tarname="libbz2-1.0.6-4-mingw32-dll-2.tar.lzma" >
+          <requires eq="mingw32-libgcc-*-mingw32-dll-1.tar" />
+        </release>
         <release tarname="libbz2-1.0.6-1-mingw32-dll-2.tar.lzma" />
         <release tarname="libbz2-1.0.5-2-mingw32-dll-2.tar.gz" />
       </component>
