@@ -1,5 +1,13 @@
 2011-10-14  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
+	Update & publish msys-zlib, msys-bzip2.
+
+	* msys/msys-zlib.xml: Update to zlib-1.2.5-1.
+	* msys/msys-bzip2.xml: Update to bzip2-1.0.6-1.
+	* msys/issue.log: Update accordingly.
+
+2011-10-14  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
 	Update & publish mingw32-zlib, mingw32-bzip2, mingw32-xz.
 
 	* mingw32/mingw32-zlib.xml: Update to zlib-1.2.5-4.

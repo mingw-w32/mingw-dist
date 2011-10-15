@@ -24,6 +24,7 @@
 
       <component class="bin">
         <release tarname="bzip2-1.0.5-2-msys-1.0.13-bin.tar.lzma" />
+        <release tarname="bzip2-1.0.6-1-msys-1.0.17-bin.tar.lzma" />
 
         <!-- Every MSYS package requires msys-core-bin -->
         <requires eq="msys-core-*-msys-*-bin.tar" />
@@ -42,10 +43,12 @@
 
       <component class="doc">
         <release tarname="bzip2-1.0.5-2-msys-1.0.13-doc.tar.lzma" />
+        <release tarname="bzip2-1.0.6-1-msys-1.0.17-doc.tar.lzma" />
       </component>
 
       <component class="lic">
         <release tarname="bzip2-1.0.5-2-msys-1.0.13-lic.tar.lzma" />
+        <release tarname="bzip2-1.0.6-1-msys-1.0.17-lic.tar.lzma" />
       </component>
     </package>
 
@@ -66,11 +69,15 @@
 
       <component class="dll">
         <release tarname="libbz2-1.0.5-2-msys-1.0.13-dll-1.tar.lzma" />
+        <release tarname="libbz2-1.0.6-1-msys-1.0.17-dll-1.tar.lzma" />
         <requires eq="msys-core-*-msys-*-bin.tar" />
       </component>
 
       <component class="dev">
         <release tarname="libbz2-1.0.5-2-msys-1.0.13-dev.tar.lzma">
+          <requires eq="msys-libbz2-%-msys-%-dll-1.tar.lzma" />
+        </release>
+        <release tarname="libbz2-1.0.6-1-msys-1.0.17-dev.tar.lzma">
           <requires eq="msys-libbz2-%-msys-%-dll-1.tar.lzma" />
         </release>
       </component>
