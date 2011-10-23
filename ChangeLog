@@ -1,3 +1,10 @@
+2011-10-22  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish mingw32-gdb.
+
+	* mingw32/mingw32-gdb.xml: Update to 7.3.1-1.
+	* mingw32/issue.log: Updated accordingly.
+
 2011-10-14  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Update & publish msys-zlib, msys-bzip2.
