@@ -1,3 +1,11 @@
+2011-10-22  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update & publish mingw32-libiconv, mingw32-gettext.
+
+	* mingw32/mingw32-libiconv.xml: Update to 1.14-2.
+	* mingw32/mingw32-gettext.xml: Update to 0.18.1.1-2.
+	* mingw32/issue.log: Updated accordingly.
+
 2011-10-22  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish mingw32-gdb.
