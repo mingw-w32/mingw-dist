@@ -1,3 +1,17 @@
+2011-10-31  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update and publish msys-gettext, msys-libiconv.
+	Correct versioning issue with mingw32-{gettext,libiconv}.
+
+	* msys/msys-gettext.xml: Update to 0.18.1.1-1.
+	* msys/msys-libiconv.xml: Update to 1.14-1.
+	* msys/issue.log: Updated accordingly.
+	* mingw32/mingw32-gettext.xml: Version 0.18.1.1-2 requires
+	at least version 1.14-2 of mingw32-libiconv-dll-2.
+	* mingw32/mingw32-libiconv.xml: VErsion 1.14-2 requires at
+	least version 0.18.1.1-2 of mingw32-libintl-dll-8.
+	* mingw32/issue.log: Updated accordingly.
+
 2011-10-24  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Update & publish msys-autoconf.
