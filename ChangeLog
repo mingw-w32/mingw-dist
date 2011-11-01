@@ -1,3 +1,15 @@
+2011-11-01  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Adopt mingw32-libunistring as a contributed package;
+	relegate mingw32-pdcurses to contributed status.
+
+	* mingw32/mingw32-package-list.xml: Add mingw32-libunistring.xml hook;
+	relocate mingw32-pdcurses.xml reference to contributed package group.
+
+	* mingw32/mingw32-pdcurses.xml: Remove file.
+
+	* mingw32/issue.log: Update accordingly.
+
 2011-10-31  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Update and publish msys-gettext, msys-libiconv.

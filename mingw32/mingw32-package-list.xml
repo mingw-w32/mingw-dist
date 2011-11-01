@@ -18,7 +18,7 @@
     </package-group>
   </package-group-hierarchy>
 
-  <!-- "real" packages ~~ any commented out are yet to be published -->
+  <!-- "real" packages ~~ core distribution -->
   <package-list catalogue="mingw32-autoconf" />
   <package-list catalogue="mingw32-automake" />
   <package-list catalogue="mingw32-basic-bsdtar" />
@@ -42,13 +42,16 @@
   <package-list catalogue="mingw32-mgwport" />
   <package-list catalogue="mingw32-mpc" />
   <package-list catalogue="mingw32-mpfr" />
-  <package-list catalogue="mingw32-pdcurses" />
   <package-list catalogue="mingw32-pexports" />
   <package-list catalogue="mingw32-popt" />
   <package-list catalogue="mingw32-pthreads-w32" />
   <package-list catalogue="mingw32-runtime" />
   <package-list catalogue="mingw32-xz" />
   <package-list catalogue="mingw32-zlib" />
+
+  <!-- "real" packages ~~ user contributed -->
+  <package-list catalogue="mingw32-libunistring" />
+  <package-list catalogue="mingw32-pdcurses" />
 
   <!-- "virtual" packages -->
   <package-list catalogue="mingw32-base" />
