@@ -1,3 +1,10 @@
+2011-11-06  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Update for mingw-get-0.4-alpha-1 release.
+
+	* mingw32/mingw32-mingw-get.xml: Add release entries.
+	* mingw32/issue.log: Update accordingly.
+
 2011-11-01  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Adopt mingw32-libunistring as a contributed package;
