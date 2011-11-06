@@ -1,3 +1,11 @@
+2011-11-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update & publish mgwport-0.10.6-1.
+
+	* mingw32/mingw32-mgwport.xml: Add 0.10.6-1 release.
+	* mingw32/issue.log: Update accordingly.
+
+
 2011-11-06  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Update for mingw-get-0.4-alpha-1 release.

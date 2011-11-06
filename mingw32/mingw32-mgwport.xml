@@ -58,14 +58,17 @@
         <requires eq="msys-libtool-*-msys-*-bin.tar" />
         -->
         <release tarname="mgwport-0.10.5-1-mingw32-bin.tar.lzma" />
+        <release tarname="mgwport-0.10.6-1-mingw32-bin.tar.lzma" />
       </component>
 
       <component class="doc">
         <release tarname="mgwport-0.10.5-1-mingw32-doc.tar.lzma" />
+        <release tarname="mgwport-0.10.6-1-mingw32-doc.tar.lzma" />
       </component>
 
       <component class="lic">
         <release tarname="mgwport-0.10.5-1-mingw32-lic.tar.lzma" />
+        <release tarname="mgwport-0.10.6-1-mingw32-lic.tar.lzma" />
       </component>
     </package>
 
