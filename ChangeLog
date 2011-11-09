@@ -1,3 +1,12 @@
+2011-11-08  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Correct dependencies for mingw32-gettext-dev.
+
+	* mingw32/mingw32-gettext.xml: Add libstdc++ and libgomp
+	dependencies for -dev component. Modify all libgcc dependency
+	specifications to include subsystem version wildcard.
+	* mingw32/issue.log: Update accordingly.
+
 2011-11-06  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Update & publish msys-xz.
