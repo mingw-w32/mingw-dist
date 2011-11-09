@@ -1,5 +1,14 @@
 2011-11-08  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
+	Correct dependencies for mingw32-gettext-dev, again.
+
+	* mingw32/mingw32-gettext.xml: Also add libexpat dependency
+	for -dev component. Remove unnecessary dependencies for
+	gettext-dev 0.17-1.
+	* mingw32/issue.log: Update accordingly.
+
+2011-11-08  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
 	Correct dependencies for mingw32-gettext-dev.
 
 	* mingw32/mingw32-gettext.xml: Add libstdc++ and libgomp
