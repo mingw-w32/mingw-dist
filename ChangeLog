@@ -1,3 +1,12 @@
+2011-11-15  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Fix source and licence package associations for GDB.
+
+	* mingw32/mingw32-gdb.xml: Add generic source and licence package
+	association declarations for all mingw32-gdb package components;
+	remove release specific declarations where equivalent.
+	* mingw32/issue.log: Update accordingly.
+
 2011-11-08  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Correct dependencies for mingw32-gettext-dev, again.
