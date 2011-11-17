@@ -1,3 +1,10 @@
+2011-11-16  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update & publish msys-rebase.
+
+	* msys/msys-rebase.xml: Update to 4.0.1_1.
+	* msys/issue.log: Update accordingly.
+
 2011-11-15  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Fix source and licence package associations for GDB.
