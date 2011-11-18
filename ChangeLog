@@ -1,3 +1,10 @@
+2011-11-17  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Adopt msys-mksh as a contributed package.
+
+	* msys/msys-package-list.xml: Add msys-mksh.xml hook.
+	* msys/issue.log: Update accordingly.
+
 2011-11-16  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Update & publish msys-rebase.

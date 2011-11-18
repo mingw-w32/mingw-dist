@@ -80,6 +80,9 @@
   <package-list catalogue="msys-zip" />
   <package-list catalogue="msys-zlib" />
 
+  <!-- "real" packages ~~ user contributed -->
+  <package-list catalogue="msys-mksh" />
+
   <!-- "virtual" packages -->
   <package-list catalogue="msys-base" />
   <package-list catalogue="mingw-developer-toolkit" />
