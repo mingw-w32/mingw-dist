@@ -1,5 +1,11 @@
 2011-11-17  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
+	Update msys-mksh contributed package.
+
+	* msys/issue.log: Update for msys-mksh.
+
+2011-11-17  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
 	Adopt msys-mksh as a contributed package.
 
 	* msys/msys-package-list.xml: Add msys-mksh.xml hook.
