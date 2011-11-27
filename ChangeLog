@@ -1,4 +1,10 @@
-2011-11-17  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+2011-11-27  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Correct versioning issue with msys-mksh contributed package.
+
+	* msys/issue.log: Update for msys-mksh.
+
+2011-11-25  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update msys-mksh contributed package.
 
