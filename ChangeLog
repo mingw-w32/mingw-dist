@@ -1,3 +1,7 @@
+2011-12-15  Cesar Strauss  <cestrauss@gmail.com>
+
+	* mingw32/mingw32-gcc4.xml: Remove the short-lived 4.6.1-1 release.
+
 2011-11-27  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Correct versioning issue with msys-mksh contributed package.
