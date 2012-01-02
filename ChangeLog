@@ -1,5 +1,12 @@
 2012-01-01  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
+	Update & publish msys-mintty.
+
+	* msys/msys-mintty.xml: Update to 1.0.3-1.
+	* msys/issue.log: Updated accordingly.
+
+2012-01-01  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
 	Update & publish mingw32-binutils.
 
 	* mingw32/mingw32-binutils.xml: Update to 2.22-1.
