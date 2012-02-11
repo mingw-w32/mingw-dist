@@ -1,3 +1,10 @@
+2012-02-10  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish mingw32-gdb. Split the gdb package into gdb and gdb-python.
+
+	* mingw32/mingw32-gdb.xml: Update to 7.2-2.
+	* mingw32/issue.log: Updated accordingly.
+
 2012-01-01  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish msys-mintty.
