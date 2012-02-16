@@ -12,7 +12,7 @@
       </package-group>
       <package-group name="MinGW Libraries">
         <package-group name="MinGW Standard Libraries" />
-        <package-group name="MinGW Add-On Libraries" />
+        <package-group name="MinGW Supplementary Libraries" />
       </package-group>
       <package-group name="MinGW Autotools" />
     </package-group>
@@ -36,6 +36,7 @@
   <package-list catalogue="mingw32-libarchive" />
   <package-list catalogue="mingw32-libiconv" />
   <package-list catalogue="mingw32-libtool" />
+  <package-list catalogue="mingw32-lua" />
   <package-list catalogue="mingw32-make" />
   <package-list catalogue="mingw32-mingw-get" />
   <package-list catalogue="mingw32-mingw-utils" />
