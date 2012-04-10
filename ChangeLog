@@ -1,5 +1,18 @@
 2012-04-09  Erwin Waterlander  <waterlan@xs4all.nl>
 
+	Replace msys-cygutils-dos2unix with msys-dos2unix.
+
+	* msys/msys-cygutils.xml: Removed msys-cygutils-dos2unix
+	package element. Modified msys-cygutils description to refer
+	to the new msys-dos2unix package.
+	* msys/msys-dos2unix.xml: New file.
+	* msys/msys-package-list.xml: Added msys-dos2unix.xml.
+	* msys/msys-base.xml: Replaced msys-coreutils-dos2unix-*-bin
+	with msys-dos2unix-*-bin.
+	* msys/issue.log: Updated accordingly.
+
+2012-04-09  Erwin Waterlander  <waterlan@xs4all.nl>
+
 	Replace mingw32-cygutils-dos2unix with mingw32-dos2unix.
 	Remove (unnecessary) mingw32-cygutils.
 

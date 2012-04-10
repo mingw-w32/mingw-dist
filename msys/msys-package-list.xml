@@ -31,6 +31,7 @@
   <package-list catalogue="msys-dash" />
   <package-list catalogue="msys-diffutils" />
   <package-list catalogue="msys-diffstat" />
+  <package-list catalogue="msys-dos2unix" />
   <package-list catalogue="msys-expat" />
   <package-list catalogue="msys-file" />
   <package-list catalogue="msys-findutils" />
