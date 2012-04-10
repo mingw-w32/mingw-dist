@@ -24,7 +24,7 @@
   <package-list catalogue="mingw32-basic-bsdtar" />
   <package-list catalogue="mingw32-binutils" />
   <package-list catalogue="mingw32-bzip2" />
-  <package-list catalogue="mingw32-cygutils" />
+  <package-list catalogue="mingw32-dos2unix" />
   <package-list catalogue="mingw32-expat" />
   <package-list catalogue="mingw32-gcc3" />
   <package-list catalogue="mingw32-gcc4" />

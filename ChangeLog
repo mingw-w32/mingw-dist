@@ -1,3 +1,16 @@
+2012-04-09  Erwin Waterlander  <waterlan@xs4all.nl>
+
+	Replace mingw32-cygutils-dos2unix with mingw32-dos2unix.
+	Remove (unnecessary) mingw32-cygutils.
+
+	* mingw32/mingw32-cygutils.xml: Removed.
+	* mingw32/mingw32-dos2unix.xml: New file.
+	* mingw32/mingw32-package-list.xml: Added mingw32-dos2unix.xml;
+	removed mingw32-cygutils.xml.
+	* mingw32/mingw32-mingw-utils.xml: Updated description text
+	to refer to new mingw32-dos2unix package.
+	* mingw32/issue.log: Updated accordingly.
+
 2012-02-16  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add Lua packages as MinGW extensions.

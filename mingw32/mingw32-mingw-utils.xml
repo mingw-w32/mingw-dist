@@ -24,7 +24,7 @@
           incarnations of mingw-utils.  These included pexports, which is now
           provided by the separate mingw32-pexports package; dos2unix and
           unix2dos, which are both now provided by the separate
-          mingw32-cygutils-dos2unix package; and DrMinGW.  DrMinGW is now
+          mingw32-dos2unix package; and DrMinGW.  DrMinGW is now
           available and maintained outside the MinGW/MSYS project by its
           original author: http://code.google.com/p/jrfonseca/wiki/DrMingw
         </paragraph>
