@@ -1,3 +1,16 @@
+2012-04-15  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Correct msys-dos2unix doc and licence package reference anomalies.
+
+	* msys/msys-dos2unix.xml: Update and republish.
+	(cygutils-dos2unix-1.3.4-4-msys-1.0.13-doc.tar.lzma): Declare it as a
+	virtual package; add 'requires' specification, linking it to...
+	(cygutils-1.3.4-4-msys-1.0.13-doc.tar): ...this.
+	(cygutils-dos2unix-1.3.4-4-msys-1.0.13-lic.tar.lzma): Likewise...
+	(cygutils-1.3.4-4-msys-1.0.13-lic.tar): ...linking to this.
+
+	* msys/issue.log: Updated accordingly.
+
 2012-04-09  Erwin Waterlander  <waterlan@xs4all.nl>
 
 	Replace msys-cygutils-dos2unix with msys-dos2unix.
