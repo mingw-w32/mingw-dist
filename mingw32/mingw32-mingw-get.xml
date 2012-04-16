@@ -27,14 +27,33 @@
       </description>
 
       <component class="bin">
+        <release tarname="mingw-get-0.5-mingw32-beta-20120416-1-bin.tar.xz" />
         <release tarname="mingw-get-0.4-mingw32-alpha-1-bin.tar.xz" />
         <release tarname="mingw-get-0.3-mingw32-alpha-2.1-bin.tar.xz" />
         <release tarname="mingw-get-0.3-mingw32-alpha-2-bin.tar.gz" />
         <release tarname="mingw-get-0.3-mingw32-alpha-1-bin.tar.gz" />
         <release tarname="mingw-get-0.2-mingw32-alpha-4-bin.tar.gz" />
+
+        <action class="post-install">
+          setup = require "setup"
+          print( " running post-install hooks for mingw-get-bin" )
+          setup.create_shortcuts(
+            '--description="Manage MinGW Package Installation"',
+            setup.libexec_path( "gui.exe" ), "mingw-get"
+          )
+        </action>
+        <action class="post-remove">
+          setup = require "setup"
+          print( " running post-remove hooks for mingw-get-bin" )
+          setup.delete_shortcuts(
+            "--if-linked="..setup.libexec_path( "gui.exe" ),
+            "--force", "mingw-get"
+          )
+        </action>
       </component>
 
       <component class="lic">
+        <release tarname="mingw-get-0.5-mingw32-beta-20120416-1-lic.tar.xz" />
         <release tarname="mingw-get-0.4-mingw32-alpha-1-lic.tar.xz" />
         <release tarname="mingw-get-0.3-mingw32-alpha-2.1-lic.tar.xz" />
         <release tarname="mingw-get-0.3-mingw32-alpha-2-lic.tar.gz" />
@@ -62,6 +81,7 @@
       <source tarname="mingw-get-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
+        <release tarname="pkginfo-0.5-mingw32-beta-20120416-1-bin.tar.xz" />
         <release tarname="pkginfo-0.4-mingw32-alpha-1-bin.tar.xz" />
         <release tarname="pkginfo-0.3-mingw32-alpha-2.1-bin.tar.xz" />
         <release tarname="pkginfo-0.3-mingw32-alpha-2-bin.tar.gz" />

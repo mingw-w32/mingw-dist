@@ -1,3 +1,10 @@
+2012-04-16  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Update for mingw-get-0.5-mingw32-beta-20120416-1 release.
+
+	* mingw32/mingw32-mingw-get.xml: Update and republish.
+	* mingw32/issue.log: Updated accordingly.
+
 2012-04-15  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Correct msys-dos2unix doc and licence package reference anomalies.
