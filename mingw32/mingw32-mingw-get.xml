@@ -27,6 +27,7 @@
       </description>
 
       <component class="bin">
+        <release tarname="mingw-get-0.5-mingw32-beta-20120426-1-bin.tar.xz" />
         <release tarname="mingw-get-0.5-mingw32-beta-20120416-1-bin.tar.xz" />
         <release tarname="mingw-get-0.4-mingw32-alpha-1-bin.tar.xz" />
         <release tarname="mingw-get-0.3-mingw32-alpha-2.1-bin.tar.xz" />
@@ -53,6 +54,7 @@
       </component>
 
       <component class="lic">
+        <release tarname="mingw-get-0.5-mingw32-beta-20120426-1-lic.tar.xz" />
         <release tarname="mingw-get-0.5-mingw32-beta-20120416-1-lic.tar.xz" />
         <release tarname="mingw-get-0.4-mingw32-alpha-1-lic.tar.xz" />
         <release tarname="mingw-get-0.3-mingw32-alpha-2.1-lic.tar.xz" />
@@ -81,6 +83,7 @@
       <source tarname="mingw-get-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
+        <release tarname="pkginfo-0.5-mingw32-beta-20120426-1-bin.tar.xz" />
         <release tarname="pkginfo-0.5-mingw32-beta-20120416-1-bin.tar.xz" />
         <release tarname="pkginfo-0.4-mingw32-alpha-1-bin.tar.xz" />
         <release tarname="pkginfo-0.3-mingw32-alpha-2.1-bin.tar.xz" />
