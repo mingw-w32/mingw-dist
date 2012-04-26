@@ -43,9 +43,9 @@
             setup.libexec_path( "gui.exe" ), "mingw-get"
           )
         </action>
-        <action class="post-remove">
+        <action class="pre-remove">
           setup = require "setup"
-          print( " running post-remove hooks for mingw-get-bin" )
+          print( " running pre-remove hooks for mingw-get-bin" )
           setup.delete_shortcuts(
             "--if-linked="..setup.libexec_path( "gui.exe" ),
             "--force", "mingw-get"

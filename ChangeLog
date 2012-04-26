@@ -1,5 +1,15 @@
 2012-04-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Fix post/pre-remove conflict in mingw-get.xml scripting.
+
+	* mingw32/mingw32-mingw-get.xml (mingw-get-bin.post-remove): Can't
+	use post-remove script here, after helper modules removed; replace...
+	(mingw-get-bin.pre-remove): ...with this; regenerate and republish.
+
+	* mingw32/issue.log: Update accordingly.
+
+2012-04-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Update for mingw-get-0.5-mingw32-beta-20120426-1 release.
 
 	* mingw32/mingw32-mingw-get.xml: Update and republish.
