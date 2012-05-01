@@ -1,3 +1,16 @@
+2012-05-01  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Reorder dependencies for mingw32-gcc4.
+
+	* mingw32/mingw32-gcc4.xml (gcc-core): Factor out dependency
+	declarations common to all releases; order all version specific
+	references before version agnostic references, to avoid possible
+	accidental scheduling of mismatched versions for installation.
+	(gcc-ada): Factor out common dependency declarations.
+	Regenerate, and republish.
+
+	* mingw32/issue.log: Update accordingly.
+
 2012-04-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Fix post/pre-remove conflict in mingw-get.xml scripting.
