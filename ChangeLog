@@ -1,3 +1,14 @@
+2012-05-16  Charles Wilson  <mingw@cwilson.fastmail.fm>
+
+	Update and publish msys-zlib and mingw32-zlib.
+
+	* msys/msys-zlib.xml: Update to 1.2.7-1. Add new minizip-bin,
+	libminizip-dev, and libminizip-dll-1 components.
+	* msys/issue.log: Update accordingly.
+	* mingw32/mingw32-zlib.xml: Update to 1.2.7-1. Add new
+	minizip-bin, libminizip-dev, and libminizip-dll-1 components.
+	* mingw32/issue.log: Update accordingly.
+
 2012-05-01  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Reorder dependencies for mingw32-gcc4.

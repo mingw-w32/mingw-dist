@@ -56,6 +56,6 @@
   9399cb6c2efd8fd907c42a278a6f41bbde9e440c 2011091400 mingw32-pthreads-w32.xml
   488d6d4e037b19acdffc6a54c753fa69c21e80f9 2011082300 mingw32-runtime.xml
   a8d4de8b2feefdf9744cff733051e395f72e7b21 2011101400 mingw32-xz.xml
-  751a1de122b6aac73f7e32c0404d123e43a9cf19 2011101400 mingw32-zlib.xml
+  0514f6a48779110bb6dc3dee17defcdc5f1d1bae 2012051700 mingw32-zlib.xml
 #
 # $RCSfile$: end of file
