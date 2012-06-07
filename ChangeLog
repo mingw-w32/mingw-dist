@@ -1,3 +1,10 @@
+2012-06-07  Cesar Strauss  <cestrauss@gmail.com>
+
+	Update & publish mingw32-gcc4.
+
+	* mingw32/mingw32-gcc4.xml: Update to 4.7.0-1.
+	* mingw32/issue.log: Update accordingly.
+
 2012-05-16  Charles Wilson  <mingw@cwilson.fastmail.fm>
 
 	Update and publish msys-zlib and mingw32-zlib.
