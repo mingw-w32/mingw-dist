@@ -24,22 +24,48 @@
         </paragraph>
       </description>
 
-      <source tarname="mingwrt-%-mingw32-src.tar.gz" />
-      <licence tarname="mingwrt-%-mingw32-dev.tar.gz" />
+      <source tarname="mingwrt-%-mingw32-src.tar.lzma" />
+      <licence tarname="mingwrt-%-mingw32-dev.tar.lzma" />
 
       <component class="dev">
         <requires eq="mingwrt-%-mingw32-dll.tar" />
-        <release tarname="mingwrt-3.20-mingw32-dev.tar.gz" />
-        <release tarname="mingwrt-3.19-mingw32-dev.tar.gz" />
-        <release tarname="mingwrt-3.18-mingw32-dev.tar.gz" />
-        <release tarname="mingwrt-3.17-mingw32-dev.tar.gz" />
+        <release tarname="mingwrt-3.20-2-mingw32-dev.tar.lzma" />
+        <release tarname="mingwrt-3.20-mingw32-dev.tar.gz">
+          <source tarname="mingwrt-%-mingw32-src.tar.gz" />
+          <licence tarname="mingwrt-%-mingw32-dev.tar.gz" />
+	</release>
+        <release tarname="mingwrt-3.19-mingw32-dev.tar.gz">
+          <source tarname="mingwrt-%-mingw32-src.tar.gz" />
+          <licence tarname="mingwrt-%-mingw32-dev.tar.gz" />
+	</release>
+        <release tarname="mingwrt-3.18-mingw32-dev.tar.gz">
+          <source tarname="mingwrt-%-mingw32-src.tar.gz" />
+          <licence tarname="mingwrt-%-mingw32-dev.tar.gz" />
+	</release>
+        <release tarname="mingwrt-3.17-mingw32-dev.tar.gz">
+          <source tarname="mingwrt-%-mingw32-src.tar.gz" />
+          <licence tarname="mingwrt-%-mingw32-dev.tar.gz" />
+	</release>
       </component>
 
       <component class="dll">
-        <release tarname="mingwrt-3.20-mingw32-dll.tar.gz" />
-        <release tarname="mingwrt-3.19-mingw32-dll.tar.gz" />
-        <release tarname="mingwrt-3.18-mingw32-dll.tar.gz" />
-        <release tarname="mingwrt-3.17-mingw32-dll.tar.gz" />
+        <release tarname="mingwrt-3.20-2-mingw32-dll.tar.lzma" />
+        <release tarname="mingwrt-3.20-mingw32-dll.tar.gz">
+          <source tarname="mingwrt-%-mingw32-src.tar.gz" />
+          <licence tarname="mingwrt-%-mingw32-dev.tar.gz" />
+	</release>
+        <release tarname="mingwrt-3.19-mingw32-dll.tar.gz">
+          <source tarname="mingwrt-%-mingw32-src.tar.gz" />
+          <licence tarname="mingwrt-%-mingw32-dev.tar.gz" />
+	</release>
+        <release tarname="mingwrt-3.18-mingw32-dll.tar.gz">
+          <source tarname="mingwrt-%-mingw32-src.tar.gz" />
+          <licence tarname="mingwrt-%-mingw32-dev.tar.gz" />
+	</release>
+        <release tarname="mingwrt-3.17-mingw32-dll.tar.gz">
+          <source tarname="mingwrt-%-mingw32-src.tar.gz" />
+          <licence tarname="mingwrt-%-mingw32-dev.tar.gz" />
+	</release>
       </component>
     </package>
 

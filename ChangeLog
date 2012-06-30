@@ -1,3 +1,10 @@
+2012-06-30  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish mingwrt.
+
+	* mingw32/mingw32-runtime.xml: Update mingwrt to 3.20-2.
+	* mingw32/issue.log: Updated accordingly.
+
 2012-06-07  Cesar Strauss  <cestrauss@gmail.com>
 
 	Update & publish mingw32-gcc4.
