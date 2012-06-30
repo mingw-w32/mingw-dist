@@ -1,3 +1,13 @@
+2012-06-30  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Remove redundant source/licence references for mingwrt/w32api.
+
+	* mingw32/mingw32-runtime.xml (mingwrt, w32api): Make...
+	(source, licence): ...these references at package level generic wrt
+	compression format; remove redundant duplicates at release level.
+	Regenerate and republish LZMA format manifest.
+	* mingw32/issue.log: Updated accordingly.
+
 2012-06-30  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish mingwrt.
