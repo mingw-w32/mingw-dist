@@ -32,15 +32,20 @@
       </component>
 
       <component class="bin">
-        <release tarname="gcc-core-4.5.2-1-mingw32-bin.tar.lzma" />
+        <release tarname="gcc-core-4.5.2-1-mingw32-bin.tar.lzma">
+          <requires lt="mingwrt-3.20-2-mingw32-dev.tar" />
+        </release>
         <release tarname="gcc-core-4.6.1-2-mingw32-bin.tar.lzma">
           <requires eq="libquadmath-%-mingw32-dll-0.tar" />
+          <requires lt="mingwrt-3.20-2-mingw32-dev.tar" />
         </release>
         <release tarname="gcc-core-4.6.2-1-mingw32-bin.tar.lzma">
           <requires eq="libquadmath-%-mingw32-dll-0.tar" />
+          <requires lt="mingwrt-3.20-2-mingw32-dev.tar" />
         </release>
         <release tarname="gcc-core-4.7.0-1-mingw32-bin.tar.lzma">
           <requires eq="libquadmath-%-mingw32-dll-0.tar" />
+          <requires ge="mingwrt-3.20-2-mingw32-dev.tar" />
         </release>
 
         <!-- Requirements common to all of the above releases -->
@@ -51,7 +56,6 @@
         <requires eq="libmpc-*-mingw32-dll-2.tar" />
         <requires eq="pthreads-w32-*-mingw32-dev.tar" />
         <requires eq="binutils-*-mingw32-bin.tar" />
-        <requires eq="mingwrt-*-mingw32-dev.tar" />
         <requires eq="w32api-*-mingw32-dev.tar" />
       </component>
 
