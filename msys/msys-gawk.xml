@@ -8,7 +8,7 @@
 
     <package name="msys-gawk" alias="msys-awk">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="gawk: pattern scanning and processing language" >
+      <description lang="en" title="pattern scanning and processing language" >
         <paragraph>Gawk is the GNU implementation of the AWK programming
           language. Many computer users need to manipulate text files:
           extract and then operate on data from parts of certain lines

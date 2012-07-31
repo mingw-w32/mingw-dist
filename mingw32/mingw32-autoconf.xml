@@ -9,7 +9,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-autoconf" alias="autoconf">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="autoconf: Wrapper scripts for autoconf commands">
+      <description lang="en" title="Wrapper scripts for autoconf commands">
         <paragraph>Autoconf is an extensible package of M4 macros that
           produce shell scripts to automatically configure software source
           code packages.  These scripts can adapt the packages to many
@@ -45,7 +45,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-autoconf2.1" alias="autoconf2.1">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="autoconf2.1: Automatic Configure Script Builder (2.1x series)">
+      <description lang="en" title="Automatic Configure Script Builder (2.1x series)">
         <paragraph>Autoconf is an extensible package of M4 macros that
           produce shell scripts to automatically configure software source
           code packages.  These scripts can adapt the packages to many
@@ -82,7 +82,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-autoconf2.5" alias="autoconf2.5">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="autoconf2.5: Automatic Configure Script Builder (2.5x/2.6x series)">
+      <description lang="en" title="Automatic Configure Script Builder (2.5x/2.6x series)">
         <paragraph>Autoconf is an extensible package of M4 macros that
           produce shell scripts to automatically configure software source
           code packages.  These scripts can adapt the packages to many

@@ -8,7 +8,7 @@
 
     <package name="msys-file">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="file: determine file type" >
+      <description lang="en" title="determine file type" >
         <paragraph>The file command is used to identify a particular file
           according to the type of data contained by the file.  File can
           identify many different file types, including ELF binaries,
@@ -44,7 +44,7 @@
     </package>
 
     <package name="msys-libmagic">
-      <description lang="en" title="libmagic: library for determining file type" >
+      <description lang="en" title="library for determining file type" >
         <paragraph>The file command is used to identify a particular file
           according to the type of data contained by the file.  File can
           identify many different file types, including ELF binaries,

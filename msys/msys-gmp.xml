@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-gmp">
-      <description lang="en" title="gmp (msys): The GNU Multiple Precision Arithmetic Library" >
+      <description lang="en" title="The GNU Multiple Precision Arithmetic Library" >
         <paragraph>GNU MP is a library for arbitrary precision arithmetic,
           operating on signed integers, rational numbers, and floating
           point numbers.  It has a rich set of functions, and the functions
@@ -39,7 +39,7 @@
     </package>
 
     <package name="msys-libgmp">
-      <description lang="en" title="libgmp (msys): The GNU Multiple Precision Arithmetic Library" >
+      <description lang="en" title="The GNU Multiple Precision Arithmetic Library" >
         <paragraph>GNU MP is a library for arbitrary precision arithmetic,
           operating on signed integers, rational numbers, and floating
           point numbers.  It has a rich set of functions, and the functions

@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-zip">
-      <description lang="en" title="zip: Info-ZIP compression utility" >
+      <description lang="en" title="Info-ZIP compression utility" >
         <paragraph>Zip is a compression and file packaging/archive utility.
           Although highly compatible both with PKWARE's PKZIP and PKUNZIP
           utilities for MS-DOS and with Info-ZIP's own UnZip, the primary

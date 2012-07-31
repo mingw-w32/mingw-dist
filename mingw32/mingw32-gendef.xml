@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="mingw32-gendef" alias="gendef">
-      <description lang="en" title="gendef: Generate .def files for DLLs" >
+      <description lang="en" title="Generate .def files for DLLs" >
         <paragraph>gendef can extract information from DLLs to create
           corresponding .def files that list the symbols available in each DLL.
           .def files can then be used by dlltool (mingw32-binutils) to generate

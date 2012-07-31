@@ -8,7 +8,7 @@
 
     <package name="msys-perl">
       <affiliate group="MinGW Developer Toolkit" /> -->
-      <description lang="en" title="perl: The Perl programming language">
+      <description lang="en" title="The Perl programming language">
         <paragraph>Perl is a general-purpose programming language
           originally developed for text manipulation and now used for
           a wide range of tasks including system administration, web

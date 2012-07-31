@@ -8,7 +8,7 @@
 
     <package name="msys-patch">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="patch: Apply a diff file to an original" >
+      <description lang="en" title="Apply a diff file to an original" >
         <paragraph>GNU patch is an implementation of Larry Wall's program
           that takes "diff's" output and applies it to an original file to
           generate a modified version of that file. Normally, the patched

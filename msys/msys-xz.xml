@@ -8,7 +8,7 @@
 
     <package name="msys-xz">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="xz (msys): High performance compression based on the LZMA algorithm" >
+      <description lang="en" title="High performance compression based on the LZMA algorithm" >
         <paragraph>LZMA is data compression algorithm based on the
           Lempel-Ziv-Markov chain-Algorithm. It provides high compression
           ratios and very fast decompression, with minimal memory
@@ -73,7 +73,7 @@
     </package>
 
     <package name="msys-liblzma">
-      <description lang="en" title="liblzma (msys): High performance compression library based on the LZMA algorithm" >
+      <description lang="en" title="High performance compression library based on the LZMA algorithm" >
         <paragraph>LZMA is data compression algorithm based on the
           Lempel-Ziv-Markov chain-Algorithm. It provides high compression
           ratios and very fast decompression, with minimal memory

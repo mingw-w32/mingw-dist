@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
     <package name="msys-core" alias="msysCORE">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="msysCORE: The core components of MSYS">
+      <description lang="en" title="The core components of MSYS">
         <paragraph>MSYS, or the Minimal SYStem, is a POSIX implementation
           used in the Win32 operating system to enable configuration and
           compiling of open-source packages. This package provides the

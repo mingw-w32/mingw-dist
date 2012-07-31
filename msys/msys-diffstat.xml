@@ -8,7 +8,7 @@
 
     <package name="msys-diffstat">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="diffstat: patch file histograms" >
+      <description lang="en" title="patch file histograms" >
         <paragraph>diffstat reads the output of diff and displays a
           histogram of the insertions, deletions, and modifications
           per-file. It is useful for reviewing large, complex patch files.

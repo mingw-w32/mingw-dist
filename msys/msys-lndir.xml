@@ -8,7 +8,7 @@
 
     <package name="msys-lndir">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="lndir: Xorg recursive directory symlink tool">
+      <description lang="en" title="Xorg recursive directory symlink tool">
         <paragraph>The lndir program makes a shadow copy of a directory
           tree, except that the shadow is not populated with real files but
           instead with symbolic links (*) pointing at the real files in the

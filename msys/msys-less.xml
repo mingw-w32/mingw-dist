@@ -8,7 +8,7 @@
 
     <package name="msys-less">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="less: command-line text file viewer" >
+      <description lang="en" title="command-line text file viewer" >
         <paragraph>Less is a free, open-source file pager. A pager is a
           program that displays text files. Other pagers commonly in use
           are more and pg. Pagers are often used in command-line

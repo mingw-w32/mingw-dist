@@ -8,7 +8,7 @@
 
     <package name="msys-guile">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="guile: A Scheme interpreter" >
+      <description lang="en" title="A Scheme interpreter" >
         <paragraph>Guile is an interpreter for the Scheme programming language,
           with support for many SRFIs (Scheme Request For Implementations),
           packaged as a library which can be incorporated into your programs.
@@ -58,7 +58,7 @@
     </package>
 
     <package name="msys-libguile">
-      <description lang="en" title="libguile: An extensible Scheme interpreter library" >
+      <description lang="en" title="An extensible Scheme interpreter library" >
         <paragraph>Guile is a library designed to help programmers create
           flexible applications.  Using Guile in an application allows
           programmers to write plug-ins, or modules (there are many names, but

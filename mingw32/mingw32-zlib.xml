@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="mingw32-zlib" alias="zlib">
-      <description lang="en" title="ZLib: A Massively Spiffy Yet Delicately Unobtrusive Compression Library (docs)">
+      <description lang="en" title="A Massively Spiffy Yet Delicately Unobtrusive Compression Library (docs)">
         <paragraph>The zlib compression library provides in-memory compression
           and decompression functions, including integrity checks of the
           uncompressed data. The mingw32-zlib package provides documentation
@@ -42,7 +42,7 @@
     </package>
 
     <package name="mingw32-libz" alias="libz">
-      <description lang="en" title="ZLib: A Massively Spiffy Yet Delicately Unobtrusive Compression Library">
+      <description lang="en" title="A Massively Spiffy Yet Delicately Unobtrusive Compression Library">
         <paragraph>The zlib compression library provides in-memory compression
           and decompression functions, including integrity checks of the
           uncompressed data. The libz package provides the runtime and
@@ -84,7 +84,7 @@
     </package>
 
     <package name="mingw32-minizip" alias="minizip">
-      <description lang="en" title="MiniZip: Simple ZIP support from zlib">
+      <description lang="en" title="Simple ZIP support from zlib">
         <paragraph>The minizip package provides two simple ZIP archive
           manipulation tools, based on the minizip library from zlib.  More
           sophisticated needs are met by the unzip and zip packages.
@@ -107,7 +107,7 @@
     </package>
 
     <package name="mingw32-libminizip" alias="libminizip">
-      <description lang="en" title="MiniZip: Simple ZIP support from zlib">
+      <description lang="en" title="Simple ZIP support from zlib">
         <paragraph>The minizip library provides zlib-based support for
           manipulating ZIP archives. It is suitable for clients that need only
           create, inspect, and unpack such archives; more demanding needs may be

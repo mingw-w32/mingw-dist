@@ -8,7 +8,7 @@
 
     <package name="msys-cvs">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="cvs: Concurrent Version System" >
+      <description lang="en" title="Concurrent Version System" >
         <paragraph>CVS is a version control system, which allows you to keep
           old versions of files (usually source code), and maintains a log of
           who, when, and why changes occurred, etc., like RCS or SCCS.

@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-mintty" alias="mintty">
-      <description lang="en" title="mintty: terminal emulator" >
+      <description lang="en" title="terminal emulator" >
         <paragraph>Mintty is a terminal emulator for Cygwin and Cygwin
           derivatives such as MSYS.
         </paragraph>

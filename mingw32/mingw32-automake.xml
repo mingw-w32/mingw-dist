@@ -9,7 +9,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-automake" alias="automake" >
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="automake: Wrapper scripts for automake and aclocal">
+      <description lang="en" title="Wrapper scripts for automake and aclocal">
         <paragraph>Automake is a tool for automatically generating Makefile.in
           files compliant with the GNU Coding Standards.  Automake requires the
           use of Autoconf.  However, THIS package is actually a simple wrapper,
@@ -44,7 +44,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-automake1.4" alias="automake1.4">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="automake1.4: Automatic Makefile Builder (1.4 series)">
+      <description lang="en" title="Automatic Makefile Builder (1.4 series)">
         <paragraph>Automake is a tool for automatically generating
           Makefile.in files compliant with the GNU Coding Standards.
           Automake requires the use of Autoconf.  This package provides
@@ -78,7 +78,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-automake1.5" alias="automake1.5">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="automake1.5: Automatic Makefile Builder (1.5 series)">
+      <description lang="en" title="Automatic Makefile Builder (1.5 series)">
         <paragraph>Automake is a tool for automatically generating
           Makefile.in files compliant with the GNU Coding Standards.
           Automake requires the use of Autoconf.  This package provides
@@ -112,7 +112,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-automake1.6" alias="automake1.6">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="automake1.6: Automatic Makefile Builder (1.6 series)">
+      <description lang="en" title="Automatic Makefile Builder (1.6 series)">
         <paragraph>Automake is a tool for automatically generating
           Makefile.in files compliant with the GNU Coding Standards.
           Automake requires the use of Autoconf.  This package provides
@@ -146,7 +146,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-automake1.7" alias="automake1.7">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="automake1.7: Automatic Makefile Builder (1.7 series)">
+      <description lang="en" title="Automatic Makefile Builder (1.7 series)">
         <paragraph>Automake is a tool for automatically generating
           Makefile.in files compliant with the GNU Coding Standards.
           Automake requires the use of Autoconf.  This package provides
@@ -180,7 +180,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-automake1.8" alias="automake1.8">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="automake1.8: Automatic Makefile Builder (1.8 series)">
+      <description lang="en" title="Automatic Makefile Builder (1.8 series)">
         <paragraph>Automake is a tool for automatically generating
           Makefile.in files compliant with the GNU Coding Standards.
           Automake requires the use of Autoconf.  This package provides
@@ -214,7 +214,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-automake1.9" alias="automake1.9">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="automake1.9: Automatic Makefile Builder (1.9 series)">
+      <description lang="en" title="Automatic Makefile Builder (1.9 series)">
         <paragraph>Automake is a tool for automatically generating
           Makefile.in files compliant with the GNU Coding Standards.
           Automake requires the use of Autoconf.  This package provides
@@ -248,7 +248,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-automake1.10" alias="automake1.10">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="automake1.10: Automatic Makefile Builder (1.10 series)">
+      <description lang="en" title="Automatic Makefile Builder (1.10 series)">
         <paragraph>Automake is a tool for automatically generating
           Makefile.in files compliant with the GNU Coding Standards.
           Automake requires the use of Autoconf.  This package provides
@@ -282,7 +282,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-automake1.11" alias="automake1.11">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="automake1.11: Automatic Makefile Builder (1.11 series)">
+      <description lang="en" title="Automatic Makefile Builder (1.11 series)">
         <paragraph>Automake is a tool for automatically generating
           Makefile.in files compliant with the GNU Coding Standards.
           Automake requires the use of Autoconf.  This package provides

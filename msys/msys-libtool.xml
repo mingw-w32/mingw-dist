@@ -8,7 +8,7 @@
 
     <package name="msys-libtool">
       <affiliate group="MSYS System Builder" />
-      <description lang="en" title="libtool (msys): A shared library generation tool" >
+      <description lang="en" title="A shared library generation tool" >
         <paragraph>This is not the libtool you are looking for.</paragraph>
         <paragraph>GNU libtool is a generic library support package.  Libtool
           hides the complexity of using shared libraries behind a consistent,
@@ -61,7 +61,7 @@
 
     <package name="msys-libltdl">
       <affiliate group="MSYS System Builder" />
-      <description lang="en" title="libltdl (msys): A portable dlopen replacement" >
+      <description lang="en" title="A portable dlopen replacement" >
         <paragraph>This is not the libtool you are looking for.</paragraph>
         <paragraph>GNU libtool is a generic library support package.  Libtool
           hides the complexity of using shared libraries behind a consistent,

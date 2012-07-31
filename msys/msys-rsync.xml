@@ -8,7 +8,7 @@
 
     <package name="msys-rsync">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="rsync: file transfer program" >
+      <description lang="en" title="file transfer program" >
         <paragraph>rsync is a file transfer program. rsync uses the 'rsync
           algorithm' which provides a very fast method for bringing remote files
           into sync. It does this by sending just the differences in the files

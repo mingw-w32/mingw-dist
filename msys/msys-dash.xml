@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-dash">
-      <description lang="en" title="dash: The Debian Almquist Shell">
+      <description lang="en" title="The Debian Almquist Shell">
         <paragraph>DASH is a POSIX-compliant implementation of /bin/sh
           that aims to be as small as possible.  It does this without
           sacrificing speed where possible.  In fact, it is significantly

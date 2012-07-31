@@ -8,7 +8,7 @@
 
     <package name="msys-openssl">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="openssl: Open source crypto toolkit for TLS/SSL" >
+      <description lang="en" title="Open source crypto toolkit for TLS/SSL" >
         <paragraph>openssl is a collaborative effort to develop a robust,
           commercial-grade, fully featured, and Open Source toolkit
           implementing the Secure Sockets Layer (SSL v2/v3) and Transport
@@ -50,7 +50,7 @@
 
     <package name="msys-libopenssl">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="libopenssl: Open source crypto toolkit for TLS/SSL" >
+      <description lang="en" title="Open source crypto toolkit for TLS/SSL" >
         <paragraph>openssl is a collaborative effort to develop a robust,
           commercial-grade, fully featured, and Open Source toolkit
           implementing the Secure Sockets Layer (SSL v2/v3) and Transport

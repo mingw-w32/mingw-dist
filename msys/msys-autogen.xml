@@ -8,7 +8,7 @@
 
     <package name="msys-autogen">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="autogen: Simplifies the creation and maintenance of programs" >
+      <description lang="en" title="Simplifies the creation and maintenance of programs" >
         <paragraph>AutoGen is a tool designed to simplify the creation and
           maintenance of programs that contain large amounts of repetitious
           text.  It is especially valuable in programs that have several
@@ -60,7 +60,7 @@
     </package>
 
     <package name="msys-libopts">
-      <description lang="en" title="libopts: a semi-automated command line parsing library" >
+      <description lang="en" title="a semi-automated command line parsing library" >
         <paragraph>AutoGen is a tool designed to simplify the creation and
           maintenance of programs that contain large amounts of repetitious
           text.  It is especially valuable in programs that have several

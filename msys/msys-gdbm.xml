@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-gdbm">
-      <description lang="en" title="gdbm: GNU Database System">
+      <description lang="en" title="GNU Database System">
         <paragraph>The GNU Database System is a set of database routines
           that use extensible hashing.  It works similarly to the standard
           UNIX dbm routines, and provides compatibility replacement
@@ -45,7 +45,7 @@
     </package>
 
     <package name="msys-libgdbm">
-      <description lang="en" title="libgdbm: runtime library for the GNU Database System">
+      <description lang="en" title="runtime library for the GNU Database System">
         <paragraph>The GNU Database System is a set of database routines
           that use extensible hashing.  It works similarly to the standard
           UNIX dbm routines, and provides compatibility replacement

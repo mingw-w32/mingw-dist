@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-libarchive">
-      <description lang="en" title="libarchive (msys): library for handling various archive formats" >
+      <description lang="en" title="library for handling various archive formats" >
         <paragraph>libarchive is a programming library that can create and
           read several different streaming archive formats, including most
           popular tar variants and several cpio formats, mtree, and ar
@@ -80,7 +80,7 @@
 
     <package name="msys-bsdtar">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="bsdtar (msys): BSD version of the tar utility" >
+      <description lang="en" title="BSD version of the tar utility" >
         <paragraph>The msys-bsdtar package provides an implementation
           of tar(1) based on libarchive, which manipulates streaming archive
           files -- including the eponymous tar format.  However, bsdtar
@@ -163,7 +163,7 @@
 
     <package name="msys-bsdcpio">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="bsdcpio (msys): BSD version of the cpio utility" >
+      <description lang="en" title="BSD version of the cpio utility" >
         <paragraph>The msys-bsdcpio package provides an implementation
           of cpio(1) based on libarchive, which copies files between
           archives and directories.  This implementation can extract from

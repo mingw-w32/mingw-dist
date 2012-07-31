@@ -8,7 +8,7 @@
 
     <package name="msys-openssh">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="openssh: Secure Networking Clients" >
+      <description lang="en" title="Secure Networking Clients" >
         <paragraph>openssh is a FREE version of the SSH connectivity tools
           that technical users of the Internet rely on.  Users of telnet,
           rlogin, and ftp may not realize that their password is transmitted

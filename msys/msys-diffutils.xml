@@ -8,7 +8,7 @@
 
     <package name="msys-diffutils">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="diffutils: GNU collection of diff utilities" >
+      <description lang="en" title="GNU collection of diff utilities" >
         <paragraph>Diffutils provides a group of utilities that displays
           difference between and among text files. 'diff' outputs the
           difference between two files in any of several formats. If the

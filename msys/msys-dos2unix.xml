@@ -8,7 +8,7 @@
 
     <package name="msys-dos2unix" alias="msys-cygutils-dos2unix">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="dos2unix: Convert line breaks between Unix, Dos, and Mac">
+      <description lang="en" title="Convert line breaks between Unix, Dos, and Mac">
         <paragraph> The dos2unix package provides manipulation utilities for
           converting the line break characters of text files between the unix
           convention (0x0a), the DOS/Windows convention (0x0d 0x0a), and the old

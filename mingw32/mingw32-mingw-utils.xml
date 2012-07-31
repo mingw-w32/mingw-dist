@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="mingw32-mingw-utils" alias="mingw-utils mingw32-utils">
-      <description lang="en" title="mingw-utils: Various useful tools for MinGW" >
+      <description lang="en" title="Various useful tools for MinGW" >
         <paragraph>mingw-utils provides a number of useful utilities for MinGW.
           These include: `a2dll', a script to generate DLLs from .a archives;
           `dsw2mak', a script to generate gcc-compatibile GNU Makefiles from

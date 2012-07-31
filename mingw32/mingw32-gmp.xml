@@ -11,7 +11,7 @@
 
     <package name="mingw32-gmp" alias="gmp">
       <affiliate group="MinGW Standard Libraries" />
-      <description lang="en" title="gmp: The GNU Multiple Precision Arithmetic Library" >
+      <description lang="en" title="The GNU Multiple Precision Arithmetic Library" >
         <paragraph>
           GNU MP is a library for arbitrary precision arithmetic, operating on
           signed integers, rational numbers, and floating point numbers.  It
@@ -54,7 +54,7 @@
 
     <package name="mingw32-libgmp" alias="libgmp">
       <affiliate group="MinGW Standard Libraries" />
-      <description lang="en" title="libgmp: The GNU Multiple Precision Arithmetic Library" >
+      <description lang="en" title="The GNU Multiple Precision Arithmetic Library" >
         <paragraph>
           GNU MP is a library for arbitrary precision arithmetic, operating on
           signed integers, rational numbers, and floating point numbers.  It
@@ -89,7 +89,7 @@
 
     <package name="mingw32-libgmpxx" alias="libgmpxx">
       <affiliate group="MinGW Standard Libraries" />
-      <description lang="en" title="libgmpxx: The GNU Multiple Precision Arithmetic Library" >
+      <description lang="en" title="The GNU Multiple Precision Arithmetic Library" >
         <paragraph>
           GNU MP is a library for arbitrary precision arithmetic, operating on
           signed integers, rational numbers, and floating point numbers.  It

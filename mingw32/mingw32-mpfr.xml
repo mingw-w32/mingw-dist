@@ -11,7 +11,7 @@
 
     <package name="mingw32-mpfr" alias="mpfr">
       <affiliate group="MinGW Standard Libraries" />
-      <description lang="en" title="mpfr: Arbitrary Precision Floating Point Math Library" >
+      <description lang="en" title="Arbitrary Precision Floating Point Math Library" >
         <paragraph>
           The MPFR library is a C library for multiple-precision floating-point
           computations with correct rounding. The main goal of MPFR is to

@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="mingw32-xz" alias="xz">
-      <description lang="en" title="xz: High performance compression based on the LZMA algorithm" >
+      <description lang="en" title="High performance compression based on the LZMA algorithm" >
         <paragraph>LZMA is data compression algorithm based on the
           Lempel-Ziv-Markov chain-Algorithm.  It provides high compression
           ratios and very fast decompression, with minimal memory requirements
@@ -62,7 +62,7 @@
     </package>
 
     <package name="mingw32-liblzma" alias="liblzma">
-      <description lang="en" title="liblzma: High performance compression library based on the LZMA algorithm" >
+      <description lang="en" title="High performance compression library based on the LZMA algorithm" >
         <paragraph>LZMA is data compression algorithm based on the
           Lempel-Ziv-Markov chain-Algorithm.  It provides high compression
           ratios and very fast decompression, with minimal memory requirements

@@ -8,7 +8,7 @@
 
     <package name="msys-help2man">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="help2man: generate man pages" >
+      <description lang="en" title="generate man pages" >
         <paragraph>help2man is a perl script to create man pages from program
           --help and --version output.
         </paragraph>

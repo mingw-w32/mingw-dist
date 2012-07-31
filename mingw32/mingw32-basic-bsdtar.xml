@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="mingw32-basic-bsdtar" alias="basic-bsdtar">
-      <description lang="en" title="basic-bsdtar: standalone version of bsdtar" >
+      <description lang="en" title="standalone version of bsdtar" >
         <paragraph>The mingw32-basic-bsdtar package provides an implementation
           of tar(1) for native Win32 platforms that is statically linked -- that
           is, has no dependencies on external DLLs other than those provided by

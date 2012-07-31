@@ -9,7 +9,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-gcc-tools-epoch2-autoconf">
       <description lang="en"
-        title="gcc-tools-epoch2-autoconf: special autoconf for gcc development">
+        title="special autoconf for gcc development">
         <paragraph>Gcc requires that an unpatched, pristine version of autoconf
           be used when preparing patches for official submission. For various
           reasons [1] these pristine versions cannot coexist with the existing
@@ -55,7 +55,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-gcc-tools-epoch2-automake">
       <description lang="en"
-        title="gcc-tools-epoch2-automake: special automake for gcc development">
+        title="special automake for gcc development">
         <paragraph>Gcc requires that an unpatched, pristine version of automake
           be used when preparing patches for official submission. For various
           reasons [1] these pristine versions cannot coexist with the existing

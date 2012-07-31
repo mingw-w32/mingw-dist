@@ -8,7 +8,7 @@
 
     <package name="msys-texinfo">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="texinfo: Documentation system for on-screen and printed manuals" >
+      <description lang="en" title="Documentation system for on-screen and printed manuals" >
         <paragraph>Texinfo is the official documentation format of the GNU
           project. It was invented by Richard Stallman and Bob Chassell
           many years ago, loosely based on Brian Reid's Scribe and other

@@ -8,7 +8,7 @@
 
     <package name="msys-libiconv">
       <affiliate group="MSYS System Builder" />
-      <description lang="en" title="libiconv (msys): GNU libraries and utilities for character set conversion" >
+      <description lang="en" title="GNU libraries and utilities for character set conversion" >
         <paragraph>This is not the libiconv you are looking for.</paragraph>
         <paragraph>GNU libiconv provides an implementation of the iconv()
           function which is used to convert between various character
@@ -74,7 +74,7 @@
 
     <package name="msys-libcharset">
       <affiliate group="MSYS System Builder" />
-      <description lang="en" title="libcharset (msys): GNU libraries and utilities for character set conversion" >
+      <description lang="en" title="GNU libraries and utilities for character set conversion" >
         <paragraph>This is not the libcharset you are looking for.</paragraph>
         <paragraph>GNU libiconv provides an implementation of the iconv()
           function which is used to convert between various character

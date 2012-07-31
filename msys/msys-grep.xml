@@ -8,7 +8,7 @@
 
     <package name="msys-grep">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="grep: print lines matching a pattern" >
+      <description lang="en" title="print lines matching a pattern" >
         <paragraph>grep searches the input files for lines containing a
           match to a given pattern list.  When it finds a match in a line,
           it copies the line to standard output (by default), or produces

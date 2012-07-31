@@ -8,7 +8,7 @@
 
     <package name="msys-autoconf">
       <affiliate group="MSYS System Builder" />
-      <description lang="en" title="autoconf (msys): Automatic Configure Script Builder">
+      <description lang="en" title="Automatic Configure Script Builder">
         <paragraph>This is not the autoconf you are looking for.</paragraph>
         <paragraph>Autoconf is an extensible package of M4 macros
           that produce shell scripts to automatically configure

@@ -6,7 +6,7 @@
   <package-collection subsystem="mingw32">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
     <package name="mingw32-pexports" alias="pexports">
-      <description lang="en" title="pexports: Generate .def files for DLLs" >
+      <description lang="en" title="Generate .def files for DLLs" >
         <paragraph>pexports can extract information from DLLs to create
           corresponding .def files that list the symbols available in each DLL.
           .def files can then be used by dlltool (mingw32-binutils) to generate

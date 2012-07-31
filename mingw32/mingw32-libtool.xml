@@ -8,7 +8,7 @@
 
     <package name="mingw32-libtool" alias="libtool">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="libtool: A shared library generation tool" >
+      <description lang="en" title="A shared library generation tool" >
         <paragraph>GNU libtool is a generic library support package.
           Libtool hides the complexity of using shared libraries behind
           a consistent, portable interface.  Libtool requires the use of
@@ -53,7 +53,7 @@
 
     <package name="mingw32-libltdl" alias="libltdl">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="libltdl: A portable dlopen replacement" >
+      <description lang="en" title="A portable dlopen replacement" >
         <paragraph>GNU libtool is a generic library support script.
           Libtool hides the complexity of using shared libraries behind
           a consistent, portable interface.  Libtool requires the use of

@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-libxml2">
-      <description lang="en" title="libxml2: An XML parser and toolkit" >
+      <description lang="en" title="An XML parser and toolkit" >
         <paragraph>Libxml2 is the XML C parser and toolkit developed for
           the Gnome project (but usable outside of the Gnome platform).  It
           is free software available under the MIT License.  XML itself is a

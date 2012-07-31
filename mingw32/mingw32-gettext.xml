@@ -9,7 +9,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-gettext" alias="gettext">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="gettext: GNU Internationalization Library and Utilities" >
+      <description lang="en" title="GNU Internationalization Library and Utilities" >
         <paragraph>GNU gettext provides a set of tools that create a
           framework to help other GNU packages produce multi-lingual
           messages.  In this way, with suitable care a single binary
@@ -87,7 +87,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-libintl" alias="libintl">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="libintl: GNU Internationalization Runtime Library" >
+      <description lang="en" title="GNU Internationalization Runtime Library" >
         <paragraph>GNU gettext provides a set of tools that create a
           framework to help other GNU packages produce multi-lingual
           messages.  In this way, with suitable care a single binary
@@ -130,7 +130,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-libgettextpo" alias="libgettextpo">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="libgettextpo: GNU Internationalization Utility Library" >
+      <description lang="en" title="GNU Internationalization Utility Library" >
         <paragraph>GNU gettext provides a set of tools that create a
           framework to help other GNU packages produce multi-lingual
           messages.  In this way, with suitable care a single binary
@@ -177,7 +177,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <package name="mingw32-libasprintf" alias="libasprintf">
       <affiliate group="MinGW Autotools" />
-      <description lang="en" title="libasprintf: GNU Internationalization Utility Library" >
+      <description lang="en" title="GNU Internationalization Utility Library" >
         <paragraph>GNU gettext provides a set of tools that create a
           framework to help other GNU packages produce multi-lingual
           messages.  In this way, with suitable care a single binary

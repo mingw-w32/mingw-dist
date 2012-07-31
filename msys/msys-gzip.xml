@@ -8,7 +8,7 @@
 
     <package name="msys-gzip">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="gzip: compress or expand files" >
+      <description lang="en" title="compress or expand files" >
         <paragraph>Gzip reduces the size of the named files using
           Lempel-Ziv coding (LZ77).  Whenever possible, each file is
           replaced by one with the extension .gz, while keeping the same

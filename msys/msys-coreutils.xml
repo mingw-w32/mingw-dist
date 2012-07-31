@@ -8,7 +8,7 @@
 
     <package name="msys-coreutils">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="coreutils: GNU collection of common command line utilities" >
+      <description lang="en" title="GNU collection of common command line utilities" >
         <paragraph>GNU coreutils provides a collection of commonly used
           utilities essential to a standard POSIX environment. It comprises
           the former textutils, sh-utils, and fileutils packages.

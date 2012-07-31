@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-minires">
-      <description lang="en" title="minires: Simple win32 DNS client" >
+      <description lang="en" title="Simple win32 DNS client" >
         <paragraph>minires provides a simple implementation of resolver
           functions commonly used in clients, adapted to the MSYS
           environment.
@@ -56,7 +56,7 @@
     </package>
 
     <package name="msys-libminires">
-      <description lang="en" title="libminires: Simple win32 DNS client" >
+      <description lang="en" title="Simple win32 DNS client" >
         <paragraph>minires provides a simple implementation of resolver
           functions commonly used in clients, adapted to the MSYS
           environment.

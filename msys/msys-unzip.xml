@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-unzip">
-      <description lang="en" title="unzip: Command-line unpacker for .zip archives" >
+      <description lang="en" title="Command-line unpacker for .zip archives" >
         <paragraph>UnZip from the InfoZIP project is an open-source,
           command-line alternative to other tools, such as WinZip, for
           unpacking zip-format archives.

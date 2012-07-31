@@ -1,3 +1,44 @@
+2012-07-31  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Remove redundant package names from description/title attributes.
+
+	* mingw32/mingw32-autoconf.xml mingw32/mingw32-automake.xml:
+	* mingw32/mingw32-basic-bsdtar.xml mingw32/mingw32-bzip2.xml:
+	* mingw32/mingw32-dos2unix.xml mingw32/mingw32-expat.xml:
+	* mingw32/mingw32-gcc-tools.xml mingw32/mingw32-gendef.xml:
+	* mingw32/mingw32-gettext.xml mingw32/mingw32-gmp.xml:
+	* mingw32/mingw32-libarchive.xml mingw32/mingw32-libiconv.xml:
+	* mingw32/mingw32-libtool.xml mingw32/mingw32-make.xml:
+	* mingw32/mingw32-mgwport.xml mingw32/mingw32-mingw-utils.xml:
+	* mingw32/mingw32-mpc.xml mingw32/mingw32-mpfr.xml:
+	* mingw32/mingw32-pexports.xml mingw32/mingw32-popt.xml:
+	* mingw32/mingw32-xz.xml mingw32/mingw32-zlib.xml:
+	* msys/msys-autoconf.xml msys/msys-autogen.xml msys/msys-automake.xml:
+	* msys/msys-bash.xml msys/msys-bison.xml msys/msys-bzip2.xml:
+	* msys/msys-console.xml msys/msys-core.xml msys/msys-coreutils.xml:
+	* msys/msys-crypt.xml msys/msys-cvs.xml msys/msys-cygutils.xml:
+	* msys/msys-dash.xml msys/msys-diffstat.xml msys/msys-diffutils.xml:
+	* msys/msys-dos2unix.xml msys/msys-expat.xml msys/msys-file.xml:
+	* msys/msys-findutils.xml msys/msys-flex.xml msys/msys-gawk.xml:
+	* msys/msys-gdbm.xml msys/msys-gettext.xml msys/msys-gmp.xml:
+	* msys/msys-grep.xml msys/msys-groff.xml msys/msys-guile.xml:
+	* msys/msys-gzip.xml msys/msys-help2man.xml msys/msys-inetutils.xml:
+	* msys/msys-less.xml msys/msys-libarchive.xml msys/msys-libiconv.xml:
+	* msys/msys-libtool.xml msys/msys-libxml2.xml msys/msys-lndir.xml:
+	* msys/msys-lpr-enhanced.xml msys/msys-m4.xml msys/msys-make.xml:
+	* msys/msys-man.xml msys/msys-minires.xml msys/msys-mintty.xml:
+	* msys/msys-mktemp.xml msys/msys-openssh.xml msys/msys-openssl.xml:
+	* msys/msys-patch.xml msys/msys-perl.xml msys/msys-popt.xml:
+	* msys/msys-rebase.xml msys/msys-regex.xml msys/msys-rsync.xml:
+	* msys/msys-rxvt.xml msys/msys-sed.xml msys/msys-tar.xml:
+	* msys/msys-termcap.xml msys/msys-texinfo.xml msys/msys-unzip.xml:
+	* msys/msys-vim.xml msys/msys-wget.xml msys/msys-xz.xml:
+	* msys/msys-zip.xml msys/msys-zlib.xml (-//package//description):
+	Apply sed substitution: 's/\(title="\)[^:]*: */\1/'; regenerate and
+	republish associated *.xml.lzma files.
+
+	* mingw32/issue.log msys/issue.log: Update accordingly.
+
 2012-11-05  Cesar Strauss  <cestrauss@gmail.com>
 
 	Add versioned dependencies on mingwrt to mingw32-gcc4.

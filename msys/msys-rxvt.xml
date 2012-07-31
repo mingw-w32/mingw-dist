@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-rxvt">
-      <description lang="en" title="rxvt: terminal emulator" >
+      <description lang="en" title="terminal emulator" >
         <paragraph>VT102 terminal emulator for both X and Windows. This
           version has been modified and compiled for use in the MSYS
           environment, and does not attempt to use an X display even if

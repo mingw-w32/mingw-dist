@@ -8,7 +8,7 @@
 
     <package name="msys-gettext">
       <affiliate group="MSYS System Builder" />
-      <description lang="en" title="gettext (msys): GNU Internationalization Library and Utilities">
+      <description lang="en" title="GNU Internationalization Library and Utilities">
         <paragraph>This is not the gettext you are looking for.</paragraph>
         <paragraph>GNU gettext provides a set of tools that create a
           framework to help other GNU packages produce multi-lingual
@@ -92,7 +92,7 @@
 
     <package name="msys-libintl">
       <affiliate group="MSYS System Builder" />
-      <description lang="en" title="libintl (msys): GNU Internationalization Runtime Library">
+      <description lang="en" title="GNU Internationalization Runtime Library">
         <paragraph>This is not the libintl you are looking for.</paragraph>
         <paragraph>GNU gettext provides a set of tools that create a
           framework to help other GNU packages produce multi-lingual
@@ -145,7 +145,7 @@
 
     <package name="msys-libgettextpo">
       <affiliate group="MSYS System Builder" />
-      <description lang="en" title="libgettextpo (msys): GNU Internationalization Utility Library">
+      <description lang="en" title="GNU Internationalization Utility Library">
         <paragraph>This is not the libgettextpo you are looking for.</paragraph>
         <paragraph>GNU gettext provides a set of tools that create a
           framework to help other GNU packages produce multi-lingual
@@ -204,7 +204,7 @@
 
     <package name="msys-libasprintf">
       <affiliate group="MSYS System Builder" />
-      <description lang="en" title="libasprintf (msys): GNU Internationalization Utility Library">
+      <description lang="en" title="GNU Internationalization Utility Library">
         <paragraph>This is not the libasprintf you are looking for.</paragraph>
         <paragraph>GNU gettext provides a set of tools that create a
           framework to help other GNU packages produce multi-lingual

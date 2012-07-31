@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="mingw32-bzip2" alias="bzip2">
-      <description lang="en" title="bzip2: a high-quality data compressor">
+      <description lang="en" title="a high-quality data compressor">
         <paragraph>bzip2 is a freely available, patent free (see below),
           high-quality data compressor.  It typically compresses files to within
           10% to 15% of the best available techniques (the PPM family of
@@ -66,7 +66,7 @@
     </package>
 
     <package name="mingw32-libbz2" alias="libbz2">
-      <description lang="en" title="libbz2: runtime library for bzip2">
+      <description lang="en" title="runtime library for bzip2">
         <paragraph>bzip2 is a freely available, patent free (see below),
           high-quality data compressor.  It typically compresses files to within
           10% to 15% of the best available techniques (the PPM family of a

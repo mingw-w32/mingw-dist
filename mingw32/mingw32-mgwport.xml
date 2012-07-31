@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="mingw32-mgwport" alias="mgwport">
-      <description lang="en" title="mgwport: MinGW/MSYS source packaging tool" >
+      <description lang="en" title="MinGW/MSYS source packaging tool" >
         <paragraph>This is mgwport, a revolutionary new method for building and
         maintaining packages for MinGW and MSYS. It is based on the cygport
         tool, which is near-universally used to maintain components of the

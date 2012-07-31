@@ -8,7 +8,7 @@
 
     <package name="msys-vim">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="vim: Vi IMproved, a programmers text editor" >
+      <description lang="en" title="Vi IMproved, a programmers text editor" >
         <paragraph>Vim is a highly configurable text editor built to enable
           efficient text editing. It is an improved version of the vi editor
           distributed with most UNIX systems. Vim is distributed free as

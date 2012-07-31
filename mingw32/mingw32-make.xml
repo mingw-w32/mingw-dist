@@ -5,7 +5,7 @@
     <!-- NOTE: no alias declared here, because msys-make is considered
     the "preferred" make -->
     <package name="mingw32-make">
-      <description lang="en" title="make: GNU make utility to maintain groups of programs" >
+      <description lang="en" title="GNU make utility to maintain groups of programs" >
         <paragraph>The `make' utility automatically determines which pieces
           of a large program need to be recompiled, and issues commands to
           recompile them. GNU `make' was implemented by Richard Stallman

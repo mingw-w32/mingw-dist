@@ -8,7 +8,7 @@
 
     <package name="msys-findutils">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="findutils: GNU find utilities" >
+      <description lang="en" title="GNU find utilities" >
         <paragraph>The GNU Find Utilities are the basic directory searching
           utilities of the GNU operating system. These programs are
           typically used in conjunction with other programs to provide
@@ -49,7 +49,7 @@
 
     <package name="msys-locate">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="locate: A database-driven fast 'find'" >
+      <description lang="en" title="A database-driven fast 'find'" >
         <paragraph>The GNU Find Utilities are the basic directory searching
           utilities of the GNU operating system. These programs are
           typically used in conjunction with other programs to provide

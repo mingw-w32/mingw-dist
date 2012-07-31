@@ -8,7 +8,7 @@
 
     <package name="msys-make">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="make (msys): GNU make utility to maintain groups of programs" >
+      <description lang="en" title="GNU make utility to maintain groups of programs" >
         <paragraph>The `make' utility automatically determines which pieces
           of a large program need to be recompiled, and issues commands to
           recompile them. GNU `make' was implemented by Richard Stallman

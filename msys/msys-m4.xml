@@ -8,7 +8,7 @@
 
     <package name="msys-m4">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="m4: GNU Macro Processor" >
+      <description lang="en" title="GNU Macro Processor" >
         <paragraph>m4 is a macro processor, in the sense that it copies
           its input to the output, expanding macros as it goes.  Macros
           are either builtin or user-defined, and can take any number of

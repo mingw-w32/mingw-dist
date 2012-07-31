@@ -6,7 +6,7 @@
   <package-collection subsystem="msys">
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
     <package name="msys-cygutils">
-      <description lang="en" title="cygutils (msys): A collection of simple utilities" >
+      <description lang="en" title="A collection of simple utilities" >
         <paragraph>The cygutils package contains a collection of simple
           utilities from various sources. It provides mkshortcut and
           readshortcut, for creating and reading windows-style shortcuts.

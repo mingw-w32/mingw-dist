@@ -8,7 +8,7 @@
 
     <package name="msys-automake">
       <affiliate group="MSYS System Builder" />
-      <description lang="en" title="automake (msys): Automatic Makefile Builder">
+      <description lang="en" title="Automatic Makefile Builder">
         <paragraph>This is not the automake you are looking for.</paragraph>
         <paragraph>Automake is a tool for automatically generating Makefile.in
           files compliant with the GNU Coding Standards.  Automake requires the

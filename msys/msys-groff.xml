@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-groff">
-      <description lang="en" title="groff: GNU troff typesetting package" >
+      <description lang="en" title="GNU troff typesetting package" >
         <paragraph>The groff (GNU troff) software is a typesetting package
           which reads plain text mixed with formatting commands and
           produces formatted output.  The package is essential for viewing

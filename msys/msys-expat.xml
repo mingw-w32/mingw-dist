@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-expat">
-      <description lang="en" title="expat (msys): XML parsing library written in C">
+      <description lang="en" title="XML parsing library written in C">
         <paragraph>expat is a C library for parsing XML written by James
           Clark. Expat is a stream-oriented XML parser.  This means that
           you register handlers with the parser before starting the parse.
@@ -47,7 +47,7 @@
     </package>
 
     <package name="msys-libexpat">
-      <description lang="en" title="libexpat (msys): XML parsing library written in C">
+      <description lang="en" title="XML parsing library written in C">
         <paragraph>expat is a C library for parsing XML written by James
           Clark. Expat is a stream-oriented XML parser.  This means that
           you register handlers with the parser before starting the parse.

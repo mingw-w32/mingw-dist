@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-rebase">
-      <description lang="en" title="rebase: A tool for managing DLL address conflicts">
+      <description lang="en" title="A tool for managing DLL address conflicts">
         <paragraph>rebase provides various utilities that can assist
           with the dreaded DLL initialization problem, whose primary
           symptom is error messages of the form: "sync_with_child:

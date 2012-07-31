@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-crypt">
-      <description lang="en" title="crypt: tools for DES encryption">
+      <description lang="en" title="tools for DES encryption">
         <paragraph>crypt provides a library implementing the standard
           encryption functions crypt(), encrypt(), and setkey().  Many
           programs, such as perl, rely on the presence of these functions;
@@ -47,7 +47,7 @@
     </package>
 
     <package name="msys-libcrypt">
-      <description lang="en" title="libcrypt: runtime library for crypt">
+      <description lang="en" title="runtime library for crypt">
         <paragraph>crypt provides a library implementing the standard
           encryption functions crypt(), encrypt(), and setkey().  Many
           programs, such as perl, rely on the presence of these functions;

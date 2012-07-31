@@ -8,7 +8,7 @@
 
     <package name="msys-bash" alias="msys-sh sh bash">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="bash: The GNU Bourne Again shell" >
+      <description lang="en" title="The GNU Bourne Again shell" >
         <paragraph>Bash is a GNU project sh-compatible shell or command
           language interpreter.  Bash (Bourne Again shell) incorporates
           useful features from the Korn shell (ksh) and the C shell (csh).

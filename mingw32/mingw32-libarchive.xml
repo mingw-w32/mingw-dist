@@ -7,7 +7,7 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="mingw32-libarchive" alias="libarchive" >
-      <description lang="en" title="libarchive: library for handling various archive formats" >
+      <description lang="en" title="library for handling various archive formats" >
         <paragraph>libarchive is a programming library that can create and read
           several different streaming archive formats, including most popular
           tar variants and several cpio formats, and ar archives. It can also
@@ -69,7 +69,7 @@
     </package>
 
     <package name="mingw32-bsdtar" alias="bsdtar" >
-      <description lang="en" title="bsdtar: BSD version of the tar utility" >
+      <description lang="en" title="BSD version of the tar utility" >
         <paragraph>The mingw32-bsdtar package provides an implementation
           of tar(1) based on libarchive, which manipulates streaming archive
           files -- including the eponymous tar format.  However, bsdtar
@@ -117,7 +117,7 @@
     </package>
 
     <package name="mingw32-bsdcpio" alias="bsdcpio" >
-      <description lang="en" title="bsdcpio: BSD version of the cpio utility" >
+      <description lang="en" title="BSD version of the cpio utility" >
         <paragraph>The mingw32-bsdcpio package provides an implementation of
           cpio(1) based on libarchive, which copies files between archives and
           directories.  This implementation can extract from tar, pax, cpio,

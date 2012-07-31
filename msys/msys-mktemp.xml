@@ -8,7 +8,7 @@
 
     <package name="msys-mktemp">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="mktemp: create a temporary file or directory" >
+      <description lang="en" title="create a temporary file or directory" >
         <paragraph>The mktemp utility takes the given filename template and
           overwrites a portion of it to create a unique filename.  The
           template may be any filename with some number of `Xs' appended

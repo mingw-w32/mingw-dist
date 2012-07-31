@@ -8,7 +8,7 @@
 
     <package name="msys-inetutils">
       <affiliate group="MinGW Developer Toolkit" />
-      <description lang="en" title="inetutils: Common Networking Clients" >
+      <description lang="en" title="Common Networking Clients" >
         <paragraph>inetutils provides common networking clients, including
           telnet, ftp, rsh, rlogin, tftp, and rcp, adapated and compiled for
           the MSYS platform on Microsoft Windows.  This MSYS package provides

@@ -11,7 +11,7 @@
 
     <package name="mingw32-mpc" alias="mpc">
       <affiliate group="MinGW Standard Libraries" />
-      <description lang="en" title="mpc: Arbitrary Precision Math Library for Complex Numbers">
+      <description lang="en" title="Arbitrary Precision Math Library for Complex Numbers">
         <paragraph>
           MPC is a C library for the arithmetic of complex numbers with
           arbitrarily high precision and correct rounding of the result. It is
@@ -44,7 +44,7 @@
 
     <package name="mingw32-libmpc" alias="libmpc">
       <affiliate group="MinGW Standard Libraries" />
-      <description lang="en" title="mpc: Arbitrary Precision Math Library for Complex Numbers">
+      <description lang="en" title="Arbitrary Precision Math Library for Complex Numbers">
         <paragraph>
           MPC is a C library for the arithmetic of complex numbers with
           arbitrarily high precision and correct rounding of the result. It is

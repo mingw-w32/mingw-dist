@@ -8,7 +8,7 @@
 
     <package name="msys-sed">
       <affiliate group="MSYS Base System" />
-      <description lang="en" title="sed: GNU Stream Editor" >
+      <description lang="en" title="GNU Stream Editor" >
         <paragraph>sed is a stream editor. A stream editor is used to
           perform basic text transformations on an input stream (a file or
           input from a pipeline). While in some ways similar to an editor
