@@ -23,9 +23,12 @@
       </description>
 
       <source tarname="make-%-mingw32-src.tar.%" />
-      <licence tarname="make-%-mingw32-doc.tar.%" />
+      <licence tarname="make-%-mingw32-lic.tar.%" />
 
       <component class="bin">
+        <release tarname="make-3.82.90-cvs-20120823-1-mingw32-bin.tar.lzma" >
+          <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />
+        </release>
         <release tarname="make-3.82-5-mingw32-bin.tar.lzma" >
           <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />
         </release>
@@ -35,6 +38,7 @@
       </component>
 
       <component class="doc">
+        <release tarname="make-3.82.90-cvs-20120823-1-mingw32-doc.tar.lzma" >
         <release tarname="make-3.82-5-mingw32-doc.tar.lzma" />
         <release tarname="make-3.82-4-mingw32-doc.tar.lzma" />
       </component>
