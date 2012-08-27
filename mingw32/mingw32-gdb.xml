@@ -19,9 +19,13 @@
       </description>
 
       <source tarname="gdb-%-mingw32-%-src.tar.%" />
-      <licence tarname="gdb-%-mingw32-%-doc.tar.%" />
+      <licence tarname="gdb-%-mingw32-%-lic.tar.%" />
 
       <component class="bin">
+        <release tarname="gdb-7.5-1-mingw32-bin.tar.lzma" >
+          <requires eq="mingw32-libexpat-*-mingw32-*-dll-1.tar" />
+          <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />
+        </release>
         <release tarname="gdb-7.4-2-mingw32-bin.tar.lzma" >
           <requires eq="mingw32-libexpat-*-mingw32-*-dll-1.tar" />
           <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />
@@ -48,6 +52,7 @@
       </component>
 
       <component class="doc">
+        <release tarname="gdb-7.5-1-mingw32-doc.tar.lzma" />
         <release tarname="gdb-7.4-2-mingw32-doc.tar.lzma" />
         <release tarname="gdb-7.3.1-1-mingw32-doc.tar.lzma" />
         <release tarname="gdb-7.3-2-mingw32-doc.tar.lzma" />
@@ -69,9 +74,13 @@
       </description>
 
       <source tarname="gdb-python-%-mingw32-%-src.tar.%" />
-      <licence tarname="gdb-python-%-mingw32-%-doc.tar.%" />
+      <licence tarname="gdb-python-%-mingw32-%-lic.tar.%" />
 
       <component class="bin">
+        <release tarname="gdb-python-7.5-1-mingw32-bin.tar.lzma" >
+          <requires eq="mingw32-libexpat-*-mingw32-*-dll-1.tar" />
+          <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />
+        </release>
         <release tarname="gdb-python-7.4-2-mingw32-bin.tar.lzma" >
           <requires eq="mingw32-libexpat-*-mingw32-*-dll-1.tar" />
           <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />
@@ -79,6 +88,7 @@
       </component>
 
       <component class="doc">
+        <release tarname="gdb-python-7.5-1-mingw32-doc.tar.lzma" />
         <release tarname="gdb-python-7.4-2-mingw32-doc.tar.lzma" />
       </component>
     </package>
