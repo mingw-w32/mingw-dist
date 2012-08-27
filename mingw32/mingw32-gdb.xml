@@ -59,6 +59,10 @@
         <release tarname="gdb-7.3-1-mingw32-doc.tar.lzma" />
         <release tarname="gdb-7.2-1-mingw32-doc.tar.lzma" />
       </component>
+
+      <component class="lang">
+        <release tarname="gdb-7.5-1-mingw32-lang.tar.lzma" />
+      </component>
     </package>
 
     <package name="mingw32-gdb-python" alias="gdb-python">
@@ -90,6 +94,10 @@
       <component class="doc">
         <release tarname="gdb-python-7.5-1-mingw32-doc.tar.lzma" />
         <release tarname="gdb-python-7.4-2-mingw32-doc.tar.lzma" />
+      </component>
+
+      <component class="lang">
+        <release tarname="gdb-python-7.5-1-mingw32-lang.tar.lzma" />
       </component>
     </package>
   </package-collection>
