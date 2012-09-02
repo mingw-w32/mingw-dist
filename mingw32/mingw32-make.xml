@@ -47,14 +47,14 @@
       </component>
 
       <component class="lic">
-        <release tarname="make-3.82.90-1-mingw32-cvs-20120902-lic.tar.lzma" />
+        <release tarname="make-3.82.90-2-mingw32-cvs-20120902-lic.tar.lzma" />
         <release tarname="make-3.82.90-1-mingw32-cvs-20120823-lic.tar.lzma" />
         <release tarname="make-3.82-5-mingw32-doc.tar.lzma" />
         <release tarname="make-3.82-4-mingw32-doc.tar.lzma" />
       </component>
 
       <component class="lang">
-        <release tarname="make-3.82.90-1-mingw32-cvs-20120902-lang.tar.lzma" />
+        <release tarname="make-3.82.90-2-mingw32-cvs-20120902-lang.tar.lzma" />
         <release tarname="make-3.82.90-1-mingw32-cvs-20120823-lang.tar.lzma" />
         <release tarname="make-3.82-5-mingw32-lang.tar.lzma" />
         <release tarname="make-3.82-4-mingw32-lang.tar.lzma" />
