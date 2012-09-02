@@ -1,3 +1,10 @@
+2012-09-02  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish mingw32-make.
+
+	* mingw32/mingw32-make.xml: Update to 3.82.90-2-cvs-20120902.
+	* mingw32/issue.log: Updated accordingly.
+
 2012-08-27  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish mingw32-gdb.
