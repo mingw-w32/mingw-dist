@@ -1,0 +1,6 @@
+CVS
+build
+configure
+autom4te.cache
+.hgtags
+.hg

@@ -1,0 +1,8 @@
+syntax: glob
+.git/
+autom4te.cache/
+configure
+build/
+**.orig
+.#**
+CVS/
