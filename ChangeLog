@@ -1,3 +1,10 @@
+2012-11-05  Cesar Strauss  <cestrauss@gmail.com>
+
+	Update & publish mingw32-gcc4.
+
+	* mingw32/mingw32-gcc4.xml: Update to 4.7.2-1.
+	* mingw32/issue.log: Update accordingly.
+
 2012-09-09  Erwin Waterlander  <waterlan@xs4all.nl>
 	* mingw32/mingw32-dos2unix.xml: Updated for dos2unix version 6.0.2.
 	* msys/msys-dos2unix.xml: Updated for dos2unix version 6.0.2.
