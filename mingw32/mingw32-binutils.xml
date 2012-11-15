@@ -22,6 +22,9 @@
       <licence tarname="binutils-%-mingw32-lic.tar.%" />
 
       <component class="bin">
+        <release tarname="binutils-2.23.1-1-mingw32-bin.tar.lzma" >
+          <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />
+        </release>
         <release tarname="binutils-2.22-1-mingw32-bin.tar.lzma" >
           <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />
         </release>
@@ -43,6 +46,7 @@
       </component>
 
       <component class="doc">
+        <release tarname="binutils-2.23.1-1-mingw32-doc.tar.lzma" />
         <release tarname="binutils-2.22-1-mingw32-doc.tar.lzma" />
         <release tarname="binutils-2.21.53-1-mingw32-doc.tar.lzma" />
         <release tarname="binutils-2.21.1-2-mingw32-doc.tar.lzma" />
@@ -52,6 +56,7 @@
       </component>
 
       <component class="lang">
+        <release tarname="binutils-2.23.1-1-mingw32-lang.tar.lzma" />
         <release tarname="binutils-2.22-1-mingw32-lang.tar.lzma" />
         <release tarname="binutils-2.21.53-1-mingw32-lang.tar.lzma" />
         <release tarname="binutils-2.21.1-2-mingw32-lang.tar.lzma" />

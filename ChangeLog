@@ -1,3 +1,10 @@
+2012-11-12  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
+
+	Update & publish mingw32-binutils.
+
+	* mingw32/mingw32-binutils.xml: Update to 2.23.1-1.
+	* mingw32/issue.log: Updated accordingly.
+
 2012-11-05  Cesar Strauss  <cestrauss@gmail.com>
 
 	Update & publish mingw32-gcc4.
