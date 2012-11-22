@@ -1,3 +1,10 @@
+2012-11-22  Cesar Strauss  <cestrauss@gmail.com>
+
+	Update & publish msys-core.
+
+	* msys/msys-core.xml: Update to 1.0.18-1.
+	* msys/issue.log: Updated accordingly.
+
 2012-11-12  Chris Sutcliffe  <ir0nh34d@users.sourceforge.net>
 
 	Update & publish mingw32-binutils.
