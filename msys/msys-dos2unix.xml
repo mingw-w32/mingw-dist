@@ -20,6 +20,11 @@
       <source tarname="dos2unix-%-msys-%-src.tar.%" />
 
       <component class="bin">
+        <release tarname="dos2unix-6.0.3-1-msys-1.0.17-bin.tar.lzma" >
+          <requires eq="msys-core-*-msys-*-bin.tar" />
+          <requires eq="msys-libiconv-*-msys-*-dll-2.tar" />
+          <requires eq="msys-libintl-*-msys-*-dll-8.tar" />
+        </release>
         <release tarname="dos2unix-6.0.2-1-msys-1.0.17-bin.tar.lzma" >
           <requires eq="msys-core-*-msys-*-bin.tar" />
           <requires eq="msys-libiconv-*-msys-*-dll-2.tar" />
@@ -48,6 +53,7 @@
       </component>
 
       <component class="doc">
+        <release tarname="dos2unix-6.0.3-1-msys-1.0.17-doc.tar.lzma" />
         <release tarname="dos2unix-6.0.2-1-msys-1.0.17-doc.tar.lzma" />
         <release tarname="dos2unix-6.0.1-1-msys-1.0.17-doc.tar.lzma" />
         <release tarname="dos2unix-6.0-1-msys-1.0.17-doc.tar.lzma" />
@@ -61,6 +67,7 @@
       </component>
 
       <component class="lic">
+        <release tarname="dos2unix-6.0.3-1-msys-1.0.17-lic.tar.lzma" />
         <release tarname="dos2unix-6.0.2-1-msys-1.0.17-lic.tar.lzma" />
         <release tarname="dos2unix-6.0.1-1-msys-1.0.17-lic.tar.lzma" />
         <release tarname="dos2unix-6.0-1-msys-1.0.17-lic.tar.lzma" />
