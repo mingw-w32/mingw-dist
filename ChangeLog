@@ -1,3 +1,8 @@
+2013-02-24  Erwin Waterlander  <waterlan@xs4all.nl>
+
+	* msys/msys-m4.xml: Updated for m4 version 1.4.16-2.
+	* msys/issue.log: Updated accordingly.
+
 2013-02-04  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add missing DLL dependency for msys-bzip2-bin.

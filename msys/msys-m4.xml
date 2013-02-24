@@ -27,14 +27,17 @@
 
       <component class="bin">
         <requires eq="msys-core-*-msys-*-bin.tar" />
+        <release tarname="m4-1.4.16-2-msys-1.0.17-bin.tar.lzma" />
         <release tarname="m4-1.4.14-1-msys-1.0.13-bin.tar.lzma" />
       </component>
 
       <component class="doc">
+        <release tarname="m4-1.4.16-2-msys-1.0.17-doc.tar.lzma" />
         <release tarname="m4-1.4.14-1-msys-1.0.13-doc.tar.lzma" />
       </component>
 
       <component class="lic">
+        <release tarname="m4-1.4.16-2-msys-1.0.17-lic.tar.lzma" />
         <release tarname="m4-1.4.14-1-msys-1.0.13-lic.tar.lzma" />
       </component>
     </package>
