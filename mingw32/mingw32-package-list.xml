@@ -47,6 +47,7 @@
   <package-list catalogue="mingw32-popt" />
   <package-list catalogue="mingw32-pthreads-w32" />
   <package-list catalogue="mingw32-runtime" />
+  <package-list catalogue="mingw32-wsl-candidate" />
   <package-list catalogue="mingw32-xz" />
   <package-list catalogue="mingw32-zlib" />
 
