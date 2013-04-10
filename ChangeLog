@@ -1,3 +1,8 @@
+2013-04-10  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	* mingw32/mingw32-wsl-candidate.xml: Add the 4.0-rc-2 release.
+	* mingw32/issue.log: Updated accordingly.
+
 2013-04-09  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	* mingw32/mingw32-package-list.xml: Add mingw32-wsl-candidate.xml.
