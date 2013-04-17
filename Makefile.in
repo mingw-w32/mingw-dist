@@ -3,7 +3,7 @@
 # $Id$
 #
 # Written by Keith Marshall <keithmarshall@users.sourceforge.net>
-# Copyright (C) 2010, 2011, MinGW Project
+# Copyright (C) 2010, 2011, 2013, MinGW.org Project
 #
 #
 # Makefile template for generating mingw-get distribution manifests.
@@ -25,8 +25,9 @@
 # MinGW Project, accept liability for any damages, however caused,
 # arising from the use of this software.
 #
-all: @mingw_ac_subdirs@
+all: @mingw_ac_subdirs@ update-references
 
+@SET_MAKE@
 @mingw_ac_subdirs@: FORCE
 	@if test -r $@/Makefile; then \
 	  cd $@; $(MAKE) $(MAKECMDGOALS); \
@@ -41,5 +42,36 @@ FORCE:
 # the `all' goal.
 #
 all-distfiles: all
+
+# To support optimised "mingw-get update", the package lists must be
+# dynamically updated, to correctly identify the latest issue of each
+# individual package catalogue file; the following rule, (which MUST
+# be invoked at top level), creates a "sed" script which may then be
+# paste the appropriate tags into the package list files.
+#
+ref = @top_srcdir@/*/
+issue.sed: FORCE
+	echo 's/issue=.*\(catalogue=\)/\\1/' > $@
+	for tag in `sed -n '/.*catalogue="/{s///;s/".*//p;}' ${ref}*.xml`; \
+	  do awk /$$tag'.xml$$/{ \
+	       print "s/catalogue=\"'$$tag'\"/issue=\"" $$2 "\" &/" \
+	     }' ${ref}issue.log; \
+	  done >> $@
+
+# The generated "sed" script must be applied iteratively, to each of
+# the catalogue files which contains "package-list" references, until
+# all cross references have been fully resolved...
+#
+update-references: FORCE
+	echo check > issue.chk
+	@while test x"`cat issue.chk`" != xclean; \
+	  do echo clean > issue.chk; \
+	     $(MAKE) update-local-references; \
+	  done
+	rm -f issue.chk
+
+# ...considering all catalogues, in all registered sub-directories.
+#
+update-local-references: @mingw_ac_subdirs@
 
 # $RCSfile$: end of file

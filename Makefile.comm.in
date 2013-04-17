@@ -3,7 +3,7 @@
 # $Id$
 #
 # Written by Keith Marshall <keithmarshall@users.sourceforge.net>
-# Copyright (C) 2010, 2011, MinGW Project
+# Copyright (C) 2010, 2011, 2013, MinGW.org Project
 #
 #
 # Makefile template for generating mingw-get distribution manifests.
@@ -50,7 +50,8 @@ Makefile.sub: ${srcdir}/*.xml
 	echo '  $$(EXTRA_DISTFILES)' >> $@
 
 include Makefile.sub
-all-distfiles: unpublished $(DISTFILES) $(auto-distfiles)
+all-distfiles: unpublished issue.sed $(DISTFILES) $(auto-distfiles)
+@SET_MAKE@
 
 # Distributed manifests are serialised by incorporating a date-stamped
 # issue number, of the form YYYYMMDDNN; we track issue numbers using the
@@ -61,13 +62,20 @@ issue_number = YYYYMMDDNN
 issue_key = awk '$$3 == "$*.xml" { print $$1 }' issue.new
 issue_log = ${srcdir}/issue.log
 
+update_issue_number = \
+  test -n "$$issue" || issue=0; \
+  test $$issue -lt $${mark="`date -u +%Y%m%d`00"} && \
+    issue=$$mark || issue=`expr $$issue + 1`
+generate_catalogue = -f ${top_builddir}/issue.sed -e $(store_issue_number)
+store_issue_number = "s/@$(issue_number)@/$(issue)/"
+
 # We use SHA1 hashes to determine when source files have been changed
 # from the last published version, as recorded in `issue.log'; the hash
 # is computed by openssl, after filtering the source through awk; (this
 # ensures that the computed hash is not influenced by any unintentional
 # pollution due to accidental insertion of CRLF line endings).
 #
-sha1hash = awk '{ sub( "\r$$", "" ); print }' $< | $(sha1sum)
+sha1hash = awk '{ sub( "\r$$", "" ); print }' $$catalogue | $(sha1sum)
 sha1sum = openssl sha1 | awk '{print $$NF}'
 
 # Formatting within issue.log is controlled by PAD and TAB settings.
@@ -87,25 +95,20 @@ PAD = "  "
 # any updated manifest is uploaded to the repository server.
 #
 %.xml.lzma: %.xml
+	@echo
 	>> $(issue_log)
 	rm -f issue.new issue.tmp
+	test -f ${top_builddir}/issue.sed || $(MAKE) issue.sed
 	sed '/^$(TAB)*$$/d;/^$(TAB)*#/d' $(issue_log) > issue.new
-	issue=`awk '$$3 == "$*.xml" { print $$2 }' issue.new`; \
-	if test x$${hash="`$(sha1hash)`"} != x"`$(issue_key)`"; then \
-	  test -n "$$issue" || issue=0; \
-	  test $$issue -lt $${mark="`date -u +%Y%m%d`00"} && \
-	    issue=$$mark || issue=`expr $$issue + 1`; \
-	  awk '$$3 != "$*.xml"' issue.new > issue.tmp; \
-	  echo $(PAD)$$hash $$issue $*.xml >> issue.tmp; \
-	  fi; \
-	sed "s/@$(issue_number)@/$$issue/" $< | lzma -c > $@
-	if test -f issue.tmp; then \
-	  sed -n '/^$(TAB)*$$/q;/^$(TAB)*[^#]/q;p' $(issue_log) > issue.new; \
-	  LC_COLLATE=POSIX sort -k3 issue.tmp >> issue.new; \
-	  sed -n 's/^$(TAB)*$$/break/;1,/^$(TAB)*[^#]/d;/^$(TAB)*#/p' \
-	    $(issue_log) >> issue.new; \
-	  rm -f $(issue_log) && mv issue.new $(issue_log); \
-	  cd unpublished && $(LN_S) -f ../$@ .; \
+	@catalogue="$<" issue=`awk '$$3 == "$*.xml" { print $$2 }' issue.new`; \
+	  if test x$${hash="`$(sha1hash)`"} != x"`$(issue_key)`"; then \
+	    $(update_issue_number); \
+	    $(RMAKE) refname=$*.xml issue=$$issue hash=$$hash issue.tmp; \
+	    fi; \
+	  $(RMAKE) catalogue=$@ source=$< issue=$$issue generate-catalogue
+	@if test -f issue.tmp; then \
+	  $(RMAKE) refname=$@ select-for-publication; \
+	  $(RMAKE) update-issue-log; \
 	  fi
 	rm -f issue.new issue.tmp
 
@@ -120,7 +123,94 @@ FORCE:
 # processed, even on explicit file-by-file request).
 #
 ${srcdir}/*.xml: unpublished
-unpublished: FORCE
-	test -d unpublished || mkdir unpublished
+unpublished:
+	test -d $@ || mkdir $@
+
+# Package lists are dynamically updated, to record the latest issues of each
+# referenced package catalogue; the "sed" script used to accomplish this must
+# be generated, and driven from, within the top build directory.
+#
+update-references issue.sed: FORCE
+	cd ${top_builddir}; $(MAKE) $@
+
+# Requests to update references will be redirected back to each sub-directory
+# in turn, to be processed by the following recursive make rule.
+#
+update-local-references: unpublished issue.sed
+	rm -rf tmp; mkdir tmp; rm -f issue.tmp
+	sed '/^$(TAB)*$$/d;/^$(TAB)*#/d' $(issue_log) > issue.new
+	@for catalogue in `grep -l 'catalogue=' ${srcdir}/*.xml`; \
+	  do refname=`echo $$catalogue | sed 's,^${srcdir}/,,'` \
+	     issue=`awk '$$3 == "'$$refname'" { print $$2 }' issue.new`; \
+	     $(RMAKE) refname=$$refname issue=$$issue generate-reference; \
+	     lzma -dc $$refname.lzma | cmp -s - tmp/$$refname || \
+	       { $(update_issue_number); \
+	         $(RMAKE) dir=${top_builddir} issue.chk; \
+		 $(RMAKE) refname=$$refname issue=$$issue \
+		   hash=`$(sha1hash)` issue.tmp; \
+	         $(RMAKE) catalogue=$$refname.lzma source=$$catalogue \
+		   issue=$$issue generate-catalogue; \
+		 $(RMAKE) refname=$$refname.lzma select-for-publication; \
+	       }; \
+	  done
+	@test -f issue.tmp && $(RMAKE) update-issue-log || true
+	rm -f ${top_builddir}/issue.sed issue.new issue.tmp
+	rm -rf tmp
+
+# The preceding rules for compiling catalogues for publication, and resolving
+# "package-list" references, use several recursive make hooks to perform common
+# sub-tasks.  GNU make tends to be very verbose about entering and leaving the
+# directories in which these sub-tasks are performed, even when there is no
+# change of directory involved; to make it quieter, we prefer this form of
+# recursive invocation for local sub-tasks.
+#
+RMAKE = $(MAKE)@NO_PRINT_DIRECTORY@
+
+# The following sub-task rule creates a tentative "publication-ready" version
+# of each catalogue.
+#
+generate-catalogue: FORCE
+	sed $(generate_catalogue) $(source) \
+	  | lzma -c > $(catalogue)
+
+# The following sub-task rule creates a reference copy of each catalogue, for
+# comparison with the tentative "publication-ready" version, when checking for
+# changes introduced by resolution of "package-list" references.
+#
+generate-reference: FORCE
+	sed $(generate_catalogue) ${srcdir}/$(refname) \
+	  > tmp/$(refname)
+
+# When any generated catalogue has been found to differ from its previously
+# published version, (if any), the following rule adds it to the schedule of
+# catalogues which should be republished, (or published for the first time).
+#
+select-for-publication: FORCE
+	cd unpublished && $(LN_S) -f ../$(refname) .
+
+# The remaining macros and rules define the sub-tasks for management of the
+# temporary files used to control the iterative resolution of "package-list"
+# references, and to capture modifications to be recorded in the issue log...
+#
+extract_log_file_header = '/^$(TAB)*$$/q;/^$(TAB)*[^\#]/q;p'
+extract_log_file_footer = 's/^$(TAB)*$$/break/;1,/^$(TAB)*[^\#]/d;/^$(TAB)*\#/p'
+
+issue.chk: FORCE
+	test -f issue.tmp && mv -f issue.tmp issue.new || true
+	test -f ${dir}/$@ && echo check > ${dir}/$@ || true
+
+issue.new: FORCE
+issue.tmp: issue.new
+	awk '$$3 != "$(refname)"' $^ > $@
+	echo $(PAD)$(hash) $(issue) $(refname) >> $@
+
+# ...with this final rule completing the recording of the current state of
+# publication, in the permanent issue log files.
+#
+update-issue-log: FORCE
+	sed -n $(extract_log_file_header) $(issue_log) > issue.new
+	LC_COLLATE=POSIX sort -k3 issue.tmp >> issue.new;
+	sed -n $(extract_log_file_footer) $(issue_log) >> issue.new;
+	rm -f $(issue_log) && mv issue.new $(issue_log)
 
 # $RCSfile$: end of file

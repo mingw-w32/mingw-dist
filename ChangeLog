@@ -1,3 +1,36 @@
+2013-04-16  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add issue number tracking within published package lists.
+
+	* makeopts.m4: New file; copy it from MinGW.org's build-aux package.
+
+	* configure.ac (AC_INIT): Bump version number to 2.0
+	(makeopts.m4): m4_include it; it is required to provide support for...
+	(MINGW_AC_MAKE_NO_PRINT_DIRECTORY): ...this additional feature test.
+
+	* Makefile.in (all): Require...
+	(update-references): ...this new build goal; implement it, using...
+	(update-local-references): ...this new recursively invoked rule, and...
+	(issue.sed): ...this new call-back rule.
+
+	* Makefile.stub.in (top_builddir): Define it as a macro.
+
+	* Makefile.comm.in (update_issue_number): New macro; define it.
+	(store_issue_number): Likewise; both are required to implement...
+	(generate_catalogue): ...this new sed script defining macro.
+	(sha1hash): Redefined macro; it now depends on substitution of...
+	($catalogue): ...this local shell variable, in place of $<.
+	(extract_log_file_header, extract_log_file_footer): New macros.
+	(update-references, issue.sed): New build goals; they facilitate...
+	(update-local-references): ...this recursively invoked top-down build
+	goal; implement it in terms of refactored commands, abstracted from...
+	(%.xml.lzma: %.xml): ...this original goal, to create...
+	(generate-catalogue, generate-reference, select-for-publication):
+	(update-issue-log, issue.chk, issue.new, issue.tmp): ...these new
+	intermediate goals; they are invoked recursively, by use of...
+	(SET_MAKE): ...this autoconf defined and AC_SUBSTed hook, with...
+	(RMAKE): ...this new macro; define it.
+
 2013-04-10  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	* mingw32/mingw32-wsl-candidate.xml: Add the 4.0-rc-2 release.

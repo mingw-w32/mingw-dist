@@ -7,7 +7,7 @@
 # $Id$
 #
 # Written by Keith Marshall <keithmarshall@users.sourceforge.net>
-# Copyright (C) 2010, MinGW Project
+# Copyright (C) 2010, 2013, MinGW.org Project
 #
 #
 # Makefile template for generating mingw-get distribution manifests.
@@ -30,6 +30,7 @@
 # arising from the use of this software.
 #
   srcdir = @srcdir@
-  include @top_builddir@/Makefile.comm
+  top_builddir = @top_builddir@
+  include ${top_builddir}/Makefile.comm
 #
 # $RCSfile$: end of file

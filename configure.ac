@@ -3,7 +3,7 @@
 # $Id$
 #
 # Written by Keith Marshall  <keithmarshall@users.sourceforge.net>
-# Copyright (C) 2010, 2011, MinGW Project
+# Copyright (C) 2010, 2011, 2013, MinGW.org Project
 #
 #
 # Configuration script for mingw-dist
@@ -22,10 +22,12 @@
 # MinGW Project, accept liability for any damages, however caused,
 # arising from the use of this software.
 #
-  AC_INIT([mingw-dist],[1.0],[http://mingw.org/reporting_bugs])
+  AC_INIT([mingw-dist],[2.0],[http://mingw.org/reporting_bugs])
 
 # Check for required tools.
 #
+  m4_include([makeopts.m4])
+  MINGW_AC_MAKE_NO_PRINT_DIRECTORY
   AC_PROG_LN_S
 
 # Specify all makefiles which are to be created
