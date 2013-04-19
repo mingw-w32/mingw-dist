@@ -1,5 +1,13 @@
 2013-04-19  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Correct several incorrectly assigned file attributes.
+
+	* mingw32/issue.log mingw32/mingw32-dos2unix.xml: chmod -x
+	* msys/issue.log msys/msys-dos2unix.xml msys/msys-m4.xml: Likewise.
+	* ChangeLog: Likewise.
+
+2013-04-19  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Support automatic capture of infrastructure changes.
 
 	* Makefile.stub.in (top_srcdir): New macro; define it.
