@@ -25,13 +25,26 @@
 # MinGW Project, accept liability for any damages, however caused,
 # arising from the use of this software.
 #
-VPATH = ${srcdir}
+VPATH = ${srcdir}:${top_srcdir}:${top_builddir}
 
 # Define hooks for invoking system tools.
 #
 LN_S = @LN_S@
 
 all: all-distfiles
+
+# Capture repository infrastructure changes.  The following rules ensure
+# that configure, config.status, and all working makefiles will be updated,
+# when any of their respective sources are modified.
+#
+configure: configure.ac makeopts.m4
+	cd ${top_srcdir}; autoconf
+
+config.status: configure
+	cd ${top_builddir}; ./config.status --recheck
+
+Makefile: config.status Makefile.in Makefile.stub.in Makefile.comm.in
+	cd ${top_builddir}; ./config.status
 
 # To accommodate a top-level make on just a single subdirectory, we list
 # each of the managed subdirectories as an independent goal, invoking the

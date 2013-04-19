@@ -36,6 +36,22 @@ all: @mingw_ac_subdirs@ update-references
 .PHONY: FORCE
 FORCE:
 
+# Capture repository infrastructure changes.  The following rules ensure
+# that configure, config.status, and all working makefiles will be updated,
+# when any of their respective sources are modified.
+#
+top_srcdir = @top_srcdir@
+VPATH = ${top_srcdir}
+
+configure: configure.ac makeopts.m4
+	cd ${top_srcdir}; autoconf
+
+config.status: configure
+	./config.status --recheck
+
+Makefile: config.status Makefile.in Makefile.stub.in Makefile.comm.in
+	./config.status
+
 # We must list all goals which may be specified for sub-directories,
 # so that they may be correctly passed through $(MAKECMDGOALS); at this
 # level, the action for each is equivalent to that to be performed for

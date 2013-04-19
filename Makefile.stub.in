@@ -30,6 +30,7 @@
 # arising from the use of this software.
 #
   srcdir = @srcdir@
+  top_srcdir = @top_srcdir@
   top_builddir = @top_builddir@
   include ${top_builddir}/Makefile.comm
 #

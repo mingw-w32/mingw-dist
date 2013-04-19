@@ -1,3 +1,17 @@
+2013-04-19  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Support automatic capture of infrastructure changes.
+
+	* Makefile.stub.in (top_srcdir): New macro; define it.
+
+	* Makefile.in (VPATH, top_srcdir): New macros; define them.
+	(configure, config.status, Makefile): New build rules; implement them,
+	to be triggered by repository infrastructure changes.
+
+	* Makefile.comm.in (VPATH): Append top_srcdir and top_builddir.
+	(configure, config.status, Makefile): New build rules; implement them,
+	to be triggered by repository infrastructure changes.
+
 2013-04-16  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add issue number tracking within published package lists.
