@@ -50,7 +50,7 @@
   cd33ad74b608bce33ea297801253e6efbafce27c 2012073100 mingw32-mingw-utils.xml
   d31c39c6584fde6d4b9ddafbca913509b32a1dfc 2012073100 mingw32-mpc.xml
   99995a8e17659b6514f71ae2b17bbbcd8eb4c0a9 2012073100 mingw32-mpfr.xml
-  983af8ad24a6f97da867784dfeeecc6661d54d88 2013030500 mingw32-package-list.xml
+  983af8ad24a6f97da867784dfeeecc6661d54d88 2013042100 mingw32-package-list.xml
   40c94ac07003ac8f36558a8c33581a748ec03e3a 2012073100 mingw32-pexports.xml
   cdb2a4dbedfc9f2cdfc92340f6f9b12da061c0d9 2012073100 mingw32-popt.xml
   9399cb6c2efd8fd907c42a278a6f41bbde9e440c 2011091400 mingw32-pthreads-w32.xml

@@ -1,5 +1,18 @@
 2013-04-21  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Add issue number references to all package lists.
+
+	* common/package-list.xml: Regenerate .lzma and republish.
+	* common/issue.log: Update accordingly.
+
+	* mingw32/mingw32-package-list.xml: Regenerate .lzma and republish.
+	* mingw32/issue.log: Update accordingly.
+
+	* msys/msys-package-list.xml: Regenerate .lzma and republish.
+	* msys/issue.log: Update accordingly.
+
+2013-04-21  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Add infrastructure for managing user contributed packages.
 
 	* contrib: New directory.
