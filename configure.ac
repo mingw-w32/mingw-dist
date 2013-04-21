@@ -22,7 +22,7 @@
 # MinGW Project, accept liability for any damages, however caused,
 # arising from the use of this software.
 #
-  AC_INIT([mingw-dist],[2.0],[http://mingw.org/reporting_bugs])
+  AC_INIT([mingw-dist],[2.1],[http://mingw.org/reporting_bugs])
 
 # Check for required tools.
 #
@@ -34,7 +34,7 @@
 #
   AC_CONFIG_FILES([Makefile])
   AC_CONFIG_FILES([Makefile.comm])
-  AC_FOREACH([subdir],[common mingw32 msys],
+  AC_FOREACH([subdir],[common contrib mingw32 msys],
   [AC_CONFIG_FILES(subdir[/Makefile:Makefile.stub.in])dnl
    mingw_ac_subdirs=${mingw_ac_subdirs+"${mingw_ac_subdirs} "}"subdir"dnl
   ])

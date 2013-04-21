@@ -1,3 +1,18 @@
+2013-04-21  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add infrastructure for managing user contributed packages.
+
+	* contrib: New directory.
+	* configure.ac (AC_INIT): Bump version number to 2.1
+	(mingw_ac_subdirs): Add 'contrib' as a managed sub-directory.
+
+	* contrib/issue.log: New file; automatically generated, and adjusted
+	to reflect the original publication dates for each of...
+	* contrib/mingw32-libunistring.xml contrib/mingw32-pdcurses.xml:
+	...these new files; copy them from existing published catalogue, and
+	replace their issue number tags with templates, to capture future
+	updates automatically.
+
 2013-04-19  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Correct several incorrectly assigned file attributes.
