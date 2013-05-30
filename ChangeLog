@@ -1,3 +1,11 @@
+2013-05-30  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Update and publish pexports.
+
+	* mingw32/mingw32-pexports.xml: Add references for release 0.46.
+	* package-list.xml.lzma mingw32-package-list.xml.lzma: Regenerated.
+	* common/issue.log mingw32/issue.log: Updated accordingly.
+
 2013-04-21  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add issue number references to all package lists.
