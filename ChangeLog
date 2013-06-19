@@ -1,3 +1,9 @@
+2013-06-19  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	* mingw32/mingw32-wsl-candidate.xml: Add wsl_rc-4.0-1-mingw32-rc-3.
+	* package-list.xml.lzma mingw32-package-list.xml.lzma: Regenerated.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2013-05-30  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Update and publish pexports.
