@@ -63,6 +63,7 @@
 
     <package name="mingw32-wsl_rc">
       <component class="meta">
+	<release tarname="wsl_rc-4.0-1-mingw32-rc-4-meta.tar.lzma" />
 	<release tarname="wsl_rc-4.0-1-mingw32-rc-3-meta.tar.lzma" />
 	<release tarname="wsl_rc-4.0-1-mingw32-rc-2-meta.tar.lzma" />
         <release tarname="wsl_rc-4.0-1-mingw32-rc-1-meta.tar.lzma" />
