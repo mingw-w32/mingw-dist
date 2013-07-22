@@ -1,3 +1,20 @@
+2013-07-22  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add hooks to support mingw-get-setup.exe
+
+	* msys/msys-base.xml (msys-base):
+	* mingw32/mingw32-base.xml (mingw32-base):
+	* mingw32/mingw32-gcc4.xml (mingw32-gcc-ada, mingw32-gcc-g++):
+	(mingw32-gcc-fortran, mingw32-gcc-objc): Affiliate all with the
+	internally defined "Basic Setup" package group; regenerate and
+	publish all associated .lzma files.
+
+	* common/package-list.xml.lzma msys/msys-package-list.xml.lzma:
+	* mingw32/mingw32-package-list.xml.lzma: All regenerated and
+	published.
+
+	* common/issue.log mingw32/issue.log msys/issue.log: Updated.
+
 2013-07-01  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	* mingw32/mingw32-wsl-candidate.xml: Add wsl_rc-4.0-1-mingw32-rc-4.

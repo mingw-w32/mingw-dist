@@ -12,7 +12,10 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="msys-tiny" alias="msys-minimal" class="virtual">
+
+      <affiliate group="Basic Setup" />
       <affiliate group="MSYS Base System" />
+
       <description lang="en" title="A Tiny MSYS Installation (meta)">
         <paragraph>This meta package provides the smallest possible
           functional MSYS installation.  It includes only MSYS itself,
