@@ -13,7 +13,10 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="mingw-developer-toolkit" alias="mingw-dtk" class="virtual">
+
+      <affiliate group="Basic Setup" />
       <affiliate group="MinGW Developer Toolkit" />
+
       <description lang="en" title="An MSYS Installation for MinGW Developers (meta)">
         <paragraph>This meta package contains the components necessary to
            create a relatively complete MSYS installation suitable for most

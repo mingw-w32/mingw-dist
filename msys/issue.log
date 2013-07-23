@@ -23,11 +23,11 @@
 # MinGW Project, accept liability for any damages, however caused,
 # arising from the use of this software.
 #
-  71d9784c4b1d73fd13e665b8416d89dfa226720d 2011082600 mingw-developer-toolkit.xml
+  6c0df6cc51c6ff5c12cf69daca779822a58e70ec 2013072300 mingw-developer-toolkit.xml
   450bfc448c104abff6126411662b993922afea1a 2012073100 msys-autoconf.xml
   8384936e52651ea2fcdbb8cba5fb7eb880699118 2012073100 msys-autogen.xml
   a7ff50459cd0958291619c918690c2a716149aa0 2012073100 msys-automake.xml
-  d5d18adb8625b7c70ffbabc16aea7a88b94ddefb 2013072200 msys-base.xml
+  99df5097edfe73e5081a1234d84f6c87ce5f46d2 2013072300 msys-base.xml
   56b441272a03bc5ade62d4c7dc9595468baa922f 2012073100 msys-bash.xml
   e52982cbff0b0bb825461deb9af0411f72f2e4a2 2010090600 msys-binutils.xml
   098df570908eec421a271133cd0556f5894cce65 2012073100 msys-bison.xml
@@ -73,7 +73,7 @@
   ec0f6517ee5afb3d8f4887dd0061b558604fd3f5 2012073100 msys-mktemp.xml
   243df0057053eebc442d922dff075e09fb579805 2012073100 msys-openssh.xml
   0103c79956ba9fa128755cd93374f0fc334c7cf6 2012073100 msys-openssl.xml
-  0defc38585dbedbe010d82bdf6e4dbbae8fb1398 2013072200 msys-package-list.xml
+  0defc38585dbedbe010d82bdf6e4dbbae8fb1398 2013072300 msys-package-list.xml
   d19e1e39e5fab25a3d40acb92b98b40a60b0da90 2012073100 msys-patch.xml
   245093d35b43710010bc2d13296a6492d2336204 2012073100 msys-perl.xml
   19ddf46e23e23010a440af1b423d986712c3bda7 2012073100 msys-popt.xml

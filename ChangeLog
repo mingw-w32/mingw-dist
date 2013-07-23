@@ -1,3 +1,18 @@
+2013-07-23  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Correct some "Basic Setup" package group affiliations.
+
+	* msys/msys-base.xml (msys-tiny): Drop erroneous affiliation.
+	(msys-base): Affiliate this instead, as originally intended.
+
+	* msys/mingw-developer-toolkit.xml: Add affiliation for...
+	(mingw-developer-toolkit): ...this.
+
+	* common/package-list.xml.lzma msys/msys-package-list.xml.lzma:
+	Regenerated and published.
+
+	* common/issue.log msys/issue.log: Updated.
+
 2013-07-22  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add hooks to support mingw-get-setup.exe
