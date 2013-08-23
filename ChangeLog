@@ -1,3 +1,11 @@
+2013-08-23  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	* mingw32/mingw32-runtime.xml: Add mingwrt-4.0.0-1 and w32api-4.0.0-1.
+	Modify the default source type to -bld and the licence type to -lic.
+	Add source and licence elements to the previous packages to represent
+	the previous licence and source files.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2013-07-23  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Correct some "Basic Setup" package group affiliations.
