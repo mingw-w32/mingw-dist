@@ -28,6 +28,7 @@
       <licence tarname="pthreads-w32-%-mingw32-%-lic.tar.lzma" />
 
       <component class="dev">
+	<release tarname="pthreads-w32-2.8.1-1-mingw32-dev.tar.lzma"/>
         <release tarname="pthreads-w32-2.8.0-3-mingw32-dev.tar.lzma" >
           <requires eq="mingw32-libpthread-%-mingw32-dll-2.tar" />
         </release>
@@ -45,11 +46,21 @@
         <release tarname="pthreads-w32-2.8.0-3-mingw32-lic.tar.lzma" />
         <release tarname="pthreads-w32-2.9.0-mingw32-pre-20110507-2-lic.tar.lzma" />
       </component>
+
+      <component class="dll">
+	<release tarname="pthreads-w32-2.9.1-1-mingw32-dll.tar.lzma" />
+      </component>
     </package>
 
     <package name="mingw32-libpthreadgc" alias="libpthreadgc mingw32-libpthread libpthread">
       <affiliate group="MinGW Standard Libraries" />
       <description lang="en" title="POSIX threading library for Win32" >
+	<paragraph>
+	  NOTE: The 2.9.1 release delivers this library as part of the
+	  pthreads-w32-2.9.1-1-mingw32-dll.tar.lzma file.  This DLL file is a
+	  dependency for gcc-core-4.8.1 and will be installed as such when using
+	  mingw-get.
+	</paragraph>
         <paragraph>
           pthreads-w32 seeks to provide a freely available and high-quality
           implementation of pthreads for Windows.  Pthreads is an API for
@@ -92,6 +103,12 @@
     <package name="mingw32-libpthreadgce" alias="libpthreadgce" >
       <affiliate group="MinGW Standard Libraries" />
       <description lang="en" title="POSIX threading library for Win32" >
+	<paragraph>
+	  NOTE: The 2.9.1 release delivers this library as part of the
+	  pthreads-w32-2.9.1-1-mingw32-dll.tar.lzma file.  This DLL file is a
+	  dependency for gcc-core-4.8.1 and will be installed as such when using
+	  mingw-get.
+	</paragraph>
         <paragraph>
           pthreads-w32 seeks to provide a freely available and high-quality
           implementation of pthreads for Windows.  Pthreads is an API for
@@ -130,6 +147,11 @@
     <package name="mingw32-libquserex" alias="libquserex" >
       <affiliate group="MinGW Standard Libraries" />
       <description lang="en" title="POSIX threading library for Win32" >
+	<paragraph>
+	  NOTE: The 2.9.1 release does not deliver this library.  This decision
+	  was based on the number of downloads for the library and the fact that
+	  it is experimental.
+	</paragraph>
         <paragraph>
           pthreads-w32 seeks to provide a freely available and high-quality
           implementation of pthreads for Windows.  Pthreads is an API for
