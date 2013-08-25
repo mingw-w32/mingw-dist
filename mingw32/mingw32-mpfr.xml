@@ -32,17 +32,28 @@
       <licence tarname="mpfr-%-mingw32-lic.tar.lzma" />
 
       <component class="dev">
+	<release tarname="mpfr-3.1.2-1-mingw32-dev.tar.lzma" >
+	  <requires eq="mpfr-3.1.2-1-mingw32-dll.tar.lzma" />
+	</release>
         <release tarname="mpfr-2.4.1-1-mingw32-dev.tar.lzma" >
           <requires eq="mingw32-libmpfr-%-mingw32-dll-1.tar" />
         </release>
       </component>
 
       <component class="doc">
+	<release tarname="mpfr-3.1.2-1-mingw32-doc.tar.lzma" />
         <release tarname="mpfr-2.4.1-1-mingw32-doc.tar.lzma" />
       </component>
 
       <component class="lic">
+	<release tarname="mpfr-3.1.2-1-mingw32-lic.tar.lzma" />
         <release tarname="mpfr-2.4.1-1-mingw32-lic.tar.lzma" />
+      </component>
+
+      <component class="dll">
+	<release tarname="mpfr-3.1.2-1-mingw32-dll.tar.lzma" >
+	  <requires eq="gmp-5.1.2-1-mingw32-dll.tar.lzma" />
+	</release>
       </component>
     </package>
 

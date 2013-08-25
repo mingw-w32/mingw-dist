@@ -28,17 +28,29 @@
       <licence tarname="mpc-%-mingw32-lic.tar.lzma" />
 
       <component class="dev">
+	<release tarname="mpc-1.0.1-1-mingw32-dev.tar.lzma" >
+	  <requires eq="mpc-1.0.1-1-mingw32-dll.tar.lzma" />
+	</release>
         <release tarname="mpc-0.8.1-1-mingw32-dev.tar.lzma" >
           <requires eq="mingw32-libmpc-%-mingw32-dll-2.tar" />
         </release>
       </component>
 
       <component class="doc">
+        <release tarname="mpc-1.0.1-1-mingw32-doc.tar.lzma" />
         <release tarname="mpc-0.8.1-1-mingw32-doc.tar.lzma" />
       </component>
 
       <component class="lic">
+        <release tarname="mpc-1.0.1-1-mingw32-lic.tar.lzma" />
         <release tarname="mpc-0.8.1-1-mingw32-lic.tar.lzma" />
+      </component>
+
+      <component class="dll">
+        <release tarname="mpc-1.0.1-1-mingw32-dll.tar.lzma" >
+	  <requires eq="mpfr-3.1.2-1-mingw32-dll.tar.lzma" />
+	  <requires eq="gmp-5.1.2-1-mingw32-dll.tar.lzma" />
+	</release>
       </component>
     </package>
 

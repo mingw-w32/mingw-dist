@@ -4,3 +4,4 @@ configure
 autom4te.cache
 .hgtags
 .hg
+.*.swp

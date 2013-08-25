@@ -37,18 +37,31 @@
       <licence tarname="gmp-%-mingw32-lic.tar.lzma" />
 
       <component class="dev">
+	<release tarname="gmp-5.1.2-1-mingw32-dev.tar.lzma" >
+	  <requires eq="gmp-5.1.2-1-mingw32-dll.tar.lzma" />
+	</release>
         <release tarname="gmp-5.0.1-1-mingw32-dev.tar.lzma" >
           <requires eq="mingw32-libgmp-%-mingw32-dll-10.tar" />
           <requires eq="mingw32-libgmpxx-%-mingw32-dll-4.tar" />
         </release>
       </component>
 
+      <component class="dll">
+        <release tarname="gmp-5.1.2-1-mingw32-dll.tar.lzma" />
+      </component>
+
       <component class="doc">
+        <release tarname="gmp-5.1.2-1-mingw32-doc.tar.lzma" />
         <release tarname="gmp-5.0.1-1-mingw32-doc.tar.lzma" />
       </component>
 
       <component class="lic">
+        <release tarname="gmp-5.1.2-1-mingw32-lic.tar.lzma" />
         <release tarname="gmp-5.0.1-1-mingw32-lic.tar.lzma" />
+      </component>
+
+      <component class="info">
+        <release tarname="gmp-5.1.2-1-mingw32-info.tar.lzma" />
       </component>
     </package>
 
