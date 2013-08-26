@@ -90,4 +90,11 @@ update-references: FORCE
 #
 update-local-references: @mingw_ac_subdirs@
 
+# The following goals may be specified, when building as a sub-project
+# of mingw-get-setup; pass each request to all designated subdirectories,
+# in each of which it will become a no-op.
+#
+NO_OP_GOALS = build.tag dist clean distclean maintainer-clean
+$(NO_OP_GOALS): @mingw_ac_subdirs@
+
 # $RCSfile$: end of file

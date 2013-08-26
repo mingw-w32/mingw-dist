@@ -62,7 +62,7 @@ Makefile.sub: ${srcdir}/*.xml
 	for file in $^; do echo "$$file.lzma \\" | sed 's,.*/,  ,' >> $@; done
 	echo '  $$(EXTRA_DISTFILES)' >> $@
 
-include Makefile.sub
+sinclude Makefile.sub
 all-distfiles: unpublished issue.sed $(DISTFILES) $(auto-distfiles)
 @SET_MAKE@
 
@@ -225,5 +225,12 @@ update-issue-log: FORCE
 	LC_COLLATE=POSIX sort -k3 issue.tmp >> issue.new;
 	sed -n $(extract_log_file_footer) $(issue_log) >> issue.new;
 	rm -f $(issue_log) && mv issue.new $(issue_log)
+
+# The following goals may be specified, when building as a sub-project
+# of mingw-get-setup; make each a no-op here.
+#
+NO_OP_GOALS = build.tag dist clean distclean maintainer-clean
+.PHONY: $(NO_OP_GOALS)
+$(NO_OP_GOALS):
 
 # $RCSfile$: end of file

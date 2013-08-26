@@ -1,3 +1,12 @@
+2013-08-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add integration hooks for mingw-get-setup.
+
+	* Makefile.in Makefile.comm.in:
+	(build.tag, clean, dist, distclean, maintainer-clean): New targets;
+	implement them as no-ops; they are required when invoked recursively,
+	as a sub-make of mingw-get-setup, but are not otherwise needed here.
+
 2013-08-25  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	* mingw32/mingw32-gmp.xml: Add 5.1.2-1 release.
