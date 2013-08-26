@@ -1,5 +1,17 @@
 2013-08-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Correct a catalogue publication anomaly.
+
+	* mingw32/mingw32-zlib.xml: Correct typos.
+	(zlib-1.2.8-1.mingw32-*.tar.lzma): Such malformed file references...
+	(zlib-1.2.8-1-mingw32-*.tar.lzma): ...should have appeared thus.
+
+	* common/issue.log mingw32/issue.log: References to...
+	(package-list.xml, mingw32-package-list.xml, mingw32-zlib.xml):
+	...these automatically updated; publish lzma compressed copies to FRS.
+
+2013-08-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Add integration hooks for mingw-get-setup.
 
 	* Makefile.in Makefile.comm.in:
