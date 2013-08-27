@@ -141,9 +141,11 @@ unpublished:
 
 # Package lists are dynamically updated, to record the latest issues of each
 # referenced package catalogue; the "sed" script used to accomplish this must
-# be generated, and driven from, within the top build directory.
+# be generated, and driven from, within the top build directory.  Similarly,
+# the procedure for publishing updated catalogues to the file release system
+# must be directed to the top build directory, to process the entire tree.
 #
-update-references issue.sed: FORCE
+published update-references issue.sed: FORCE
 	cd ${top_builddir}; $(MAKE) $@
 
 # Requests to update references will be redirected back to each sub-directory

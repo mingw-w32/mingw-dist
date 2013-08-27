@@ -1,3 +1,21 @@
+2013-08-27  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add support for automated catalogue publication.
+
+	* Makefile.comm.in (published): New build goal; it redirects to the
+	new primary goal implemented...
+
+	* Makefile.in: ...here.
+	(published): New primary build goal; implement it, using...
+	(frs-username-check, frs-publish): ...these new internal build goals;
+	implement them; they should not normally be invoked directly.
+	(FRS_USERNAME, FRS_CATALOGUE): New macros; define them.
+	(FRS_CATALOGUE_HOST, FRS_CATALOGUE_ROOT, FRS_CATALOGUE_PATH):
+	(MAKE_RECURSIVE, PRIMARY_GOALS): Likewise.
+
+	* configure.ac (AC_INIT): Bump version number to 2.2
+	(FRS_USERNAME): Declare it as precious; assign "anonymous" as default.
+
 2013-08-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Correct a catalogue publication anomaly.
