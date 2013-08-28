@@ -1,3 +1,10 @@
+2013-08-28  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	Correct ptheads-w32-2.9.1-1 release.
+
+	* mingw32/mingw32-pthreads-w32.xml: Correct 2.9.1-1 release.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2013-08-27  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add support for automated catalogue publication.

@@ -28,7 +28,7 @@
       <licence tarname="pthreads-w32-%-mingw32-%-lic.tar.lzma" />
 
       <component class="dev">
-	<release tarname="pthreads-w32-2.8.1-1-mingw32-dev.tar.lzma"/>
+	<release tarname="pthreads-w32-2.9.1-1-mingw32-dev.tar.lzma"/>
         <release tarname="pthreads-w32-2.8.0-3-mingw32-dev.tar.lzma" >
           <requires eq="mingw32-libpthread-%-mingw32-dll-2.tar" />
         </release>
@@ -38,13 +38,15 @@
       </component>
 
       <component class="doc">
+	<release tarname="pthreads-w32-2.9.1-1-mingw32-doc.tar.lzma" />
         <release tarname="pthreads-w32-2.8.0-3-mingw32-doc.tar.lzma" />
         <release tarname="pthreads-w32-2.9.0-mingw32-pre-20110507-2-doc.tar.lzma" />
       </component>
 
       <component class="lic">
-        <release tarname="pthreads-w32-2.8.0-3-mingw32-lic.tar.lzma" />
+	<release tarname="pthreads-w32-2.9.1-1-mingw32-lic.tar.lzma" />
         <release tarname="pthreads-w32-2.9.0-mingw32-pre-20110507-2-lic.tar.lzma" />
+        <release tarname="pthreads-w32-2.8.0-3-mingw32-lic.tar.lzma" />
       </component>
 
       <component class="dll">
