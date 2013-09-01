@@ -9,19 +9,25 @@
     <package name="mingw32-binutils" alias="binutils">
       <affiliate group="MinGW Compiler Suite" />
       <description lang="en" title="The GNU Binary File Utilities">
-        <paragraph>
-          This package provides the GNU assembler, linker, archive librarian,
-          and other utilities for manipulating object format files.
+        <paragraph> This is a required component of the MinGW Compiler Suite.
         </paragraph>
-        <paragraph>
-          This is a required component of the MinGW Compiler Suite.
+        <paragraph>This package provides the GNU assembler, linker, archive
+	librarian, and other utilities for manipulating object format files.
         </paragraph>
+	<paragraph>This package is enhanced by the libiconv and gettext DLL if
+	they are installed.  It does not require them to operate.
+	</paragraph>
       </description>
 
       <source tarname="binutils-%-mingw32-src.tar.%" />
       <licence tarname="binutils-%-mingw32-lic.tar.%" />
 
       <component class="bin">
+	<release tarname="binutils-2.23.2-1-mingw32-bin.tar.lzma" >
+	  <requires eq="gcc-core-4.8.1-1-mingw32-dll.tar.lzma" />
+	  <requires eq="zlib-1.2.8-1-mingw32-dll.tar.lzma" />
+	  <requires eq="binutils-%-mingw32-dev.tar.lzma" />
+	</release>
         <release tarname="binutils-2.23.1-1-mingw32-bin.tar.lzma" >
           <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />
         </release>
@@ -45,7 +51,12 @@
         <release tarname="binutils-2.19.1-mingw32-bin.tar.gz" />
       </component>
 
+      <component class="dev">
+	<release tarname="binutils-2.23.2-1-mingw32-dev.tar.lzma" />
+      </component>
+
       <component class="doc">
+	<release tarname="binutils-2.23.2-1-mingw32-doc.tar.lzma" />
         <release tarname="binutils-2.23.1-1-mingw32-doc.tar.lzma" />
         <release tarname="binutils-2.22-1-mingw32-doc.tar.lzma" />
         <release tarname="binutils-2.21.53-1-mingw32-doc.tar.lzma" />
@@ -55,7 +66,16 @@
         <release tarname="binutils-2.21-2-mingw32-doc.tar.lzma" />
       </component>
 
+      <component class="info">
+	<release tarname="binutils-2.23.2-1-mingw32-info.tar.lzma" />
+      </component>
+
+      <component class="man">
+	<release tarname="binutils-2.23.2-1-mingw32-man.tar.lzma" />
+      </component>
+
       <component class="lang">
+        <release tarname="binutils-2.23.2-1-mingw32-lang.tar.lzma" />
         <release tarname="binutils-2.23.1-1-mingw32-lang.tar.lzma" />
         <release tarname="binutils-2.22-1-mingw32-lang.tar.lzma" />
         <release tarname="binutils-2.21.53-1-mingw32-lang.tar.lzma" />

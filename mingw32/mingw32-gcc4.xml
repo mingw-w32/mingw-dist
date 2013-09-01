@@ -25,59 +25,116 @@
       <licence tarname="gcc-%-mingw32-lic.tar.lzma" />
 
       <component class="lic">
-        <release tarname="gcc-4.5.2-1-mingw32-lic.tar.lzma" />
-        <release tarname="gcc-4.6.1-2-mingw32-lic.tar.lzma" />
-        <release tarname="gcc-4.6.2-1-mingw32-lic.tar.lzma" />
-        <release tarname="gcc-4.7.0-1-mingw32-lic.tar.lzma" />
+	<release tarname="gcc-core-4.8.1-1-mingw32-lic.tar.lzma" />
         <release tarname="gcc-4.7.2-1-mingw32-lic.tar.lzma" />
+        <release tarname="gcc-4.7.0-1-mingw32-lic.tar.lzma" />
+        <release tarname="gcc-4.6.2-1-mingw32-lic.tar.lzma" />
+        <release tarname="gcc-4.6.1-2-mingw32-lic.tar.lzma" />
+        <release tarname="gcc-4.5.2-1-mingw32-lic.tar.lzma" />
       </component>
 
       <component class="bin">
-        <release tarname="gcc-core-4.5.2-1-mingw32-bin.tar.lzma">
-          <requires lt="mingwrt-3.20-2-mingw32-dev.tar" />
-        </release>
-        <release tarname="gcc-core-4.6.1-2-mingw32-bin.tar.lzma">
+	<release tarname="gcc-core-4.8.1-1-mingw32-bin.tar.lzma">
+	  <requires eq="gcc-core-%-mingw32-dev.tar.lzma" />
+	  <requires eq="binutils-*-mingw32-bin.tar.lzma" />
+	  <requires eq="mingwrt-4.*-mingw32-dev.tar.lzma" />
+	  <requires eq="w32api-4.*-mingw32-dev.tar.lzma" />
+	</release>
+        <release tarname="gcc-core-4.7.2-1-mingw32-bin.tar.lzma">
           <requires eq="libquadmath-%-mingw32-dll-0.tar" />
-          <requires lt="mingwrt-3.20-2-mingw32-dev.tar" />
-        </release>
-        <release tarname="gcc-core-4.6.2-1-mingw32-bin.tar.lzma">
-          <requires eq="libquadmath-%-mingw32-dll-0.tar" />
-          <requires lt="mingwrt-3.20-2-mingw32-dev.tar" />
+          <requires ge="mingwrt-3.20-2-mingw32-dev.tar" />
+	  <requires eq="libgcc-%-mingw32-dll-1.tar" />
+	  <requires eq="libssp-%-mingw32-dll-0.tar" />
+	  <requires eq="libgomp-%-mingw32-dll-1.tar" />
+	  <requires eq="libmpc-*-mingw32-dll-2.tar" />
+	  <requires eq="pthreads-w32-*-mingw32-dev.tar" />
+	  <requires eq="binutils-*-mingw32-bin.tar" />
+	  <requires eq="w32api-*-mingw32-dev.tar" />
         </release>
         <release tarname="gcc-core-4.7.0-1-mingw32-bin.tar.lzma">
           <requires eq="libquadmath-%-mingw32-dll-0.tar" />
           <requires ge="mingwrt-3.20-2-mingw32-dev.tar" />
+	  <requires eq="libgcc-%-mingw32-dll-1.tar" />
+	  <requires eq="libssp-%-mingw32-dll-0.tar" />
+	  <requires eq="libgomp-%-mingw32-dll-1.tar" />
+	  <requires eq="libmpc-*-mingw32-dll-2.tar" />
+	  <requires eq="pthreads-w32-*-mingw32-dev.tar" />
+	  <requires eq="binutils-*-mingw32-bin.tar" />
+	  <requires eq="w32api-*-mingw32-dev.tar" />
         </release>
-        <release tarname="gcc-core-4.7.2-1-mingw32-bin.tar.lzma">
+        <release tarname="gcc-core-4.6.2-1-mingw32-bin.tar.lzma">
           <requires eq="libquadmath-%-mingw32-dll-0.tar" />
-          <requires ge="mingwrt-3.20-2-mingw32-dev.tar" />
+          <requires lt="mingwrt-3.20-2-mingw32-dev.tar" />
+	  <requires eq="libgcc-%-mingw32-dll-1.tar" />
+	  <requires eq="libssp-%-mingw32-dll-0.tar" />
+	  <requires eq="libgomp-%-mingw32-dll-1.tar" />
+	  <requires eq="libmpc-*-mingw32-dll-2.tar" />
+	  <requires eq="pthreads-w32-*-mingw32-dev.tar" />
+	  <requires eq="binutils-*-mingw32-bin.tar" />
+	  <requires eq="w32api-*-mingw32-dev.tar" />
         </release>
+        <release tarname="gcc-core-4.6.1-2-mingw32-bin.tar.lzma">
+          <requires eq="libquadmath-%-mingw32-dll-0.tar" />
+          <requires lt="mingwrt-3.20-2-mingw32-dev.tar" />
+	  <requires eq="libgcc-%-mingw32-dll-1.tar" />
+	  <requires eq="libssp-%-mingw32-dll-0.tar" />
+	  <requires eq="libgomp-%-mingw32-dll-1.tar" />
+	  <requires eq="libmpc-*-mingw32-dll-2.tar" />
+	  <requires eq="pthreads-w32-*-mingw32-dev.tar" />
+	  <requires eq="binutils-*-mingw32-bin.tar" />
+	  <requires eq="w32api-*-mingw32-dev.tar" />
+        </release>
+        <release tarname="gcc-core-4.5.2-1-mingw32-bin.tar.lzma">
+          <requires lt="mingwrt-3.20-2-mingw32-dev.tar" />
+	  <requires eq="libgcc-%-mingw32-dll-1.tar" />
+	  <requires eq="libssp-%-mingw32-dll-0.tar" />
+	  <requires eq="libgomp-%-mingw32-dll-1.tar" />
+	  <requires eq="libmpc-*-mingw32-dll-2.tar" />
+	  <requires eq="pthreads-w32-*-mingw32-dev.tar" />
+	  <requires eq="binutils-*-mingw32-bin.tar" />
+	  <requires eq="w32api-*-mingw32-dev.tar" />
+        </release>
+      </component>
 
-        <!-- Requirements common to all of the above releases -->
+      <component class="dll">
+	<release tarname="gcc-core-4.8.1-1-mingw32-dll.tar.lzma">
+	  <requires eq="mpc-1.0.1-1-mingw32-dll.tar.lzma" />
+	  <requires eq="gmp-5.1.2-1-mingw32-dll.tar.lzma" />
+	  <requires eq="mpfr-3.1.2-1-mingw32-dll.tar.lzma" />
+	  <requires eq="zlib-1.2.8-1-mingw32-dll.tar.lzma" />
+	</release>
+      </component>
 
-        <requires eq="libgcc-%-mingw32-dll-1.tar" />
-        <requires eq="libssp-%-mingw32-dll-0.tar" />
-        <requires eq="libgomp-%-mingw32-dll-1.tar" />
-        <requires eq="libmpc-*-mingw32-dll-2.tar" />
-        <requires eq="pthreads-w32-*-mingw32-dev.tar" />
-        <requires eq="binutils-*-mingw32-bin.tar" />
-        <requires eq="w32api-*-mingw32-dev.tar" />
+      <component class="dev">
+	<release tarname="gcc-core-4.8.1-1-mingw32-dev.tar.lzma">
+	  <requires eq="gcc-core-%-mingw32-dll.tar.lzma" />
+	</release>
       </component>
 
       <component class="doc">
-        <release tarname="gcc-4.5.2-1-mingw32-doc.tar.lzma" />
-        <release tarname="gcc-4.6.1-2-mingw32-doc.tar.lzma" />
-        <release tarname="gcc-4.6.2-1-mingw32-doc.tar.lzma" />
-        <release tarname="gcc-4.7.0-1-mingw32-doc.tar.lzma" />
+        <release tarname="gcc-core-4.8.1-1-mingw32-doc.tar.lzma" />
         <release tarname="gcc-4.7.2-1-mingw32-doc.tar.lzma" />
+        <release tarname="gcc-4.7.0-1-mingw32-doc.tar.lzma" />
+        <release tarname="gcc-4.6.2-1-mingw32-doc.tar.lzma" />
+        <release tarname="gcc-4.6.1-2-mingw32-doc.tar.lzma" />
+        <release tarname="gcc-4.5.2-1-mingw32-doc.tar.lzma" />
+      </component>
+
+      <component class="man">
+        <release tarname="gcc-core-4.8.1-1-mingw32-man.tar.lzma" />
+      </component>
+
+      <component class="info">
+        <release tarname="gcc-core-4.8.1-1-mingw32-info.tar.lzma" />
       </component>
 
       <component class="lang">
-        <release tarname="gcc-4.5.2-1-mingw32-lang.tar.lzma" />
-        <release tarname="gcc-4.6.1-2-mingw32-lang.tar.lzma" />
-        <release tarname="gcc-4.6.2-1-mingw32-lang.tar.lzma" />
-        <release tarname="gcc-4.7.0-1-mingw32-lang.tar.lzma" />
+        <release tarname="gcc-4.8.1-1-mingw32-lang.tar.lzma" />
         <release tarname="gcc-4.7.2-1-mingw32-lang.tar.lzma" />
+        <release tarname="gcc-4.7.0-1-mingw32-lang.tar.lzma" />
+        <release tarname="gcc-4.6.2-1-mingw32-lang.tar.lzma" />
+        <release tarname="gcc-4.6.1-2-mingw32-lang.tar.lzma" />
+        <release tarname="gcc-4.5.2-1-mingw32-lang.tar.lzma" />
       </component>
     </package>
 
@@ -98,6 +155,9 @@
           by the GNU C++ language compiler, unless support for shared
           runtime libraries is explicitly disabled when building.
         </paragraph>
+	<paragraph>NOTE: As of gcc-4.8.1 release this library is delivered in
+	the -dll file of the gcc-core package.
+	</paragraph>
       </description>
 
       <source tarname="gcc-%-mingw32-src.tar.lzma" />
@@ -131,19 +191,43 @@
       <licence tarname="gcc-%-mingw32-lic.tar.lzma" />
 
       <component class="bin">
-        <requires eq="gcc-core-%-mingw32-bin.tar" />
-        <release tarname="gcc-ada-4.5.2-1-mingw32-bin.tar.lzma">
-          <requires eq="libgnat-%-mingw32-dll-4_5.tar" />
-        </release>
-        <release tarname="gcc-ada-4.6.2-1-mingw32-bin.tar.lzma">
-          <requires eq="libgnat-%-mingw32-dll-4_6.tar" />
+	<release tarname="gcc-ada-4.8.1-1-mingw32-bin.tar.lzma">
+	  <requires eq="gcc-ada-%-mingw32-dev.tar.lzma" />
+	  <requires eq="gcc-core-%-mingw32-dev.tar.lzma" />
+	  <requires eq="mingwrt-4.*-mingw32-dev.tar.lzma" />
+	  <requires eq="w32api-4.*-mingw32-dev.tar.lzma" />
+	  <requires eq="binutils-*-mingw32-bin.tar.lzma" />
+	</release>
+        <release tarname="gcc-ada-4.7.2-1-mingw32-bin.tar.lzma">
+          <requires eq="libgnat-%-mingw32-dll-4_7.tar" />
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
         </release>
         <release tarname="gcc-ada-4.7.0-1-mingw32-bin.tar.lzma">
           <requires eq="libgnat-%-mingw32-dll-4_7.tar" />
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
         </release>
-        <release tarname="gcc-ada-4.7.2-1-mingw32-bin.tar.lzma">
-          <requires eq="libgnat-%-mingw32-dll-4_7.tar" />
+        <release tarname="gcc-ada-4.6.2-1-mingw32-bin.tar.lzma">
+          <requires eq="libgnat-%-mingw32-dll-4_6.tar" />
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
         </release>
+        <release tarname="gcc-ada-4.5.2-1-mingw32-bin.tar.lzma">
+          <requires eq="libgnat-%-mingw32-dll-4_5.tar" />
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+        </release>
+      </component>
+
+      <component class="dll">
+	<release tarname="gcc-ada-4.8.1-1-mingw32-dll.tar.lzma" />
+      </component>
+
+      <component class="dev">
+	<release tarname="gcc-ada-4.8.1-1-mingw32-dev.tar.lzma">
+	  <requires eq="gcc-ada-%-mingw32-dll.tar.lzma" />
+	</release>
+      </component>
+
+      <component class="info">
+	<release tarname="gcc-ada-4.8.1-1-mingw32-info.tar.lzma" />
       </component>
     </package>
 
@@ -161,6 +245,9 @@
           by the GNU Ada language compiler, unless support for shared
           runtime libraries is explicitly disabled when building.
         </paragraph>
+	<paragraph>NOTE: As of gcc-4.8.1 release this library is delivered in
+	the -dll file of the gcc-ada package.
+	</paragraph>
       </description>
 
       <source tarname="gcc-%-mingw32-src.tar.lzma" />
@@ -193,13 +280,51 @@
       <licence tarname="gcc-%-mingw32-lic.tar.lzma" />
 
       <component class="bin">
-        <requires eq="gcc-core-%-mingw32-bin.tar" />
-        <requires eq="libstdc++-%-mingw32-dll-6.tar" />
-        <release tarname="gcc-c++-4.5.2-1-mingw32-bin.tar.lzma" />
-        <release tarname="gcc-c++-4.6.1-2-mingw32-bin.tar.lzma" />
-        <release tarname="gcc-c++-4.6.2-1-mingw32-bin.tar.lzma" />
-        <release tarname="gcc-c++-4.7.0-1-mingw32-bin.tar.lzma" />
-        <release tarname="gcc-c++-4.7.2-1-mingw32-bin.tar.lzma" />
+	<release tarname="gcc-c++-4.8.1-1-mingw32-bin.tar.lzma" >
+	  <requires eq="gcc-c++-%-mingw32-dev.tar.lzma" />
+	  <requires eq="gcc-core-%-mingw32-dev.tar.lzma" />
+	  <requires eq="binutils-*-mingw32-bin.tar.lzma" />
+	  <requires eq="mingwrt-4.*-mingw32-dev.tar.lzma" />
+	  <requires eq="w32api-4.*-mingw32-dev.tar.lzma" />
+	</release>
+        <release tarname="gcc-c++-4.7.2-1-mingw32-bin.tar.lzma" >
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+	  <requires eq="libstdc++-%-mingw32-dll-6.tar" />
+	</release>
+        <release tarname="gcc-c++-4.7.0-1-mingw32-bin.tar.lzma" >
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+	  <requires eq="libstdc++-%-mingw32-dll-6.tar" />
+	</release>
+        <release tarname="gcc-c++-4.6.2-1-mingw32-bin.tar.lzma" >
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+	  <requires eq="libstdc++-%-mingw32-dll-6.tar" />
+	</release>
+        <release tarname="gcc-c++-4.6.1-2-mingw32-bin.tar.lzma" >
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+	  <requires eq="libstdc++-%-mingw32-dll-6.tar" />
+	</release>
+        <release tarname="gcc-c++-4.5.2-1-mingw32-bin.tar.lzma" >
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+	  <requires eq="libstdc++-%-mingw32-dll-6.tar" />
+	</release>
+      </component>
+
+      <component class="dll">
+	<release tarname="gcc-c++-4.8.1-1-mingw32-dll.tar.lzma" />
+      </component>
+
+      <component class="dev">
+	<release tarname="gcc-c++-4.8.1-1-mingw32-dev.tar.lzma" >
+	  <requires eq="gcc-c++-%-mingw32-dll.tar.lzma" />
+	</release>
+      </component>
+
+      <component class="doc">
+	<release tarname="gcc-c++-4.8.1-1-mingw32-doc.tar.lzma" />
+      </component>
+
+      <component class="man">
+	<release tarname="gcc-c++-4.8.1-1-mingw32-man.tar.lzma" />
       </component>
     </package>
 
@@ -217,6 +342,9 @@
           by the GNU C++ language compiler, unless support for shared
           runtime libraries is explicitly disabled when building.
         </paragraph>
+	<paragraph>NOTE: As of gcc-4.8.1 release this library is delivered in
+	the -dll file of the gcc-c++ package.
+	</paragraph>
       </description>
 
       <source tarname="gcc-%-mingw32-src.tar.lzma" />
@@ -250,13 +378,53 @@
       <licence tarname="gcc-%-mingw32-lic.tar.lzma" />
 
       <component class="bin">
-        <requires eq="gcc-core-%-mingw32-bin.tar" />
-        <requires eq="libgfortran-%-mingw32-dll-3.tar" />
-        <release tarname="gcc-fortran-4.5.2-1-mingw32-bin.tar.lzma" />
-        <release tarname="gcc-fortran-4.6.1-2-mingw32-bin.tar.lzma" />
-        <release tarname="gcc-fortran-4.6.2-1-mingw32-bin.tar.lzma" />
-        <release tarname="gcc-fortran-4.7.0-1-mingw32-bin.tar.lzma" />
-        <release tarname="gcc-fortran-4.7.2-1-mingw32-bin.tar.lzma" />
+	<release tarname="gcc-fortran-4.8.1-1-mingw32-bin.tar.lzma">
+	  <requires eq="gcc-fortran-%-mingw32-dev.tar.lzma" />
+	  <requires eq="gcc-core-%-mingw32-dev.tar.lzma" />
+	  <requires eq="binutils-*-mingw32-bin.tar.lzma" />
+	</release>
+        <release tarname="gcc-fortran-4.7.2-1-mingw32-bin.tar.lzma" >
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+	  <requires eq="libgfortran-%-mingw32-dll-3.tar" />
+	</release>
+        <release tarname="gcc-fortran-4.7.0-1-mingw32-bin.tar.lzma" >
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+	  <requires eq="libgfortran-%-mingw32-dll-3.tar" />
+	</release>
+        <release tarname="gcc-fortran-4.6.2-1-mingw32-bin.tar.lzma" >
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+	  <requires eq="libgfortran-%-mingw32-dll-3.tar" />
+	</release>
+        <release tarname="gcc-fortran-4.6.1-2-mingw32-bin.tar.lzma" >
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+	  <requires eq="libgfortran-%-mingw32-dll-3.tar" />
+	</release>
+        <release tarname="gcc-fortran-4.5.2-1-mingw32-bin.tar.lzma" >
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+	  <requires eq="libgfortran-%-mingw32-dll-3.tar" />
+	</release>
+      </component>
+
+      <component class="dll">
+	<release tarname="gcc-fortran-4.8.1-1-mingw32-dll.tar.lzma" />
+      </component>
+
+      <component class="dev">
+	<release tarname="gcc-fortran-4.8.1-1-mingw32-dev.tar.lzma" >
+	  <requires eq="gcc-fortran-%-mingw32-dll.tar.lzma" />
+	</release>
+      </component>
+
+      <component class="doc">
+	<release tarname="gcc-fortran-4.8.1-1-mingw32-doc.tar.lzma" />
+      </component>
+
+      <component class="info">
+	<release tarname="gcc-fortran-4.8.1-1-mingw32-info.tar.lzma" />
+      </component>
+
+      <component class="man">
+	<release tarname="gcc-fortran-4.8.1-1-mingw32-man.tar.lzma" />
       </component>
     </package>
 
@@ -325,28 +493,49 @@
           you require it only if you wish to compile programs written
           in the Objective-C language.
         </paragraph>
+	<paragraph>NOTE: As of the gcc-4.8.1 release in order to install objc
+	you need to install the gcc-objc-%-mingw32-dev package instead of the
+	-bin package.  This change was made to be consistent with what -bin
+	usually contains compared to -dev.
+	</paragraph>
       </description>
 
       <source tarname="gcc-%-mingw32-src.tar.lzma" />
       <licence tarname="gcc-%-mingw32-lic.tar.lzma" />
 
       <component class="bin">
-        <requires eq="gcc-core-%-mingw32-bin.tar" />
-        <release tarname="gcc-objc-4.5.2-1-mingw32-bin.tar.lzma">
-          <requires eq="libobjc-%-mingw32-dll-2.tar" />
-        </release>
-        <release tarname="gcc-objc-4.6.1-2-mingw32-bin.tar.lzma">
-          <requires eq="libobjc-%-mingw32-dll-3.tar" />
-        </release>
-        <release tarname="gcc-objc-4.6.2-1-mingw32-bin.tar.lzma">
-          <requires eq="libobjc-%-mingw32-dll-3.tar" />
+        <release tarname="gcc-objc-4.7.2-1-mingw32-bin.tar.lzma">
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+          <requires eq="libobjc-%-mingw32-dll-4.tar" />
         </release>
         <release tarname="gcc-objc-4.7.0-1-mingw32-bin.tar.lzma">
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
           <requires eq="libobjc-%-mingw32-dll-4.tar" />
         </release>
-        <release tarname="gcc-objc-4.7.2-1-mingw32-bin.tar.lzma">
-          <requires eq="libobjc-%-mingw32-dll-4.tar" />
+        <release tarname="gcc-objc-4.6.2-1-mingw32-bin.tar.lzma">
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+          <requires eq="libobjc-%-mingw32-dll-3.tar" />
         </release>
+        <release tarname="gcc-objc-4.6.1-2-mingw32-bin.tar.lzma">
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+          <requires eq="libobjc-%-mingw32-dll-3.tar" />
+        </release>
+        <release tarname="gcc-objc-4.5.2-1-mingw32-bin.tar.lzma">
+	  <requires eq="gcc-core-%-mingw32-bin.tar" />
+          <requires eq="libobjc-%-mingw32-dll-2.tar" />
+        </release>
+      </component>
+
+      <component class="dll">
+	<release tarname="gcc-objc-4.8.1-1-mingw32-dll.tar.lzma" >
+	  <requires eq="gcc-core-%-mingw32-bin.tar.lzma" />
+	</release>
+      </component>
+
+      <component class="dev">
+	<release tarname="gcc-objc-4.8.1-1-mingw32-dev.tar.lzma">
+	  <requires eq="gcc-objc-%-mingw32-dll.tar.lzma" />
+	</release>
       </component>
     </package>
 
@@ -364,6 +553,9 @@
           the GNU Objective-C language compiler, unless support for shared
           runtime libraries is explicitly disabled when building.
         </paragraph>
+	<paragraph>NOTE: As of gcc-4.8.2-1 release this library is delivered
+	in the primary gcc-objc-%-mingw32-dll file.
+	</paragraph>
       </description>
 
       <source tarname="gcc-%-mingw32-src.tar.lzma" />

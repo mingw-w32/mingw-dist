@@ -1,3 +1,11 @@
+2013-09-01  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	* mingw32/mingw32-binutils.xml: Release 2.23.2-1.
+	* mingw32/mingw32-gcc4.xml: Release 4.8.1-1.
+	* mingw32/mingw32-gettext.xml: Release 0.18.3.1-1.
+	* mingw32/mingw32-libiconv.xml: Release 1.14-3.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2013-08-28  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	Correct ptheads-w32-2.9.1-1 release.
