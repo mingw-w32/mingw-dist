@@ -1,6 +1,7 @@
 2013-09-02  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	* mingw32/mingw32-gettext.xml: Add "dll" component class for 0.18.3.1-1.
+	Fix typo declaring the requirement for the dll.
 	* common/issue.log mingw32/issue.log: Update accordingly.
 
 2013-09-01  Earnie Boyd  <earnie@users.sourceforge.net>
