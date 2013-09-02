@@ -2,6 +2,7 @@
 
 	* mingw32/mingw32-gettext.xml: Add "dll" component class for 0.18.3.1-1.
 	Fix typo declaring the requirement for the dll.
+	* mingw32/mingw32-expat.xml: Release 2.1.0-1.
 	* common/issue.log mingw32/issue.log: Update accordingly.
 
 2013-09-01  Earnie Boyd  <earnie@users.sourceforge.net>

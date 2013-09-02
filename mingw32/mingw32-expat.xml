@@ -18,18 +18,43 @@
           development files.
         </paragraph>
       </description>
-      <component class="bin">
-        <release tarname="expat-2.0.1-1-mingw32-bin.tar.gz" />
-        <requires eq="mingw32-libexpat-%-mingw32-%-dll-1.tar" />
-      </component>
-      <component class="doc">
-        <release tarname="expat-2.0.1-1-mingw32-doc.tar.gz" />
-      </component>
-      <component class="lic">
-        <release tarname="expat-2.0.1-1-mingw32-lic.tar.gz" />
-      </component>
+
       <licence tarname="expat-%-mingw32-%-lic.tar.%" />
       <source tarname="expat-%-mingw32-%-src.tar.%" />
+
+      <component class="bin">
+	<release tarname="expat-2.1.0-1-mingw32-bin.tar.lzma" >
+	  <requires eq="expat-%-mingw32-dll.tar.lzma" />
+	</release>
+        <release tarname="expat-2.0.1-1-mingw32-bin.tar.gz" >
+	  <requires eq="mingw32-libexpat-%-mingw32-%-dll-1.tar" />
+	</release>
+      </component>
+
+      <component class="dll">
+	<release tarname="expat-2.1.0-1-mingw32-dll.tar.lzma" />
+      </component>
+
+      <component class="dev">
+	<release tarname="expat-2.1.0-1-mingw32-dev.tar.lzma" >
+	  <requires eq="expat-%-mingw32-dll.tar.lzma" />
+	</release>
+      </component>
+
+      <component class="doc">
+	<release tarname="expat-2.1.0-1-mingw32-doc.tar.lzma" />
+        <release tarname="expat-2.0.1-1-mingw32-doc.tar.gz" />
+      </component>
+
+      <component class="man">
+	<release tarname="expat-2.1.0-1-mingw32-man.tar.lzma" />
+      </component>
+
+      <component class="lic">
+	<release tarname="expat-2.1.0-1-mingw32-lic.tar.lzma" />
+        <release tarname="expat-2.0.1-1-mingw32-lic.tar.gz" />
+      </component>
+
     </package>
     <package name="mingw32-libexpat" alias="libexpat">
       <description lang="en" title="XML parsing library written in C">
@@ -46,6 +71,9 @@
           mingw32-expat package provides the xmlwf validation tool and
           documentation related to the library.
         </paragraph>
+	<paragraph>NOTE: As of release 2.1.0-1 this DLL is now part of the
+	primary package.
+	</paragraph>
       </description>
       <component class="dll">
         <release tarname="libexpat-2.0.1-1-mingw32-dll-1.tar.gz" />
