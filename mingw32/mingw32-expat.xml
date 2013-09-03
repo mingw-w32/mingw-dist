@@ -32,12 +32,15 @@
       </component>
 
       <component class="dll">
-	<release tarname="expat-2.1.0-1-mingw32-dll.tar.lzma" />
+	<release tarname="expat-2.1.0-1-mingw32-dll.tar.lzma" >
+	  <requires eq="libexpat-%-mingw32-dll-0.tar" />
+	</release>
       </component>
 
       <component class="dev">
 	<release tarname="expat-2.1.0-1-mingw32-dev.tar.lzma" >
 	  <requires eq="expat-%-mingw32-dll.tar.lzma" />
+	  <requires eq="libexpat-%-mingw32-dev.tar" />
 	</release>
       </component>
 
@@ -77,10 +80,17 @@
       </description>
       <component class="dll">
         <release tarname="libexpat-2.0.1-1-mingw32-dll-1.tar.gz" />
+	<release tarname="libexpat-2.1.0-1-mingw32-dll-0.tar" >
+	  <download tarname="none"/>
+	</release>
       </component>
       <component class="dev">
-        <release tarname="libexpat-2.0.1-1-mingw32-dev.tar.gz" />
-        <requires eq="mingw32-libexpat-%-mingw32-%-dll-1.tar" />
+        <release tarname="libexpat-2.0.1-1-mingw32-dev.tar.gz" >
+	  <requires eq="mingw32-libexpat-%-mingw32-%-dll-1.tar" />
+	</release>
+	<release tarname="libexpat-2.1.0-1-mingw32-dev-0.tar" >
+	  <download tarname="none"/>
+	</release>
       </component>
       <licence tarname="expat-%-mingw32-%-lic.tar.%" />
       <source tarname="expat-%-mingw32-%-src.tar.%" />

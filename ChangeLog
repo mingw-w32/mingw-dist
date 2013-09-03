@@ -1,3 +1,12 @@
+2013-09-03  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	* mingw32/mingw32-expat.xml: Resolve update of old naming install.
+	* mingw32/mingw32-gcc4.xml: Ditto.
+	* mingw32/mingw32-gettext.xml: Ditto.
+	* mingw32/mingw32-libiconv.xml: Ditto.
+	* mingw32/mingw32-zlib.xml: Ditto.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2013-09-02  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	* mingw32/mingw32-gettext.xml: Add "dll" component class for 0.18.3.1-1.

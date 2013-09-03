@@ -98,6 +98,10 @@
 
       <component class="dll">
 	<release tarname="gcc-core-4.8.1-1-mingw32-dll.tar.lzma">
+	  <requires eq="libgcc-%-mingw32-dll-0.tar" />
+	  <requires eq="libgomp-%-mingw32-dll-0.tar" />
+	  <requires eq="libssp-%-mingw32-dll-0.tar" />
+	  <requires eq="libquadmath-%-mingw32-dll-0.tar" />
 	  <requires eq="mpc-1.0.1-1-mingw32-dll.tar.lzma" />
 	  <requires eq="gmp-5.1.2-1-mingw32-dll.tar.lzma" />
 	  <requires eq="mpfr-3.1.2-1-mingw32-dll.tar.lzma" />
@@ -169,6 +173,9 @@
         <release tarname="libgcc-4.6.2-1-mingw32-dll-1.tar.lzma" />
         <release tarname="libgcc-4.7.0-1-mingw32-dll-1.tar.lzma" />
         <release tarname="libgcc-4.7.2-1-mingw32-dll-1.tar.lzma" />
+	<release tarname="libgcc-4.8.1-1-mingw32-dll-0.tar" >
+	  <download tarname="none" />
+	</release>
       </component>
     </package>
 
@@ -217,7 +224,9 @@
       </component>
 
       <component class="dll">
-	<release tarname="gcc-ada-4.8.1-1-mingw32-dll.tar.lzma" />
+	<release tarname="gcc-ada-4.8.1-1-mingw32-dll.tar.lzma" >
+	  <requires eq="libgnat-%-mingw32-dll-0.tar" />
+	</release>
       </component>
 
       <component class="dev">
@@ -258,6 +267,9 @@
         <release tarname="libgnat-4.6.2-1-mingw32-dll-4_6.tar.lzma" />
         <release tarname="libgnat-4.7.0-1-mingw32-dll-4_7.tar.lzma" />
         <release tarname="libgnat-4.7.2-1-mingw32-dll-4_7.tar.lzma" />
+	<release tarname="libgnat-4.8.1-1-mingw32-dll-0.tar" >
+	  <download tarname="none" />
+	</release>
       </component>
     </package>
 
@@ -310,7 +322,9 @@
       </component>
 
       <component class="dll">
-	<release tarname="gcc-c++-4.8.1-1-mingw32-dll.tar.lzma" />
+	<release tarname="gcc-c++-4.8.1-1-mingw32-dll.tar.lzma" >
+	  <requires eq="libstdc++-4.8.1-1-mingw32-dll-0.tar" />
+	</release>
       </component>
 
       <component class="dev">
@@ -356,6 +370,9 @@
         <release tarname="libstdc++-4.6.2-1-mingw32-dll-6.tar.lzma" />
         <release tarname="libstdc++-4.7.0-1-mingw32-dll-6.tar.lzma" />
         <release tarname="libstdc++-4.7.2-1-mingw32-dll-6.tar.lzma" />
+	<release tarname="libstdc++-4.8.1-1-mingw32-dll-0.tar" >
+	  <download tarname="none"/>
+	</release>
       </component>
     </package>
 
@@ -406,7 +423,9 @@
       </component>
 
       <component class="dll">
-	<release tarname="gcc-fortran-4.8.1-1-mingw32-dll.tar.lzma" />
+	<release tarname="gcc-fortran-4.8.1-1-mingw32-dll.tar.lzma" >
+	  <requires eq="libgfortran-%-mingw32-dll-0.tar" />
+	</release>
       </component>
 
       <component class="dev">
@@ -453,6 +472,9 @@
         <release tarname="libgfortran-4.6.2-1-mingw32-dll-3.tar.lzma" />
         <release tarname="libgfortran-4.7.0-1-mingw32-dll-3.tar.lzma" />
         <release tarname="libgfortran-4.7.2-1-mingw32-dll-3.tar.lzma" />
+	<release tarname="libgfortran-4.8.1-1-mingw32-dll-0.tar" >
+	  <download tarname="none" />
+	</release>
       </component>
     </package>
 
@@ -524,11 +546,16 @@
 	  <requires eq="gcc-core-%-mingw32-bin.tar" />
           <requires eq="libobjc-%-mingw32-dll-2.tar" />
         </release>
+	<release tarname="gcc-objc-4.8.1-1-mingw32-bin.tar" >
+	  <download tarname="none" />
+	  <requires eq="gcc-objc-4.8.1-1-mingw32-dev.tar.lzma" />
+	</release>
       </component>
 
       <component class="dll">
 	<release tarname="gcc-objc-4.8.1-1-mingw32-dll.tar.lzma" >
 	  <requires eq="gcc-core-%-mingw32-bin.tar.lzma" />
+	  <requires eq="libobjc-%-mingw32-dll-0.tar" />
 	</release>
       </component>
 
@@ -567,6 +594,9 @@
         <release tarname="libobjc-4.6.2-1-mingw32-dll-3.tar.lzma" />
         <release tarname="libobjc-4.7.0-1-mingw32-dll-4.tar.lzma" />
         <release tarname="libobjc-4.7.2-1-mingw32-dll-4.tar.lzma" />
+	<release tarname="libobjc-4.8.1-1-mingw32-dll-0.tar" >
+	  <download tarname="none"/>
+	</release>
       </component>
     </package>
 
@@ -583,6 +613,9 @@
         <release tarname="libgomp-4.6.2-1-mingw32-dll-1.tar.lzma" />
         <release tarname="libgomp-4.7.0-1-mingw32-dll-1.tar.lzma" />
         <release tarname="libgomp-4.7.2-1-mingw32-dll-1.tar.lzma" />
+	<release tarname="libgomp-4.8.1-1-mingw32-dll-0.tar" >
+	  <download tarname="none"/>
+	</release>
       </component>
     </package>
 
@@ -598,6 +631,9 @@
         <release tarname="libssp-4.6.2-1-mingw32-dll-0.tar.lzma" />
         <release tarname="libssp-4.7.0-1-mingw32-dll-0.tar.lzma" />
         <release tarname="libssp-4.7.2-1-mingw32-dll-0.tar.lzma" />
+	<release tarname="libssp-4.8.1-1-mingw32-dll-0.tar" >
+	  <download tarname="none" />
+	</release>
       </component>
     </package>
 
@@ -612,6 +648,9 @@
         <release tarname="libquadmath-4.6.2-1-mingw32-dll-0.tar.lzma" />
         <release tarname="libquadmath-4.7.0-1-mingw32-dll-0.tar.lzma" />
         <release tarname="libquadmath-4.7.2-1-mingw32-dll-0.tar.lzma" />
+	<release tarname="libquadmath-4.8.1-1-mingw32-dll-0.tar" >
+	  <download tarname="none"/>
+	</release>
       </component>
     </package>
 

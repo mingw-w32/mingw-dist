@@ -56,7 +56,11 @@
       </component>
 
       <component class="dll">
-	<release tarname="gettext-0.18.3.1-1-mingw32-dll.tar.lzma" />
+	<release tarname="gettext-0.18.3.1-1-mingw32-dll.tar.lzma" >
+	  <requires eq="libintl-0.18.3.1-1-mingw32-dll-0.tar" />
+	  <requires eq="libgettextpo-0.18.3.1-1-mingw32-dll-0.tar" />
+	  <requires eq="libasprintf-0.18.3.1-1-mingw32-dll-0.tar" />
+	</release>
       </component>
 
       <component class="doc">
@@ -149,6 +153,9 @@
           <requires eq="mingw32-libgcc-*-mingw32-*-dll-1.tar" />
           <requires ge="mingw32-libiconv-1.14-2-mingw32-*-dll-2.tar" />
         </release>
+	<release tarname="libintl-0.18.3.1-1-mingw32-dll-0.tar" >
+	  <download tarname="none"/>
+	</release>
       </component>
     </package>
 
@@ -196,6 +203,9 @@
           <requires ge="mingw32-libiconv-1.14-2-mingw32-*-dll-2.tar" />
           <requires eq="mingw32-libintl-%-mingw32-%-dll-8.tar" />
         </release>
+	<release tarname="libgettextpo-0.18.3.1-1-mingw32-dll-0.tar" >
+	  <download tarname="none"/>
+	</release>
       </component>
     </package>
 
@@ -241,6 +251,9 @@
           <requires eq="mingw32-libstdc++-*-mingw32-*-dll-6.tar" />
           <requires eq="mingw32-libgcc-*-mingw32-*-dll-1.tar" />
         </release>
+	<release tarname="libasprintf-0.18.3.1-1-mingw32-dll-0.tar" >
+	  <download tarname="none"/>
+	</release>
       </component>
     </package>
 
