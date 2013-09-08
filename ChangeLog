@@ -1,3 +1,11 @@
+2013-09-08  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	Finish rework for gcc and publish 4.8.1-2.
+
+	* mingw32/mingw32-gcc4.xml: Add 4.8.1-2 release and complete the rework
+	for the libraries.
+	* common/issue.log mingw32/issue.log: Updated accordingly.
+
 2013-09-07  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	Rework my previous changes to help avoid ERROR issues.
@@ -11,6 +19,7 @@
 	* mingw32/mingw32-pthreads-w32.xml: Rework to use libpthread package
 	as before.
 	* mingw32/mingw32-zlib.zml: Rework to use libz package as before.
+	* common/issue.log mingw32/issue.log: Updated accordingly.
 
 2013-09-04  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
