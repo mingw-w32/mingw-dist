@@ -1,3 +1,17 @@
+2013-09-07  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	Rework my previous changes to help avoid ERROR issues.
+
+	* mingw32/mingw32-binutils.xml: Change dependency to match changes in
+	mingw32-gcc4.xml and mingw32-zlib.xml.
+	* mingw32/mingw32-gcc4.xml: Rework to use libXXX package as before where
+	XXX is dependent on the compiler type.
+	* mingw32/mingw32-mpc.xml: Rework to use libmpc package as before.
+	* mingw32/mingw32-mpfr.xml: Rework to use libmpfr package as before.
+	* mingw32/mingw32-pthreads-w32.xml: Rework to use libpthread package
+	as before.
+	* mingw32/mingw32-zlib.zml: Rework to use libz package as before.
+
 2013-09-04  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Publish mingw-get release 0.6.0-beta-20130904-1.

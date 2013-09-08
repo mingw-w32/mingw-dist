@@ -33,7 +33,8 @@
 
       <component class="dev">
 	<release tarname="mpfr-3.1.2-1-mingw32-dev.tar.lzma" >
-	  <requires eq="mpfr-3.1.2-1-mingw32-dll.tar.lzma" />
+	  <requires eq="mingw32-libmpfr-%-mingw32-dll-1.tar" />
+	  <requires eq="gmp-5.1.2-1-mingw32-dev.tar.lzma" />
 	</release>
         <release tarname="mpfr-2.4.1-1-mingw32-dev.tar.lzma" >
           <requires eq="mingw32-libmpfr-%-mingw32-dll-1.tar" />
@@ -50,11 +51,6 @@
         <release tarname="mpfr-2.4.1-1-mingw32-lic.tar.lzma" />
       </component>
 
-      <component class="dll">
-	<release tarname="mpfr-3.1.2-1-mingw32-dll.tar.lzma" >
-	  <requires eq="gmp-5.1.2-1-mingw32-dll.tar.lzma" />
-	</release>
-      </component>
     </package>
 
     <package name="mingw32-libmpfr" alias="libmpfr">
@@ -86,6 +82,10 @@
         <release tarname="libmpfr-2.4.1-1-mingw32-dll-1.tar.lzma" >
           <requires eq="mingw32-libgmp-*-mingw32-dll-10.tar" />
         </release>
+	<release tarname="libmpfr-3.1.2-1-mingw32-dll-1.tar" >
+	  <download tarname="mpfr-3.1.2-1-mingw32-dll.tar.lzma" />
+	  <requires eq="mingw32-libgmp-*-mingw32-dll-10.tar" />
+	</release>
       </component>
     </package>
 

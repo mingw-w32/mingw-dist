@@ -38,16 +38,12 @@
 
       <component class="dev">
 	<release tarname="gmp-5.1.2-1-mingw32-dev.tar.lzma" >
-	  <requires eq="gmp-5.1.2-1-mingw32-dll.tar.lzma" />
+	  <requires eq="mingw32-libgmpxx-%-mingw32-dll-4.tar" />
 	</release>
         <release tarname="gmp-5.0.1-1-mingw32-dev.tar.lzma" >
           <requires eq="mingw32-libgmp-%-mingw32-dll-10.tar" />
           <requires eq="mingw32-libgmpxx-%-mingw32-dll-4.tar" />
         </release>
-      </component>
-
-      <component class="dll">
-        <release tarname="gmp-5.1.2-1-mingw32-dll.tar.lzma" />
       </component>
 
       <component class="doc">
@@ -96,6 +92,9 @@
       <licence tarname="gmp-%-mingw32-lic.tar.lzma" />
 
       <component class="dll">
+        <release tarname="libgmp-5.1.2-1-mingw32-dll-10.tar" >
+	  <download tarname="gmp-5.1.2-1-mingw32-dll.tar.lzma" />
+	</release>
         <release tarname="libgmp-5.0.1-1-mingw32-dll-10.tar.lzma" />
       </component>
     </package>
@@ -121,6 +120,10 @@
       <licence tarname="gmp-%-mingw32-lic.tar.lzma" />
 
       <component class="dll">
+        <release tarname="libgmpxx-5.1.2-1-mingw32-dll-4.tar.lzma" >
+	  <download tarname="none" />
+          <requires eq="libgmp-%-mingw32-dll-10.tar" />
+        </release>
         <release tarname="libgmpxx-5.0.1-1-mingw32-dll-4.tar.lzma" >
           <requires eq="libgmp-%-mingw32-dll-10.tar" />
           <requires eq="libgcc-*-mingw32-dll-1.tar" />

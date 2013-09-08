@@ -24,9 +24,9 @@
 
       <component class="bin">
 	<release tarname="binutils-2.23.2-1-mingw32-bin.tar.lzma" >
-	  <requires eq="gcc-core-4.8.1-1-mingw32-dll.tar.lzma" />
-	  <requires eq="zlib-1.2.8-1-mingw32-dll.tar.lzma" />
 	  <requires eq="binutils-%-mingw32-dev.tar.lzma" />
+	  <requires eq="mingw32-libz-*-dll-1.tar" />
+	  <requires eq="mingw32-libgcc-*-dll-1.tar" />
 	</release>
         <release tarname="binutils-2.23.1-1-mingw32-bin.tar.lzma" >
           <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />

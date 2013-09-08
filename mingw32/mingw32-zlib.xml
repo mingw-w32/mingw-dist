@@ -7,32 +7,15 @@
     <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
 
     <package name="mingw32-zlib" alias="zlib">
-      <affiliate group="MinGW Standard Libraries" />
       <description lang="en" title="A Massively Spiffy Yet Delicately Unobtrusive Compression Library">
         <paragraph>The zlib compression library provides in-memory compression
           and decompression functions, including integrity checks of the
           uncompressed data.
         </paragraph>
-        <paragraph>Prior to the 1.2.8-1 release, the mingw32-zlib package
-          provided only documentation related to the ZLib library; the runtime
-          and development files were provided by the associated mingw32-libz
-          package.  From the 1.2.8-1 release onwards, these additional
-          components have been subsumed into this main package set.
-        </paragraph>
       </description>
 
       <licence tarname="zlib-%-mingw32-%-lic.tar.%" />
       <source tarname="zlib-%-mingw32-%-src.tar.%" />
-
-      <component class="dll">
-        <release tarname="zlib-1.2.8-1-mingw32-dll.tar.lzma" />
-      </component>
-
-      <component class="dev">
-        <release tarname="zlib-1.2.8-1-mingw32-dev.tar.lzma" >
-	  <requires tarname="zlib-1.2.8-1-mingw32-dll.tar.lzma" />
-	</release>
-      </component>
 
       <component class="doc">
         <release tarname="zlib-1.2.8-1-mingw32-doc.tar.lzma" />
@@ -61,9 +44,6 @@
 
     <package name="mingw32-libz" alias="libz">
       <description lang="en" title="A Massively Spiffy Yet Delicately Unobtrusive Compression Library">
-        <paragraph>NOTE: The zlib DLL and development package is delivered in
-          the primary zlib package release as of zlib-1.2.8-1.
-        </paragraph>
         <paragraph>The zlib compression library provides in-memory compression
           and decompression functions, including integrity checks of the
           uncompressed data. The libz package provides the runtime and
@@ -71,6 +51,7 @@
           package provides documentation.
         </paragraph>
       </description>
+      <affiliate group="Mingw Standard Libraries"/>
 
       <licence tarname="zlib-%-mingw32-%-lic.tar.%" />
       <source tarname="zlib-%-mingw32-%-src.tar.%" />
@@ -86,8 +67,8 @@
         <release tarname="libz-1.2.7-1-mingw32-dll-1.tar.lzma" >
           <requires eq="mingw32-libgcc-*-mingw32-dll-1.tar" />
         </release>
-	<release tarname="libz-1.2.8-1-mingw32-dll-0.tar" >
-	  <download tarname="none" />
+	<release tarname="libz-1.2.8-1-mingw32-dll-1.tar">
+	  <download tarname="zlib-1.2.8-1-mingw32-dll.tar.lzma" />
 	</release>
       </component>
 
@@ -104,9 +85,9 @@
         <release tarname="libz-1.2.7-1-mingw32-dev.tar.lzma" >
           <requires eq="mingw32-libz-%-mingw32-%-dll-1.tar" />
         </release>
-	<release tarname="libz-1.2.8-1-mingw32-dev-0.tar" >
-	  <download tarname="none" />
-	  <requires eq="zlib-1.2.8-1-mingw32-dev.tar.lzma" />
+	<release tarname="libz-1.2.8-1-mingw32-dev-1.tar" >
+	  <download tarname="zlib-1.2.8-1-mingw32-dev.tar.lzma" />
+	  <requires eq="mingw32-libz-%-mingw32-dll-1.tar" />
 	</release>
       </component>
     </package>
@@ -129,6 +110,7 @@
           met by the libarchive package.
         </paragraph>
       </description>
+      <affilate group="MinGW Deprecated Packages" />
 
       <licence tarname="zlib-%-mingw32-%-lic.tar.%" />
       <source tarname="zlib-%-mingw32-%-src.tar.%" />
