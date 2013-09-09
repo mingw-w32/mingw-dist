@@ -1,3 +1,9 @@
+2013-09-09  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	* mingw32/mingw32-gettext.xml: Use the correct package name for libgcc.
+	* mingw32/mingw32-libiconv.xml: Ditto.
+	* common/issue.log mingw32/issue.log: Updated accordingly.
+
 2013-09-08  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	Finish rework for gcc and publish 4.8.1-2.
