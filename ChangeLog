@@ -1,3 +1,8 @@
+2013-09-10  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	* mingw32/mingw32-expat.xml: Correct the usage of libexpat.
+	* common/issue.log mingw32/issue.log: Updated accordingly.
+
 2013-09-09  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	* mingw32/mingw32-gettext.xml: Use the correct package name for libgcc.
