@@ -1,3 +1,17 @@
+2013-09-10  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Publish mingw-get release 0.6.1-beta-20130910-1.
+
+	* mingw32/mingw32-mingw-get.xml:
+	(mingw-get) <bin>: Add 0.6.1-beta-20130910-1 release specification;
+	(mingw-get) <gui, lic>: Likewise.
+	(pkginfo) <bin>: Likewise.
+
+	* mingw32-mingw-get.xml.lzma: Regenerated and published.
+	* mingw32-package-list.lzma package-list.xml.lzma: Likewise.
+
+	* common/issue.log mingw32/issue.log: Updated accordingly.
+
 2013-09-10  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	* mingw32/mingw32-expat.xml: Correct the usage of libexpat.
