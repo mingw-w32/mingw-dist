@@ -13,6 +13,11 @@
       <package-group name="MinGW Libraries">
         <package-group name="MinGW Standard Libraries" />
         <package-group name="MinGW Supplementary Libraries" />
+	<package-group name="MinGW Contributed Libraries" />
+      </package-group>
+      <package-group name="MinGW Contributed">
+	<package-group name="MinGW Contributed Applications" />
+	<package-group name="MinGW Contributed Libraries" />
       </package-group>
       <package-group name="MinGW Autotools" />
     </package-group>
@@ -54,6 +59,7 @@
   <!-- "real" packages ~~ user contributed -->
   <package-list catalogue="mingw32-libunistring" />
   <package-list catalogue="mingw32-pdcurses" />
+  <package-list catalogue="mingw32-tcltk" />
 
   <!-- "virtual" packages -->
   <package-list catalogue="mingw32-base" />

@@ -17,6 +17,14 @@
 	(w32api): Ditto.
 	* common/issue.log mingw32/issue.log: Update accordingly.
 
+	Publish contrib package tcl/tk 8.6.0.
+
+	* mingw32/mingw32-package-list.xml: Add mingw32-tcktk.xml package.
+	Add package group MinGW Contributed.
+	* contrib/mingw32-tcltk.xml: New package.
+	* common/issue.log mingw32/issue.log contrib/issue.log: Update
+	accordingly.
+
 2013-09-14  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	Publish a correction for libwinspool.a.
