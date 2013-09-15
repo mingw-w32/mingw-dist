@@ -29,6 +29,7 @@
 
       <component class="dev">
         <requires eq="mingwrt-%-mingw32-dll.tar.%" />
+	<release tarname="mingwrt-4.0.2-1-mingw32-dev.tar.lzma" />
 	<release tarname="mingwrt-4.0.1-1-mingw32-dev.tar.lzma" />
 	<release tarname="mingwrt-4.0.0-1-mingw32-dev.tar.lzma" />
 	<!-- The default source and licence name changed so we must -->
@@ -56,6 +57,7 @@
       </component>
 
       <component class="dll">
+	<release tarname="mingwrt-4.0.2-1-mingw32-dll.tar.lzma" />
 	<release tarname="mingwrt-4.0.1-1-mingw32-dll.tar.lzma" />
 	<release tarname="mingwrt-4.0.0-1-mingw32-dll.tar.lzma" />
 	<!-- The default source and licence name changed so we must -->
@@ -83,11 +85,13 @@
       </component>
 
       <component class="lic">
+	<release tarname="mingwrt-4.0.2-1-mingw32-lic.tar.lzma" />
 	<release tarname="mingwrt-4.0.1-1-mingw32-lic.tar.lzma" />
 	<release tarname="mingwrt-4.0.0-1-mingw32-lic.tar.lzma" />
       </component>
 
       <component class="doc">
+	<release tarname="mingwrt-4.0.2-1-mingw32-doc.tar.lzma" />
 	<release tarname="mingwrt-4.0.1-1-mingw32-doc.tar.lzma" />
 	<release tarname="mingwrt-4.0.0-1-mingw32-doc.tar.lzma" />
       </component>
@@ -112,6 +116,9 @@
       <licence tarname="w32api-%-mingw32-lic.tar.%" />
 
       <component class="dev">
+	<release tarname="w32api-4.0.2-1-mingw32-dev.tar.lzma" >
+	  <requires eq="mingwrt-4.0.2-1-mingw32-dev.tar.lzma" />
+	</release>
 	<release tarname="w32api-4.0.1-1-mingw32-dev.tar.lzma" >
 	  <requires eq="mingwrt-4.0.1-1-mingw32-dev.tar.lzma" />
 	</release>
@@ -143,11 +150,13 @@
       </component>
 
       <component class="lic">
+	<release tarname="w32api-4.0.2-1-mingw32-lic.tar.lzma" />
 	<release tarname="w32api-4.0.1-1-mingw32-lic.tar.lzma" />
 	<release tarname="w32api-4.0.0-1-mingw32-lic.tar.lzma" />
       </component>
 
       <component class="doc">
+	<release tarname="w32api-4.0.2-1-mingw32-doc.tar.lzma" />
 	<release tarname="w32api-4.0.1-1-mingw32-doc.tar.lzma" />
 	<release tarname="w32api-4.0.0-1-mingw32-doc.tar.lzma" />
       </component>

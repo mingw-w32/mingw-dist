@@ -10,6 +10,13 @@
 	(info): Ditto.
 	* common/issue.log mingw32/issue.log: Update accordingly.
 
+	Publish correction for wtsapi32.h.
+
+	* mingw32/mingw32-runtime.xml:
+	(minwrt): Add 4.0.2 release.
+	(w32api): Ditto.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2013-09-14  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	Publish a correction for libwinspool.a.
