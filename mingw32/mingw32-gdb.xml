@@ -8,6 +8,7 @@
 
     <package name="mingw32-gdb" alias="gdb">
       <affiliate group="MinGW Base System" />
+      <affiliate group="MinGW Source-Level Debugger" />
       <description lang="en" title="The GNU Source-Level Debugger">
         <paragraph>
           GDB is a source-level debugger, capable of breaking programs at
@@ -22,9 +23,9 @@
       <licence tarname="gdb-%-mingw32-%-lic.tar.%" />
 
       <component class="bin">
-	<release tarname="gdb-7.6.1-1-mingw32-bin.tar.lzma">
-	  <requires eq="mingw32-libz-*-mingw32-dll-1.tar" />
-	</release>
+        <release tarname="gdb-7.6.1-1-mingw32-bin.tar.lzma">
+          <requires eq="mingw32-libz-*-mingw32-dll-1.tar" />
+        </release>
         <release tarname="gdb-7.5-1-mingw32-bin.tar.lzma" >
           <requires eq="mingw32-libexpat-*-mingw32-*-dll-1.tar" />
           <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />

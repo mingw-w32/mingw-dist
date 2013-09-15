@@ -25,6 +25,14 @@
 	* common/issue.log mingw32/issue.log contrib/issue.log: Update
 	accordingly.
 
+	Add affiliate group for Source-Level Debugger to gdb release and retab.
+
+	* mingw32/mingw32-package-list.xml: Retab due to broken vim modeline
+	configuration on my side.
+	* mingw32/mingw32-gdb.xml: Add affiliate group for Source-Level Debugger
+	and retab due to broken vim modeline configuration on my side.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2013-09-14  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	Publish a correction for libwinspool.a.
