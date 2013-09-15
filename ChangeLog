@@ -1,3 +1,15 @@
+2013-09-15  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	Publish gdb-7.6.1
+
+	* mingw32/mingw32-gdb.xml (bin): Add gdb-7.6.1 release.
+	(doc): Ditto.
+	(lic): New component.
+	(man): Ditto.
+	(lang): Ditto.
+	(info): Ditto.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2013-09-14  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	Publish a correction for libwinspool.a.
