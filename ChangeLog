@@ -1,3 +1,11 @@
+2013-09-22  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	Publish mingwrt-4.0.3 and w32api-4.0.3
+
+	* mingw32/mingw32-runtime.xml (mingwrt): Add 4.0.3 release.
+	(w32api): Ditto.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2013-09-15  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	Publish gdb-7.6.1
