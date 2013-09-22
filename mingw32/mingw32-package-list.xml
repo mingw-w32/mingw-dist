@@ -60,6 +60,7 @@
   <package-list catalogue="mingw32-libunistring" />
   <package-list catalogue="mingw32-pdcurses" />
   <package-list catalogue="mingw32-tcltk" />
+  <package-list catalogue="mingw32-xerces-c" />
 
   <!-- "virtual" packages -->
   <package-list catalogue="mingw32-base" />

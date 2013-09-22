@@ -1,3 +1,13 @@
+2013-09-22  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Publish Xerces-C++ contributed package.
+
+	* contrib/mingw32-xerces-c.xml: New catalogue file.
+	* mingw32/mingw32-package-list.xml (mingw32-xerces-c): Add reference.
+	* contrib/issue.log mingw32/issue.log common/issue.log: Updated.
+	* mingw32-package-list.xml.lzma: Regenerate and publish.
+	* mingw32-xerces-c.xml.lzma: Generate and publish.
+
 2013-09-22  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	Publish mingwrt-4.0.3 and w32api-4.0.3
