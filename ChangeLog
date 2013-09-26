@@ -1,3 +1,17 @@
+2013-09-26  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	Correct more packaging issues.
+
+	* mingw32/mingw32-gcc4.xml: Release 4.8.1-3 to correct library version
+	issues.
+	* mingw32/mingw32-mpc.xml: Release 1.0.1-2 to correct library version
+	issues.
+	* mingw32/mingw32-mpfr.xml: Release 3.1.2-2 to correct library version
+	issues.
+	* mingw32/mingw32-libiconv.xml: Correct library version issues.
+	* mingw32/mingw32-gettext.xml: Ditto.
+	* common/issue.log mingw32/issue.log: Updated accordingly.
+
 2013-09-22  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Publish Xerces-C++ contributed package.
