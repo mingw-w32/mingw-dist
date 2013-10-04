@@ -1,5 +1,17 @@
 2013-10-04  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Reduce "Basic Setup" group GCC inventory to only "bin" packages.
+
+	* mingw32/mingw32-gcc4.xml (ada, c++, fortran, objc): Move affiliate
+	reference for "Basic Setup" from package to "bin" component.
+
+	* mingw32-gcc4.xml.lzma: Regenerated and published.
+	* mingw32-package-list.lzma package-list.xml.lzma: Likewise.
+
+	* common/issue.log mingw32/issue.log: Updated accordingly.
+
+2013-10-04  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Publish mingw-get release 0.6.2-beta-20131004-1.
 
 	* mingw32/mingw32-mingw-get.xml:
