@@ -25,7 +25,7 @@
 # MinGW Project, accept liability for any damages, however caused,
 # arising from the use of this software.
 #
-all: @mingw_ac_subdirs@ update-references
+all: check @mingw_ac_subdirs@ update-references
 
 @SET_MAKE@
 @mingw_ac_subdirs@: FORCE
@@ -58,6 +58,21 @@ Makefile: config.status Makefile.in Makefile.stub.in Makefile.comm.in
 # the `all' goal.
 #
 all-distfiles: all
+
+# Before building a set of catalogues, for publication, we should run
+# the test suite to validate all source documents; the following rules
+# provide the interface which is needed to run the test suite.
+#
+srcdir = @srcdir@
+check: tests/Makefile
+	cd tests; $(MAKE_RECURSIVE) $@
+
+${srcdir}/tests/configure: ${srcdir}/tests/configure.ac VERSION.m4
+	cd ${srcdir}/tests; autoconf
+
+tests/Makefile: ${srcdir}/tests/configure
+	test -d tests || mkdir tests
+	cd tests; ../${srcdir}/tests/configure
 
 # To support optimised "mingw-get update", the package lists must be
 # dynamically updated, to correctly identify the latest issue of each

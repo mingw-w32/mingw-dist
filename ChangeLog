@@ -1,5 +1,14 @@
 2013-10-08  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Integrate XML validation tests into build infrastructure.
+
+	* Makefile.in (all): Add a primary dependency on...
+	(check): ...this new build goal; implement it, in terms of...
+	($srcdir/tests/configure, $builddir/tests/Makefile): ...these new
+	intermediates; define procedures to build them.
+
+2013-10-08  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Implement an XML validation test suite.
 
 	* tests: New directory.
