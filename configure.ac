@@ -22,7 +22,8 @@
 # MinGW Project, accept liability for any damages, however caused,
 # arising from the use of this software.
 #
-  AC_INIT([mingw-dist],[2.2],[http://mingw.org/reporting_bugs])
+  m4_include([VERSION.m4])
+  AC_INIT([mingw-dist],__VERSION__,[http://mingw.org/reporting_bugs])
 
 # Specify a default (invalid) user name, for authentication to FRS.
 #

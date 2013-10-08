@@ -1,3 +1,10 @@
+2013-10-08  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Delegate version assignment to VERSION.m4 auxiliary file.
+
+	* VERSION.m4: New file.
+	* configure.ac (AC_INIT): m4_include, and use it.
+
 2013-10-04  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Reduce "Basic Setup" group GCC inventory to only "bin" packages.
