@@ -1,0 +1,78 @@
+# @configure_input@
+#
+# $Id$
+#
+# Written by Keith Marshall <keithmarshall@users.sourceforge.net>
+# Copyright (C) 2013, MinGW.org Project
+#
+#
+# Makefile template for generating mingw-get distribution manifests.
+#
+#   Project: @PACKAGE_TARNAME@
+#   Version: @PACKAGE_VERSION@
+#
+#
+# This is free software.  Permission is granted to copy, modify and
+# redistribute this software, under the provisions of the GNU General
+# Public License, Version 3, (or, at your option, any later version),
+# as published by the Free Software Foundation; see the file COPYING
+# for licensing details.
+#
+# Note, in particular, that this software is provided "as is", in the
+# hope that it may prove useful, but WITHOUT WARRANTY OF ANY KIND; not
+# even an implied WARRANTY OF MERCHANTABILITY, nor of FITNESS FOR ANY
+# PARTICULAR PURPOSE.  Under no circumstances will the author, or the
+# MinGW Project, accept liability for any damages, however caused,
+# arising from the use of this software.
+#
+VPATH = @srcdir@
+vpath VERSION.m4 @srcdir@/..
+
+CXX = @CXX@
+CXXFLAGS = @CXXFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+
+EXEEXT = @EXEEXT@
+OBJEXT = @OBJEXT@
+
+srcdir = @srcdir@
+xml_datarootdir = ${srcdir}/..
+
+XMLCHECK =
+
+check: @XERCES_C_TOOLS@
+	./xmlcheck$(EXEEXT) ${srcdir}/pkgspec.xsd ${xml_datarootdir}/*/*.xml \
+	  2> xmlcheck.log && rm -f xmlcheck.log \
+	     || { cat xmlcheck.log; exit 1; }
+
+no-xerces-c-tools:
+	@for msg in $(NO_XERCES_C_TOOLS_MSG); do echo $$msg; done; false
+
+NO_XERCES_C_TOOLS_MSG = "" \
+  "This test suite requires the Xerces-C++ SDK, but it appears that" \
+  "this has not been installed on your system." "" \
+  "Please install a copy of this SDK, which is compatible with your" \
+  "system C++ compiler, if you wish to run this test suite." ""
+
+xerces-c-tools: xmlcheck$(EXEEXT)
+xmlcheck$(EXEEXT): xmlcheck.$(OBJEXT)
+	$(CXX) $(CXXFLAGS) -o $@ $(LDFLAGS) $^ $(LIBS)
+
+sinclude *.d
+%.$(OBJEXT): %.cpp
+	$(CXX) -MMD -MP -c $(CPPFLAGS) $(CXXFLAGS) -o $@ $<
+
+configure: configure.ac VERSION.m4
+	cd ${srcdir}; autoconf
+
+config.status: configure
+	./config.status --recheck
+
+Makefile: config.status Makefile.in
+	./config.status
+
+clean:
+	rm -f *.$(OBJEXT) xmlcheck$(EXEEXT)
+
+# $RCSfile$: end of file

@@ -1,5 +1,13 @@
 2013-10-08  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Implement an XML validation test suite.
+
+	* tests: New directory.
+	* tests/configure.ac tests/Makefile.in: New files.
+	* tests/xmlcheck.cpp tests/pkgspec.xsd: Likewise.
+
+2013-10-08  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Delegate version assignment to VERSION.m4 auxiliary file.
 
 	* VERSION.m4: New file.

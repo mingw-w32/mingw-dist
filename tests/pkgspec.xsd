@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!--
+    $Id$
+
+    XSDL schema for validation of mingw-get package specifications.
+
+    Written by Keith Marshall  <keithmarshall@users.sourceforge.net>
+    Copyright (C) 2013, MinGW.org Project
+
+
+    This file is part of the mingw-dist catalogue validation suite.
+
+    This is free software.  Permission is granted to copy, modify and
+    redistribute this software, under the provisions of the GNU General
+    Public License, Version 3, (or, at your option, any later version),
+    as published by the Free Software Foundation; see the file COPYING
+    for licensing details.
+
+    Note, in particular, that this software is provided "as is", in the
+    hope that it may prove useful, but WITHOUT WARRANTY OF ANY KIND; not
+    even an implied WARRANTY OF MERCHANTABILITY, nor of FITNESS FOR ANY
+    PARTICULAR PURPOSE.  Under no circumstances will the author, or the
+    MinGW Project, accept liability for any damages, however caused,
+    arising from the use of this software.
+
+
+    Note to maintainers, (because this may seem counter intuitive, and
+    thus may be eminently forgettable): whilst the structure of any XML
+    document demands that attributes be specified in the opening tag of
+    their associated element, and thus they PRECEDE the element content,
+    XSDL requires that they be declared AFTER the corresponding content
+    model; please ensure that their declarations are correctly placed
+    within this XSDL schema.
+  -->
+
+  <xs:element name="software-distribution" type="specification-document" />
+  <!--
+    The package specification document root is always an XML element
+    named "software-distribution", which must conform to the following
+    type definition
+  -->
+  <xs:complexType name="specification-document">
+    <xs:sequence>
+      <!--
+	The entire specification comprises a sequence of at most three
+	optionally repeating section types; unless it is omitted...
+      -->
+      <xs:element name="package-group-hierarchy" minOccurs="0">
+	<!--
+	  ...this must appear as the first section; only one instance
+	  is permitted.
+	-->
+	<xs:complexType>
+	  <xs:sequence maxOccurs="unbounded">
+            <!--
+              Within the package group hierarchy, at least one package
+              group must be specified.  Additional group specifications
+              may be added, without limit; all must conform to the type
+              definition, as specified below.
+            -->
+	    <xs:element name="package-group" type="package-group-definition" />
+	  </xs:sequence>
+	</xs:complexType>
+      </xs:element>
+      <!--
+        When present, a package group hierarchy specification is typically
+        followed by one or more instances of...
+      -->
+      <xs:element name="package-list" minOccurs="0" maxOccurs="unbounded">
+        <!--
+          ...this; it is optional, but when present, all instances must
+          follow the package group hierarchy specification, (if any), and
+          must precede any "package collection" specification.
+        -->
+	<xs:complexType>
+          <!--
+            This is an "attribute only" element.  The "catalogue" attribute
+            must be specified; it represents the name of a further XML file
+            to be included within the specification document, omitting both
+            any directory path, and the ".xml" file name suffix.
+          -->
+	  <xs:attribute name="catalogue" type="xs:string" use="required" />
+          <!--
+            The specification author typically does NOT specify the "issue"
+            attribute; it is inserted automatically by the "mingw-dist" build
+            system, as an indicator to mingw-get when the catalogue named by
+            the "catalogue" attribute should be updated.
+          -->
+	  <xs:attribute name="issue" type="serial-number" />
+	</xs:complexType>
+      </xs:element>
+      <!--
+        Typically specified in isolation, (i.e. entirely separated from any
+        package group hierarchy or package list specification), the final
+        section which may appear in the specification document is...
+      -->
+      <xs:element name="package-collection" minOccurs="0" maxOccurs="unbounded">
+        <!--
+          ...this.  Although any number of instances may appear in a single
+          specification document, most commonly, each document will specify
+          only one package collection, which itself comprises...
+        -->
+	<xs:complexType>
+          <!--
+            ...a group of child elements, as defined below, specifying the
+            set of packages which are included in this collection.
+          -->
+	  <xs:group ref="package-collection-specification" />
+          <!--
+            All of the individual packages in any one collection MUST
+            be assigned to a common installation "subsystem", which is
+            identified by this required attribute.
+          -->
+	  <xs:attribute name="subsystem" type="xs:string" use="required" />
+	</xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <!--
+      The specification document also supports three attributes: the "project"
+      and "host" attributes are optional; they are provided primarily as an aid
+      to documenting the origin of the specified package collection, but they
+      are not actually used by mingw-get.
+    -->
+    <xs:attribute name="project" type="xs:string" default="MinGW" />
+    <xs:attribute name="home" type="xs:anyURI" default="http://www.mingw.org" />
+    <!--
+      On the other hand, the "issue" attribute is required; it takes a string
+      value, conforming to the type definition below; in the source context of
+      a mingw-dist catalogue build, it should be specified using the template
+      form for the value; other contexts should use the YYYYMMDDNN form.
+    -->
+    <xs:attribute name="issue" type="serial-number" use="required" />
+  </xs:complexType>
+
+  <xs:simpleType name="serial-number">
+    <!--
+      This specialization of the XSDL string type is to be used to specify the
+      value for the "issue" attribute, which is required in every specification
+      document.  It may be either be the explicit "@YYYYMMDDNN@" substitution
+      template, as used in mingw-dist source documents, or any ten character
+      alpha-numeric pattern derived from this template.
+    -->
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(@YYYYMMDDNN@)|([0-9A-Z]{10})" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="package-group-definition">
+    <!--
+      Defines the structure of the elements used to specify package groups,
+      within the package group hierarchy section of the specification document.
+      Elements of this type may repeat any number of times, both within this
+      context, and recursively nested within other package groups.
+    -->
+    <xs:sequence minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="package-group" type="package-group-definition" />
+    </xs:sequence>
+    <!--
+      Every package group must be named; mingw-get uses the value of the "name"
+      attribute as a label, to create a tree-view display representation of the
+      package group hierarchy, in the left hand pane of the GUI client window.
+    -->
+    <xs:attribute name="name" type="xs:string" use="required" />
+    <!--
+      The optional "expand" attribute provides a mechanism for specifying those
+      levels of a nested package group hierarchy which are to be shown expanded,
+      in the initial rendition of the tree-view display.
+    -->
+    <xs:attribute name="expand" type="xs:boolean" />
+  </xs:complexType>
+
+  <xs:group name="package-group-association-and-description">
+    <!--
+      Provides the mechanism for defining package to package group associations,
+      allowing multiple associations to be specified, and intermingled with any
+      number of package description elements, at the beginning of any individual
+      package specification.
+    -->
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="affiliate">
+          <!--
+            Defines a single package to package group association, in terms of
+            a single attribute only specification element...
+          -->
+	  <xs:complexType>
+	    <xs:attribute name="group" type="xs:string" />
+	  </xs:complexType>
+        </xs:element>
+        <!--
+          ...whilst this allows "description" blocks to be interspersed among
+          repeating "affiliate" specifications.
+        -->
+	<xs:element name="description" type="package-description" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+
+  <xs:complexType name="package-description">
+    <!--
+      Defines the structure of a "description" block as a container for a
+      sequence of one or more "paragraph" blocks...
+    -->
+    <xs:sequence>
+      <xs:element name="paragraph" maxOccurs="unbounded" />
+    </xs:sequence>
+    <!--
+      ...optionally qualified by "lang" and/or "title" attributes.
+    -->
+    <xs:attribute name="lang" type="xs:string" default="en" />
+    <xs:attribute name="title" type="xs:string" />
+  </xs:complexType>
+
+  <xs:group name="package-collection-specification">
+    <xs:sequence>
+      <!--
+        Defines the sequence of XML elements which are required to properly
+        specify any package group collection.
+      -->
+      <xs:element name="download-host">
+        <xs:complexType>
+          <!--
+            The first is always a specification for the URL whence all packages
+            in the collection may be downloaded; it is declared as a string type
+            because it is specified in a template format, which may violate the
+            constraints of the XSDL anyURI type, e.g.:
+
+              <download-host uri="http://host.domain.com/packages/%F" />
+
+            where "%F" is substituted, at download time, by the actual name of
+            the archive file wich is to be downloaded.
+            
+            Note: only one template may be specified for any package collection;
+            thus all packages in any collection MUST be served from one common
+            hosting domain.
+          -->
+          <xs:attribute name="uri" type="xs:string" use="required" />
+        </xs:complexType>
+      </xs:element>
+      <!--
+        The download host specification may be followed by an optional sequence
+        of package group association specifications.  These must conform to the
+        format defined above, where it may be seen that they comprise any number
+        of "affiliate" and "description" elements, in arbitrary order.  If any
+        of these are specified here, they apply to every package subsequently
+        included within the collection.
+      -->
+      <xs:group ref="package-group-association-and-description" />
+      <xs:choice maxOccurs="unbounded">
+        <!--
+          The principal content of any package collection comprises an arbitrary
+          number of "package" specification elements.
+        -->
+	<xs:element name="package">
+	  <xs:complexType>
+	    <xs:sequence>
+              <!--
+                Each package specification begins with an optional description,
+                and an arbitrary set of package group association declarations.
+              -->
+	      <xs:group ref="package-group-association-and-description" />
+              <!--
+                This must be followed by an arbitray sequence of one or more
+                "source", "licence", "component", or "action" specifications.
+              -->
+	      <xs:choice maxOccurs="unbounded">
+		<xs:group ref="source-or-licence-archive-reference" />
+		<xs:element name="component" type="component-specification" />
+		<xs:element name="action" type="action-script" />
+	      </xs:choice>
+	    </xs:sequence>
+            <!--
+              Each package MUST be named; it may also be assigned to the class
+              of "virtual" packages, so identifying it as a meta-package, and it
+              may also be identified by a list of aliases.
+            -->
+	    <xs:attribute name="name" type="xs:string" use="required" />
+	    <xs:attribute name="class" type="package-class" />
+	    <xs:attribute name="alias" type="xs:string" />
+	  </xs:complexType>
+	</xs:element>
+        <!--
+          Actions may also be specified within the package-collection scope, in
+          which case they apply to all packages, and component packages, which
+          are declared within the collection.
+        -->
+	<xs:element name="action" type="action-script" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+
+  <xs:simpleType name="package-class">
+    <!--
+      Any package may be specified as a meta-package, by assigning it a "class"
+      attribute value of "virtual"; specification of this attribute is optional,
+      but no other value is permitted.
+    -->
+    <xs:restriction base="xs:string">
+      <xs:pattern value="virtual" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="component-specification">
+    <!--
+      Each "package" should be subdivided into one or more "component" packages,
+      each of which may bear its own individual description and/or package group
+      associations.  Each "component" package should also define a sequence of
+      "release" specifications, optionally qualified by specifications of any
+      dependencies which are common to all releases of the "component" package,
+      and any actions which should be performed when installing or removing any
+      release of the "component" package.
+    -->
+    <xs:choice maxOccurs="unbounded">
+      <xs:group ref="package-group-association-and-description" />
+      <xs:element name="release" type="release-specification" />
+      <xs:element name="requires" type="dependency-specification" />
+      <xs:element name="action" type="action-script" />
+    </xs:choice>
+    <!--
+      Every "component" package MUST be classified; however, the choice of
+      "class" name is unrestricted.
+    -->
+    <xs:attribute name="class" type="xs:string" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="release-specification">
+    <!--
+      Each individual release of any component package must be specified by its
+      own "release" specification element; this may be qualified by a "download"
+      specification, (for cases where the actual archive file name differs from
+      the canonical "tarname", or is "none" in the case of a meta-release, for
+      which the container "package" element cannot be declared as "virtual");
+      each "release" may also specify its own set of dependencies, and/or its
+      own specific "source" and/or "licence" archive associations.
+    -->
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="download" type="tarname-reference" />
+      <xs:element name="requires" type="dependency-specification" />
+      <xs:group ref="source-or-licence-archive-reference" />
+    </xs:choice>
+    <!--
+      Every "release" MUST be identified by a canonical "tarname" attribute.
+    -->
+    <xs:attribute ref="tarname" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="action-script" mixed="true">
+    <!--
+      Any action is specified as Lua script, appearing as textual content within
+      the body of the "action" element; it also requires a specification for its
+      "class" attribute, to identify the context in which it is to be executed.
+    -->
+    <xs:attribute name="class" type="action-class" use="required" />
+  </xs:complexType>
+
+  <xs:simpleType name="action-class">
+    <!--
+      The context in which any specified action is to be executed must be one of
+      "pre-install",  "post-install", "pre-remove", or "post-remove".
+    -->
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(pre|post)-(install|remove)" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:group name="source-or-licence-archive-reference">
+    <!--
+      "source" and "licence" elements are simple "attribute only" elements, each
+      of which requires only a "tarname" attribute; note that the spelling which
+      is required for the "licence" element uses the noun form, as prescribed by
+      the Oxford Dictionary of World English; use of the US English form, where
+      noun and verb are both spelled as "license" is NOT supported.
+    -->
+    <xs:choice>
+      <xs:element name="source" type="tarname-reference" />
+      <xs:element name="licence" type="tarname-reference" />
+    </xs:choice>
+  </xs:group>
+
+  <xs:complexType name="tarname-reference">
+    <!--
+      When any element accepts a "tarname" attribute, then specification of that
+      attribute is mandatory.
+    -->
+    <xs:attribute ref="tarname" use="required" />
+  </xs:complexType>
+  <!--
+    The "tarname" attribute is a simple string type; it should match a specific
+    pattern, but for the time being, we do not attempt to verify it.
+  -->
+  <xs:attribute name="tarname" type="xs:string" />
+
+  <xs:complexType name="dependency-specification">
+    <!--
+      Any "requires" specification MUST include one or more of the following
+      attributes, to declare an equality or a range dependency.  It may be noted
+      that, while a range specification requires two such attributes, there will
+      be some combinations which will be mutually inconsistent; unfortunately,
+      XSDL provides no mechanism to filter out such combinations.
+    -->
+    <xs:attribute name="lt" type="xs:string" />
+    <xs:attribute name="le" type="xs:string" />
+    <xs:attribute name="eq" type="xs:string" />
+    <xs:attribute name="ge" type="xs:string" />
+    <xs:attribute name="gt" type="xs:string" />
+  </xs:complexType>
+
+</xs:schema>
+
+<!-- vim: set nocompatible fileformat=unix: -->
+<!-- vim: set smartindent shiftwidth=2 expandtab textwidth=80 wrap: -->
+<!-- $RCSfile$: end of file -->
