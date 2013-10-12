@@ -1,3 +1,11 @@
+2013-10-12  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Revert enforced -static build for XML validation tool.
+
+	* tests/Makefile.in (xmlcheck$EXEEXT): Remove -static from CXX command
+	line; users who want or require a static build may add it to the CFLAGS
+	at either configure or make time.
+
 2013-10-12  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	Release gcc-4.8.1-4 and corrections as expressed in [#2094]
@@ -19,7 +27,7 @@
 
 	Correct an XML validation tool format specification error.
 
-	* tests/xmlchec.cpp (error_handler::handleError): Need PRIu64 format
+	* tests/xmlcheck.cpp (error_handler::handleError): Need PRIu64 format
 	for printing loc->getLineNumber() and loc->getColumnNumber(); define
 	__STDC_FORMAT_MACROS as 1, and include inttypes.h, to use it.
 
