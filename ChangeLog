@@ -1,3 +1,11 @@
+2013-10-12  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Correct an XML validation tool format specification error.
+
+	* tests/xmlchec.cpp (error_handler::handleError): Need PRIu64 format
+	for printing loc->getLineNumber() and loc->getColumnNumber(); define
+	__STDC_FORMAT_MACROS as 1, and include inttypes.h, to use it.
+
 2013-10-08  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Integrate XML validation tests into build infrastructure.

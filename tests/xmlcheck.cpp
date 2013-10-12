@@ -32,7 +32,10 @@
  * arising from the use of this software.
  *
  */
-#include <cstdio>
+#define __STDC_FORMAT_MACROS  1
+#include <inttypes.h>   /* for PRIu64        */
+
+#include <cstdio>	/* for fprintf()     */
 #include <string>
 #include <memory>       /* for std::auto_ptr */
 #include <cstddef>      /* for std::size_t   */
@@ -151,7 +154,7 @@ error_handler::handleError( const xercesc::DOMError& condition )
    * diagnostic message to emit.
    */
   char* msg = XMLString::transcode( condition.getMessage() );
-  fprintf( stderr, "%d:%d: %s: %s\n", loc->getLineNumber(),
+  fprintf( stderr, "%" PRIu64 ":%" PRIu64 ": %s: %s\n", loc->getLineNumber(),
       loc->getColumnNumber(), warn ? "WARNING" : "ERROR", msg
     );
   XMLString::release( &msg );
