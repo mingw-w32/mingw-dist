@@ -57,7 +57,7 @@ NO_XERCES_C_TOOLS_MSG = "" \
 
 xerces-c-tools: xmlcheck$(EXEEXT)
 xmlcheck$(EXEEXT): xmlcheck.$(OBJEXT)
-	$(CXX) $(CXXFLAGS) -o $@ $(LDFLAGS) $^ $(LIBS)
+	$(CXX) -static $(CXXFLAGS) -o $@ $(LDFLAGS) $^ $(LIBS)
 
 sinclude *.d
 %.$(OBJEXT): %.cpp

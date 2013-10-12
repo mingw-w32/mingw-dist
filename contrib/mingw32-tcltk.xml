@@ -17,7 +17,7 @@
 	platform, easily deployed and highly extensible.
 	</paragraph>
       </description>
-      <license tarname="tcl-%-mingw32-%-lic.tar.lzma"/>
+      <licence tarname="tcl-%-mingw32-%-lic.tar.lzma"/>
       <source tarname="tcl-%-mingw32-%-src.tar.lzma" />
       <component class="bin">
 	<release tarname="tcl-8.6.0-1-mingw32-bin.tar.lzma" >
@@ -52,7 +52,7 @@
 	unchanged across Windows, Mac OS X, Linux and more.
 	</paragraph>
       </description>
-      <license tarname="tk-%-mingw32-%-lic.tar.lzma"/>
+      <licence tarname="tk-%-mingw32-%-lic.tar.lzma"/>
       <source tarname="tk-%-mingw32-%-src.tar.lzma" />
       <component class="bin">
 	<release tarname="tk-8.6.0-1-mingw32-bin.tar.lzma" >

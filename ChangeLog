@@ -1,3 +1,20 @@
+2013-10-12  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	Release gcc-4.8.1-4 and corrections as expressed in [#2094]
+
+	* tests/Makefile.in: Add -static to the build for xmlcheck.exe to
+	correct an assertion issue being given by the xerces-c library.
+	* msys/msys-gcc.xml: Correct spelling of licence.
+	* msys/msys-perl.xml: Remove extraneous --> causing invalid xml.
+	* msys/issue.log: Updated accordingly.
+	* mingw32/mingw32-gcc4.xml: Add gcc-4.8.1-4 release.
+	* mingw32/mingw32-zlib.xml: Correct spelling of affiliate.
+	* mingw32/mingw32-gettext.xml: Require any libgcc-4.8.1-* release.
+	* mingw32/mingw32-libiconv.xml: Ditto.
+	* mingw32/issue.log: Updated accordingly.
+	* contrib/mingw32-tcltk.xml: Correct spelling of licence.
+	* contrig/issue.log: Updated accordingly.
+
 2013-10-12  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Correct an XML validation tool format specification error.

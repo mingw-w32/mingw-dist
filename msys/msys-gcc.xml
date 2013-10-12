@@ -26,7 +26,7 @@
         </paragraph>
       </description>
 
-      <license tarname="gcc-%-msys-%-lic.tar.lzma" />
+      <licence tarname="gcc-%-msys-%-lic.tar.lzma" />
       <source tarname="gcc-%-msys-%-src.tar.lzma" />
 
       <component class="bin" >

@@ -110,7 +110,7 @@
           met by the libarchive package.
         </paragraph>
       </description>
-      <affilate group="MinGW Deprecated Packages" />
+      <affiliate group="MinGW Deprecated Packages" />
 
       <licence tarname="zlib-%-mingw32-%-lic.tar.%" />
       <source tarname="zlib-%-mingw32-%-src.tar.%" />
