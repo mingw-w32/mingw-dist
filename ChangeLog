@@ -1,3 +1,9 @@
+2013-10-14  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	* mingw32/mingw32-gcc4.xml: Modify accidental change of libmpc-dll-3
+	to libmpc-dll-4.
+	* mingw32/issue.log common/issue.log: Update accordingly.
+
 2013-10-12  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Revert enforced -static build for XML validation tool.
