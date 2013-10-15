@@ -1,3 +1,18 @@
+2013-10-14  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Fix uncorrected omission from Earnie's preceding commit.
+
+	* mingw32/mingw32-mpc.xml (libmpc-1.0.1-1-dll): Correct DLL interface
+	version number; was 2, should be 3.
+
+	* mingw32/mingw32-mpc.xml.lzma: Regenerate and republish.
+	* mingw32/mingw32-package-list.xml.lzma: Likewise.
+	* msys/msys-package-list.xml.lzma: Likewise.
+	* common/package-list.xml.lzma: Likewise.
+
+	* mingw32/issue.log common/issue.log: Update accordingly.
+	* msys/issue.log: Likewise.
+
 2013-11-14  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	* mingw32/mingw32-gcc4.xml: Add missing requirements in gcc-core-bin.
