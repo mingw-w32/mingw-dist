@@ -39,6 +39,9 @@
       <component class="bin">
         <release tarname="gcc-core-4.8.1-4-mingw32-bin.tar.lzma">
           <requires eq="gcc-core-4.8.1-4-mingw32-dev.tar.lzma" />
+          <requires eq="binutils-*-mingw32-bin.tar.lzma" />
+          <requires eq="mingwrt-4.*-mingw32-dev.tar.lzma" />
+          <requires eq="w32api-4.*-mingw32-dev.tar.lzma" />
         </release>
         <release tarname="gcc-core-4.8.1-3-mingw32-bin.tar.lzma">
           <requires eq="gcc-core-4.8.1-3-mingw32-dev.tar.lzma" />
