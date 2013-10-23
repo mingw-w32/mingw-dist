@@ -1,5 +1,21 @@
 2013-10-23  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Add missing dependencies for libintl-dll, et al.
+
+	* mingw32/mingw32-gettext.xml (libintl-dll): Make generic libgcc-1.dll
+	and libiconv-2.dll>=1.14-2 dependencies apply to all releases.
+	(libgettextpo-dll): Likewise; ditto for release matched libintl-8.dll
+	(libasprintf-dll): Make generic libgcc-1.dll and libstdc++-6.dll apply
+	to all releases.
+
+	* mingw32/mingw32-gettext.xml.lzma: Regenerate and republish.
+	* mingw32/mingw32-package-list.xml.lzma: Likewise.
+	* common/package-list.xml.lzma: Likewise.
+
+	* mingw32/issue.log common/issue.log: Update accordingly.
+
+2013-10-23  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Remove all references to defective mpfr-3.1.2-1 release.
 
 	* mingw32/mingw32-mpfr.xml (mpfr-3.1.2-1): Remove release references
