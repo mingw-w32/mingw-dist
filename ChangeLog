@@ -1,5 +1,20 @@
 2013-10-14  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Remove all references to defective mpfr-3.1.2-1 release.
+
+	* mingw32/mingw32-mpfr.xml (mpfr-3.1.2-1): Remove release references
+	from all component package specifications; they implied use of ...
+	(libmpfr-3.1.2-1-dll-1): ...this; its offer to install libmpfr-1.dll
+	was bogus; delete its release reference.
+
+	* mingw32/mingw32-mpfr.xml.lzma: Regenerate and republish.
+	* mingw32/mingw32-package-list.xml.lzma: Likewise.
+	* common/package-list.xml.lzma: Likewise.
+
+	* mingw32/issue.log common/issue.log: Update accordingly.
+
+2013-10-14  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Fix uncorrected omission from Earnie's preceding commit.
 
 	* mingw32/mingw32-mpc.xml (libmpc-1.0.1-1-dll): Correct DLL interface
