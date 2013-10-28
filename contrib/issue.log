@@ -26,6 +26,6 @@
   6c149bb701714b06cba818db2ad055ec9b6bbbe3 2011101400 mingw32-libunistring.xml
   7f7474478d1ca1464d391beb0bd574a48a745315 2011101100 mingw32-pdcurses.xml
   801dd30f9480c82d806b3cc849b20ad5b664b428 2013101200 mingw32-tcltk.xml
-  b211efd2b8cd26d322e60debee15981cc5af7bf7 2013092200 mingw32-xerces-c.xml
+  82c157ee11b0bfec68ff23eb5dec56909c0b1cfa 2013102800 mingw32-xerces-c.xml
 #
 # $RCSfile$: end of file

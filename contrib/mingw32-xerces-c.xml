@@ -39,8 +39,9 @@
             programs, as included in the standard Xerces-C++ distribution.
           </paragraph>
         </description>
-        <release tarname="xerces-c-3.1.1-mingw32-bin.tar.xz" />
-        <requires eq="xerces-c-%-mingw32-dll-3.tar.%" />
+        <release tarname="xerces-c-3.1.1-2-mingw32-4.7.2-bin.tar.xz" />
+        <release tarname="xerces-c-3.1.1-1-mingw32-3.4.5-bin.tar.xz" />
+        <requires eq="xerces-c-%-mingw32-%-dll-3.tar.%" />
       </component>
 
       <component class="dll">
@@ -50,11 +51,14 @@
             is required by all dynamically linked Xerces-C++ applications.
           </paragraph>
           <paragraph>
-            This shared library has been compiled using MinGW32-GCC-3.4.5,
-            and uses the SJLJ exception handling model.
+            The version 3.1.1-2 release of this shared library has been
+            compiled using MinGW32-GCC-4.7.2, and uses the Dwarf-2 exception
+            handling model; the version 3.1.1-1 release has been compiled using
+            MinGW32-GCC-3.4.5, and uses the SJLJ exception handling model.
           </paragraph>
         </description>
-        <release tarname="xerces-c-3.1.1-mingw32-dll-3.tar.xz" />
+        <release tarname="xerces-c-3.1.1-2-mingw32-4.7.2-dll-3.tar.xz" />
+        <release tarname="xerces-c-3.1.1-1-mingw32-3.4.5-dll-3.tar.xz" />
       </component>
 
       <component class="dev">
@@ -69,7 +73,8 @@
             http://xerces.apache.org/xerces-c/program-3.html
           </paragraph>
         </description>
-        <release tarname="xerces-c-3.1.1-mingw32-dev.tar.xz" />
+        <release tarname="xerces-c-3.1.1-2-mingw32-4.7.2-dev.tar.xz" />
+        <release tarname="xerces-c-3.1.1-1-mingw32-3.4.5-dev.tar.xz" />
       </component>
 
       <component class="lic">

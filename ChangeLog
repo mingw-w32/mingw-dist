@@ -1,3 +1,18 @@
+2013-10-28  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Provide both GCC-3.4.5 and GCC-4.7.2 builds of Xerces-C++.
+
+	* contrib/mingw32-xerces-c.xml (release 3.1.1): Rename as...
+	(release 3.1.1-1): ...this; it provides the GCC-3.4.5 build; add...
+	(release 3.1.1-2): ...this; it provides the GCC-4.7.2 build.
+
+	* contrib/mingw32-xerces-c.xml.lzma: Regenerate and publish.
+	* mingw32/mingw32-package-list.xml.lzma: Likewise.
+	* common/package-list.xml.lzma: Likewise.
+
+	* common/issue.log contrib/issue.log: Update accordingly.
+	* mingw32/isue.log: Likewise.
+
 2013-10-28  Earnie Boyd  <earnie@users.sourceforge.net>
 
 	Allow any package release of gettext-0.18.3.1 to be installed.
