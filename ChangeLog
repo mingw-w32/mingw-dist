@@ -1,3 +1,13 @@
+2013-10-28  Earnie Boyd  <earnie@users.sourceforge.net>
+
+	Allow any package release of gettext-0.18.3.1 to be installed.
+
+	* mingw32/mingw32-libiconv.xml: Use a wildcard for the package release
+	requirement of gettext-0.18.3.1.
+	* common/issue.log, mingw32/issue.log: Update accordingly.
+	* msys/issue.log: I don't know why msys-package-list.xml was date
+	stamped for today but the make process decided that it was needed.
+
 2013-10-23  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add missing dependencies for libintl-dll, et al.

@@ -26,7 +26,7 @@
       <component class="bin">
         <release tarname="libiconv-1.14-3-mingw32-bin.tar.lzma" >
           <requires eq="mingw32-libgcc-4.8.1-*-mingw32-dll-1.tar" />
-          <requires eq="mingw32-gettext-0.18.3.1-1-mingw32-dll-8.tar" />
+          <requires eq="mingw32-gettext-0.18.3.1-*-mingw32-dll-8.tar" />
           <requires eq="mingw32-libiconv-%-mingw32-dll-2.tar" />
         </release>
         <release tarname="libiconv-1.14-2-mingw32-bin.tar.lzma" >
