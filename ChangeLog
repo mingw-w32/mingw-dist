@@ -1,3 +1,17 @@
+2013-11-01  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Correct MPC requirements references to nonexistent MPFR package.
+
+	* mingw32/mingw32-mpc.xml (mingw32-mpc-dev): Do not require...
+	(mpfr-3.1.2-1-mingw32-dev): ...this, as an explicit 'eq' reference;
+	use a 'ge' specification instead.
+
+	* mingw32/mingw32-mpc.xml.lzma: Regenerate and republish.
+	* mingw32/mingw32-package-list.xml.lzma: Likewise.
+	* common/package-list.xml.lzma: Likewise.
+
+	* mingw32/issue.log common/issue.log: Update accordingly.
+
 2013-10-28  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Provide both GCC-3.4.5 and GCC-4.7.2 builds of Xerces-C++.

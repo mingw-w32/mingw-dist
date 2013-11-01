@@ -24,17 +24,17 @@
         </paragraph>
       </description>
 
-      <source tarname="mpc-%-mingw32-src.tar.lzma" />
-      <licence tarname="mpc-%-mingw32-lic.tar.lzma" />
+      <source tarname="mpc-%-mingw32-src.tar.%" />
+      <licence tarname="mpc-%-mingw32-lic.tar.%" />
 
       <component class="dev">
         <release tarname="mpc-1.0.1-2-mingw32-dev.tar.lzma" >
           <requires eq="mingw32-libmpc-%-mingw32-dll-3.tar" />
-          <requires eq="mpfr-3.1.2-1-mingw32-dev.tar.lzma" />
+          <requires ge="mpfr-3.1.2-1-mingw32-dev.tar" />
         </release>
         <release tarname="mpc-1.0.1-1-mingw32-dev.tar.lzma" >
           <requires eq="mingw32-libmpc-%-mingw32-dll-2.tar" />
-          <requires eq="mpfr-3.1.2-1-mingw32-dev.tar.lzma" />
+          <requires ge="mpfr-3.1.2-1-mingw32-dev.tar" />
         </release>
         <release tarname="mpc-0.8.1-1-mingw32-dev.tar.lzma" >
           <requires eq="mingw32-libmpc-%-mingw32-dll-2.tar" />
@@ -97,4 +97,6 @@
 
   </package-collection>
 </software-distribution>
-<!-- vim: set nocompatible expandtab fileformat=unix textwidth=80 tabstop=2 shiftwidth=2: -->
+
+<!-- vim: set textwidth=80 tabstop=2 shiftwidth=2 expandtab: -->
+<!-- vim: set fileformat=unix nocompatible: -->
