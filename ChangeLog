@@ -1,3 +1,9 @@
+2014-01-11  Erwin Waterlander  <waterlan@xs4all.nl>
+
+	* mingw32/mingw32-dos2unix.xml: Updated for dos2unix version 6.0.4.
+	* mingw32/issue.log: Updated accordingly.
+	* common/issue.log: Updated accordingly.
+
 2014-01-10  Erwin Waterlander  <waterlan@xs4all.nl>
 
 	* msys/msys-dos2unix.xml: Updated for dos2unix version 6.0.4.
