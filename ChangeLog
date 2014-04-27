@@ -1,3 +1,11 @@
+2014-04-27  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Upgrade mingw32-gettext to GNU gettext-0.18.3.2
+
+	* mingw32/mingw32-gettext.xml: Add new release specifications.
+	* mingw32/issue.log common/issue.log: Updated accordingly.
+	* msys/issue.log: Sync for package list consistency.
+
 2014-01-11  Erwin Waterlander  <waterlan@xs4all.nl>
 
 	* mingw32/mingw32-dos2unix.xml: Updated for dos2unix version 6.0.4.
