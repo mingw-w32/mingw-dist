@@ -1,3 +1,10 @@
+2014-04-29  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Correct omission from gettext-0.18.3.2 package specification.
+
+	* mingw32/mingw32-gettext.xml (gettext-bin): Add missing reference.
+	* mingw32/issue.log common/issue.log: Updated accordingly.
+
 2014-04-27  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Upgrade mingw32-gettext to GNU gettext-0.18.3.2
