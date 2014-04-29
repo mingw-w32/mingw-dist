@@ -1,5 +1,15 @@
 2014-04-29  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Correct broken mingw32-libiconv dependency specification.
+
+	* mingw32/mingw32-libiconv.xml: Generally rationalize dependencies.
+	(libiconv-bin): Remove bogus 'eq' dependency on gettext-0.18.3.1-dll-8;
+	replace with correctly specified 'ge' dependency on libintl-dll-8, with
+	release 0.18.1.1-1 as the realistic minimum sufficient requirement.
+	* mingw32/issue.log common/issue.log: Updated accordingly.
+
+2014-04-29  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Correct omission from gettext-0.18.3.2 package specification.
 
 	* mingw32/mingw32-gettext.xml (gettext-bin): Add missing reference.
