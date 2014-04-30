@@ -38,7 +38,9 @@
       <source tarname="gettext-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
-        <release tarname="gettext-0.18.3.2-1-mingw32-bin.tar.xz" />
+        <release tarname="gettext-0.18.3.2-1-mingw32-bin.tar.xz">
+          <download tarname="gettext-0.18.3.2-1-1-mingw32-bin.tar.xz" />
+        </release>
         <release tarname="gettext-0.18.3.1-1-mingw32-bin.tar.lzma" />
         <release tarname="gettext-0.18.1.1-2-mingw32-bin.tar.lzma" />
         <release tarname="gettext-0.17-1-mingw32-bin.tar.lzma" />
@@ -52,7 +54,14 @@
           degenerate package should never have been created in the
           first place!
          -->
-        <release tarname="gettext-0.18.3.2-1-mingw32-dll.tar.xz" >
+        <description lang="en">
+          <paragraph>Please DO NOT install this component package!
+            It is malformed, and WILL introduce package conflicts; it will
+            be discontinued, when the likelihood of encountering residual
+            bogus inter-package dependencies ceases to be a concern.
+          </paragraph>
+        </description>
+        <release tarname="gettext-0.18.3.2-1-mingw32-dll.tar.xz">
           <download tarname="none" />
         </release>
         <release tarname="gettext-0.18.3.1-1-mingw32-dll.tar.lzma" />

@@ -1,3 +1,14 @@
+2014-04-30  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Correct message catalogue packaging for gettext-0.18.3.2
+
+	* mingw32/mingw32-gettext.xml (gettext-bin): Add download tarname
+	specification, redirecting to gettext-0.18.3.2-1-1-mingw32-bin.tar.xz,
+	with correctly packaged gettext-runtime.mo message catalogues, instead
+	of previously bundled gettext-tools.mo, which duplicated copies...
+	(gettext-dev): ...correctly provided by this component package.
+	* mingw32/issue.log common/issue.log: Updated accordingly.
+
 2014-04-29  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Correct broken mingw32-libiconv dependency specification.
