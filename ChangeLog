@@ -1,3 +1,11 @@
+2014-05-20  Erwin Waterlander  <waterlan@xs4all.nl>
+
+	* mingw32/mingw32-dos2unix.xml: Updated for dos2unix version 6.0.5.
+	* msys/msys-dos2unix.xml: Updated for dos2unix version 6.0.5.
+	* mingw32/issue.log: Updated accordingly.
+	* msys/issue.log: Updated accordingly.
+	* common/issue.log: Update accordingly.
+
 2014-04-30  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Correct message catalogue packaging for gettext-0.18.3.2
