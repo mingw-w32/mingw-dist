@@ -1,3 +1,11 @@
+2014-06-14  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Remove bogus mingw32-binutils-2.24 dependency.
+
+	* mingw32/mingw32-binutils.xml (bin): Should not depend on...
+	(dev): ...this; delete associated "requires" reference.
+	* mingw32/issue.log common/issue.log: Updated accordingly.
+
 2014-06-13  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Upgrade mingw32-binutils to version 2.24
