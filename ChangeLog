@@ -1,3 +1,13 @@
+2014-08-05  Erwin Waterlander  <waterlan@xs4all.nl>
+
+	Upgrade dos2unix to version 6.0.6.
+
+	* mingw32/mingw32-dos2unix.xml: Updated for dos2unix version 6.0.6.
+	* msys/msys-dos2unix.xml: Updated for dos2unix version 6.0.6.
+	* mingw32/issue.log: Updated accordingly.
+	* msys/issue.log: Updated accordingly.
+	* common/issue.log: Update accordingly.
+
 2014-06-14  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Remove bogus mingw32-binutils-2.24 dependency.
