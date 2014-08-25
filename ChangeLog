@@ -1,3 +1,10 @@
+2014-08-25  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Revert corruption of file attributes (again).
+
+	* common/issue.log mingw32/issue.log msys/issue.log: Remove bogus
+	executable attribute.
+
 2014-08-05  Erwin Waterlander  <waterlan@xs4all.nl>
 
 	Upgrade dos2unix to version 6.0.6.
