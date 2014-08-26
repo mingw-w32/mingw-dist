@@ -1,9 +1,24 @@
+2014-08-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Withdraw regressive WSL-4.x from general distribution.
+
+	* mingw32/mingw32-runtime.xml: Revert to last issue predating WSL-4.x
+	* mingw32/mingw32-gcc4.xml: Clean up malformed dependency references.
+	(mingwrt, w32api): Replace all dependencies on WSL-4.x releases with
+	generic references to the most recently available releases of previous
+	mingwrt-3.x and w32api-3.x packages respectively.
+
+	* common/package-list.xml common/issue.log: Update accordingly.
+	* mingw32/mingw32-package-list.xml mingw32/issue.log: Likewise.
+
 2014-08-25  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Revert corruption of file attributes (again).
 
 	* common/issue.log mingw32/issue.log msys/issue.log: Remove bogus
-	executable attribute.
+	executable attribute; this also necessitates republication of...
+	* common/package-list.xml mingw32/mingw32-package-list.xml:
+	* msys/msys-package-list.xml: ...all of these.
 
 2014-08-05  Erwin Waterlander  <waterlan@xs4all.nl>
 
