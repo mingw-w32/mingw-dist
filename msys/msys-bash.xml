@@ -24,21 +24,52 @@
       <licence tarname="bash-%-msys-%-lic.tar.%" />
 
       <component class="bin">
-        <release tarname="bash-3.1.17-4-msys-1.0.16-bin.tar.lzma">
-          <requires eq="msys-libtermcap-*-msys-*-dll-0.tar" />
-          <requires eq="msys-libregex-*-msys-*-dll-1.tar" />
-        </release>
+        <release tarname="bash-3.1.17-4-msys-1.0.16-bin.tar.lzma" />
+        <release tarname="bash-3.1.23-1-msys-1.0.18-bin.tar.xz" />
+        <requires eq="msys-libtermcap-*-msys-*-dll-0.tar" />
+        <requires eq="msys-libregex-*-msys-*-dll-1.tar" />
         <requires eq="msys-core-*-msys-*-bin.tar" />
         <requires eq="msys-coreutils-*-msys-*-bin.tar" />
       </component>
 
       <component class="doc">
         <release tarname="bash-3.1.17-4-msys-1.0.16-doc.tar.lzma" />
+        <release tarname="bash-3.1.23-1-msys-1.0.18-doc.tar.xz" />
       </component>
 
       <component class="lic">
         <release tarname="bash-3.1.17-4-msys-1.0.16-lic.tar.lzma" />
+        <release tarname="bash-3.1.23-1-msys-1.0.18-lic.tar.xz" />
       </component>
+
+      <component class="lnk">
+        <release tarname="bash-3.1.23-1-msys-1.0.18-lnk.tar.xz">
+          <download tarname="none" />
+        </release>
+        <requires eq="msys-core-*-msys-*-ext.tar" />
+        <action class="post-install">
+          setup = require "setup"
+          sysroot_prefix = os.getenv( "MSYS_SYSROOT" )
+          if sysroot_prefix then
+             setup.create_shortcuts(
+               '--description="Start MinGW Shell"',
+               '--icon="'..sysroot_prefix..'\\msys.ico"',
+                sysroot_prefix..'\\msys.bat', '"MinGW Shell"'
+             )
+          end
+        </action>
+        <action class="pre-remove">
+          setup = require "setup"
+          sysroot_prefix = os.getenv( "MSYS_SYSROOT" )
+          if sysroot_prefix then
+             setup.delete_shortcuts(
+               "--if-linked="..sysroot_prefix.."\\msys.bat",
+               "--force", '"MinGW Shell"'
+             )
+          end
+        </action>
+      </component>
+
     </package>
 
   </package-collection>

@@ -1,5 +1,13 @@
 2014-10-19  Cesar Strauss  <cestrauss@gmail.com>
 
+	Upgrade msys-bash to GNU Bash 3.1 patchlevel 23.
+
+	* msys/msys-bash.xml: Update to 3.1.23-1.
+        (msys-bash) <lnk>: New component for creating msys.bat shortcuts.
+	* common/issue.log msys/issue.log: Updated accordingly.
+
+2014-10-19  Cesar Strauss  <cestrauss@gmail.com>
+
 	Revert corruption of file attributes (again).
 
 	* common/issue.log mingw32/issue.log msys/issue.log: Remove bogus
