@@ -1,9 +1,21 @@
+2014-08-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Upgrade MinGW Runtime package to release mingwrt-3.21
+
+	* mingw32/mingw32-runtime.xml: Add new release specifications;
+	withdraw installation support for releases pre-dating mingwrt-3.18.
+	(mingw32-mingwrt) <lic, man>: New sub-packages, separated out from...
+	(mingw32-mingwrt) <dev>: ...here; retrofit virtual equivalents for
+	prior releases, to maintain mingw-get roll-back consistency.
+
+	* mingw32/issue.log common/issue.log: Updated accordingly.
+
 2014-10-19  Cesar Strauss  <cestrauss@gmail.com>
 
 	Upgrade msys-bash to GNU Bash 3.1 patchlevel 23.
 
 	* msys/msys-bash.xml: Update to 3.1.23-1.
-        (msys-bash) <lnk>: New component for creating msys.bat shortcuts.
+	(msys-bash) <lnk>: New component for creating msys.bat shortcuts.
 	* common/issue.log msys/issue.log: Updated accordingly.
 
 2014-10-19  Cesar Strauss  <cestrauss@gmail.com>
