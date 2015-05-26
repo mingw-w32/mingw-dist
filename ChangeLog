@@ -1,3 +1,13 @@
+2015-05-26  Erwin Waterlander  <waterlan@xs4all.nl>
+
+	Upgrade dos2unix to version 7.2.2.
+
+	* mingw32/mingw32-dos2unix.xml: Updated for dos2unix version 7.2.2.
+	* msys/msys-dos2unix.xml: Updated for dos2unix version 7.2.2.
+	* mingw32/issue.log: Updated accordingly.
+	* msys/issue.log: Updated accordingly.
+	* common/issue.log: Updated accordingly.
+
 2014-08-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Upgrade MinGW Runtime package to release mingwrt-3.21
