@@ -28,26 +28,36 @@
       <licence tarname="mpc-%-mingw32-lic.tar.%" />
 
       <component class="dev">
-        <release tarname="mpc-1.0.1-2-mingw32-dev.tar.lzma" >
+        <release tarname="mpc-1.0.2-mingw32-dev.tar.xz">
           <requires eq="mingw32-libmpc-%-mingw32-dll-3.tar" />
           <requires ge="mpfr-3.1.2-1-mingw32-dev.tar" />
         </release>
-        <release tarname="mpc-1.0.1-1-mingw32-dev.tar.lzma" >
+        <release tarname="mpc-1.0.1-2-mingw32-dev.tar.lzma">
+          <requires eq="mingw32-libmpc-%-mingw32-dll-3.tar" />
+          <requires ge="mpfr-3.1.2-1-mingw32-dev.tar" />
+        </release>
+        <release tarname="mpc-1.0.1-1-mingw32-dev.tar.lzma">
           <requires eq="mingw32-libmpc-%-mingw32-dll-2.tar" />
           <requires ge="mpfr-3.1.2-1-mingw32-dev.tar" />
         </release>
-        <release tarname="mpc-0.8.1-1-mingw32-dev.tar.lzma" >
+        <release tarname="mpc-0.8.1-1-mingw32-dev.tar.lzma">
           <requires eq="mingw32-libmpc-%-mingw32-dll-2.tar" />
         </release>
       </component>
 
       <component class="doc">
+        <release tarname="mpc-1.0.2-mingw32-doc.tar.xz" />
         <release tarname="mpc-1.0.1-2-mingw32-doc.tar.lzma" />
         <release tarname="mpc-1.0.1-1-mingw32-doc.tar.lzma" />
         <release tarname="mpc-0.8.1-1-mingw32-doc.tar.lzma" />
       </component>
 
+      <component class="info">
+        <release tarname="mpc-1.0.2-mingw32-info.tar.xz" />
+      </component>
+
       <component class="lic">
+        <release tarname="mpc-1.0.2-mingw32-lic.tar.xz" />
         <release tarname="mpc-1.0.1-2-mingw32-lic.tar.lzma" />
         <release tarname="mpc-1.0.1-1-mingw32-lic.tar.lzma" />
         <release tarname="mpc-0.8.1-1-mingw32-lic.tar.lzma" />
@@ -78,17 +88,21 @@
       <licence tarname="mpc-%-mingw32-lic.tar.lzma" />
 
       <component class="dll">
-        <release tarname="libmpc-1.0.1-2-mingw32-dll-3.tar" >
+        <release tarname="libmpc-1.0.2-mingw32-dll-3.tar.xz">
+          <requires eq="mingw32-libmpfr-*-mingw32-dll-4.tar" />
+          <requires eq="mingw32-libgmp-*-mingw32-dll-10.tar" />
+        </release>
+        <release tarname="libmpc-1.0.1-2-mingw32-dll-3.tar">
           <download tarname="mpc-1.0.1-2-mingw32-dll.tar.lzma" />
           <requires eq="mingw32-libmpfr-*-mingw32-dll-4.tar" />
           <requires eq="mingw32-libgmp-*-mingw32-dll-10.tar" />
         </release>
-        <release tarname="libmpc-1.0.1-1-mingw32-dll-3.tar" >
+        <release tarname="libmpc-1.0.1-1-mingw32-dll-3.tar">
           <download tarname="mpc-1.0.1-1-mingw32-dll.tar.lzma" />
           <requires eq="mingw32-libmpfr-*-mingw32-dll-1.tar" />
           <requires eq="mingw32-libgmp-*-mingw32-dll-10.tar" />
         </release>
-        <release tarname="libmpc-0.8.1-1-mingw32-dll-2.tar.lzma" >
+        <release tarname="libmpc-0.8.1-1-mingw32-dll-2.tar.lzma">
           <requires eq="mingw32-libmpfr-*-mingw32-dll-1.tar" />
           <requires eq="mingw32-libgmp-*-mingw32-dll-10.tar" />
         </release>
