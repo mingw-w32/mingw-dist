@@ -1,3 +1,13 @@
+2015-09-06  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Fix MinGW-Bug [#2216]: error in gettext-0.18.3.2 packaging.
+
+	* mingw32-gettext.xml (all package components): Add new release
+	specifications, at version 0.18.3.2-2; these effectlively duplicate
+	the version 0.18.3.2-1 package set, but with all offending *.la files
+	removed from the archive corresponding to the gettext-dev component.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2015-08-22  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Upgrade GNU MPC package set to version 1.0.2

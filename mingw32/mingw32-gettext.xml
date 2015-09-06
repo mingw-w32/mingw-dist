@@ -38,6 +38,7 @@
       <source tarname="gettext-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
+        <release tarname="gettext-0.18.3.2-2-mingw32-bin.tar.xz" />
         <release tarname="gettext-0.18.3.2-1-mingw32-bin.tar.xz">
           <download tarname="gettext-0.18.3.2-1-1-mingw32-bin.tar.xz" />
         </release>
@@ -61,6 +62,9 @@
             bogus inter-package dependencies ceases to be a concern.
           </paragraph>
         </description>
+        <release tarname="gettext-0.18.3.2-2-mingw32-dll.tar.xz">
+          <download tarname="none" />
+        </release>
         <release tarname="gettext-0.18.3.2-1-mingw32-dll.tar.xz">
           <download tarname="none" />
         </release>
@@ -71,6 +75,7 @@
       </component>
 
       <component class="doc">
+        <release tarname="gettext-0.18.3.2-2-mingw32-doc.tar.xz" />
         <release tarname="gettext-0.18.3.2-1-mingw32-doc.tar.xz" />
         <release tarname="gettext-0.18.3.1-1-mingw32-doc.tar.lzma" />
         <release tarname="gettext-0.18.1.1-2-mingw32-doc.tar.lzma" />
@@ -78,6 +83,7 @@
       </component>
 
       <component class="lic">
+        <release tarname="gettext-0.18.3.2-2-mingw32-lic.tar.xz" />
         <release tarname="gettext-0.18.3.2-1-mingw32-lic.tar.xz" />
         <release tarname="gettext-0.18.3.1-1-mingw32-lic.tar.lzma" />
         <release tarname="gettext-0.18.1.1-2-mingw32-lic.tar.lzma" />
@@ -85,16 +91,22 @@
       </component>
 
       <component class="info">
+        <release tarname="gettext-0.18.3.2-2-mingw32-info.tar.xz" />
         <release tarname="gettext-0.18.3.2-1-mingw32-info.tar.xz" />
         <release tarname="gettext-0.18.3.1-1-mingw32-info.tar.lzma" />
       </component>
 
       <component class="man">
+        <release tarname="gettext-0.18.3.2-2-mingw32-man.tar.xz" />
         <release tarname="gettext-0.18.3.2-1-mingw32-man.tar.xz" />
         <release tarname="gettext-0.18.3.1-1-mingw32-man.tar.lzma" />
       </component>
 
       <component class="html">
+        <release tarname="gettext-0.18.3.2-2-mingw32-html.tar.xz" >
+          <requires eq="gettext-%-mingw32-%-doc.tar" />
+          <download tarname="none" />
+        </release>
         <release tarname="gettext-0.18.3.2-1-mingw32-html.tar.xz" >
           <requires eq="gettext-%-mingw32-%-doc.tar" />
           <download tarname="none" />
@@ -103,6 +115,7 @@
       </component>
 
       <component class="dev">
+        <release tarname="gettext-0.18.3.2-2-mingw32-dev.tar.xz" />
         <release tarname="gettext-0.18.3.2-1-mingw32-dev.tar.xz" />
         <release tarname="gettext-0.18.3.1-1-mingw32-dev.tar.lzma" >
           <requires eq="gettext-0.18.3.1-1-mingw32-dll.tar.lzma" />
@@ -119,6 +132,7 @@
       </component>
 
       <component class="ext">
+        <release tarname="gettext-0.18.3.2-2-mingw32-ext.tar.xz" />
         <release tarname="gettext-0.18.3.2-1-mingw32-ext.tar.xz" />
         <release tarname="gettext-0.18.3.1-1-mingw32-ext.tar.lzma" />
         <release tarname="gettext-0.18.1.1-2-mingw32-ext.tar.lzma" />
@@ -165,6 +179,7 @@
         <release tarname="libintl-0.18.3.1-1-mingw32-dll-8.tar" >
           <download tarname="gettext-0.18.3.1-1-mingw32-dll.tar.lzma"/>
         </release>
+        <release tarname="libintl-0.18.3.2-2-mingw32-dll-8.tar.xz" />
         <release tarname="libintl-0.18.3.2-1-mingw32-dll-8.tar.xz" />
       </component>
     </package>
@@ -211,6 +226,7 @@
         <release tarname="libgettextpo-0.18.3.1-1-mingw32-dll-0.tar" >
           <download tarname="gettext-0.18.3.1-1-mingw32-dll.tar.lzma"/>
         </release>
+        <release tarname="libgettextpo-0.18.3.2-2-mingw32-dll-0.tar.xz" />
         <release tarname="libgettextpo-0.18.3.2-1-mingw32-dll-0.tar.xz" />
       </component>
     </package>
@@ -256,6 +272,7 @@
         <release tarname="libasprintf-0.18.3.1-1-mingw32-dll-0.tar" >
           <download tarname="none"/>
         </release>
+        <release tarname="libasprintf-0.18.3.2-2-mingw32-dll-0.tar.xz" />
         <release tarname="libasprintf-0.18.3.2-1-mingw32-dll-0.tar.xz" />
       </component>
     </package>
