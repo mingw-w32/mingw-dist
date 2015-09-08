@@ -1,3 +1,10 @@
+2015-09-08  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Upgrade pexports package to version 0.47
+
+	* mingw32/mingw32-pexports.xml: Add new release specifications.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2015-09-06  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Fix MinGW-Bug [#2216]: error in gettext-0.18.3.2 packaging.

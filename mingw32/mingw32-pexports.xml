@@ -32,6 +32,7 @@
       <source tarname="pexports-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
+        <release tarname="pexports-0.47-mingw32-bin.tar.xz" />
         <release tarname="pexports-0.46-mingw32-bin.tar.xz" />
         <release tarname="pexports-0.44-1-mingw32-bin.tar.lzma" />
         <requires eq="mingw32-gcc-core-*-mingw32-*-bin.tar" />
@@ -40,11 +41,13 @@
       </component>
 
       <component class="doc">
+        <release tarname="pexports-0.47-mingw32-doc.tar.xz" />
         <release tarname="pexports-0.46-mingw32-doc.tar.xz" />
         <release tarname="pexports-0.44-1-mingw32-doc.tar.lzma" />
       </component>
 
       <component class="lic">
+        <release tarname="pexports-0.47-mingw32-lic.tar.xz" />
         <release tarname="pexports-0.46-mingw32-lic.tar.xz" />
         <release tarname="pexports-0.44-1-mingw32-lic.tar.lzma" />
       </component>
