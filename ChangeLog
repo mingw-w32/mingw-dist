@@ -1,3 +1,11 @@
+2015-09-19  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Upgrade binutils package to version 2.25.1
+
+	* mingw32/mingw32-binutils.xml: Add new release specifications.
+	(binutils) <doc>: Component package marked obsolete; NOT upgraded.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2015-09-08  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Upgrade pexports package to version 0.47
