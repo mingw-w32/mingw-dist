@@ -1,3 +1,11 @@
+2015-09-20  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Upgrade binutils package to version 2.25.1 (correction)
+
+	* mingw32/mingw32-binutils.xml (binutils) <bin>: Correct archive
+	compression type; was recorded as .lzma; should be .xz
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2015-09-19  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Upgrade binutils package to version 2.25.1
