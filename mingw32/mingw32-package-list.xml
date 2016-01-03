@@ -58,6 +58,7 @@
 
   <!-- "real" packages ~~ user contributed -->
   <package-list catalogue="mingw32-libunistring" />
+  <package-list catalogue="mingw32-ncurses" />
   <package-list catalogue="mingw32-pdcurses" />
   <package-list catalogue="mingw32-tcltk" />
   <package-list catalogue="mingw32-xerces-c" />

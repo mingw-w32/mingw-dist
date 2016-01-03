@@ -1,3 +1,13 @@
+2016-01-03  Erwin Waterlander  <waterlan@xs4all.nl>
+
+	New package mingw32-ncurses 6.0.
+
+	* contrib/mingw32-ncurses.xml: New for ncurses version 6.0.
+	* mingw32/mingw32-package-list.xml: Added mingw32-ncurses.
+	* mingw32/issue.log: Updated accordingly.
+	* contrib/issue.log: Updated accordingly.
+	* common/issue.log: Updated accordingly.
+
 2015-12-22  Erwin Waterlander  <waterlan@xs4all.nl>
 
 	Upgrade dos2unix to version 7.3.2.
