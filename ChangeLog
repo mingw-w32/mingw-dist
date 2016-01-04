@@ -1,3 +1,10 @@
+2016-01-04  Erwin Waterlander  <waterlan@xs4all.nl>
+
+	Upgrade mingw32-libunistring package to 0.9.6.
+
+	* contrib/mingw32-libunistring.xml: Updated for libunistring version 0.9.6.
+	* contrib/issue.log: Updated accordingly.
+
 2016-01-03  Erwin Waterlander  <waterlan@xs4all.nl>
 
 	New package mingw32-ncurses 6.0.
