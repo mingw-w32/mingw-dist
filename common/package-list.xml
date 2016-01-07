@@ -5,6 +5,7 @@
   <!-- This is the master package catalogue for the MinGW Project -->
 
   <package-list catalogue="mingw32-package-list" />
+  <package-list catalogue="mingw32-contrib-package-list" />
   <package-list catalogue="msys-package-list" />
 
 </software-distribution>

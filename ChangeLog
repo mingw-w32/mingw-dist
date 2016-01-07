@@ -1,3 +1,13 @@
+2016-01-07  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Give contributed package their own package list.
+
+	* mingw32/mingw32-package-list.xml: Remove contributed packages, to...
+	* contrib/mingw32-contrib-package-list.xml: ...this new file.
+	* common/package-list.xml (mingw32-contrib-package-list.xml): Add it.
+	* common/issue.log mingw32/issue.log contrib/issue.log: Regenerate;
+	publish all affected catalogue files.
+
 2016-01-04  Erwin Waterlander  <waterlan@xs4all.nl>
 
 	Upgrade mingw32-libunistring package to 0.9.6.
