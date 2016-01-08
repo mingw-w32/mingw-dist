@@ -1,3 +1,17 @@
+2016-01-08  Erwin Waterlander  <waterlan@xs4all.nl>
+
+	Upgraded package mingw32-ncurses to version 6.0-2.
+
+	* contrib/mingw32-ncurses.xml: Created separate package
+	  definitions for ncurses, libncurses, and terminfo.
+	  Added libncurses-dll package.
+	* contrib/issue.log: Updated accordingly.
+	* common/issue.log: Updated accordingly.
+
+	Updated package mingw32-pdcurses.
+
+	* contrib/mingw32-pdcurses.xml: Added missing group affiliates.
+
 2016-01-07  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Give contributed package their own package list.
