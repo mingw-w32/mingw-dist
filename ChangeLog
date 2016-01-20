@@ -1,3 +1,10 @@
+2016-01-20  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Upgrade mingwrt to version 3.21.1
+
+	* mingw32/mingw32-runtime.xml (mingwrt): Add new version references.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2016-01-08  Erwin Waterlander  <waterlan@xs4all.nl>
 
 	Upgraded package mingw32-ncurses to version 6.0-2.

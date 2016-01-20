@@ -30,6 +30,7 @@
       <component class="dev">
         <requires eq="mingwrt-%-mingw32-dll.tar" />
         <release tarname="mingwrt-3.21-mingw32-dev.tar.xz" />
+        <release tarname="mingwrt-3.21.1-mingw32-dev.tar.xz" />
         <release tarname="mingwrt-3.20-2-mingw32-dev.tar.lzma">
           <requires eq="mingwrt-%-mingw32-lic.tar" />
           <requires eq="mingwrt-%-mingw32-man.tar" />
@@ -50,6 +51,7 @@
 
       <component class="dll">
         <release tarname="mingwrt-3.21-mingw32-dll.tar.xz" />
+        <release tarname="mingwrt-3.21.1-mingw32-dll.tar.xz" />
         <release tarname="mingwrt-3.20-2-mingw32-dll.tar.lzma" />
         <release tarname="mingwrt-3.20-mingw32-dll.tar.gz" />
         <release tarname="mingwrt-3.19-mingw32-dll.tar.gz" />
@@ -58,6 +60,7 @@
 
       <component class="lic">
         <release tarname="mingwrt-3.21-mingw32-lic.tar.xz" />
+        <release tarname="mingwrt-3.21.1-mingw32-lic.tar.xz" />
         <release tarname="mingwrt-3.20-2-mingw32-lic.tar.lzma">
           <requires eq="mingwrt-%-mingw32-dev.tar" />
           <download tarname="none" />
@@ -78,6 +81,7 @@
 
       <component class="man">
         <release tarname="mingwrt-3.21-mingw32-man.tar.xz" />
+        <release tarname="mingwrt-3.21.1-mingw32-man.tar.xz" />
         <release tarname="mingwrt-3.20-2-mingw32-man.tar.lzma">
           <requires eq="mingwrt-%-mingw32-dev.tar" />
           <download tarname="none" />
