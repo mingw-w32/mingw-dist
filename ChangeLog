@@ -1,3 +1,11 @@
+2016-02-20  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Upgrade GCC; make version 4.9.3 the preferred release.
+
+	* mingw32/mingw32-gcc4.xml: Add v4.9.3 references for all GCC
+	component packages, associated sub-packages, and library packages.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2016-01-20  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Upgrade mingwrt to version 3.21.1
