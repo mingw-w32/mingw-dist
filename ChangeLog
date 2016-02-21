@@ -1,3 +1,15 @@
+2016-02-21  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Remove bogus GCC-4.9.3 dependencies.
+
+	* mingw32/mingw32-gcc4.xml (gcc-core-dev): Make dependencies on...
+	(libgomp-dll-1, libssp-dll-0): ...these specific to each GCC version.
+	(libgcc-dll-1): Remove unnecessary dependency on...
+	(libmpc-dll-3): ...this; reassign it where it is needed...
+	(gcc-core-bin): ...here.
+
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2016-02-20  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Upgrade GCC; make version 4.9.3 the preferred release.
