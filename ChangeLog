@@ -1,3 +1,13 @@
+2016-02-22  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Reassign misplaced libmpc dependencies for GCC-4.8.1
+
+	* mingw32/mingw32-gcc4.xml (libgcc-dll-1): Delete dependencies on...
+	(libmpc-dll-2, libmpc-dll-3): ...these; reassign as appropriate, to...
+	(gcc-core-4.8.1-dev): ...here.
+
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2016-02-21  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Remove bogus GCC-4.9.3 dependencies.
