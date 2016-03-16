@@ -83,6 +83,7 @@
 
   <!-- "real" packages ~~ user contributed -->
   <package-list catalogue="msys-mksh" />
+  <package-list catalogue="msys-ncurses" />
 
   <!-- "virtual" packages -->
   <package-list catalogue="msys-base" />

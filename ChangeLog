@@ -1,3 +1,14 @@
+2016-03-16  Erwin Waterlander  <waterlan@xs4all.nl>
+
+	New package msys-ncurses 6.0.
+
+	* msys/msys-ncurses.xml: New for ncurses version 6.0.
+	* msys/msys-package-list.xml: Added msys-ncurses.
+	* msys/issue.log: Updated accordingly.
+	* common/issue.log: Updated accordingly.
+
+	* msys/msys-mksh.xml: Added missing file.
+
 2016-02-22  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Reassign misplaced libmpc dependencies for GCC-4.8.1
