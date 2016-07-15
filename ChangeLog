@@ -1,3 +1,13 @@
+2016-07-15  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Publish mingwrt-3.22 and w32api-3.18.
+
+	* mingw32/mingw32-runtime.xml (mingwrt-3.22): Add release records...
+	(dev, dll, lic, man): ...for each of these component packages.
+	(w32api-3.18): Likewise, for 'dev' component package only.
+
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2016-03-16  Erwin Waterlander  <waterlan@xs4all.nl>
 
 	New package msys-ncurses 6.0.
