@@ -1,3 +1,12 @@
+2016-07-15  Cesar Strauss  <cestrauss@gmail.com>
+
+	Upgrade msys-core to version 1.0.19.
+
+	* msys/msys-core.xml:  Add new release specifications.
+	(msys-core) <bin>: Generate /etc/fstab automatically in postinstall.
+
+	* common/issue.log msys/issue.log: Updated accordingly.
+
 2016-07-15  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Publish mingwrt-3.22 and w32api-3.18.
