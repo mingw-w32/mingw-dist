@@ -1,3 +1,11 @@
+2016-07-24  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Publish w32api-3.18.1.
+
+	* mingw32/mingw32-runtime.xml (w32api-3.18.1-dev): Add release record.
+
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2016-07-15  Cesar Strauss  <cestrauss@gmail.com>
 
 	Upgrade msys-core to version 1.0.19.
