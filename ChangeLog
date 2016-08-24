@@ -1,3 +1,22 @@
+2016-08-24  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add references for previously published GCC-5.3.0-2.
+
+	* mingw32/mingw32-gcc4.xml (mingw32-gcc-bin, mingw32-libgcc-dll)
+	(mingw32-gcc-ada-bin, mingw32-gcc-g++-bin, mingw32-gcc-fortran-bin)
+	(mingw32-gcc-info, mingw32-gcc-lang, mingw32-gcc-lic, mingw32-gcc-man)
+	(mingw32-libstdc++-dll, mingw32-libssp-dll, mingw32-libquadmath-dll)
+	(mingw32-libgfortran-dll, mingw32-libobjc-dll, mingw32-libgomp-dll)
+	(mingw32-gcc-fortran-info, mingw32-libquadmath-info)
+	(mingw32-gcc-objc-bin, mingw32-gcc-fortran-man): Add release records.
+	(mingw32-gcc-dev, mingw32-gcc-ada-dev, mingw32-gcc-fortran-dev)
+	(mingw32-gcc-objc-dev, mingw32-gcc-doc, mingw32-gcc-fortran-doc)
+	(mingw32-gcc-c++-dev, mingw32-gcc-c++-doc): Add fake release records;
+	these remove artefacts from previous releases, which may otherwise
+	result in installation conflicts for the current release.
+	(mingw32-libatomic-dll): New component package; specify it.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2016-08-22  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Publish pthreads-win32-2.10-mingw32-pre-20160821-1.
