@@ -46,7 +46,7 @@
           <requires eq="libgcc-%-mingw32-dll-1.tar" />
           <requires eq="libssp-%-mingw32-dll-0.tar" />
           <requires eq="libgomp-%-mingw32-dll-1.tar" />
-          <requires ge="libpthreadgc-2.10-mingw32-dev.tar" />
+          <requires ge="libpthreadgc-2.10.*-mingw32-dev.tar" />
           <requires eq="libatomic-%-mingw32-dll-1.tar" />
           <requires eq="libquadmath-%-mingw32-dll-0.tar" />
           <requires eq="libmpc-*-mingw32-dll-3.tar" />

@@ -1,3 +1,11 @@
+2016-09-05  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Correct underspecified dependency in 2016-09-04 update.
+
+	* mingw32-gcc4.xml (mingw32-gcc-core-bin): Respecify...
+	(libpthreadgc-*-mingw32-dev) [* >= 2.10.*]: ...this dependency.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2016-09-04  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add missing "-lpthread" dependency for GCC-5.3.0-2.
