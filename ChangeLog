@@ -1,3 +1,12 @@
+2016-10-03  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add missing package descriptions.
+
+	* mingw32/mingw32-gcc4.xml (mingw32-libatomic, mingw32-libgomp)
+	(mingw32-libssp): Add missing package descriptions.  Avoid empty
+	paragraph elements; they crash "mingw-get list".  Republish.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2016-09-21  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Publish mingwrt-3.22.2 and w32api-3.18.2 patch releases.
@@ -11,7 +20,7 @@
 
 	Correct underspecified dependency in 2016-09-04 update.
 
-	* mingw32-gcc4.xml (mingw32-gcc-core-bin): Respecify...
+	* mingw32/mingw32-gcc4.xml (mingw32-gcc-core-bin): Respecify...
 	(libpthreadgc-*-mingw32-dev) [* >= 2.10.*]: ...this dependency.
 	* common/issue.log mingw32/issue.log: Update accordingly.
 
@@ -19,7 +28,7 @@
 
 	Add missing "-lpthread" dependency for GCC-5.3.0-2.
 
-	* mingw32-gcc4.xml (mingw32-gcc-core-bin): Require...
+	* mingw32/mingw32-gcc4.xml (mingw32-gcc-core-bin): Require...
 	(libpthreadgc-*-mingw32-dev) [* >= 2.10]: ...this package.
 	* common/issue.log mingw32/issue.log: Update accordingly.
 

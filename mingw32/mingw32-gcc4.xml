@@ -817,7 +817,12 @@
     <package name="mingw32-libatomic" alias="libatomic">
       <affiliate group="MinGW Compiler Suite" />
       <description lang="en" title="GCC Atomic Function Support Library">
-        <paragraph />
+        <paragraph>
+          This package provides the GCC support library for atomic
+          operations which are not directly supported by hardware;
+          it is a required component of GCC compiler installations,
+          from GCC-5.3 onwards.
+        </paragraph>
       </description>
 
       <source tarname="gcc-%-mingw32-src.tar.*" />
@@ -831,7 +836,12 @@
     <package name="mingw32-libgomp" alias="libgomp">
       <affiliate group="MinGW Compiler Suite" />
       <description lang="en" title="GCC MultiProcessor Support Library">
-        <paragraph />
+        <paragraph>
+          This package provides the GNU implementation of the OpenMP API;
+          it is a required component of GCC compiler installations, if it
+          is desired to support multi-processor parallel programming in
+          C, C++, or FORTRAN programming languages.
+        </paragraph>
       </description>
 
       <source tarname="gcc-%-mingw32-src.tar.*" />
@@ -880,7 +890,10 @@
     <package name="mingw32-libssp" alias="libssp">
       <affiliate group="MinGW Compiler Suite" />
       <description lang="en" title="GCC Stack Smashing Protection Library">
-        <paragraph />
+        <paragraph>
+          This package provides support against stack smashing attacks,
+          e.g. when compiling with GCC's -fstack-protector option.
+        </paragraph>
       </description>
 
       <source tarname="gcc-%-mingw32-src.tar.*" />
