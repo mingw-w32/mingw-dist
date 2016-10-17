@@ -1,3 +1,12 @@
+2016-10-17  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Publish mingwrt-3.22.4 patch release.
+
+	* mingw32/mingw32-runtime.xml (mingwrt-3.22.3-dev)
+	(mingwrt-3.22.4-dll, mingwrt-3.22.4-lic, mingwrt-3.22.4-man): Add
+	component package release records.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2016-10-13  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Publish mingwrt-3.22.3 patch release.
