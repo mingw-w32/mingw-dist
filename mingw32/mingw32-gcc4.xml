@@ -25,6 +25,7 @@
       <licence tarname="gcc-%-mingw32-lic.tar.*" />
 
       <component class="lic">
+        <release tarname="gcc-5.3.0-3-mingw32-lic.tar.xz" />
         <release tarname="gcc-5.3.0-2-mingw32-lic.tar.xz" />
         <release tarname="gcc-4.9.3-1-mingw32-lic.tar.xz" />
         <release tarname="gcc-core-4.8.1-4-mingw32-lic.tar.lzma" />
@@ -42,6 +43,15 @@
         <requires eq="binutils-*-mingw32-bin.tar" />
         <requires eq="mingwrt-*-mingw32-dev.tar" />
         <requires eq="w32api-*-mingw32-dev.tar" />
+        <release tarname="gcc-core-5.3.0-3-mingw32-bin.tar.xz">
+          <requires eq="libgcc-%-mingw32-dll-1.tar" />
+          <requires eq="libssp-%-mingw32-dll-0.tar" />
+          <requires eq="libgomp-%-mingw32-dll-1.tar" />
+          <requires ge="libpthreadgc-2.10.*-mingw32-dev.tar" />
+          <requires eq="libatomic-%-mingw32-dll-1.tar" />
+          <requires eq="libquadmath-%-mingw32-dll-0.tar" />
+          <requires eq="libmpc-*-mingw32-dll-3.tar" />
+        </release>
         <release tarname="gcc-core-5.3.0-2-mingw32-bin.tar.xz">
           <requires eq="libgcc-%-mingw32-dll-1.tar" />
           <requires eq="libssp-%-mingw32-dll-0.tar" />
@@ -112,6 +122,9 @@
       <component class="dev">
         <requires eq="mingw32-libgcc-%-mingw32-dll-1.tar" />
         <requires eq="mingw32-libquadmath-%-mingw32-dll-0.tar" />
+        <release tarname="gcc-5.3.0-3-mingw32-dev.tar.xz">
+          <download tarname="none" />
+        </release>
         <release tarname="gcc-5.3.0-2-mingw32-dev.tar.xz">
           <download tarname="none" />
         </release>
@@ -146,6 +159,9 @@
       </component>
 
       <component class="doc">
+        <release tarname="gcc-core-5.3.0-3-mingw32-doc.tar.xz">
+          <download tarname="none" />
+        </release>
         <release tarname="gcc-core-5.3.0-2-mingw32-doc.tar.xz">
           <download tarname="none" />
         </release>
@@ -164,6 +180,7 @@
       </component>
 
       <component class="man">
+        <release tarname="gcc-5.3.0-3-mingw32-man.tar.xz" />
         <release tarname="gcc-5.3.0-2-mingw32-man.tar.xz" />
         <release tarname="gcc-4.9.3-1-mingw32-man.tar.xz" />
         <release tarname="gcc-core-4.8.1-4-mingw32-man.tar.lzma" />
@@ -173,6 +190,7 @@
       </component>
 
       <component class="info">
+        <release tarname="gcc-5.3.0-3-mingw32-info.tar.xz" />
         <release tarname="gcc-5.3.0-2-mingw32-info.tar.xz" />
         <release tarname="gcc-4.9.3-1-mingw32-info.tar.xz" />
         <release tarname="gcc-core-4.8.1-4-mingw32-info.tar.lzma" />
@@ -182,6 +200,7 @@
       </component>
 
       <component class="lang">
+        <release tarname="gcc-5.3.0-3-mingw32-lang.tar.xz" />
         <release tarname="gcc-5.3.0-2-mingw32-lang.tar.xz" />
         <release tarname="gcc-4.9.3-1-mingw32-lang.tar.xz" />
         <release tarname="gcc-4.8.1-4-mingw32-lang.tar.lzma" />
@@ -223,6 +242,7 @@
       <licence tarname="gcc-%-mingw32-lic.tar.*" />
 
       <component class="dll">
+        <release tarname="libgcc-5.3.0-3-mingw32-dll-1.tar.xz" />
         <release tarname="libgcc-5.3.0-2-mingw32-dll-1.tar.xz" />
         <release tarname="libgcc-4.9.3-1-mingw32-dll-1.tar.xz" />
         <release tarname="libgcc-4.8.1-4-mingw32-dll-1.tar">
@@ -265,6 +285,9 @@
       <component class="bin">
         <affiliate group="Basic Setup" />
         <requires eq="gcc-core-%-mingw32-bin.tar" />
+        <release tarname="gcc-ada-5.3.0-3-mingw32-bin.tar.xz">
+          <requires eq="gcc-ada-%-mingw32-dev.tar" />
+        </release>
         <release tarname="gcc-ada-5.3.0-2-mingw32-bin.tar.xz">
           <requires eq="gcc-ada-%-mingw32-dev.tar" />
         </release>
@@ -298,6 +321,9 @@
       </component>
 
       <component class="dev">
+        <release tarname="gcc-ada-5.3.0-3-mingw32-dev.tar.xz">
+          <download tarname="none" />
+        </release>
         <release tarname="gcc-ada-5.3.0-2-mingw32-dev.tar.xz">
           <download tarname="none" />
         </release>
@@ -391,6 +417,10 @@
       <component class="bin">
         <affiliate group="Basic Setup" />
         <requires eq="gcc-core-%-mingw32-bin.tar" />
+        <release tarname="gcc-c++-5.3.0-3-mingw32-bin.tar.xz" >
+          <requires eq="libstdc++-%-mingw32-dll-6.tar" />
+          <requires eq="gcc-c++-%-mingw32-dev.tar" />
+        </release>
         <release tarname="gcc-c++-5.3.0-2-mingw32-bin.tar.xz" >
           <requires eq="libstdc++-%-mingw32-dll-6.tar" />
           <requires eq="gcc-c++-%-mingw32-dev.tar" />
@@ -429,6 +459,9 @@
 
       <component class="dev">
         <requires eq="mingw32-libstdc++-%-mingw32-dll-6.tar" />
+        <release tarname="gcc-c++-5.3.0-3-mingw32-dev.tar.xz">
+          <download tarname="none" />
+        </release>
         <release tarname="gcc-c++-5.3.0-2-mingw32-dev.tar.xz">
           <download tarname="none" />
         </release>
@@ -442,6 +475,9 @@
       </component>
 
       <component class="doc">
+        <release tarname="gcc-c++-5.3.0-3-mingw32-doc.tar.xz">
+          <download tarname="none" />
+        </release>
         <release tarname="gcc-c++-5.3.0-2-mingw32-doc.tar.xz">
           <download tarname="none" />
         </release>
@@ -455,6 +491,7 @@
       </component>
 
       <component class="man">
+        <release tarname="gcc-c++-5.3.0-3-mingw32-man.tar.xz" />
         <release tarname="gcc-c++-5.3.0-2-mingw32-man.tar.xz" />
         <release tarname="gcc-c++-4.9.3-1-mingw32-man.tar.xz" />
         <release tarname="gcc-c++-4.8.1-4-mingw32-man.tar.lzma" />
@@ -488,6 +525,7 @@
       <licence tarname="gcc-%-mingw32-lic.tar.*" />
 
       <component class="dll">
+        <release tarname="libstdc++-5.3.0-3-mingw32-dll-6.tar.xz" />
         <release tarname="libstdc++-5.3.0-2-mingw32-dll-6.tar.xz" />
         <release tarname="libstdc++-4.9.3-1-mingw32-dll-6.tar.xz" />
         <release tarname="libstdc++-4.8.1-4-mingw32-dll-6.tar" >
@@ -530,6 +568,10 @@
       <component class="bin">
         <affiliate group="Basic Setup" />
         <requires eq="gcc-core-%-mingw32-bin.tar" />
+        <release tarname="gcc-fortran-5.3.0-3-mingw32-bin.tar.xz">
+          <requires eq="libgfortran-%-mingw32-dll-3.tar" />
+          <requires eq="gcc-fortran-%-mingw32-dev.tar" />
+        </release>
         <release tarname="gcc-fortran-5.3.0-2-mingw32-bin.tar.xz">
           <requires eq="libgfortran-%-mingw32-dll-3.tar" />
           <requires eq="gcc-fortran-%-mingw32-dev.tar" />
@@ -569,6 +611,9 @@
 
       <component class="dev">
         <requires eq="libgfortran-%-mingw32-dll-3.tar" />
+        <release tarname="gcc-fortran-5.3.0-3-mingw32-dev.tar.xz">
+          <download tarname="none" />
+        </release>
         <release tarname="gcc-fortran-5.3.0-2-mingw32-dev.tar.xz">
           <download tarname="none" />
         </release>
@@ -582,6 +627,9 @@
       </component>
 
       <component class="doc">
+        <release tarname="gcc-fortran-5.3.0-3-mingw32-doc.tar.xz">
+          <download tarname="none" />
+        </release>
         <release tarname="gcc-fortran-5.3.0-2-mingw32-doc.tar.xz">
           <download tarname="none" />
         </release>
@@ -595,6 +643,7 @@
       </component>
 
       <component class="info">
+        <release tarname="gcc-fortran-5.3.0-3-mingw32-info.tar.xz" />
         <release tarname="gcc-fortran-5.3.0-2-mingw32-info.tar.xz" />
         <release tarname="gcc-fortran-4.9.3-1-mingw32-info.tar.xz" />
         <release tarname="gcc-fortran-4.8.1-4-mingw32-info.tar.lzma" />
@@ -604,6 +653,9 @@
       </component>
 
       <component class="man">
+        <release tarname="gcc-fortran-5.3.0-3-mingw32-man.tar.xz">
+          <download tarname="libgfortran-5.3.0-3-mingw32-man.tar.xz" />
+        </release>
         <release tarname="gcc-fortran-5.3.0-2-mingw32-man.tar.xz">
           <download tarname="libgfortran-5.3.0-2-mingw32-man.tar.xz" />
         </release>
@@ -654,6 +706,7 @@
         </release>
         <release tarname="libgfortran-4.9.3-1-mingw32-dll-3.tar.xz" />
         <release tarname="libgfortran-5.3.0-2-mingw32-dll-3.tar.xz" />
+        <release tarname="libgfortran-5.3.0-3-mingw32-dll-3.tar.xz" />
       </component>
     </package>
 
@@ -712,6 +765,10 @@
       <component class="bin">
         <affiliate group="Basic Setup" />
         <requires eq="gcc-core-%-mingw32-bin.tar" />
+        <release tarname="gcc-objc-5.3.0-3-mingw32-bin.tar.xz">
+          <requires eq="libobjc-%-mingw32-dll-4.tar" />
+          <requires eq="gcc-objc-%-mingw32-dev.tar" />
+        </release>
         <release tarname="gcc-objc-5.3.0-2-mingw32-bin.tar.xz">
           <requires eq="libobjc-%-mingw32-dll-4.tar" />
           <requires eq="gcc-objc-%-mingw32-dev.tar" />
@@ -755,6 +812,9 @@
 
       <component class="dev">
         <requires eq="libobjc-%-mingw32-dll-4.tar" />
+        <release tarname="gcc-objc-5.3.0-3-mingw32-dev.tar.xz">
+          <download tarname="none" />
+        </release>
         <release tarname="gcc-objc-5.3.0-2-mingw32-dev.tar.xz">
           <download tarname="none" />
         </release>
@@ -811,6 +871,7 @@
         </release>
         <release tarname="libobjc-4.9.3-1-mingw32-dll-4.tar.xz" />
         <release tarname="libobjc-5.3.0-2-mingw32-dll-4.tar.xz" />
+        <release tarname="libobjc-5.3.0-3-mingw32-dll-4.tar.xz" />
       </component>
     </package>
 
@@ -829,6 +890,7 @@
       <licence tarname="gcc-%-mingw32-lic.tar.*" />
 
       <component class="dll">
+        <release tarname="libatomic-5.3.0-3-mingw32-dll-1.tar.xz" />
         <release tarname="libatomic-5.3.0-2-mingw32-dll-1.tar.xz" />
       </component>
     </package>
@@ -884,6 +946,7 @@
           <requires eq="libpthread-*-mingw32-dll-2.tar" />
         </release>
         <release tarname="libgomp-5.3.0-2-mingw32-dll-1.tar.xz" />
+        <release tarname="libgomp-5.3.0-3-mingw32-dll-1.tar.xz" />
       </component>
     </package>
 
@@ -922,6 +985,7 @@
           <requires eq="mingw32-libgcc-%-mingw32-dll-1.tar" />
         </release>
         <release tarname="libssp-5.3.0-2-mingw32-dll-0.tar.xz" />
+        <release tarname="libssp-5.3.0-3-mingw32-dll-0.tar.xz" />
       </component>
     </package>
 
@@ -954,11 +1018,13 @@
         </release>
         <release tarname="libquadmath-4.9.3-1-mingw32-dll-0.tar.xz" />
         <release tarname="libquadmath-5.3.0-2-mingw32-dll-0.tar.xz" />
+        <release tarname="libquadmath-5.3.0-3-mingw32-dll-0.tar.xz" />
       </component>
 
       <component class="info">
         <release tarname="libquadmath-4.9.3-1-mingw32-info.tar.xz" />
         <release tarname="libquadmath-5.3.0-2-mingw32-info.tar.xz" />
+        <release tarname="libquadmath-5.3.0-3-mingw32-info.tar.xz" />
       </component>
     </package>
 
