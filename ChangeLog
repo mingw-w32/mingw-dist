@@ -1,3 +1,13 @@
+2017-03-09  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Publish MinGW.org WSL-5.0 package set.
+
+	* mingw32/mingw32-runtime.xml (mingwrt-5.0-dev, mingwrt-5.0-dll)
+	(mingwrt-5.0-lic, mingwrt-5.0-man, w32api-5.0-dev): Add references.
+	(libmingwex): New subpackage; define it, and add references for...
+	(libmingwex-5.0-dev, libmingwex-5.0-dll-0): ...these components.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2016-12-12  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Replace potentially malformed GCC-5 package set.

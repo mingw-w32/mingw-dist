@@ -29,6 +29,7 @@
 
       <component class="dev">
         <requires eq="mingwrt-%-mingw32-dll.tar" />
+        <release tarname="mingwrt-5.0-mingw32-dev.tar.xz" />
         <release tarname="mingwrt-3.22-mingw32-dev.tar.xz" />
         <release tarname="mingwrt-3.22.1-mingw32-dev.tar.xz" />
         <release tarname="mingwrt-3.22.2-mingw32-dev.tar.xz" />
@@ -55,6 +56,7 @@
       </component>
 
       <component class="dll">
+        <release tarname="mingwrt-5.0-mingw32-dll.tar.xz" />
         <release tarname="mingwrt-3.22-mingw32-dll.tar.xz" />
         <release tarname="mingwrt-3.22.1-mingw32-dll.tar.xz" />
         <release tarname="mingwrt-3.22.2-mingw32-dll.tar.xz" />
@@ -69,6 +71,7 @@
       </component>
 
       <component class="lic">
+        <release tarname="mingwrt-5.0-mingw32-lic.tar.xz" />
         <release tarname="mingwrt-3.22-mingw32-lic.tar.xz" />
         <release tarname="mingwrt-3.22.1-mingw32-lic.tar.xz" />
         <release tarname="mingwrt-3.22.2-mingw32-lic.tar.xz" />
@@ -95,6 +98,7 @@
       </component>
 
       <component class="man">
+        <release tarname="mingwrt-5.0-mingw32-man.tar.xz" />
         <release tarname="mingwrt-3.22-mingw32-man.tar.xz" />
         <release tarname="mingwrt-3.22.1-mingw32-man.tar.xz" />
         <release tarname="mingwrt-3.22.2-mingw32-man.tar.xz" />
@@ -121,6 +125,35 @@
       </component>
     </package>
 
+    <package name="mingw32-libmingwex" alias="libmingwex" >
+      <affiliate group="MinGW Compiler Suite" />
+      <affiliate group="MinGW Standard Libraries" />
+      <description lang="en" title="The MinGW Runtime Library API">
+        <paragraph>
+          This package provides an alternative implementation of the
+          MinGW libraries, to support dynamic linking of the principal
+          non-Microsoft components of the MinGW Runtime API.
+        </paragraph>
+        <paragraph>
+          This is an optional component of the MinGW Compiler Suite.
+        </paragraph>
+      </description>
+
+      <source tarname="mingwrt-%-mingw32-src.tar.%" />
+      <licence tarname="mingwrt-%-mingw32-lic.tar.%" />
+
+      <component class="dev">
+        <release tarname="libmingwex-5.0-mingw32-dev.tar.xz">
+          <requires eq="libmingwex-%-mingw32-dll-0.tar" />
+        </release>
+        <requires eq="mingwrt-%-mingw32-dev.tar" />
+      </component>
+
+      <component class="dll">
+        <release tarname="libmingwex-5.0-mingw32-dll-0.tar.xz" />
+      </component>
+    </package>
+
     <package name="mingw32-w32api" alias="w32api">
       <affiliate group="MinGW Compiler Suite" />
       <affiliate group="MinGW Standard Libraries" />
@@ -140,6 +173,7 @@
       <licence tarname="w32api-%-mingw32-dev.tar.%" />
 
       <component class="dev">
+        <release tarname="w32api-5.0-mingw32-dev.tar.xz" />
         <release tarname="w32api-3.18.2-mingw32-dev.tar.xz" />
         <release tarname="w32api-3.18.1-mingw32-dev.tar.xz" />
         <release tarname="w32api-3.18-mingw32-dev.tar.xz" />
