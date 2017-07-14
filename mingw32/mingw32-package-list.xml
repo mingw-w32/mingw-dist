@@ -38,6 +38,7 @@
   <package-list catalogue="mingw32-gendef" />
   <package-list catalogue="mingw32-gettext" />
   <package-list catalogue="mingw32-gmp" />
+  <package-list catalogue="mingw32-isl" />
   <package-list catalogue="mingw32-libarchive" />
   <package-list catalogue="mingw32-libiconv" />
   <package-list catalogue="mingw32-libtool" />

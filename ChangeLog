@@ -1,3 +1,11 @@
+2017-07-14  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add and publish new mingw32-isl-0.18 package set.
+
+	* mingw32/mingw32-isl.xml: New package specification file.
+	* mingw32/mingw32-package-list.xml (mingw32-isl): Register it.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2017-07-12  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Upgrade mingw32-binutils package to version 2.28-1.
