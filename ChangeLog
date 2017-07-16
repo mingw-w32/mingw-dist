@@ -1,3 +1,10 @@
+2017-07-16  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Upgrade mingw32-gmp package to version 6.1.2.
+
+	* mingw32/mingw32-gmp.xml: Add new release specifications.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2017-07-14  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add and publish new mingw32-isl-0.18 package set.
