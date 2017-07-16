@@ -1,5 +1,12 @@
 2017-07-16  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Upgrade mingw32-mpc package to version 1.0.3.
+
+	* mingw32/mingw32-mpc.xml: Add new release specifications.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
+2017-07-16  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Upgrade mingw32-mpfr package to version 3.1.5.
 
 	* mingw32/mingw32-mpfr.xml: Add new release specifications.
