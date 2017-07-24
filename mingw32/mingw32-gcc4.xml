@@ -552,7 +552,6 @@
             the installation, or upgrade, has been completed.
           </paragraph>
         </description>
-        <requires eq="libgfortran-%-mingw32-dll-3.tar" />
         <release tarname="gcc-fortran-4.8.2-mingw32-dev.tar.meta">
           <!-- dummy package, to clean up possible 4.8.1 conflicts -->
           <download tarname="none" />
