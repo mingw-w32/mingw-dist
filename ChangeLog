@@ -1,3 +1,10 @@
+2017-07-24  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Pre-empt facility to support package visibility attributes.
+
+	* tests/pkgspec.xsd (visibility-attribute): New XML type; define it.
+	(package, component-specification) [visibility="hidden"]: Accept it.
+
 2017-07-16  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Upgrade mingw32-mpc package to version 1.0.3.

@@ -6,7 +6,7 @@
     XSDL schema for validation of mingw-get package specifications.
 
     Written by Keith Marshall  <keithmarshall@users.sourceforge.net>
-    Copyright (C) 2013, MinGW.org Project
+    Copyright (C) 2013, 2017, MinGW.org Project
 
 
     This file is part of the mingw-dist catalogue validation suite.
@@ -272,10 +272,17 @@
 	    </xs:sequence>
             <!--
               Each package MUST be named; it may also be assigned to the class
-              of "virtual" packages, so identifying it as a meta-package, and it
-              may also be identified by a list of aliases.
+              of "virtual" packages, so identifying it as a meta-package, may
+              be identified by a list of aliases, and may also be marked as
+              intended to be hidden from the user interface.  (Note that, if
+              both class="virtual" and visibility="hidden" are specified, an
+              intent is implied to both conceal the package from the user, and
+              to suppress any record of its installation; this feature, which
+              is intended to facilitate forced dependency resolution, is not
+              currently supported by mingw-get).
             -->
 	    <xs:attribute name="name" type="xs:string" use="required" />
+	    <xs:attribute name="visibility" type="visibility-attribute" />
 	    <xs:attribute name="class" type="package-class" />
 	    <xs:attribute name="alias" type="xs:string" />
 	  </xs:complexType>
@@ -301,6 +308,19 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <xs:simpleType name="visibility-attribute">
+    <!--
+      Any package, or package component, may be marked with a visibility of
+      "hidden", indicating that mingw-get should not show it within the user
+      interface; (if specified, this attribute MUST have a value of "hidden";
+      it should normally be omitted entirely, for any package or component
+      which is to be visible within the user interface).
+    -->
+    <xs:restriction base="xs:string">
+      <xs:pattern value="hidden" />
+    </xs:restriction>
+  </xs:simpleType>
+
   <xs:complexType name="component-specification">
     <!--
       Each "package" should be subdivided into one or more "component" packages,
@@ -319,9 +339,12 @@
     </xs:choice>
     <!--
       Every "component" package MUST be classified; however, the choice of
-      "class" name is unrestricted.
+      "class" name is unrestricted.  Additionally, any component package may
+      be marked with the visibility="hidden" attribute, (although this will
+      be ignored if the component delivers installable content).
     -->
     <xs:attribute name="class" type="xs:string" use="required" />
+    <xs:attribute name="visibility" type="visibility-attribute" />
   </xs:complexType>
 
   <xs:complexType name="release-specification">
