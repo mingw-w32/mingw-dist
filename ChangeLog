@@ -1,5 +1,20 @@
 2017-07-24  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	Upgrade GCC; make version 6.3.0 the preferred release.
+
+	* mingw32/mingw32-gcc4.xml: Add v6.3.0 references for all GCC
+	component packages, associated sub-packages, and library packages.
+	(mingw32-gcc-core-deps, mingw32-libgomp-deps): New virtual packages;
+	they facilitate dependency resolution for non-GCC libraries with ABI
+	versions which differ across GCC releases; users are advised to remove
+	them after installation; (FIXME: let mingw-get do this automatically).
+	(GCC Upgrade Blockers): New package hierarchy group; affiliate those
+	aberrant "dev" packages, and temporary convenience packages, which
+	we would prefer users to remove ASAP, after upgrade to GCC-6.3.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
+2017-07-24  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Pre-empt facility to support package visibility attributes.
 
 	* tests/pkgspec.xsd (visibility-attribute): New XML type; define it.
