@@ -1,3 +1,11 @@
+2017-07-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Add libmingwex-0.dll dependency for GCC-6.3.0
+
+	* mingw32/mingw32-gcc4.xml (gcc-core-bin): Add dependency on...
+	(mingw32-libmingwex-dll-0): ...this; it is required by cc1.exe
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2017-07-24  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Correct a bogus dependency in earlier GCC-6.3.0 publication.

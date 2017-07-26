@@ -58,6 +58,7 @@
         <requires eq="binutils-*-mingw32-bin.tar" />
         <requires eq="mingwrt-*-mingw32-dev.tar" />
         <requires eq="w32api-*-mingw32-dev.tar" />
+        <requires eq="libmingwex-*-mingw32-dll-0.tar" />
         <requires eq="mingw32-libssp-%-mingw32-dll-0.tar" />
         <requires eq="mingw32-libgomp-%-mingw32-dll-1.tar" />
         <requires eq="mingw32-libquadmath-%-mingw32-dll-0.tar" />
