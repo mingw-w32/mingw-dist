@@ -1,3 +1,12 @@
+2017-03-09  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Publish MinGW.org WSL-5.0.1 package set.
+
+	* mingw32/mingw32-runtime.xml (mingwrt-5.0.1-dev, mingwrt-5.0.1-dll)
+	(mingwrt-5.0.1-lic, mingwrt-5.0.1-man, libmingwex-5.0.1-dll-0)
+	(libmingwex-5.0.1-dev, w32api-5.0.1-dev): Add references.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2017-07-26  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Add libmingwex-0.dll dependency for GCC-6.3.0
