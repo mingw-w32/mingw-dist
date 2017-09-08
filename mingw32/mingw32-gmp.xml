@@ -36,6 +36,7 @@
       <licence tarname="gmp-%-mingw32-lic.tar.%" />
 
       <component class="dev">
+        <release tarname="gmp-6.1.2-2-mingw32-dev.tar.xz" />
         <release tarname="gmp-6.1.2-1-mingw32-dev.tar.xz" />
         <release tarname="gmp-5.1.2-1-mingw32-dev.tar.lzma" />
         <release tarname="gmp-5.0.1-1-mingw32-dev.tar.lzma" />
@@ -52,12 +53,14 @@
       </component>
 
       <component class="lic">
+        <release tarname="gmp-6.1.2-2-mingw32-lic.tar.xz" />
         <release tarname="gmp-6.1.2-1-mingw32-lic.tar.xz" />
         <release tarname="gmp-5.1.2-1-mingw32-lic.tar.lzma" />
         <release tarname="gmp-5.0.1-1-mingw32-lic.tar.lzma" />
       </component>
 
       <component class="info">
+        <release tarname="gmp-6.1.2-2-mingw32-info.tar.xz" />
         <release tarname="gmp-6.1.2-1-mingw32-info.tar.xz" />
         <release tarname="gmp-5.1.2-1-mingw32-info.tar.lzma" />
       </component>
@@ -93,6 +96,7 @@
       <licence tarname="gmp-%-mingw32-lic.tar.%" />
 
       <component class="dll">
+        <release tarname="libgmp-6.1.2-2-mingw32-dll-10.tar.xz" />
         <release tarname="libgmp-6.1.2-1-mingw32-dll-10.tar.xz" />
         <release tarname="libgmp-5.1.2-1-mingw32-dll-10.tar">
           <download tarname="gmp-5.1.2-1-mingw32-dll.tar.lzma" />
@@ -121,6 +125,7 @@
       <licence tarname="gmp-%-mingw32-lic.tar.%" />
 
       <component class="dll">
+        <release tarname="libgmpxx-6.1.2-2-mingw32-dll-4.tar.xz" />
         <release tarname="libgmpxx-6.1.2-1-mingw32-dll-4.tar.xz" />
         <release tarname="libgmpxx-5.1.2-1-mingw32-dll-4.tar.lzma">
           <download tarname="none" />
