@@ -1,3 +1,12 @@
+2018-01-18  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Publish MinGW.org WSL-5.0.2 package set.
+
+	* mingw32/mingw32-runtime.xml (mingwrt-5.0.2-dev, mingwrt-5.0.2-dll)
+	(mingwrt-5.0.2-lic, mingwrt-5.0.2-man, libmingwex-5.0.2-dll-0)
+	(libmingwex-5.0.2-dev, w32api-5.0.2-dev): Add references.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2018-01-17  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Upgrade to correct malformed libmpfr.a
@@ -5,7 +14,7 @@
 	* mingw32/mingw32-mpfr.xml (mpfr, libmpfr): Add 3.1.5-2 release;
 	this removes references to libgmp.dll.a from libmpfr.a, correctly
 	replacing them with references to static libgmp.a
-	* mingw32/issue.log: Update accordingly.
+	* common/issue.log mingw32/issue.log: Update accordingly.
 
 2017-09-08  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
