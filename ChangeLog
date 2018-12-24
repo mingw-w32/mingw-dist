@@ -1,3 +1,20 @@
+2018-12-24  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Publish MinGW.org WSL-5.2 package set.
+
+	* mingw32/mingw32-runtime.xml (download-host): Relocate to osdn.net
+	(mingwrt-5.2-dev, mingwrt-5.2-dll, mingwrt-5.2-lic, mingwrt-5.2-man)
+	(libmingwex-5.2-dev, libmingwex-5.2-dll-2, w32api-5.2-dev): Add
+	references; also add references to each of...
+	(mingwrt-5.1.1-dev, mingwrt-5.1.1-dll, mingwrt-5.1.1-lic)
+	(mingwrt-5.1.1-man, libmingwex-5.1.1-dev, libmingwex-5.1.1-dll-0)
+	(w32api-5.1.1-dev, mingwrt-5.1-dev, mingwrt-5.1-dll, mingwrt-5.1-lic)
+	(mingwrt-5.1-man, libmingwex-5.1-dev, libmingwex-5.1-dll-0)
+	(w32api-5.1.1-dev): ...these previously unmanaged releases; remove all
+	references to earlier releases, which remain on sourceforge.net, but
+	are not scheduled to be relocated to the osdn.net download host.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2018-01-18  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Publish MinGW.org WSL-5.0.2 package set.
