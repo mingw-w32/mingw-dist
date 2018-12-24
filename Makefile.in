@@ -2,8 +2,8 @@
 #
 # $Id$
 #
-# Written by Keith Marshall <keithmarshall@users.sourceforge.net>
-# Copyright (C) 2010, 2011, 2013, MinGW.org Project
+# Written by Keith Marshall <keith@users.osdn.me>
+# Copyright (C) 2010, 2011, 2013, 2018, MinGW.org Project
 #
 #
 # Makefile template for generating mingw-get distribution manifests.
@@ -106,11 +106,11 @@ update-references: FORCE
 update-local-references: @mingw_ac_subdirs@
 
 # Approiately authenticated users may publish updated catalogues
-# via the SourceForge file release system.
+# via the OSDN file storage and download system.
 #
-FRS_CATALOGUE_HOST = frs.sourceforge.net
-FRS_CATALOGUE_ROOT = /home/frs/project/mingw
-FRS_CATALOGUE_PATH = $(FRS_CATALOGUE_ROOT)/Installer/mingw-get/catalogue
+FRS_CATALOGUE_HOST = storage.osdn.net
+FRS_CATALOGUE_ROOT = /storage/groups/m/mi/mingw
+FRS_CATALOGUE_PATH = $(FRS_CATALOGUE_ROOT)/.catalogue
 
 FRS_CATALOGUE = $(FRS_CATALOGUE_HOST):$(FRS_CATALOGUE_PATH)
 

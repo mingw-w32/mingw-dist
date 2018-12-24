@@ -1,4 +1,15 @@
-2018-12-24  Keith Marshall  <keithmarshall@users.sourceforge.net>
+2018-12-24  Keith Marshall  <keith@users.osdn.me>
+
+	Redirect catalogue publication host to OSDN.net
+
+	* Makefile.in (FRS_CATALOGUE_HOST): Relocate to storage.osdn.net
+	(FRS_CATALOGUE_ROOT): Direct it to /storage/groups/m/mi/mingw/...
+	(FRS_CATALOGUE_PATH): ...using the .catalogue directory.
+
+	* VERSION.m4 (VERSION_MINOR): Increment it to 4, thus making...
+	* configure (PACKAGE_VERSION): ...this equivalent to 2.4.0
+
+2018-12-24  Keith Marshall  <keith@users.osdn.me>
 
 	Publish MinGW.org WSL-5.2 package set.
 

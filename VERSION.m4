@@ -2,8 +2,8 @@
 #
 # $Id$
 #
-# Written by Keith Marshall <keithmarshall@users.sourceforge.net>
-# Copyright (C) 2013, MinGW.org Project
+# Written by Keith Marshall <keith@users.osdn.me>
+# Copyright (C) 2013, 2018, MinGW.org Project
 #
 #
 # Configuration script version specification for mingw-dist
@@ -23,7 +23,7 @@
 # arising from the use of this software.
 #
   m4_define([VERSION_MAJOR], [2])
-  m4_define([VERSION_MINOR], [3])
+  m4_define([VERSION_MINOR], [4])
   m4_define([VERSION_PATCH], [0])
 #
   m4_define([__VERSION__], [VERSION_MAJOR.VERSION_MINOR.VERSION_PATCH])
