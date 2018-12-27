@@ -1,3 +1,16 @@
+2018-12-27  Keith Marshall  <keith@users.osdn.me>
+
+	Redirect binutils package download requests to OSDN.net
+
+	* mingw32/mingw32-binutils.xml (download-host): Relocate to osdn.net
+	(binutils-bin, binutils-dev): Prune all release references other than
+	those for version 2.28-1; these earlier releases will remain available
+	on SourceForge.net, but are not scheduled for relocation to OSDN.net
+	(binutils-info, binutils-man, binutils-lang): Likewise.
+	(binutils-2.24-1-doc): Retain effectively empty virtual package;
+	vacate its dependency list; prune all other version references.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2018-12-24  Keith Marshall  <keith@users.osdn.me>
 
 	Redirect catalogue publication host to OSDN.net
