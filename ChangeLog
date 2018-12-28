@@ -1,5 +1,16 @@
 2018-12-28  Keith Marshall  <keith@users.osdn.me>
 
+	Redirect MPFR package download requests to OSDN.net
+
+	* mingw32/mingw32-mpfr.xml (download-host): Relocate to osdn.net
+	(mpfr-dev, mpfr-doc, mpfr-info, mpfr-lic, libmpfr-dll): Remove all
+	release references, other than those for version 3.1.5-2; associated
+	packages will remain on SourceForge.net, but are not scheduled for
+	relocation to, and will not be accessible on, the OSDN.net host.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
+2018-12-28  Keith Marshall  <keith@users.osdn.me>
+
 	Redirect GMP package download requests to OSDN.net
 
 	* mingw32/mingw32-gmp.xml (download-host): Relocate to osdn.net
