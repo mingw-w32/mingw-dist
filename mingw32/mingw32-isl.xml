@@ -4,7 +4,7 @@
   <!-- File: mingw32-isl.xml ~~ mingw-get package description for ISL -->
 
   <package-collection subsystem="mingw32">
-    <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+    <download-host uri="http://osdn.net/dl/mingw/%F" />
 
     <!-- Provides the package descriptions for the ISL library, which -->
     <!-- is a runtime prerequisite for modern versions of GCC.        -->

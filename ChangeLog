@@ -2,6 +2,13 @@
 
 	Redirect MPC package download requests to OSDN.net
 
+	* mingw32/mingw32-isl.xml (download-host): Relocate to osdn.net
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
+2018-12-28  Keith Marshall  <keith@users.osdn.me>
+
+	Redirect MPC package download requests to OSDN.net
+
 	* mingw32/mingw32-mpc.xml (download-host): Relocate to osdn.net
 	(mpc-1.0.3-2-dev, mpc-1.0.3-2-info, mpc-1.0.3-2-lic): Add new release
 	references; remove all references to earlier releases, all of which
