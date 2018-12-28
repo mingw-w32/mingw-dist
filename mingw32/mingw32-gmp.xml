@@ -4,7 +4,7 @@
   <!-- File: mingw32-gmp.xml ~~ mingw-get package description for gmp -->
 
   <package-collection subsystem="mingw32">
-    <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+    <download-host uri="http://osdn.net/dl/mingw/%F" />
 
     <!-- Provides the package descriptions for the gmp library, which -->
     <!-- is a runtime prerequisite for modern versions of GCC.        -->
@@ -36,33 +36,31 @@
       <licence tarname="gmp-%-mingw32-lic.tar.%" />
 
       <component class="dev">
-        <release tarname="gmp-6.1.2-2-mingw32-dev.tar.xz" />
-        <release tarname="gmp-6.1.2-1-mingw32-dev.tar.xz" />
-        <release tarname="gmp-5.1.2-1-mingw32-dev.tar.lzma" />
-        <release tarname="gmp-5.0.1-1-mingw32-dev.tar.lzma" />
+        <release tarname="gmp-6.1.2-3-mingw32-dev.tar.xz" />
         <requires eq="mingw32-libgmpxx-%-mingw32-dll-4.tar" />
         <requires eq="mingw32-libgmp-%-mingw32-dll-10.tar" />
       </component>
 
       <component class="doc">
-        <release tarname="gmp-6.1.2-1-mingw32-doc.tar">
+        <description lang="en">
+          <paragraph>This "doc" component package is obsolete; documentation
+            is now provided in the "info" component package.
+          </paragraph>
+          <paragraph>There is no longer any useful content in this component
+            package; if it has been installed, you may safely remove it.
+          </paragraph>
+        </description>
+        <release tarname="gmp-5.1.2-1-mingw32-doc.tar.lzma">
           <download tarname="none" />
         </release>
-        <release tarname="gmp-5.1.2-1-mingw32-doc.tar.lzma" />
-        <release tarname="gmp-5.0.1-1-mingw32-doc.tar.lzma" />
       </component>
 
       <component class="lic">
-        <release tarname="gmp-6.1.2-2-mingw32-lic.tar.xz" />
-        <release tarname="gmp-6.1.2-1-mingw32-lic.tar.xz" />
-        <release tarname="gmp-5.1.2-1-mingw32-lic.tar.lzma" />
-        <release tarname="gmp-5.0.1-1-mingw32-lic.tar.lzma" />
+        <release tarname="gmp-6.1.2-3-mingw32-lic.tar.xz" />
       </component>
 
       <component class="info">
-        <release tarname="gmp-6.1.2-2-mingw32-info.tar.xz" />
-        <release tarname="gmp-6.1.2-1-mingw32-info.tar.xz" />
-        <release tarname="gmp-5.1.2-1-mingw32-info.tar.lzma" />
+        <release tarname="gmp-6.1.2-3-mingw32-info.tar.xz" />
       </component>
     </package>
 
@@ -96,12 +94,7 @@
       <licence tarname="gmp-%-mingw32-lic.tar.%" />
 
       <component class="dll">
-        <release tarname="libgmp-6.1.2-2-mingw32-dll-10.tar.xz" />
-        <release tarname="libgmp-6.1.2-1-mingw32-dll-10.tar.xz" />
-        <release tarname="libgmp-5.1.2-1-mingw32-dll-10.tar">
-          <download tarname="gmp-5.1.2-1-mingw32-dll.tar.lzma" />
-        </release>
-        <release tarname="libgmp-5.0.1-1-mingw32-dll-10.tar.lzma" />
+        <release tarname="libgmp-6.1.2-3-mingw32-dll-10.tar.xz" />
       </component>
     </package>
 
@@ -125,12 +118,7 @@
       <licence tarname="gmp-%-mingw32-lic.tar.%" />
 
       <component class="dll">
-        <release tarname="libgmpxx-6.1.2-2-mingw32-dll-4.tar.xz" />
-        <release tarname="libgmpxx-6.1.2-1-mingw32-dll-4.tar.xz" />
-        <release tarname="libgmpxx-5.1.2-1-mingw32-dll-4.tar.lzma">
-          <download tarname="none" />
-        </release>
-        <release tarname="libgmpxx-5.0.1-1-mingw32-dll-4.tar.lzma" />
+        <release tarname="libgmpxx-6.1.2-3-mingw32-dll-4.tar.xz" />
         <requires eq="libgmp-%-mingw32-dll-10.tar" />
         <requires eq="libgcc-*-mingw32-dll-1.tar" />
       </component>
@@ -139,5 +127,5 @@
   </package-collection>
 </software-distribution>
 
-<!-- vim: set textwidth=80 tabstop=2 shiftwidth=2 expandtab: -->
-<!-- vim: set fileformat=unix nocompatible: -->
+<!-- vim: set nocompatible expandtab showcmd tabstop=2 shiftwidth=2: -->
+<!-- vim: set fileformat=unix textwidth=80: -->
