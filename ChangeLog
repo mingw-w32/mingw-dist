@@ -1,3 +1,18 @@
+2018-12-28  Keith Marshall  <keith@users.osdn.me>
+
+	Redirect libiconv package download requests to OSDN.net
+
+	* mingw32/libiconv.xml (download-host): Relocate to osdn.net
+	(affiliate): Associate all packages with "MinGW Standard Libraries".
+	(libiconv-bin, libiconv-dev, libiconv-dll-2, libcharset-dll-1)
+	(libiconv-lic, libiconv-html, libiconv-lang, libiconv-man): Add
+	version 1.14-2 release references.  Prune all other references; the
+	associated packages will remain on SourceForge.net, but they are not
+	scheduled for relocation to, and will not be accessible on OSDN.net
+	(libiconv-doc): Likewise; vacate content; add description; note that
+	this component package is redundant, and no longer maintained.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2018-12-27  Keith Marshall  <keith@users.osdn.me>
 
 	Redirect binutils package download requests to OSDN.net
