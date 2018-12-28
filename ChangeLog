@@ -1,5 +1,22 @@
 2018-12-28  Keith Marshall  <keith@users.osdn.me>
 
+	Redirect GNU gettext package download requests to OSDN.net
+
+	* mingw32/mingw32-gettext.xml (download-host): Relocate to osdn.net
+	(affiliate) <libintl>: Associate with "MinGW Standard Libraries".
+	(affiliate) <libgettextpo, libasprintf>: Likewise.
+	(gettext-bin, gettext-ext, gettext-dev, gettext-doc, gettext-info)
+	(gettext-man, gettext-html, gettext-lic, gettext-dll, libintl-dll-8)
+	(libgettextpo-dll-0, libasprintf-dll-0): Prune release references to
+	any version other than 0.18.3.2-2; the associated packages will remain
+	on SourceForge.net, but they are not scheduled for relocation to, and
+	will not be accessible on, the OSDN.net download host.
+	[libiconv-dll-2]: Accept any issue of version 1.14
+	(gettext-dll): Update description; declare it obsolete.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
+2018-12-28  Keith Marshall  <keith@users.osdn.me>
+
 	Redirect libiconv package download requests to OSDN.net
 
 	* mingw32/libiconv.xml (download-host): Relocate to osdn.net
