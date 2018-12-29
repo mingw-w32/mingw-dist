@@ -1,5 +1,15 @@
 2018-12-29  Keith Marshall  <keith@users.osdn.me>
 
+	Correct ISL package references following relocation to OSDN.net
+
+	* mingw32/mingw32-isl.xml (isl-dev, isl-doc, isl-lic)
+	(libisl-dll-15): Update release references to version 0.18-2; the
+	previous 0.18-1 release packages remain on SourceForge.net, but were
+	not relocated, and are thus inaccessible on the OSDN.net host.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
+2018-12-29  Keith Marshall  <keith@users.osdn.me>
+
 	Publish GCC-8.2.0 package set on OSDN.net
 
 	* mingw32/mingw32-gcc4.xml (download-host): Relocate to osdn.net
