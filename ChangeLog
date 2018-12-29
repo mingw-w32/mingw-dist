@@ -1,6 +1,31 @@
+2018-12-29  Keith Marshall  <keith@users.osdn.me>
+
+	Publish GCC-8.2.0 package set on OSDN.net
+
+	* mingw32/mingw32-gcc4.xml (download-host): Relocate to osdn.net
+	(package-group-hierarchy): Remove now-redundant "GCC Upgrade Blockers"
+	(gcc-lic, gcc-core-bin, gcc-info, gcc-man, gcc-lang, libgcc-dll-1)
+	(gcc-ada-bin, libgnat-dll, gcc-c++-bin, gcc-c++-man, libstdc++-dll-6)
+	(gcc-fortran-bin, gcc-fortran-info, gcc-fortran-man, libgfortran-dll)
+	(gcc-objc-bin, libobjc-dll-4, libatomic-dll-1, libgomp-dll-1)
+	(libssp-dll-1, libquadmath-dll-0, libquadmath-info): Add release
+	references for version 8.2.0-2 package set, and also for previously
+	unmanaged version 8.2.0-1 and version 7.3.0-1 package sets.  Delete
+	references to all earlier version package sets; associated packages
+	will remain on SourceForge.net, but are not scheduled for relocation,
+	and will not be accessible through the OSDN.net download service.
+	(gcc-core-dev, gcc-ada-dev, gcc-c++-dev, gcc-fortran-dev)
+	(gcc-objc-dev): Add release reference for version 4.8.2-2, and delete
+	all other version references.  This is a virtual package, and thus is
+	effectively empty; it serves only to clear out aberrant content which
+	may have been inherited from a prior version 4.8.1 installation.
+	(gcc-core-doc, gcc-c++-doc, gcc-fortran-doc): Likewise, but identify
+	the sole residual virtual release as version 4.8.1-5
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2018-12-28  Keith Marshall  <keith@users.osdn.me>
 
-	Redirect MPC package download requests to OSDN.net
+	Redirect ISL package download requests to OSDN.net
 
 	* mingw32/mingw32-isl.xml (download-host): Relocate to osdn.net
 	* common/issue.log mingw32/issue.log: Update accordingly.
