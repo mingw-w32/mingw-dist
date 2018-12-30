@@ -1,3 +1,16 @@
+2018-12-30  Keith Marshall  <keith@users.osdn.me>
+
+	Publish binutils-2.31.1 package set on OSDN.net
+
+	* mingw32/mingw32-binutils.xml (binutils-bin, binutils-dev)
+	(binutils-lic, binutils-info, binutils-man, binutils-lang): Add
+	release references for version 2.31.1-1
+
+	* mingw32/mingw32-gcc4.xml (gcc-core-bin): Force a requirement for
+	binutils-2.31.1-1 or later; add missing dependency on libstdc++-dll-6
+
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2018-12-29  Keith Marshall  <keith@users.osdn.me>
 
 	Correct ISL package references following relocation to OSDN.net

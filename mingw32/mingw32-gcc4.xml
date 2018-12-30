@@ -31,7 +31,7 @@
       </component>
 
       <component class="bin">
-        <requires eq="binutils-*-mingw32-bin.tar" />
+        <requires ge="binutils-2.31.1-1-mingw32-bin.tar" />
         <requires eq="mingw32-libisl-*-mingw32-dll-15.tar" />
         <requires eq="mingw32-libmpc-*-mingw32-dll-3.tar" />
         <requires eq="mingwrt-*-mingw32-dev.tar" />
@@ -40,6 +40,7 @@
         <requires eq="mingw32-libssp-%-mingw32-dll-0.tar" />
         <requires eq="mingw32-libgomp-%-mingw32-dll-1.tar" />
         <requires eq="mingw32-libquadmath-%-mingw32-dll-0.tar" />
+        <requires eq="mingw32-libstdc++-%-mingw32-dll-6.tar" />
         <requires eq="mingw32-libgcc-%-mingw32-dll-1.tar" />
         <requires eq="libatomic-%-mingw32-dll-1.tar" />
 
