@@ -1,5 +1,14 @@
 2018-12-31  Keith Marshall  <keith@users.osdn.me>
 
+	Add a missing package affiliation.
+
+	* mingw32/mingw32-zlib.xml (zlib): Affiliate it with the
+	"MinGW Standard Libraries" package group; previously, it had no
+	affiliation whatsoever, and thus wasn't visible at its natural
+	location within the package group hierarchy.
+
+2018-12-31  Keith Marshall  <keith@users.osdn.me>
+
 	Correct a trivial typographic error.
 
 	* test/pkgspec.xsd (download-host): s/wich/which/

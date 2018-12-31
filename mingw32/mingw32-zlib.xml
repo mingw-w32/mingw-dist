@@ -13,6 +13,7 @@
           uncompressed data.
         </paragraph>
       </description>
+      <affiliate group="MinGW Standard Libraries"/>
 
       <licence tarname="zlib-%-mingw32-%-lic.tar.%" />
       <source tarname="zlib-%-mingw32-%-src.tar.%" />
@@ -42,7 +43,7 @@
           package provides documentation.
         </paragraph>
       </description>
-      <affiliate group="Mingw Standard Libraries"/>
+      <affiliate group="MinGW Standard Libraries"/>
 
       <licence tarname="zlib-%-mingw32-%-lic.tar.%" />
       <source tarname="zlib-%-mingw32-%-src.tar.%" />
