@@ -1,3 +1,18 @@
+2018-12-31  Keith Marshall  <keith@users.osdn.me>
+
+	Publish zlib-1.2.11 package set on OSDN.net
+
+	* mingw32/mingw32-zlib.xml (download-host): Relocate to osdn.net
+	(zlib-doc, zlib-lic, zlib-man, libz-dev, libz-dll-1): Add release
+	references for version 1.2.11-1, and also for previously unmanaged
+	version 1.2.8-2; delete all references to earlier versions, for which
+	the package files will remain on SourceForge.net, but have not been
+	relocated to, and will not be accessible on, the OSDN.net host.
+	(minizip, libminizip): Delete all release references to versions other
+	than 1.2.7-1, for which the (now-obsolete) packages have been
+	relocated; no new releases are scheduled for publication.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2018-12-30  Keith Marshall  <keith@users.osdn.me>
 
 	Publish binutils-2.31.1 package set on OSDN.net
