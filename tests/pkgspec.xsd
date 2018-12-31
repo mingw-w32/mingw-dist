@@ -6,7 +6,7 @@
     XSDL schema for validation of mingw-get package specifications.
 
     Written by Keith Marshall  <keithmarshall@users.sourceforge.net>
-    Copyright (C) 2013, 2017, MinGW.org Project
+    Copyright (C) 2013, 2017, 2018, MinGW.org Project
 
 
     This file is part of the mingw-dist catalogue validation suite.
@@ -229,7 +229,7 @@
               <download-host uri="http://host.domain.com/packages/%F" />
 
             where "%F" is substituted, at download time, by the actual name of
-            the archive file wich is to be downloaded.
+            the archive file which is to be downloaded.
             
             Note: only one template may be specified for any package collection;
             thus all packages in any collection MUST be served from one common
