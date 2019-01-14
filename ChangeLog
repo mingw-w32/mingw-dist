@@ -1,3 +1,23 @@
+2019-01-14  Keith Marshall  <keith@users.osdn.me>
+
+	Republish binutils-2.31.1 and gcc-8.2.0 package sets.
+
+	* mingw32/mingw32-binutils.xml (binutils-bin, binutils-dev)
+	(binutils-lic, binutils-info, binutils-man, binutils-lang): Add
+	release references for version 2.31.1-2; this is a rebuilt package, to
+	correct a defect in the mkstemp() function from mingwrt-5.2
+
+	* mingw32/mingw32-gcc4.xml (gcc-core-bin): Require binutils-2.31.1-2
+	(gcc-lic, gcc-core-bin, gcc-info, gcc-man, gcc-lang, libgcc-dll-1)
+	(gcc-ada-bin, libgnat-dll, gcc-c++-bin, gcc-c++-man, libstdc++-dll-6)
+	(gcc-fortran-bin, gcc-fortran-info, gcc-fortran-man, libgfortran-dll)
+	(gcc-objc-bin, libobjc-dll-4, libatomic-dll-1, libgomp-dll-1)
+	(libssp-dll-1, libquadmath-dll-0, libquadmath-info): Add release
+	references for version 8.2.0-3 package set; once again, this is a
+	rebuild to correct the mingwrt-5.2 mkstemp() defect.
+
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2018-12-31  Keith Marshall  <keith@users.osdn.me>
 
 	Add a missing package affiliation.

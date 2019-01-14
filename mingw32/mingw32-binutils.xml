@@ -24,11 +24,13 @@
 
       <component class="bin">
         <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />
+        <release tarname="binutils-2.31.1-2-mingw32-bin.tar.xz" />
         <release tarname="binutils-2.31.1-1-mingw32-bin.tar.xz" />
         <release tarname="binutils-2.28-1-mingw32-bin.tar.xz" />
       </component>
 
       <component class="dev">
+        <release tarname="binutils-2.31.1-2-mingw32-dev.tar.xz" />
         <release tarname="binutils-2.31.1-1-mingw32-dev.tar.xz" />
         <release tarname="binutils-2.28-1-mingw32-dev.tar.xz" />
       </component>
@@ -47,16 +49,19 @@
       </component>
 
       <component class="info">
+        <release tarname="binutils-2.31.1-2-mingw32-info.tar.xz" />
         <release tarname="binutils-2.31.1-1-mingw32-info.tar.xz" />
         <release tarname="binutils-2.28-1-mingw32-info.tar.xz" />
       </component>
 
       <component class="man">
+        <release tarname="binutils-2.31.1-2-mingw32-man.tar.xz" />
         <release tarname="binutils-2.31.1-1-mingw32-man.tar.xz" />
         <release tarname="binutils-2.28-1-mingw32-man.tar.xz" />
       </component>
 
       <component class="lang">
+        <release tarname="binutils-2.31.1-2-mingw32-lang.tar.xz" />
         <release tarname="binutils-2.31.1-1-mingw32-lang.tar.xz" />
         <release tarname="binutils-2.28-1-mingw32-lang.tar.xz" />
       </component>
