@@ -10,7 +10,43 @@
     <!-- packages, which comprise the standard MinGW Runtime Library API, -->
     <!-- namely mingwrt and w32api.                                       -->
 
-    <package name="mingw32-mingwrt" alias="mingwrt mingw-runtime" >
+    <package name="mingw32-wsl-features" alias="wsl-features">
+      <affiliate group="MinGW Compiler Suite" />
+      <affiliate group="MinGW Standard Libraries" />
+      <description lang="en" title="MinGW Runtime Library Configuration Support">
+        <paragraph>
+          This package provides an auto-update hook for MinGW's user-supplied
+          &lt;features.h&gt; header file.  Subject to the user-supplied header
+          conforming to stipulated formatting conventions, the post-installation
+          hook will merge new features specifications into the user-supplied
+          file, while preserving all existing content, and features selections,
+          as already specified by the user.
+        </paragraph>
+        <paragraph>
+          In the event that no &lt;features.h&gt; header file yet exists, the
+          post-installation hook will simply install a suitably formatted,
+          pre-configured default header file.
+        </paragraph>
+      </description>
+
+      <source tarname="mingwrt-*-mingw32-src.tar" />
+      <licence tarname="mingwrt-*-mingw32-lic.tar" />
+
+      <component class="cfg">
+        <release tarname="wsl-features-20190122-1-mingw32-cfg.tar.xz" />
+        <action class="post-install">
+          sysroot = os.getenv( "MINGW32_SYSROOT" )
+          package.path = sysroot.."/var/lib/wsl/?.lua;"..package.path
+          have_features, config = pcall( require, "features" )
+          if have_features
+          then
+            config.update( io.open( config.pathname(), "w" ) )
+          end
+        </action>
+      </component>
+    </package>
+
+    <package name="mingw32-mingwrt" alias="mingwrt mingw-runtime">
       <affiliate group="MinGW Compiler Suite" />
       <affiliate group="MinGW Standard Libraries" />
       <description lang="en" title="The MinGW Runtime Library API">
@@ -29,6 +65,8 @@
 
       <component class="dev">
         <requires eq="mingwrt-%-mingw32-dll.tar" />
+        <requires eq="wsl-features-*-mingw32-cfg.tar" />
+        <release tarname="mingwrt-5.2.1-mingw32-dev.tar.xz" />
         <release tarname="mingwrt-5.2-mingw32-dev.tar.xz" />
         <release tarname="mingwrt-5.1.1-mingw32-dev.tar.xz" />
         <release tarname="mingwrt-5.1-mingw32-dev.tar.xz" />
@@ -36,6 +74,7 @@
       </component>
 
       <component class="dll">
+        <release tarname="mingwrt-5.2.1-mingw32-dll.tar.xz" />
         <release tarname="mingwrt-5.2-mingw32-dll.tar.xz" />
         <release tarname="mingwrt-5.1.1-mingw32-dll.tar.xz" />
         <release tarname="mingwrt-5.1-mingw32-dll.tar.xz" />
@@ -43,6 +82,7 @@
       </component>
 
       <component class="lic">
+        <release tarname="mingwrt-5.2.1-mingw32-lic.tar.xz" />
         <release tarname="mingwrt-5.2-mingw32-lic.tar.xz" />
         <release tarname="mingwrt-5.1.1-mingw32-lic.tar.xz" />
         <release tarname="mingwrt-5.1-mingw32-lic.tar.xz" />
@@ -50,6 +90,7 @@
       </component>
 
       <component class="man">
+        <release tarname="mingwrt-5.2.1-mingw32-man.tar.xz" />
         <release tarname="mingwrt-5.2-mingw32-man.tar.xz" />
         <release tarname="mingwrt-5.1.1-mingw32-man.tar.xz" />
         <release tarname="mingwrt-5.1-mingw32-man.tar.xz" />
@@ -76,6 +117,9 @@
 
       <component class="dev">
         <requires eq="mingwrt-%-mingw32-dev.tar" />
+        <release tarname="libmingwex-5.2.1-mingw32-dev.tar.xz">
+          <requires eq="libmingwex-%-mingw32-dll-2.tar" />
+        </release>
         <release tarname="libmingwex-5.2-mingw32-dev.tar.xz">
           <requires eq="libmingwex-%-mingw32-dll-2.tar" />
         </release>
@@ -91,6 +135,7 @@
       </component>
 
       <component class="dll">
+        <release tarname="libmingwex-5.2.1-mingw32-dll-2.tar.xz" />
         <release tarname="libmingwex-5.2-mingw32-dll-2.tar.xz" />
         <release tarname="libmingwex-5.1.1-mingw32-dll-0.tar.xz" />
         <release tarname="libmingwex-5.1-mingw32-dll-0.tar.xz" />
@@ -117,6 +162,7 @@
       <licence tarname="mingwrt-%-mingw32-lic.tar.%" />
 
       <component class="dev">
+        <release tarname="w32api-5.2.1-mingw32-dev.tar.xz" />
         <release tarname="w32api-5.2-mingw32-dev.tar.xz" />
         <release tarname="w32api-5.1.1-mingw32-dev.tar.xz" />
         <release tarname="w32api-5.1-mingw32-dev.tar.xz" />

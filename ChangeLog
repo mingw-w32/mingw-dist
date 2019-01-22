@@ -1,3 +1,14 @@
+2019-01-22  Keith Marshall  <keith@users.osdn.me>
+
+	Publish MinGW.org WSL-5.2.1 package set.
+
+	* mingw32/mingw32-runtime.xml (mingwrt-5.2.1-dev, mingwrt-5.2.1-dll)
+	(mingwrt-5.2.1-lic, mingwrt-5.2.1-man, libmingwex-5.2.1-dll-2)
+	(libmingwex-5.2.1-dev, w32api-5.2.1-dev): Add references.
+	(wsl-features): New post-installation hook package; specify it.
+	(wsl-features-20190122-1-cfg): Add reference; define action.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2019-01-14  Keith Marshall  <keith@users.osdn.me>
 
 	Republish binutils-2.31.1 and gcc-8.2.0 package sets.
