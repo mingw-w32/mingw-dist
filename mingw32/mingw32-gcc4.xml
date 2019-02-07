@@ -257,7 +257,9 @@
             if it has been installed, you may safely remove it.
           </paragraph>
         </description>
-        <release tarname="gcc-c++-4.8.1-5-mingw32-doc.tar.lzma" />
+        <release tarname="gcc-c++-4.8.1-5-mingw32-doc.tar.lzma">
+          <download tarname="none" />
+        </release>
       </component>
 
       <component class="man">

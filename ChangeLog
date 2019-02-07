@@ -1,3 +1,11 @@
+2019-02-07  Keith Marshall  <keith@users.osdn.me>
+
+	Correct a typo, of omission, for obsolete gcc-4.8.1.
+
+	* mingw32/mingw32-gcc4.xml (gcc-c++-4.8.1-5-doc): Add a missing
+	'download tarname="none"' attribute to the release specification.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2019-01-22  Keith Marshall  <keith@users.osdn.me>
 
 	Publish MinGW.org WSL-5.2.1 package set.
