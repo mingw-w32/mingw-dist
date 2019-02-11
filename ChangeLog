@@ -1,3 +1,12 @@
+2019-02-11  Keith Marshall  <keith@users.osdn.me>
+
+	Publish binutils-2.32 package set.
+
+	* mingw32/mingw32-binutils.xml (binutils-bin, binutils-dev)
+	(binutils-lic, binutils-info, binutils-man, binutils-lang): Add
+	release references for version 2.32-1
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2019-02-07  Keith Marshall  <keith@users.osdn.me>
 
 	Correct a typo, of omission, for obsolete gcc-4.8.1.
