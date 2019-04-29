@@ -197,10 +197,10 @@
       <licence tarname="gcc-%-mingw32-lic.tar.*" />
 
       <component class="dll">
-        <release tarname="libgnat-8.2.0-3-mingw32-dll-6.tar.lzma" />
-        <release tarname="libgnat-8.2.0-2-mingw32-dll-6.tar.lzma" />
-        <release tarname="libgnat-8.2.0-1-mingw32-dll-6.tar.lzma" />
-        <release tarname="libgnat-7.3.0-1-mingw32-dll-6.tar.lzma" />
+        <release tarname="libgnat-8.2.0-3-mingw32-dll-6.tar.xz" />
+        <release tarname="libgnat-8.2.0-2-mingw32-dll-6.tar.xz" />
+        <release tarname="libgnat-8.2.0-1-mingw32-dll-6.tar.xz" />
+        <release tarname="libgnat-7.3.0-1-mingw32-dll-6.tar.xz" />
       </component>
     </package>
 

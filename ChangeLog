@@ -1,3 +1,11 @@
+2019-04-29  Keith Marshall  <keith@users.osdn.me>
+
+	Correct a package name typo.
+
+	* mingw32/mingw32-gcc4.xml (libgnat-6.dll): Tarball is actually
+	.tar.xz, but was specified as .tar.lzma; correct it, and republish.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2019-02-11  Keith Marshall  <keith@users.osdn.me>
 
 	Publish binutils-2.32 package set.
