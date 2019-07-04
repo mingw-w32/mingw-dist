@@ -1,3 +1,10 @@
+2019-07-04  Keith Marshall  <keith@users.osdn.me>
+
+	Correct -Wformat handling of "%hhn" for __mingw_format__.
+
+	* mingw32/mingw32-gcc4.xml: Update all packages to release 8.2.0-4
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2019-04-29  Keith Marshall  <keith@users.osdn.me>
 
 	Correct a package name typo.
