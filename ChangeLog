@@ -1,3 +1,12 @@
+2019-07-06  Keith Marshall  <keith@users.osdn.me>
+
+	Publish MinGW.org WSL-5.2.2 package set.
+
+	* mingw32/mingw32-runtime.xml (mingwrt-5.2.2-dev, mingwrt-5.2.2-dll)
+	(mingwrt-5.2.2-lic, mingwrt-5.2.2-man, libmingwex-5.2.2-dll-2)
+	(libmingwex-5.2.2-dev, w32api-5.2.2-dev): Add references.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2019-07-04  Keith Marshall  <keith@users.osdn.me>
 
 	Correct -Wformat handling of "%hhn" for __mingw_format__.
