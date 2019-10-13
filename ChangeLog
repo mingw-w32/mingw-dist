@@ -1,5 +1,12 @@
 2019-10-13  Keith Marshall  <keith@users.osdn.me>
 
+	GCC update to address MinGW-Issue #39639; link with libiconv.
+
+	* mingw32/mingw32-gcc4.xml: Update all packages to release 8.2.0-5
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
+2019-10-13  Keith Marshall  <keith@users.osdn.me>
+
 	Update to accommodate C++11 deprecation of "auto_ptr".
 
 	* tests/xmlcheck.cpp (unique_or_auto_ptr): New macro; define it...
