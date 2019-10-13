@@ -1,3 +1,11 @@
+2019-10-13  Keith Marshall  <keith@users.osdn.me>
+
+	Update to accommodate C++11 deprecation of "auto_ptr".
+
+	* tests/xmlcheck.cpp (unique_or_auto_ptr): New macro; define it...
+	[__cplusplus >= 201103L]: ...as "unique_ptr", for C++11 onward, or...
+	[__cplusplus < 201103L]: ...as "auto_ptr", for earlier C++.
+
 2019-07-06  Keith Marshall  <keith@users.osdn.me>
 
 	Publish MinGW.org WSL-5.2.2 package set.

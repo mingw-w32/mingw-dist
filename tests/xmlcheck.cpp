@@ -16,7 +16,7 @@
  *
  *
  * Adaptation by Keith Marshall <keithmarshall@users.sourceforge.net>
- * Copyright (C) 2013, MinGW.org Project
+ * Copyright (C) 2013, 2019, MinGW.org Project
  *
  * This is free software.  Permission is granted to copy, modify and
  * redistribute this software, under the provisions of the GNU General
@@ -41,6 +41,17 @@
 #include <cstddef>      /* for std::size_t   */
 
 #include <libgen.h>     /* for basename()    */
+
+#if __cplusplus >= 201103L
+/* C++11 deprecates auto_ptr, in favour of shared_ptr or unique_ptr;
+ * prefer the latter alternative, in this case.
+ */
+#define unique_or_auto_ptr  unique_ptr
+#else
+/* Using a pre-C++11 compiler; must still use auto_ptr
+ */
+#define unique_or_auto_ptr  auto_ptr
+#endif
 
 #include <xercesc/util/XMLUni.hpp>
 #include <xercesc/util/XMLString.hpp>
@@ -267,7 +278,7 @@ validation_status( int argc, char **argv )
   /* Initialize a grammer pool, for use by our parser instances.
    */
   MemoryManager* mm( XMLPlatformUtils::fgMemoryManager );
-  auto_ptr<XMLGrammarPool> gp( new XMLGrammarPoolImpl( mm ) );
+  unique_or_auto_ptr<XMLGrammarPool> gp( new XMLGrammarPoolImpl( mm ) );
 
   /* Load the schema definitions into the grammar pool.
    */
