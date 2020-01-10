@@ -1,3 +1,13 @@
+2020-01-10  Keith Marshall  <keith@users.osdn.me>
+
+	Address MinGW-Issue #39902; correct minizip dependencies.
+
+	* mingw32/mingw32-zlib.xml (libminizip-mingw32-dll): Remove...
+	(mingw32-libz-%-mingw32-dll-1.tar): ...this dependency; replace...
+	(mingw32-libz-*-mingw32-dll-1.tar): ...with version agnostic form.
+	(mingw32-libbz2-*-mingw32-dll-2.tar): Add missing dependency.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2019-10-13  Keith Marshall  <keith@users.osdn.me>
 
 	GCC update to address MinGW-Issue #39639; link with libiconv.

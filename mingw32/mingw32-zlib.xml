@@ -113,8 +113,9 @@
       <source tarname="zlib-%-mingw32-%-src.tar.%" />
 
       <component class="dll">
+        <requires eq="mingw32-libz-*-mingw32-dll-1.tar" />
+        <requires eq="mingw32-libbz2-*-mingw32-dll-2.tar" />
         <requires eq="mingw32-libgcc-*-mingw32-dll-1.tar" />
-        <requires eq="mingw32-libz-%-mingw32-dll-1.tar" />
         <release tarname="libminizip-1.2.7-1-mingw32-dll-1.tar.lzma" />
       </component>
 
