@@ -1,3 +1,12 @@
+2020-01-13  Keith Marshall  <keith@users.osdn.me>
+
+	Publish MinGW.org WSL-5.2.3 package set.
+
+	* mingw32/mingw32-runtime.xml (mingwrt-5.2.3-dev, mingwrt-5.2.3-dll)
+	(mingwrt-5.2.3-lic, mingwrt-5.2.3-man, libmingwex-5.2.3-dll-2)
+	(libmingwex-5.2.3-dev, w32api-5.2.3-dev): Add references.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2020-01-10  Keith Marshall  <keith@users.osdn.me>
 
 	Address MinGW-Issue #39902; correct minizip dependencies.
