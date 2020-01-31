@@ -1,3 +1,12 @@
+2020-01-31  Keith Marshall  <keith@users.osdn.me>
+
+	Publish pexports package version 0.48
+
+	* mingw32/mingw32-pexports.xml: Set download host to OSDN.net; add new
+	release specifications; mark previous releases as having no available
+	package for download, from the new download host.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2020-01-13  Keith Marshall  <keith@users.osdn.me>
 
 	Publish MinGW.org WSL-5.2.3 package set.
