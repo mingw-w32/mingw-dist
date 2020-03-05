@@ -1,5 +1,16 @@
 2020-03-05  Keith Marshall  <keith@users.osdn.me>
 
+	Update MPC package set to version 1.1.0
+
+	* mingw32/mingw32-mpc.xml (mpc-dev): Add release reference; specify
+	minimum version dependency on corresponding MPFR-4.0.2 release.
+	(mpc-info, mpc-lic): Add release references.
+	(libmpc-dll): Add release reference; specify explicit LIBMPFR.DLL
+	dependencies for individual LIBMPC.DLL releases.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
+2020-03-05  Keith Marshall  <keith@users.osdn.me>
+
 	Update MPFR package set to version 4.0.2
 
 	* mingw32/mingw32-mpfr.xml (mpfr-dev): Add release reference; define
