@@ -1,5 +1,14 @@
 2020-03-05  Keith Marshall  <keith@users.osdn.me>
 
+	Update ISL package set to version 0.21
+
+	* mingw32/mingw32-isl.xml (isl-dev): Add release reference; specify
+	explicit LIBISL.DLL version dependencies for individual ISL releases.
+	(isl-doc, isl-lic, libisl-dll): Add release references.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
+2020-03-05  Keith Marshall  <keith@users.osdn.me>
+
 	Update MPC package set to version 1.1.0
 
 	* mingw32/mingw32-mpc.xml (mpc-dev): Add release reference; specify
