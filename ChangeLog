@@ -1,3 +1,18 @@
+2020-03-05  Keith Marshall  <keith@users.osdn.me>
+
+	Publish MinGW.org GCC-9.2 and WSL-5.3 package sets.
+
+	* mingw32/mingw32-gcc4.xml (gcc-lic, gcc-core-bin, gcc-info, gcc-man)
+	(gcc-lang, libgcc-dll-1, gcc-ada-bin, libgnat-dll, gcc-c++-bin)
+	(gcc-c++-man, libstdc++-dll-6, gcc-fortran-bin, gcc-fortran-info)
+	(gcc-fortran-man, libgfortran-dll, gcc-objc-bin, libobjc-dll-4)
+	(libatomic-dll-1, libgomp-dll-1, libssp-dll-1, libquadmath-dll-0)
+	(libquadmath-info): Add release references for version 9.2.0-1.
+	* mingw32/mingw32-runtime.xml (mingwrt-5.3-dev, mingwrt-5.3-dll)
+	(mingwrt-5.3-lic, mingwrt-5.3-man, libmingwex-5.3-dll-2)
+	(libmingwex-5.3-dev, w32api-5.3-dev): Add release references.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2020-01-31  Keith Marshall  <keith@users.osdn.me>
 
 	Publish pexports package version 0.48

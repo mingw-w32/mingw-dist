@@ -66,6 +66,7 @@
       <component class="dev">
         <requires eq="mingwrt-%-mingw32-dll.tar" />
         <requires eq="wsl-features-*-mingw32-cfg.tar" />
+        <release tarname="mingwrt-5.3-mingw32-dev.tar.xz" />
         <release tarname="mingwrt-5.2.3-mingw32-dev.tar.xz" />
         <release tarname="mingwrt-5.2.2-mingw32-dev.tar.xz" />
         <release tarname="mingwrt-5.2.1-mingw32-dev.tar.xz" />
@@ -76,6 +77,7 @@
       </component>
 
       <component class="dll">
+        <release tarname="mingwrt-5.3-mingw32-dll.tar.xz" />
         <release tarname="mingwrt-5.2.3-mingw32-dll.tar.xz" />
         <release tarname="mingwrt-5.2.2-mingw32-dll.tar.xz" />
         <release tarname="mingwrt-5.2.1-mingw32-dll.tar.xz" />
@@ -86,6 +88,7 @@
       </component>
 
       <component class="lic">
+        <release tarname="mingwrt-5.3-mingw32-lic.tar.xz" />
         <release tarname="mingwrt-5.2.3-mingw32-lic.tar.xz" />
         <release tarname="mingwrt-5.2.2-mingw32-lic.tar.xz" />
         <release tarname="mingwrt-5.2.1-mingw32-lic.tar.xz" />
@@ -96,6 +99,7 @@
       </component>
 
       <component class="man">
+        <release tarname="mingwrt-5.3-mingw32-man.tar.xz" />
         <release tarname="mingwrt-5.2.3-mingw32-man.tar.xz" />
         <release tarname="mingwrt-5.2.2-mingw32-man.tar.xz" />
         <release tarname="mingwrt-5.2.1-mingw32-man.tar.xz" />
@@ -125,6 +129,9 @@
 
       <component class="dev">
         <requires eq="mingwrt-%-mingw32-dev.tar" />
+        <release tarname="libmingwex-5.3-mingw32-dev.tar.xz">
+          <requires eq="libmingwex-%-mingw32-dll-2.tar" />
+        </release>
         <release tarname="libmingwex-5.2.3-mingw32-dev.tar.xz">
           <requires eq="libmingwex-%-mingw32-dll-2.tar" />
         </release>
@@ -149,6 +156,7 @@
       </component>
 
       <component class="dll">
+        <release tarname="libmingwex-5.3-mingw32-dll-2.tar.xz" />
         <release tarname="libmingwex-5.2.3-mingw32-dll-2.tar.xz" />
         <release tarname="libmingwex-5.2.2-mingw32-dll-2.tar.xz" />
         <release tarname="libmingwex-5.2.1-mingw32-dll-2.tar.xz" />
@@ -178,6 +186,7 @@
       <licence tarname="mingwrt-%-mingw32-lic.tar.%" />
 
       <component class="dev">
+        <release tarname="w32api-5.3-mingw32-dev.tar.xz" />
         <release tarname="w32api-5.2.3-mingw32-dev.tar.xz" />
         <release tarname="w32api-5.2.2-mingw32-dev.tar.xz" />
         <release tarname="w32api-5.2.1-mingw32-dev.tar.xz" />
