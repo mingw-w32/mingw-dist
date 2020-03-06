@@ -36,7 +36,6 @@
 
       <component class="bin">
         <requires ge="binutils-2.31.1-2-mingw32-bin.tar" />
-        <requires eq="mingw32-libisl-*-mingw32-dll-15.tar" />
         <requires eq="mingw32-libmpc-*-mingw32-dll-3.tar" />
         <requires eq="mingwrt-*-mingw32-dev.tar" />
         <requires eq="w32api-*-mingw32-dev.tar" />
@@ -48,13 +47,27 @@
         <requires eq="mingw32-libgcc-%-mingw32-dll-1.tar" />
         <requires eq="libatomic-%-mingw32-dll-1.tar" />
 
-        <release tarname="gcc-core-9.2.0-1-mingw32-bin.tar.xz" />
-        <release tarname="gcc-core-8.2.0-5-mingw32-bin.tar.xz" />
-        <release tarname="gcc-core-8.2.0-4-mingw32-bin.tar.xz" />
-        <release tarname="gcc-core-8.2.0-3-mingw32-bin.tar.xz" />
-        <release tarname="gcc-core-8.2.0-2-mingw32-bin.tar.xz" />
-        <release tarname="gcc-core-8.2.0-1-mingw32-bin.tar.xz" />
-        <release tarname="gcc-core-7.3.0-1-mingw32-bin.tar.xz" />
+        <release tarname="gcc-core-9.2.0-1-mingw32-bin.tar.xz">
+          <requires eq="mingw32-libisl-*-mingw32-dll-21.tar" />
+        </release>
+        <release tarname="gcc-core-8.2.0-5-mingw32-bin.tar.xz">
+          <requires eq="mingw32-libisl-*-mingw32-dll-15.tar" />
+        </release>
+        <release tarname="gcc-core-8.2.0-4-mingw32-bin.tar.xz">
+          <requires eq="mingw32-libisl-*-mingw32-dll-15.tar" />
+        </release>
+        <release tarname="gcc-core-8.2.0-3-mingw32-bin.tar.xz">
+          <requires eq="mingw32-libisl-*-mingw32-dll-15.tar" />
+        </release>
+        <release tarname="gcc-core-8.2.0-2-mingw32-bin.tar.xz">
+          <requires eq="mingw32-libisl-*-mingw32-dll-15.tar" />
+        </release>
+        <release tarname="gcc-core-8.2.0-1-mingw32-bin.tar.xz">
+          <requires eq="mingw32-libisl-*-mingw32-dll-15.tar" />
+        </release>
+        <release tarname="gcc-core-7.3.0-1-mingw32-bin.tar.xz">
+          <requires eq="mingw32-libisl-*-mingw32-dll-15.tar" />
+        </release>
       </component>
 
       <component class="dev">

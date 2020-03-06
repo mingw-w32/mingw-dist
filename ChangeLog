@@ -1,3 +1,11 @@
+2020-03-06  Keith Marshall  <keith@users.osdn.me>
+
+	Update GCC dependencies on LIBISL.DLL
+
+	* mingw32/mingw32-gcc4.xml (gcc-core-bin): Explicitly identify all
+	LIBISL.DLL version dependencies, specific to individual GCC releases.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2020-03-05  Keith Marshall  <keith@users.osdn.me>
 
 	Update ISL package set to version 0.21
