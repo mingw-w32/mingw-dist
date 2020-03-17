@@ -1,3 +1,13 @@
+2020-03-17  Keith Marshall  <keith@users.osdn.me>
+
+	Correct catalogue reference for mingw-get
+
+	* mingw32/mingw32-mingw-get.xml (mingw-get-bin, mingw-get-gui)
+	(mingw-get-lic, pkginfo-bin): Add references for "pre-20170905-1"
+	release; remove obsolete references to old SF-hosted releases.
+	(download-host): Point it to OSDN.net
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2020-03-06  Keith Marshall  <keith@users.osdn.me>
 
 	Update GCC dependencies on LIBISL.DLL
