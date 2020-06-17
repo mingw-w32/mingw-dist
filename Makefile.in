@@ -41,6 +41,7 @@ FORCE:
 # when any of their respective sources are modified.
 #
 top_srcdir = @top_srcdir@
+abs_top_srcdir = @abs_top_srcdir@
 VPATH = ${top_srcdir}
 
 configure: configure.ac makeopts.m4
@@ -63,16 +64,15 @@ all-distfiles: all
 # the test suite to validate all source documents; the following rules
 # provide the interface which is needed to run the test suite.
 #
-srcdir = @srcdir@
 check: tests/Makefile
 	cd tests; $(MAKE_RECURSIVE) $@
 
-${srcdir}/tests/configure: ${srcdir}/tests/configure.ac VERSION.m4
-	cd ${srcdir}/tests; autoconf
+${srcdir}/tests/configure: ${abs_top_srcdir}/tests/configure.ac VERSION.m4
+	cd ${abs_top_srcdir}/tests; autoconf
 
-tests/Makefile: ${srcdir}/tests/configure
+tests/Makefile: ${abs_top_srcdir}/tests/configure
 	test -d tests || mkdir tests
-	cd tests; ../${srcdir}/tests/configure
+	cd tests; ${abs_top_srcdir}/tests/configure
 
 # To support optimised "mingw-get update", the package lists must be
 # dynamically updated, to correctly identify the latest issue of each

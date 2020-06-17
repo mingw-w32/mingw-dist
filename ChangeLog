@@ -1,3 +1,14 @@
+2020-06-17  Keith Marshall  <keith@users.osdn.me>
+
+	Improve support for out-of-tree catalogue generation.
+
+	* Makefile.in: When running the testsuite, use ${abs_top_srcdir}
+	references, rather than ${top_srcdir}; this is required, to ensure
+	that testsuite path names are correctly resolved, when the build
+	directory is not a subdirectory of ${top_srcdir}, (as is likely
+	to be the case, when generating a catalogue snapshot, which is
+	to be distributed with the mingw-get setup package).
+
 2020-06-03  Keith Marshall  <keith@users.osdn.me>
 
 	Publish MinGW.org WSL-5.3.3 package set.
