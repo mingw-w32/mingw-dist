@@ -1,3 +1,12 @@
+2020-07-08  Keith Marshall  <keith@users.osdn.me>
+
+	Publish MinGW.org WSL-5.4 package set.
+
+	* mingw32/mingw32-runtime.xml (mingwrt-5.4-dev, mingwrt-5.4-dll)
+	(mingwrt-5.4-lic, mingwrt-5.4-man, libmingwex-5.3.4-dll-4)
+	(libmingwex-5.4-dev, w32api-5.4-dev): Add references.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2020-07-06  Keith Marshall  <keith@users.osdn.me>
 
 	Publish MinGW.org WSL-5.3.4 package set.
