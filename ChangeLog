@@ -1,3 +1,15 @@
+2020-07-11  Keith Marshall  <keith@users.osdn.me>
+
+	Update GCC-9.2 to remove obsolete dependencies.
+
+	* mingw32/mingw32-gcc4.xml (gcc-lic, gcc-core-bin, gcc-info, gcc-man)
+	(gcc-lang, libgcc-dll-1, gcc-ada-bin, libgnat-dll, gcc-c++-bin)
+	(gcc-c++-man, libstdc++-dll-6, gcc-fortran-bin, gcc-fortran-info)
+	(gcc-fortran-man, libgfortran-dll, gcc-objc-bin, libobjc-dll-4)
+	(libatomic-dll-1, libgomp-dll-1, libssp-dll-1, libquadmath-dll-0)
+	(libquadmath-info): Add release references for version 9.2.0-2.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2020-07-08  Keith Marshall  <keith@users.osdn.me>
 
 	Publish MinGW.org WSL-5.4 package set.
