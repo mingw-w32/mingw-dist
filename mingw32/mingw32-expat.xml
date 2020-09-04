@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <software-distribution project="MinGW" home="http://mingw.org" issue="@YYYYMMDDNN@">
+
   <package-collection subsystem="mingw32">
-    <download-host uri="http://prdownloads.sourceforge.net/mingw/%F?download" />
+    <download-host uri="http://osdn.net/dl/mingw/%F" />
+
     <package name="mingw32-expat" alias="expat">
       <description lang="en" title="XML parsing library written in C">
         <paragraph>expat is a C library for parsing XML written by James
@@ -23,26 +25,54 @@
       <source tarname="expat-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
-	<release tarname="expat-2.1.0-1-mingw32-bin.tar.lzma" >
-	  <requires eq="mingw32-libexpat-%-mingw32-%-dll-1.tar" />
-	</release>
-        <release tarname="expat-2.0.1-1-mingw32-bin.tar.gz" >
-	  <requires eq="mingw32-libexpat-%-mingw32-%-dll-1.tar" />
-	</release>
+        <requires eq="mingw32-libexpat-%-mingw32-%-dll-1.tar" />
+        <release tarname="expat-2.2.9-1-mingw32-bin.tar.xz" />
+        <release tarname="expat-2.1.0-1-mingw32-bin.tar.lzma">
+          <download tarname="none" />
+        </release>
+        <release tarname="expat-2.0.1-1-mingw32-bin.tar.gz">
+          <download tarname="none" />
+        </release>
       </component>
 
       <component class="doc">
-	<release tarname="expat-2.1.0-1-mingw32-doc.tar.lzma" />
-        <release tarname="expat-2.0.1-1-mingw32-doc.tar.gz" />
+        <description>
+          <paragraph>As of expat-2.2.9, the "doc" component package has been
+            divided into separate "man" and "html" components.  There is no
+            residual content with the "doc" package itself; thus, if it has
+            been installed, it may be safely removed.
+          </paragraph>
+        </description>
+        <release tarname="expat-2.2.9-1-mingw32-doc.tar">
+          <download tarname="none" />
+        </release>
+        <release tarname="expat-2.1.0-1-mingw32-doc.tar.lzma">
+          <download tarname="none" />
+        </release>
+        <release tarname="expat-2.0.1-1-mingw32-doc.tar.gz">
+          <download tarname="none" />
+        </release>
+      </component>
+
+      <component class="html">
+        <release tarname="expat-2.2.9-1-mingw32-html.tar.xz" />
       </component>
 
       <component class="man">
-	<release tarname="expat-2.1.0-1-mingw32-man.tar.lzma" />
+        <release tarname="expat-2.2.9-1-mingw32-man.tar.xz" />
+        <release tarname="expat-2.1.0-1-mingw32-man.tar.lzma">
+          <download tarname="none" />
+        </release>
       </component>
 
       <component class="lic">
-	<release tarname="expat-2.1.0-1-mingw32-lic.tar.lzma" />
-        <release tarname="expat-2.0.1-1-mingw32-lic.tar.gz" />
+        <release tarname="expat-2.2.9-1-mingw32-lic.tar.xz" />
+        <release tarname="expat-2.1.0-1-mingw32-lic.tar.lzma">
+          <download tarname="none" />
+        </release>
+        <release tarname="expat-2.0.1-1-mingw32-lic.tar.gz">
+          <download tarname="none" />
+        </release>
       </component>
 
     </package>
@@ -61,32 +91,34 @@
           mingw32-expat package provides the xmlwf validation tool and
           documentation related to the library.
         </paragraph>
-	<paragraph>NOTE: As of release 2.1.0-1 this DLL is now part of the
-	primary package.
-	</paragraph>
       </description>
 
       <licence tarname="expat-%-mingw32-%-lic.tar.%" />
       <source tarname="expat-%-mingw32-%-src.tar.%" />
 
       <component class="dll">
-	<release tarname="libexpat-2.1.0-1-mingw32-dll-1.tar" >
-	  <download tarname="expat-2.1.0-1-mingw32-dll.tar.lzma" />
-	</release>
-        <release tarname="libexpat-2.0.1-1-mingw32-dll-1.tar.gz" />
+        <release tarname="libexpat-2.2.9-1-mingw32-dll-1.tar.xz" />
+        <release tarname="libexpat-2.1.0-1-mingw32-dll-1.tar">
+          <download tarname="none" />
+        </release>
+        <release tarname="libexpat-2.0.1-1-mingw32-dll-1.tar.gz">
+          <download tarname="none" />
+        </release>
       </component>
 
       <component class="dev">
-	<release tarname="libexpat-2.1.0-1-mingw32-dev.tar" >
-	  <download tarname="expat-2.1.0-1-mingw32-dev.tar.lzma" />
-	  <requires eq="mingw32-libexpat-%-mingw32-%-dll-1.tar" />
-	</release>
-        <release tarname="libexpat-2.0.1-1-mingw32-dev.tar.gz" >
-	  <requires eq="mingw32-libexpat-%-mingw32-%-dll-1.tar" />
-	</release>
+        <release tarname="libexpat-2.2.9-1-mingw32-dev.tar.xz" />
+        <release tarname="libexpat-2.1.0-1-mingw32-dev.tar">
+          <download tarname="none" />
+        </release>
+        <release tarname="libexpat-2.0.1-1-mingw32-dev.tar.gz">
+          <download tarname="none" />
+        </release>
       </component>
     </package>
+
   </package-collection>
 </software-distribution>
-<!-- vim: set nocompatible expandtab tw=80 ts=2 sw=2 ff=unix: -->
 
+<!-- vim: set expandtab textwidth=80 tabstop=2 shiftwidth=2: -->
+<!-- vim: set fileformat=unix nocompatible: -->

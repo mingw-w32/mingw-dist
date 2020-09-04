@@ -1,3 +1,13 @@
+2020-09-04  Keith Marshall  <keith@users.osdn.me>
+
+	Publish expat-2.2.9 package set.
+
+	* mingw32/mingw32-expat.xml (download-host): Relocate to osdn.net
+	(expat, libexpat): Add expat-2.2.9 reference recordss for all package
+	components; mark all previous releases as "unavailable for download",
+	by setting all associated download tarname attributes to "none".
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2020-07-24  Keith Marshall  <keith@users.osdn.me>
 
 	Publish MinGW.org WSL-5.4.1 package set.
