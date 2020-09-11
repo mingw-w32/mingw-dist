@@ -1,9 +1,27 @@
+2020-09-11  Keith Marshall  <keith@users.osdn.me>
+
+	Publish mingw32 xz-5.2.5 and liblzma-5.2.5 package set.
+
+	* mingw32/mingw32-xz.xml (download-host): Relocate to osdn.net
+	(xz-5.2.5-1-mingw32-lic, xz-5.2.5-2-mingw32-lic)
+	(xz-5.2.5-1-mingw32-bin, xz-5.2.5-2-mingw32-bin)
+	(liblzma-5.2.5-1-mingw32-dev, liblzma-5.2.5-2-mingw32-dev)
+	(liblzma-5.2.5-1-mingw32-dll-5, liblzma-5.2.5-2-mingw32-dll-5)
+	(xz-5.2.5-1-mingw32-doc, xz-5.2.5-2-mingw32-doc): Add references;
+	mark all previous releases as "unavailable for download".
+	(xz-5.2.5-1-mingw32-lang, xz-5.2.5-2-mingw32-lang): Likewise; mark
+	as "unavailable" for xz-5.2.5-1; it offers no NLS support.
+	(xz-5.2.5-1-mingw32-ext, xz-5.2.5-2-mingw32-ext)
+	(xz-5.2.5-1-mingw32-man, xz-5.2.5-2-mingw32-man): Add new
+	component package references.
+	* common/issue.log mingw32/issue.log: Update accordingly.
+
 2020-09-04  Keith Marshall  <keith@users.osdn.me>
 
 	Publish expat-2.2.9 package set.
 
 	* mingw32/mingw32-expat.xml (download-host): Relocate to osdn.net
-	(expat, libexpat): Add expat-2.2.9 reference recordss for all package
+	(expat, libexpat): Add expat-2.2.9 reference records for all package
 	components; mark all previous releases as "unavailable for download",
 	by setting all associated download tarname attributes to "none".
 	* common/issue.log mingw32/issue.log: Update accordingly.
