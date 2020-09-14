@@ -1,3 +1,16 @@
+2020-09-14  Keith Marshall  <keith@users.osdn.me>
+
+	Publish mingw32 ncurses-6.2 package set.
+
+	* contrib/mingw32-ncurses.xml (ncurses-6.2-1-mingw32-bin)
+	(libncurses-6.2-1-mingw32-dll-6, terminfo-6.2-1-mingw32-data)
+	(libncurses-6.2-1-mingw32-dev, ncurses-6.2-1-mingw32-doc)
+	(ncurses-6.2-1-mingw32-lic): Add references; mark all previous
+	releases as "unavailable for download", due to relocation of...
+	(download-host): ...this, to osdn.net
+	(ncurses-6.2-1-mingw32-man): New component package; add reference.
+	* common/issue.log contrib/issue.log: Update accordingly.
+
 2020-09-11  Keith Marshall  <keith@users.osdn.me>
 
 	Publish mingw32 xz-5.2.5 and liblzma-5.2.5 package set.
