@@ -1,3 +1,17 @@
+2020-09-21  Keith Marshall  <keith@users.osdn.me>
+
+	Republish mingw32 ncurses-6.2 package set.
+
+	* contrib/mingw32-ncurses.xml (ncurses-6.2-2-mingw32-bin)
+	(libncurses-6.2-2-mingw32-dll-6, terminfo-6.2-2-mingw32-data)
+	(libncurses-6.2-2-mingw32-dev, ncurses-6.2-2-mingw32-doc)
+	(ncurses-6.2-2-mingw32-man, ncurses-6.2-2-mingw32-lic): Add further
+	references, noting release number increment.
+	(ncurses-*-mingw32-bin): Add previously omitted dependency on...
+	(libncurses-%-mingw32-%-dll-6): ...this, which in turn, depends on...
+	(libgcc-*-mingw32-*-dll-1): ...this.
+	* common/issue.log contrib/issue.log: Update accordingly.
+
 2020-09-14  Keith Marshall  <keith@users.osdn.me>
 
 	Publish mingw32 ncurses-6.2 package set.

@@ -28,6 +28,8 @@
       <source tarname="ncurses-%-mingw32-%-src.tar.%" />
 
       <component class="bin">
+        <requires eq="libncurses-%-mingw32-%-dll-6.tar" />
+        <release tarname="ncurses-6.2-2-mingw32-bin.tar.xz" />
         <release tarname="ncurses-6.2-1-mingw32-bin.tar.xz" />
         <release tarname="ncurses-6.0-2-mingw32-bin.tar.lzma">
           <download tarname="none" />
@@ -38,6 +40,7 @@
       </component>
 
       <component class="doc">
+        <release tarname="ncurses-6.2-2-mingw32-doc.tar.xz" />
         <release tarname="ncurses-6.2-1-mingw32-doc.tar.xz" />
         <release tarname="ncurses-6.0-2-mingw32-doc.tar.lzma">
           <download tarname="none" />
@@ -49,11 +52,13 @@
 
       <component class="man">
         <affiliate group="MinGW Contributed Libraries" />
+        <release tarname="ncurses-6.2-2-mingw32-man.tar.xz" />
         <release tarname="ncurses-6.2-1-mingw32-man.tar.xz" />
       </component>
 
       <component class="lic">
         <affiliate group="MinGW Contributed Libraries" />
+        <release tarname="ncurses-6.2-2-mingw32-lic.tar.xz" />
         <release tarname="ncurses-6.2-1-mingw32-lic.tar.xz" />
         <release tarname="ncurses-6.0-2-mingw32-lic.tar.lzma">
           <download tarname="none" />
@@ -86,6 +91,7 @@
       <source tarname="ncurses-%-mingw32-%-src.tar.%" />
 
       <component class="dev">
+        <release tarname="libncurses-6.2-2-mingw32-dev.tar.xz" />
         <release tarname="libncurses-6.2-1-mingw32-dev.tar.xz" />
         <release tarname="libncurses-6.0-2-mingw32-dev.tar.lzma">
           <download tarname="none" />
@@ -96,6 +102,8 @@
       </component>
 
       <component class="dll">
+        <requires eq="libgcc-*-mingw32-*-dll-1.tar" />
+        <release tarname="libncurses-6.2-2-mingw32-dll-6.tar.xz" />
         <release tarname="libncurses-6.2-1-mingw32-dll-6.tar.xz" />
         <release tarname="libncurses-6.0-2-mingw32-dll-6.tar.lzma">
           <download tarname="none" />
@@ -121,6 +129,7 @@
       <source tarname="ncurses-%-mingw32-%-src.tar.%" />
 
       <component class="data">
+        <release tarname="terminfo-6.2-2-mingw32-data.tar.xz" />
         <release tarname="terminfo-6.2-1-mingw32-data.tar.xz" />
         <release tarname="terminfo-6.0-2-mingw32-data.tar.lzma">
           <download tarname="none" />

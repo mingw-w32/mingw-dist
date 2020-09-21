@@ -23,9 +23,9 @@
 # MinGW Project, accept liability for any damages, however caused,
 # arising from the use of this software.
 #
-  6ce16f1347a24682fd4abb1b06482d0a4d780a81 2020091400 mingw32-contrib-package-list.xml
+  6ce16f1347a24682fd4abb1b06482d0a4d780a81 2020092100 mingw32-contrib-package-list.xml
   060b76884c7f336b75d32347c29545f3876ee3d5 2016010400 mingw32-libunistring.xml
-  f736e18eecbe57c514608899afac6f7812aa4400 2020091400 mingw32-ncurses.xml
+  f23ff9db54af25990b9aabb422ade276a8b5a785 2020092100 mingw32-ncurses.xml
   620b2482dea7ac975604dd15a2ab67421f2a5646 2016010800 mingw32-pdcurses.xml
   801dd30f9480c82d806b3cc849b20ad5b664b428 2013101200 mingw32-tcltk.xml
   82c157ee11b0bfec68ff23eb5dec56909c0b1cfa 2013102800 mingw32-xerces-c.xml
